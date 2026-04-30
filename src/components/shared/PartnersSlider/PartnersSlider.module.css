@@ -1,0 +1,13 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider {
+  animation: scroll 40s linear infinite;
+  width: max-content;
+}

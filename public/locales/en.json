@@ -1,0 +1,715 @@
+{
+  "header": {
+    "whoWeAre": "Who We Are",
+    "ourServices": "Our Services",
+    "whySavvy": "Why Savvy",
+    "latestProjects": "Latest Projects",
+    "contactUs": "Contact Us"
+  },
+  "nav": {
+    "expo": "Expo",
+    "innovation": "Innovation",
+    "media": "Media",
+    "contact": "Contact",
+    "languageToArabic": "العربية",
+    "languageToEnglish": "English",
+    "about": "About",
+    "pricing": "Pricing",
+    "steps": "Steps"
+  },
+  "serviceBrandNames": [
+    "Savvy World",
+    "Savvy Expo",
+    "Savvy Media",
+    "Savvy Innovation"
+  ],
+  "footer": {
+    "savvyWorld": "Smart World",
+    "aboutSavvy": "About Savvy",
+    "tools": "Automation Tools",
+    "aiCenter": "AI Workflow Builder",
+    "integrationCenter": "Integration Hub",
+    "smartAI": "Smart Exhibition",
+    "section1": "Section 1",
+    "section2": "Section 2",
+    "section3": "Section 3",
+    "section4": "Section 4",
+    "intelligentAdvertising": "Intelligent Media",
+    "exhibition": "Smart Innovation",
+    "socialMedia": "Social Media",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter / X",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "copyright": "© Savvy World 2025. All rights reserved"
+  },
+  "topBanner": {
+    "text": "Contact us now ",
+    "learnMore": "Learn More"
+  },
+  "hero": {
+    "welcomeText": "We provide end-to-end, governed high-tech solutions designed for tomorrow's world ..",
+    "savvyWorld": "",
+    "description": "An advisory boutique shop serving corporate and government sectors. Targeting to integrate advanced responsible AI technologies with strategic marketing to design scalable business models and profitable frameworks, enabling the localization of local and global innovations within the Saudi market through the most effective approaches.",
+    "subDescription": "Paving the way to onboard solutions focused on:",
+    "goalsTitle": "2026 Goals",
+    "goals": {
+      "0": "Governed and purpose-driven robotics",
+      "1": "Sustainability and green solutions",
+      "2": "Net-Zero Emissions Solutions",
+      "3": "Responsible Artificial Intelligence (AI)"
+    },
+
+    "ctaButton": "Contact Us",
+    "partners": "Partners who trusted us to create different experiences… you're next",
+    "socialTiktok": "Follow us on TikTok",
+    "socialLinkedin": "Follow us on LinkedIn",
+    "socialInstagram": "Follow us on Instagram",
+    "socialSnapchat": "Follow us on Snapchat"
+  },
+  "home": {
+    "goals2030": {
+      "intro": "Aligned with Saudi Vision 2030 — building a resilient, technology-led economy."
+    },
+    "socialProof": {
+      "title": "Trusted at major exhibitions",
+      "stats": [
+        { "value": "8000+", "label": "Visitors" },
+        { "value": "60+", "label": "Company visits" },
+        { "value": "250M+", "label": "Social impressions" }
+      ]
+    },
+    "useCases": {
+      "title": "Contributions from the field",
+      "subtitle": "Short highlights from exhibitions and activations.",
+      "items": [
+        {
+          "title": "HajjConfex",
+          "outcome": "Immersive storytelling for Hajj and Umrah ecosystem innovation.",
+          "metric": "420K+ visitors",
+          "link": "/expo"
+        },
+        {
+          "title": "Cityscape",
+          "outcome": "Smart-city and PropTech narratives on a global stage.",
+          "metric": "550+ exhibitors",
+          "link": "/expo"
+        },
+        {
+          "title": "Robotics & AI",
+          "outcome": "Industrial robotics and responsible AI showcased live.",
+          "metric": "Live demos",
+          "link": "/robots"
+        }
+      ]
+    },
+
+    "finalCta": {
+      "title": "Book a consultation",
+      "subtitle": "Tell us about your project — our team will respond with next steps.",
+      "button": "Contact us"
+    }
+  },
+  "promo": {
+    "title": "Savvy World .. Your gateway to the new world",
+    "description": "An integrated industrial consultancy system that combines governed robotics, responsible artificial intelligence, and sustainable technologies. We strive to contribute to building a resilient, future-ready infrastructure. We connect emerging technologies with the local environment by designing comprehensive localization strategies to ensure alignment with local market needs.",
+    "buttonText": "Contact Us",
+    "buttonLink": "/contact",
+    "image": "/promo/robot-hand.png"
+  },
+  "servicesGrid": {
+    "title": "Savvy Services",
+    "subtitle": "We offer a wide range of solutions designed to support businesses, enhance experiences, and deliver value across every touchpoint.",
+    "innovationTitle": "Savvy Innovation",
+    "innovationDescription": "We provide sustainable energy services, electric vehicle charging solutions, and advanced AI solutions for businesses.",
+    "innovationButton": "Learn more",
+    "expoTitle": "Savvy Expo",
+    "expoDescription": "We focus on building strategic partnerships while delivering engaging entertainment activities, creating environments that attract audiences and generate meaningful impact through curated activations.",
+    "expoButton": "Learn more",
+    "mediaTitle": "Savvy Media",
+    "mediaDescription": "Our media division offers a range of premium services, including large-scale advertising display systems that strengthen brand presence, in addition to a dedicated content creation and brand marketing unit that maximizes reach and visibility.",
+    "mediaButton": "Learn more"
+  },
+  "partnersSlider": {
+    "heading": "Our Valued Partners: "
+  },
+  "imageSlider": {
+    "heading": "Our activations"
+  },
+  "expo": {
+    "partners": {
+      "title": "Our partners create with us",
+      "subtitle": "Experiences that stay in memory"
+    },
+    "hero": {
+      "title": "Bring your booth to life… and let the experience speak for you",
+      "subtitle": "Mr.savvy and interactive screens give you a distinctive presence",
+      "contactUs": "Contact Us",
+      "learnMore": "Learn More"
+    },
+    "services": {
+      "title": "Savvy Expo Services",
+      "subtitle": "We bring your exhibitions from first idea to last visitor",
+      "service1Title": "Strategic Partnerships",
+      "service1Description": "Well-planned alliances with organizers and major brands to enhance your booth's impact, expand visibility opportunities, drive growth, and achieve tangible results.",
+      "service2Title": "Mr.savvy Robot",
+      "service2Description": "The ambassador of smart technologies at your booth, delivering educational and interactive content, attracting visitors with its presence, and showcasing your brand innovatively.",
+      "service3Title": "Engaging and Purposeful Activities",
+      "service3Description": "Immersive stations using motion, light, and smart technologies that offer visitors a unique experience, encouraging exploration and increasing the value of your booth presence."
+    },
+    "latestProjects": {
+      "title": "Our Latest Projects",
+      "tab1": "Global Robotics Summit",
+      "tab2": "\"Al-Jameel First\" Exhibition",
+      "tab3": "Al-Khozama Exhibition",
+      "project1Title": "Global Robotics Summit",
+      "project1Description": "An international robotics and technology summit showcasing the latest innovations.",
+      "project2Title": "\"Al-Jameel First\" Exhibition",
+      "project2Description": "The first innovative tech exhibition presenting solutions for the future.",
+      "project3Title": "Al-Khozama Exhibition",
+      "project3Description": "A large-scale event displaying technology and innovation.",
+      "stats1Label": "Visitors",
+      "stats1Value": "8000+",
+      "stats2Label": "Company Visits",
+      "stats2Value": "60+",
+      "stats3Label": "Social Media Views",
+      "stats3Value": "250+ million"
+    }
+  },
+  "innovation": {
+    "hero": {
+      "title": "22 years bringing global technologies to the Saudi market, positioned for real impact.",
+      "subtitle": "We bridge global innovation with Saudi market needs by localizing advanced technologies and engineering tailored solutions across supply chain optimization, industrial automation, energy infrastructure, inspection, and security systems, ensuring compliance, reliability, and measurable operational impact."
+    },
+    "about": {
+      "title": "Savvy Innovation is an R&D program featuring the Mr.savvy robot, camera-tracking screens, and AR maps. We develop intelligent content on instant dashboards, implement smart home experiences, and ensure full PDPL compliance. We continuously test and improve based on real-world usage.",
+      "description": "Savvy Innovation turns ideas into reality through advanced AI, sustainable energy solutions, and cutting-edge robotics that shape the future of technology."
+    },
+    "services": {
+      "title": "What Services Do We Offer?",
+      "service1Title": "Sustainable Technology Solutions",
+      "service1Description": "Innovative, eco-friendly tech solutions that enhance sustainability and environmental responsibility.",
+      "service2Title": "Humanoid-Like Robotics (Hajer Robota)",
+      "service2Description": "Advanced humanoid robots designed to enhance automation and human-robot interaction.",
+      "service3Title": "Electric Vehicle Solutions",
+      "service3Description": "Comprehensive EV technologies and charging infrastructure for sustainable transportation.",
+      "service4Title": "Smart AI Systems",
+      "service4Description": "Advanced AI systems that optimize operations and enhance decision-making capabilities.",
+      "service5Title": "Collaboration with the Saudi Green Technology Forum",
+      "service5Description": "Strategic partnerships that drive innovation in green technology and sustainable development initiatives."
+    },
+    "solutions": {
+      "title": "Savvy Innovation Solutions",
+      "subtitle": "Localizing innovation, powering Saudi growth",
+      "solution1Title": "Industrial Robots",
+      "solution1Description": "Advanced robotic solutions for firefighting, industrial inspection, and security guarding, engineered with controlled, governed, and secure operational frameworks to ensure safety, regulatory compliance, data integrity, and reliable performance in mission-critical environments.",
+      "solution2Title": "Green Energy",
+      "solution2Description": "Integrated green energy solutions, from solar systems and sustainable buildings to nature-friendly cement technologies, reduce power consumption, improve operational efficiency, generate long-term returns, and accelerate zero-emission and carbon-reduction pathways aligned with Vision 2030.",
+      "solution3Title": "Mr.savvy",
+      "solution3Description": "SAVVY develops governed, purpose-driven robotics for industrial impact and sustainability. Mr. Savvy, our humanoid ambassador, represents responsible Artificial Intelligence, governed & ethical automation, and green technologies.",
+      "solution4Title": "Smart Homes",
+      "solution4Description": "Powered by advanced energy-saving algorithms, this integrated smart community platform optimizes efficiency, connects residents, visitors, and facility teams, streamlines payments and services, and enables secure smart home automation with seamless digital key management."
+    }
+  },
+  "media": {
+    "hero": {
+      "badge": "Boost Your Visibility",
+      "title": "Turn Your Facade into an Attraction… A Screen That Speaks for You.",
+      "description": "Transform your company into a powerful visual message with immersive content and interactive screens operating 24/7, highlighting your business at every moment.",
+      "statsLabel1": "Active Screens",
+      "statsLabel2": "Uptime",
+      "primaryButton": "Learn More",
+      "secondaryButton": "Contact Us",
+      "imageAlt": "NHC Building - Innovation Center"
+    },
+    "about": {
+      "badge": "About Us",
+      "title": "We Produce Professional Content",
+      "description": "Including 4K video production, motion graphics design, screen and social media designs, quick video editing, content management, publication, sponsored ads, influencer collaboration, and effective media coverage.",
+      "feature1Title": "Unlimited Creativity",
+      "feature1Description": "Transform your ideas into stunning content",
+      "feature2Title": "Fast Production",
+      "feature2Description": "High-quality projects in record time",
+      "feature3Title": "Professional Quality",
+      "feature3Description": "World-class standards in every detail"
+    },
+    "content": {
+      "topTitle": "Creating Unique Content! More Beautiful… Simpler…",
+      "topDescription": "Immersive digital content features technologies like Hyper Realistic, Anamorphic, and AR to create vivid, interactive scenes with high visual quality, enriched with AI-driven, interactive, 3D content suitable for all marketing needs.",
+      "bottomTitle": "With the ability to display content on both indoor and outdoor digital screens for continuous commercial use, 24/7",
+      "bottomDescription": "A network of indoor and outdoor screens operating 24/7, featuring high-brightness displays and weather-resistant design. It includes remote content management, smart targeting, and scene analysis capabilities that measure total audience reach, dwell time, age groups, and emotional engagement—helping boost campaign effectiveness by up to 50%.",
+      "activeEngagements": "Active Engagements",
+      "uptime": "Uptime",
+      "hours": "Hours",
+      "feature1": "Dwell Time Analysis",
+      "feature2": "Total Visitors and Attendance",
+      "feature3": "Emotion and Impression Analysis",
+      "feature4": "Age and Gender Analysis",
+      "button": "First of Its Kind in Saudi Arabia"
+    },
+    "whySavvy": {
+      "title": "Why Savvy Media?",
+      "subtitle": "Because your message deserves to be showcased beautifully and effectively",
+      "feature1Title": "Comprehensive Display Solutions",
+      "feature1Description": "A network of indoor and outdoor screens built to commercial standards, operating around the clock",
+      "feature2Title": "Immersive Content Elevating Brand Presence",
+      "feature2Description": "Hyper Realistic, AR, and 3D technologies provide a powerful and engaging visual experience for your audience",
+      "feature3Title": "Data-Driven Targeting and Measurement",
+      "feature3Description": "Accurate analytics of visitor movements and interactions to optimize campaign performance and boost results"
+    },
+    "projects": {
+      "badge": "Our Projects",
+      "title": "Growing Your Project Is Our Priority",
+      "subtitle": "We are not your typical marketing team. We help brands grow through clear strategy, creative energy, and a human touch.",
+      "project1Title": "Media Facade Screens",
+      "project1Description": "Large-scale facade screens across Saudi Arabia giving your brand a striking presence in high-traffic cities.",
+      "project2Title": "Content and Production",
+      "project2Description": "Comprehensive production including 4K filming, motion graphics, screen and social media content, fast editing, paid promotion, and influencer/media management."
+    },
+    "services": {
+      "badge": "Our Services",
+      "title": "Elevate Your Brand with Growth-Driven Strategies",
+      "subtitle": "Driven by innovation, we enhance your brand presence and expand your business reach to achieve its full growth potential.",
+      "service1": "Media Facades and Giant Screens",
+      "service2": "Outdoor Advertising",
+      "service3": "On-Site 4K Filming",
+      "service4": "Animation and Infographic Videos",
+      "service5": "Fast Production",
+      "service6": "Social Media (AR / EN)",
+      "service7": "Partnerships with Social Media Influencers",
+      "service8": "50-Square-Meter Screen (Used for Real Estate Filming)"
+    }
+  },
+  "news": {
+    "title": "Savvy News",
+    "subtitle": "Our latest updates… keeping you in the loop every step of the way",
+    "stayTuned": "Stay tuned for the official launch on ",
+    "dateText": "March 21",
+    "followText": "To learn more about Savvy World\n official launch plan Follow us on our media channels on\n March 21, 2026."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated: November 11, 2025",
+    "introTitle": "Acceptance of Terms",
+    "introContent": "We respect your privacy and are committed to protecting your personal data while you use Savvy World and its services. This policy explains the types of data we collect, how we use it, and your options for managing it.",
+    "introList": [],
+    "introFooter": "",
+    "dataCollectionTitle": "Data We Collect",
+    "dataCollectionContent": "When using any form on the site (Contact Us, Interest Registration, Newsletter Subscription):",
+    "dataCollectionList": [
+      "1. Name",
+      "2. Email",
+      "3. Phone Number",
+      "4. ID or Company (Optional)",
+      "5. Message or Request",
+      "6. Any additional information provided by the user"
+    ],
+    "dataSharingTitle": "Sharing Data Within Savvy World",
+    "dataSharingContent": "We may share your data across our different departments to provide better services.",
+    "noSellingTitle": "No Selling of Data",
+    "noSellingContent": "We do not sell or rent your data to any third party under any circumstances.",
+    "dataRetentionTitle": "Data Retention",
+    "dataRetentionContent": "We retain your data only for as long as necessary to provide services or as required by law. Unnecessary data may be deleted periodically.",
+    "policyChangesTitle": "Changes to the Privacy Policy",
+    "policyChangesContent": "We may update this policy from time to time. Continued use of the site constitutes acceptance of the updated version.",
+    "yourRightsTitle": "Your Rights",
+    "yourRightsContent": "Users have the right to:",
+    "yourRightsList": [
+      "Request a copy of their data",
+      "Request data modification or updates",
+      "Request data deletion",
+      "Withdraw consent for data usage (where applicable)",
+      "To exercise any of these rights:",
+      "You can contact us via the Contact Us page."
+    ],
+    "contactTitle": "Contact Us",
+    "contactContent": "If you have any questions about the privacy policy or how your data is handled, please reach out to us:",
+    "contactEmail": "privacy@savvy.com",
+    "contactPhone": "+966 50 123 4567"
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "lastUpdated": "Last Updated: December 2024",
+    "acceptanceTitle": "Acceptance of Terms",
+    "acceptanceContent": "By using the Savvy World website or any of its pages and services, you agree to comply with these terms. If you do not agree with any part of them, please do not use the site.",
+    "permittedUseTitle": "Permitted Use",
+    "permittedContent": "You are allowed to use the site for the following purposes only:",
+    "permittedList": [
+      "Browsing and learning about Savvy World’s services",
+      "Contacting us through official forms",
+      "Registering for events or expressing interest in projects",
+      "Reading displayed content (news, images, exhibitions, solutions, services)"
+    ],
+    "intellectualPropertyTitle": "Intellectual Property",
+    "intellectualPropertyContent": "All content published on the site is owned by Savvy World and includes:",
+    "intellectualPropertyList": [
+      "Texts",
+      "Images",
+      "Designs",
+      "Logos",
+      "Videos"
+    ],
+    "intellectualPropertyFooter": "Creative content related to Mr.savvy, robots, and solutions — any content from Savvy exhibitions, media, or innovation — may not be used without prior written permission.",
+    "userTeamTitle": "Accuracy of Information",
+    "userTeamContent": "We strive to provide accurate and up-to-date information, but:",
+    "userTeamList": [
+      "Content or services may change without notice",
+      "Some pages may contain experimental or preliminary information",
+      "We do not guarantee the site is error-free or uninterrupted",
+      "Use of any information is at your own risk."
+    ],
+    "modificationsTitle": "Modifications to Terms",
+    "modificationsContent": "We reserve the right to modify the terms of use at any time. Continued use of the site after changes constitutes explicit acceptance of the new version.",
+    "terminationTitle": "Termination",
+    "terminationContent": "We may suspend or prevent your use of the site if you violate any of the stated terms. This may occur without prior notice."
+  },
+  "contact": {
+    "heroBadge": "Get In Touch",
+    "heroTitle": "Get In Touch",
+    "heroSubtitle": "We're here to answer your questions and help with your next project",
+    "formTitle": "Send a Message",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "companyName": "Company Name",
+    "jobTitle": "Job Title",
+    "fullNamePlaceholder": "John Doe",
+    "emailPlaceholder": "user@email.com",
+    "phonePlaceholder": "0581234567",
+    "companyPlaceholder": "company Name",
+    "jobPlaceholder": "Company Manager",
+    "savvySolutions": "Savvy solutions (optional)",
+    "message": "Message",
+    "messagePlaceholder": "Please put in a brief about your product of interest. Example (Innovation, Media, Expo)",
+    "sending": "Sending...",
+    "send": "Send",
+    "successMessage": "Your message has been sent successfully!",
+    "errorMessage": "An error occurred. Please try again.",
+    "faqTitle": "Frequently Asked Questions",
+    "faqQuestion1": "What is Savvy World?",
+    "faqAnswer1": "Savvy World is an innovative Saudi platform combining modern technologies + sustainability + digital transformation + robotics, presented to people and businesses in a simple way, aiming to bring AI and robotics into a better world — the Savvy World.",
+    "faqQuestion2": "What does Savvy Media offer?",
+    "faqAnswer2": "It provides indoor and outdoor digital display screens operating 24/7, along with advanced immersive content using 3D and AR technologies, featuring smart targeting and precise interaction measurement.",
+    "faqQuestion3": "Who is Mr.savvy?",
+    "faqAnswer3": "Mr.savvy is a humanoid robot introduced in Saudi Arabia as an ambassador for good technologies and sustainability. Its main idea is to simplify the world of robotics and AI for people in a fun, easy way, available in both Arabic and English.",
+    "faqQuestion4": "What is the role of Savvy Expo?",
+    "faqAnswer4": "Savvy Expo is the events and exhibitions arm of Savvy World. Its main role is to transform any event into an intelligent, engaging, and educational experience using robotics, AI, and interactive content.",
+    "faqQuestion5": "Do you offer green energy solutions?",
+    "faqAnswer5": "Yes — comprehensively and clearly. In collaboration with the Saudi Green Building Forum, we provide fully certified green solutions. We offer it as a complete 'Green Transformation Journey' for developers, companies, and banks with profitable business models.",
+    "faqQuestion6": "What is Savvy Innovation?",
+    "faqAnswer6": "Savvy Innovation links AI, digital interaction, and green solutions to develop more sustainable urban spaces, providing solutions geared toward the future of cities and experiences.",
+    "sidebarTitle": "Direct contact",
+    "sidebarPhoneLabel": "Phone",
+    "sidebarPhone": "+966 58 033 5989",
+    "sidebarEmailLabel": "Email",
+    "sidebarEmail": "sales@savvyworld.ai",
+    "sidebarAddressLabel": "Location",
+    "sidebarAddress": "Riyadh, KSA",
+    "sidebarHoursLabel": "Business hours",
+    "sidebarHours": "24/7",
+    "solutionOther": "Other",
+    "solutionOptionGroups": [ 
+      {
+        "title": "Savvy Innovation",
+        "options": [
+          "Advisory: responsible AI and data management",
+          "Industrial robots (firefighting, inspection, security)",
+          "Green energy: solar, EV charging, eco cement, efficient smart home",
+          "Strategic partnerships"
+        ]
+      },
+      {
+        "title": "Savvy Expo",
+        "options": [
+          "Events, exhibitions, and interactive visitor experiences",
+          "Mr.savvy robot",
+          "Entertainment humanoid robots (with training)"
+        ]
+      },
+      {
+        "title": "Savvy Media",
+        "options": [
+          "Indoor, outdoor, and facade digital screens",
+          "Brand, content, and social media",
+          "Alcrea — intelligent assistants to reduce workload"
+        ]
+      }
+    ],
+      "solutionOptions": [
+      "Advisory services in Data Management",
+      "Advisory services in Responsible AI",
+      " Industrial robots (firefighting, inspection, security)",
+      "Strategic partnerships",
+      " Electric vehicle (EV) charging stations",
+      "Eco-friendly cement",
+      "Energy-efficient smart home solutions",
+      "Strategic partnerships",
+      "Engaging and purposeful activities",
+      "mr.savvy robot",
+      "Innovative and interactive visitor experiences",
+      "Brand building",
+      "Digital marketing",
+      "Creative content production",
+      "Digital marketing",
+      "Humanoid robots (with training services)",
+      "Alcrea Intelligent assistants designed to reduce your workload.",
+      "Other"
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "question1": "What is Savvy World?",
+    "answer1": "Savvy World is an innovative Saudi platform combining modern technologies + sustainability + digital transformation + robotics, presented to people and businesses in a simple way, aiming to bring AI and robotics into a better world — the Savvy World.",
+    "question2": "What does Savvy Media offer?",
+    "answer2": "It provides indoor and outdoor digital display screens operating 24/7, along with advanced immersive content using 3D and AR technologies, featuring smart targeting and precise interaction measurement.",
+    "question3": "Who is Mr.savvy?",
+    "answer3": "Mr.savvy is a humanoid robot introduced in Saudi Arabia as an ambassador for good technologies and sustainability. Its main idea is to simplify the world of robotics and AI for people in a fun, easy way, available in both Arabic and English.",
+    "question4": "What is the role of Savvy Expo?",
+    "answer4": "Savvy Expo is the events and exhibitions arm of Savvy World. Its main role is to transform any event into an intelligent, engaging, and educational experience using robotics, AI, and interactive content.",
+    "question5": "Do you offer green energy solutions?",
+    "answer5": "Yes — comprehensively and clearly. In collaboration with the Saudi Green Building Forum, we provide fully certified green solutions. We offer it as a complete 'Green Transformation Journey' for developers, companies, and banks with profitable business models.",
+    "question6": "What is Savvy Innovation?",
+    "answer6": "Savvy Innovation links AI, digital interaction, and green solutions to develop more sustainable urban spaces, providing solutions geared toward the future of cities and experiences."
+  },
+
+  "common": {
+    "main": "Home",
+    "news": "News",
+    "projects": "Latest Projects",
+    "services": "Gallery",
+    "about": "Our Sections",
+    "contactUs": "Contact Us",
+    "gallery": "Our Gallery",
+    "ourSections": "Our Sections",
+    "savvyWorld": "Savvy World",
+    "savvyMedia": "Savvy Media",
+    "savvyExpo": "Savvy Expo",
+    "savvyInnovation": "Savvy Innovation",
+    "otherPages": "Other Pages",
+    "robots": "Savvy E-Store",
+    "content": "Content",
+    "whySavvy": "Why Savvy",
+    "servicesLabel": "Services",
+    "projectsLabel": "Projects",
+    "solutions": "Solutions",
+    "partnersLabel": "Partners",
+    "specifications": "Specifications",
+    "stayTuned": "Stay tuned for the official launch on",
+    "close": "Close",
+    "toggleMenu": "Toggle menu",
+    "robotsViewAll": "View all",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "viewFullscreen": "View fullscreen",
+    "needHelp": "Need help? Contact us",
+    "bookMrSavvy": "Book Mr. Savvy now",
+    "contactUsLabel": "Contact Us",
+    "learnMore": "Learn More",
+    "previousExhibitions": "Our Previous Exhibitions",
+    "gateway": "Your gateway to the new world of Expo, Media and Innovation",
+    "copyrightFull": "Copyright © 2025 Savvy. All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "mediaGallery": "Gallery",
+    "savvyEStore": "Savvy eStore",
+    "mediaContentSection": "Content",
+    "mediaGallerySection": "Gallery"
+  },
+  "savvySections": {
+    "sectionTitle": "Savvy World Sections",
+    "cards": [
+      {
+        "id": "innovation",
+        "title": "Savvy Innovation",
+        "description": "We transform local and global innovation into operational solutions aligned with the Saudi market.",
+        "features": [
+          "Advisory services in Data Management",
+          "Advisory services in Responsible AI",
+          " Industrial robots (firefighting, inspection, security)",
+          "Strategic partnerships",
+          " Electric vehicle (EV) charging stations",
+          "Eco-friendly cement",
+          "Energy-efficient smart home solutions"
+        ],
+        "icon": "/home-page/icons/innovation-icon.svg",
+        "image": "/sections/innovation-image.jpg",
+        "link": "/innovation",
+        "buttonText": "Learn more"
+      },
+      {
+        "id": "expo",
+        "title": "Savvy Expo",
+          "description": "We turn your brand into unforgettable experiences… through",
+          "features": [
+            "Building strategic partnerships",
+            "Focusing on engaging and purposeful entertainment activities",
+            "Creating attractive and interactive experiences with visitors",
+            "Leveraging the world of robotics with strong media presence (Mr. Savvy & Haksha characters)"
+          ],
+        "icon": "/home-page/icons/expo-icon.svg",
+        "image": "/sections/expo-image.jpg",
+        "link": "/expo",
+        "buttonText": "Learn more"
+      },
+      {
+        "id": "media",
+        "title": "Savvy Media",
+        "description": "We build the most suitable content for your brand and target market",
+        "features": [
+          "Brand building",
+          "Digital marketing",
+          "Creative content production",
+          "Digital marketing",
+          "Large-scale screens on building facades promoting your brand"
+        ],
+        "icon": "/home-page/icons/media-icon.svg",
+        "image": "/sections/media-image.jpg",
+        "link": "/media",
+        "buttonText": "Learn more"
+      }
+    ]
+  },
+  "gallerySection": {
+    "title": "Snapshots that tell our story.. Images that make the first impression",
+    "emptyState": "No images added yet. Please add images in locale JSON",
+    "images": [
+      {
+        "id": "img-1",
+        "src": "/home-page/gallery/image-1.jpg",
+        "alt": "Gallery Image 1",
+        "gridSpan": {
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      {
+        "id": "img-2",
+        "src": "/home-page/gallery/image-2.jpg",
+        "alt": "Gallery Image 2",
+        "gridSpan": {
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      {
+        "id": "img-3",
+        "src": "/home-page/gallery/image-3.jpg",
+        "alt": "Gallery Image 3",
+        "gridSpan": {
+          "cols": 2,
+          "rows": 1
+        }
+      },
+      {
+        "id": "img-4",
+        "src": "/home-page/gallery/image-4.jpg",
+        "alt": "Gallery Image 4",
+        "gridSpan": {
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      {
+        "id": "img-5",
+        "src": "/home-page/gallery/image-5.jpg",
+        "alt": "Gallery Image 5",
+        "gridSpan": {
+          "cols": 1,
+          "rows": 2
+        }
+      },
+      {
+        "id": "img-6",
+        "src": "/home-page/gallery/image-6.jpg",
+        "alt": "Gallery Image 6",
+        "gridSpan": {
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      {
+        "id": "img-7",
+        "src": "/home-page/gallery/image-7.jpg",
+        "alt": "Gallery Image 7",
+        "gridSpan": {
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      {
+        "id": "img-8",
+        "src": "/home-page/gallery/image-8.jpg",
+        "alt": "Gallery Image 8",
+        "gridSpan": {
+          "cols": 2,
+          "rows": 1
+        }
+      },
+      {
+        "id": "img-9",
+        "src": "/home-page/gallery/image-9.jpg",
+        "alt": "Gallery Image 9",
+        "gridSpan": {
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      {
+        "id": "img-10",
+        "src": "/home-page/gallery/image-10.jpg",
+        "alt": "Gallery Image 10",
+        "gridSpan": {
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      {
+        "id": "img-11",
+        "src": "/home-page/gallery/image-11.png",
+        "alt": "Gallery Image 11",
+        "gridSpan": {
+          "cols": 1,
+          "rows": 1
+        }
+      },
+      {
+        "id": "img-12",
+        "src": "/home-page/gallery/image-12.png",
+        "alt": "Gallery Image 12",
+        "gridSpan": {
+          "cols": 1,
+          "rows": 1
+        }
+      }
+    ]
+  },
+  "latestNewsSection": {
+    "sectionTitle": "Latest News.. Step by step with us.",
+    "cards": [
+      {
+        "id": "news-1",
+        "title": "How to build interactive future activities?",
+        "date": "October 12",
+        "image": "/news/news-3.jpg",
+        "buttonText": "News",
+        "link": "/news/interactive-displays-future"
+      },
+      {
+        "id": "news-2",
+        "title": "How to design images and videos for the first impression?",
+        "date": "October 3",
+        "image": "/news/news-2.jpg",
+        "buttonText": "Media",
+        "link": "/news/2"
+      },
+      {
+        "id": "news-3",
+        "title": "How does technology change the future of events?",
+        "date": "October 5",
+        "image": "/news/news-1.jpg",
+        "buttonText": "News",
+        "link": "/news/3"
+      }
+    ]
+  }
+}

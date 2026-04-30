@@ -1,0 +1,22 @@
+{
+  "currency": "SAR",
+  "usdToSarRate": 3.75,
+  "note": "SAR list prices match the website locales (derived from former Unitree USD list prices × 3.75, the SAR-USD peg). Update this file and locales together if finance changes rates or list prices.",
+  "shippingEstimateSar": { "min": 1496, "max": 3750, "note": "R1 shipping band on site (converted from former USD 399–1000 at same peg)." },
+  "models": [
+    { "key": "g1_edu", "formerUsdList": null, "sarList": null, "display": "Contact Sales" },
+    { "key": "h2", "formerUsdList": 29900, "sarList": 112125 },
+    { "key": "h2_edu", "formerUsdList": null, "sarList": null, "display": "Contact Sales" },
+    { "key": "go2_air", "formerUsdList": 1600, "sarList": 6000 },
+    { "key": "go2_air_controller", "formerUsdList": 1850, "sarList": 6938 },
+    { "key": "go2_pro", "formerUsdList": 2800, "sarList": 10500 },
+    { "key": "go2_pro_controller", "formerUsdList": 3050, "sarList": 11438 },
+    { "key": "go2_x", "formerUsdList": 4500, "sarList": 16875 },
+    { "key": "go2_edu", "formerUsdList": null, "sarList": null, "display": "Contact Sales" },
+    { "key": "r1_air_white", "formerUsdList": 4900, "sarList": 18375 },
+    { "key": "r1_white", "formerUsdList": 5900, "sarList": 22125 },
+    { "key": "r1_air_red", "formerUsdList": 4900, "sarList": 18375 },
+    { "key": "r1_red", "formerUsdList": 5900, "sarList": 22125 },
+    { "key": "r1_edu", "formerUsdList": null, "sarList": null, "display": "Contact Sales" }
+  ]
+}

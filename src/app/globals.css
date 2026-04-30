@@ -1,0 +1,296 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FBFCFD;
+  --foreground: #060B13;
+  --primary: #3960F9;
+  --secondary: #181D27;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --font-sans: var(--font-inter);
+
+  /* Container settings */
+  --container-max-width: 1280px;
+  --container-padding: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #FBFCFD;
+    --foreground: #060B13;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Disable native smooth scroll - Lenis handles it */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), "Inter Tight", Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  overflow-x: hidden;
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    --animation-duration: 0.5s;
+    --animation-easing: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Mobile Performance Optimizations */
+@media (max-width: 767px) {
+  :root {
+    --animation-duration: 0.3s;
+    --animation-easing: cubic-bezier(0.33, 1, 0.68, 1);
+  }
+  
+  /* Reduce animation complexity on mobile */
+  *,
+  *::before,
+  *::after {
+    will-change: auto !important;
+  }
+  
+  /* Faster animations on mobile */
+  .animate-fadeIn {
+    animation-duration: 0.3s;
+  }
+  
+  .animate-slideDownFadeIn {
+    animation-duration: 0.4s;
+  }
+}
+
+/* English content uses Inter Tight */
+[dir="ltr"] body,
+.ltr {
+  font-family: var(--font-inter), "Inter Tight", Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* English base weight */
+.lang-en {
+  font-weight: 600;
+}
+
+/* Arabic font styling */
+[dir="rtl"] body,
+.lang-ar {
+  /* Use Inter for Arabic */
+  font-family: var(--font-inter-arabic), "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  /* Ensure Tailwind font-sans maps to Arabic in this mode */
+  --font-sans: var(--font-inter-arabic);
+}
+
+/* Smooth scrolling for anchor links */
+a[href^="#"] {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Navbar slide down animation */
+@keyframes slideDownFadeIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideDownFadeIn {
+  animation: slideDownFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+/* Container class for centered content */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width, 1280px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding, 0.75rem);
+  padding-right: var(--container-padding, 0.75rem);
+}
+
+@media (min-width: 640px) {
+  .container {
+    --container-padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    --container-padding: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    --container-padding: 4rem;
+  }
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 767px) {
+  /* Reduced spacing for mobile */
+  .container {
+    --container-padding: 1rem;
+  }
+  
+  /* Optimize text sizes for mobile readability */
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  h4 {
+    font-size: 1.125rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* Reduce padding and margins globally on mobile */
+  /* section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  } */
+  
+  /* Optimize button sizes */
+  button {
+    min-height: 44px;
+    padding: 0.625rem 1rem;
+  }
+}
+
+/* Infinite Scroll Animation for Image Rows */
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 1rem));
+  }
+}
+
+@keyframes infinite-scroll-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(50% + 1rem));
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 30s linear infinite;
+  display: flex;
+  will-change: transform;
+}
+
+[dir="rtl"] .animate-infinite-scroll,
+.rtl .animate-infinite-scroll {
+  animation: infinite-scroll-rtl 30s linear infinite;
+}
+
+/* Pause animation on hover for better UX */
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-infinite-scroll {
+    animation: none;
+  }
+}
