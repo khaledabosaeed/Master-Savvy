@@ -15,7 +15,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   if (!isAppLanguage(lang)) {
     notFound()
   }
-  const texts = articleDetailPageHeaderTexts(getDictionary(lang))
+  const texts = articleDetailPageHeaderTexts(await getDictionary(lang))
 
   return (
     <>

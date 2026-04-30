@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
+import FormattedText from "@/components/shared/FormattedText"
 
 export default function WhySavvy() {
   const { language } = useLanguage()
@@ -37,8 +38,12 @@ export default function WhySavvy() {
           transition={{ duration: 0.6 }}
           className={`text-center mb-16 ${isRTL ? "rtl" : "ltr"}`}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">{t("media.whySavvy.title")}</h2>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto">{t("media.whySavvy.subtitle")}</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <FormattedText text={t("media.whySavvy.title")} />
+          </h2>
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+            <FormattedText text={t("media.whySavvy.subtitle")} />
+          </p>
         </motion.div>
 
         <div className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto ${isRTL ? "rtl" : "ltr"}`}>
@@ -58,9 +63,13 @@ export default function WhySavvy() {
                 <span className="text-3xl font-bold text-[#3960F9]">{feature.number}</span>
               </motion.div>
 
-              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">{feature.title}</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 text-center">
+                <FormattedText text={feature.title} />
+              </h3>
 
-              <p className="text-gray-600 leading-relaxed text-center">{feature.description}</p>
+              <p className="text-gray-600 leading-relaxed text-center">
+                <FormattedText text={feature.description} />
+              </p>
             </motion.div>
           ))}
         </div>

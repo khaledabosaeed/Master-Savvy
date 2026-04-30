@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
+import FormattedText from "@/components/shared/FormattedText"
 
 export default function InnovationHero() {
   const { language } = useLanguage()
@@ -37,7 +38,7 @@ export default function InnovationHero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight max-w-4xl mx-auto"
             >
-              {t("innovation.hero.title")}
+              <FormattedText text={t("innovation.hero.title")} />
             </motion.h1>
 
             <motion.p
@@ -46,7 +47,7 @@ export default function InnovationHero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-base md:text-lg lg:text-lg text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto"
             >
-              {t("innovation.hero.subtitle")}
+              <FormattedText text={t("innovation.hero.subtitle")} />
             </motion.p>
 
             {/* CTA Buttons */}
@@ -71,7 +72,7 @@ export default function InnovationHero() {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {t("common.contactUs")}
+                <FormattedText text={t("common.contactUs")} />
               </motion.a>
             </motion.div>
           </motion.div>

@@ -15,7 +15,7 @@ export default async function Contact({ params }: ContactPageProps) {
   if (!isAppLanguage(lang)) {
     notFound()
   }
-  const dict = getDictionary(lang)
+  const dict = await getDictionary(lang)
   const texts = contactPageHeaderTexts(dict)
 
   return (

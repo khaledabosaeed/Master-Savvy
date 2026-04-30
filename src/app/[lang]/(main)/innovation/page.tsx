@@ -17,7 +17,7 @@ export default async function InnovationPage({ params }: InnovationPageProps) {
   if (!isAppLanguage(lang)) {
     notFound()
   }
-  const dict = getDictionary(lang)
+  const dict = await getDictionary(lang)
   const texts = innovationPageHeaderTexts(dict)
 
   return (

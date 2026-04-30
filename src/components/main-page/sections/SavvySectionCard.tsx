@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useIsMobile } from "@/hooks/useIsMobile"
+import FormattedText from "@/components/shared/FormattedText"
 
 interface SavvySectionCardProps {
     title: string
@@ -56,11 +57,11 @@ export default function SavvySectionCard({
                 {/* Title and Description - Better mobile typography */}
                 <div className="flex-1">
                     <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-1.5 md:mb-2">
-                        {title}
+                        <FormattedText text={title} />
                     </h3>
                     <div className="w-full h-px bg-gray-300 mb-2 md:mb-3" />
                     <p className="text-gray-600 leading-relaxed text-xs md:text-sm lg:text-base">
-                        {description}
+                        <FormattedText text={description} />
                     </p>
                 </div>
             </div>
@@ -75,7 +76,7 @@ export default function SavvySectionCard({
                                 <span className="text-gray-900 font-bold  text-xs md:text-sm pb-1.5 md:pb-2">
                                     {String(idx + 1).padStart(2, '0')}
                                 </span>
-                                <span className="text-gray-900 font-bold   text-xs md:text-sm">{feature}</span>
+                                <FormattedText text={feature} className="text-gray-900 font-bold text-xs md:text-sm" />
                             </li>
                         ))}
                     </ul>
@@ -84,7 +85,7 @@ export default function SavvySectionCard({
                     <span
                         className={`inline-flex items-center gap-2 text-gray-900 text-sm md:text-base font-medium hover:text-blue-600 transition-colors group ${isRTL ? 'flex-row-reverse' : ''}`}
                     >
-                        <span>{buttonText}</span>
+                        <FormattedText text={buttonText} />
                         <svg
                             className={`w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-1 ${isRTL ? 'rotate-180' : ''}`}
                             fill="none"

@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next"
 import { FaInstagram, FaSnapchatGhost, FaTiktok } from "react-icons/fa"
 import { FaLinkedinIn } from "react-icons/fa6"
 import { Leaf, Wind, Brain, Bot } from "lucide-react"
+import FormattedText from "@/components/shared/FormattedText"
 
 export default function NewHero() {
   const [animate, setAnimate] = useState(false)
@@ -164,9 +165,9 @@ export default function NewHero() {
             animate={animate ? "visible" : "hidden"}
             className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight px-2"
           >
-            {t("hero.welcomeText")}{" "}
+            <FormattedText text={t("hero.welcomeText")} />{" "}
             <span className="text-primary">
-              {t("hero.savvyWorld")}
+              <FormattedText text={t("hero.savvyWorld")} />
             </span>
           </motion.h1>
 
@@ -177,7 +178,7 @@ export default function NewHero() {
             animate={animate ? "visible" : "hidden"}
             className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mb-3 md:mb-4 max-w-4xl mx-auto px-4 leading-relaxed"
           >
-            {t("hero.description")}
+            <FormattedText text={t("hero.description")} />
           </motion.p>
 
    
@@ -292,10 +293,10 @@ export default function NewHero() {
             className="mb-4 md:mb-6 w-full max-w-6xl mx-auto px-4 flex flex-col items-center"
           >
                <h3 className="text-sm md:text-base font-semibold text-primary mb-4 md:mb-5 text-center">
-              {t("hero.goalsTitle")}
+              <FormattedText text={t("hero.goalsTitle")} />
             </h3>
             <p className="text-xs md:text-sm lg:text-base text-gray-600 mb-2 md:mb-3 text-center">
-              {t("hero.subDescription")}
+              <FormattedText text={t("hero.subDescription")} />
             </p>
          
             <motion.div
@@ -334,7 +335,7 @@ export default function NewHero() {
                     <p
                       className={`text-sm md:text-base font-bold text-gray-800 leading-relaxed flex-1 text-center transition-colors ${href ? "group-hover:text-gray-900" : ""}`}
                     >
-                      {goal}
+                      <FormattedText text={goal} />
                     </p>
                   </motion.div>
                 )

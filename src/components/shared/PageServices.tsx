@@ -5,6 +5,7 @@ import { type LucideIcon } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useIsMobile } from "@/hooks/useIsMobile"
 import { useRef } from "react"
+import FormattedText from "./FormattedText"
 
 export type Language = "en" | "ar"
 
@@ -45,11 +46,11 @@ export default function PageServices({
           className="text-center mb-10 md:mb-16"
         >
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
-            {title}
+            <FormattedText text={title} />
           </h2>
           {subtitle && (
             <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-              {subtitle}
+              <FormattedText text={subtitle} />
             </p>
           )}
         </motion.div>
@@ -80,12 +81,12 @@ export default function PageServices({
                 <div className="flex-1 pt-1 md:pt-2 text-center">
                   {/* Title */}
                   <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-2 md:mb-3">
-                    {service.title}
+                    <FormattedText text={service.title} />
                   </h3>
 
                   {/* Description */}
                   <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                    {service.description}
+                    <FormattedText text={service.description} />
                   </p>
                 </div>
               </motion.div>

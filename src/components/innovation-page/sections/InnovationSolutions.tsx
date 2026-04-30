@@ -5,6 +5,7 @@ import { Users, Leaf, Bot, Home } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useIsMobile } from "@/hooks/useIsMobile"
 import { useTranslation } from "react-i18next"
+import FormattedText from "@/components/shared/FormattedText"
 
 export default function InnovationSolutions() {
   const { language } = useLanguage()
@@ -48,7 +49,7 @@ export default function InnovationSolutions() {
           className={`mb-3 md:mb-4 ${isRTL ? 'rtl text-right' : 'ltr text-left'}`}
         >
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900">
-            {t("innovation.solutions.title")}
+            <FormattedText text={t("innovation.solutions.title")} />
           </h2>
         </motion.div>
 
@@ -61,7 +62,7 @@ export default function InnovationSolutions() {
           className={`mb-10 md:mb-16 ${isRTL ? 'rtl text-right' : 'ltr text-left'}`}
         >
           <p className="text-gray-600 text-base md:text-lg max-w-2xl">
-            {t("innovation.solutions.subtitle")}
+            <FormattedText text={t("innovation.solutions.subtitle")} />
           </p>
         </motion.div>
 
@@ -89,12 +90,12 @@ export default function InnovationSolutions() {
 
                 {/* العنوان */}
                 <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-3 md:mb-4">
-                  {solution.title}
+                  <FormattedText text={solution.title} />
                 </h3>
 
                 {/* الوصف */}
                 <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                  {solution.description}
+                  <FormattedText text={solution.description} />
                 </p>
               </motion.div>
             )
@@ -104,6 +105,5 @@ export default function InnovationSolutions() {
     </section>
   )
 }
-
 
 

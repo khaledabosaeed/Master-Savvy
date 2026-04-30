@@ -11,6 +11,7 @@ import { useIsMobile } from "@/hooks/useIsMobile"
 import { useSmoothScroll } from "@/contexts/SmoothScrollContext"
 import LanguageSwitcher from "./LanguageSwitcher"
 import Badge from "./Badge"
+import FormattedText from "./FormattedText"
 import { motion, AnimatePresence } from "framer-motion"
 
 interface UnifiedHeaderProps {
@@ -191,7 +192,7 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
                         onClick={handleMainClick}
                         className={`${navTextClass} transition-colors text-sm font-medium whitespace-nowrap flex items-center`}
                       >
-                        {value}
+                        <FormattedText text={value} />
                         {key === "whySavvy" && showBadge && <Badge text="1512 × 69" />}
                       </Link>
                     )
@@ -209,7 +210,7 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
                       onClick={() => setIsServicesOpen(!isServicesOpen)}
                       className={`${navTextClass} transition-colors text-sm font-medium flex items-center gap-1 whitespace-nowrap`}
                     >
-                      {texts["ourServices"]}
+                      <FormattedText text={texts["ourServices"]} />
                       <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
                     </button>
 
@@ -227,28 +228,28 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
                             onClick={() => setIsServicesOpen(false)}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
                           >
-                            {serviceSections[0]}
+                            <FormattedText text={serviceSections[0] ?? ""} />
                           </Link>
                           <Link
                             href={`/${lang}/expo`}
                             onClick={() => setIsServicesOpen(false)}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
                           >
-                            {serviceSections[1]}
+                            <FormattedText text={serviceSections[1] ?? ""} />
                           </Link>
                           <Link
                             href={`/${lang}/media`}
                             onClick={() => setIsServicesOpen(false)}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
                           >
-                            {serviceSections[2]}
+                            <FormattedText text={serviceSections[2] ?? ""} />
                           </Link>
                           <Link
                             href={`/${lang}/innovation`}
                             onClick={() => setIsServicesOpen(false)}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
                           >
-                            {serviceSections[3]}
+                            <FormattedText text={serviceSections[3] ?? ""} />
                           </Link>
                         </motion.div>
                       )}
@@ -268,7 +269,7 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
                       onClick={() => setIsRobotsOpen(!isRobotsOpen)}
                       className={`${navTextClass} transition-colors text-sm font-medium flex items-center gap-1 whitespace-nowrap`}
                     >
-                      {texts["ourRobots"]}
+                      <FormattedText text={texts["ourRobots"]} />
                       <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isRobotsOpen ? 'rotate-180' : ''}`} />
                     </button>
 
@@ -286,7 +287,7 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
                             onClick={() => setIsRobotsOpen(false)}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors font-medium"
                           >
-                            {t("common.robotsViewAll")}
+                            <FormattedText text={t("common.robotsViewAll")} />
                           </Link>
                           <Link
                             href={`/${lang}/robots/g1`}
@@ -330,7 +331,7 @@ Unitree Humanoid R1
                   href={`/${lang}/contact`}
                   className="px-5 py-2 bg-[#0066FF] text-white rounded-full hover:bg-[#0052CC] transition-colors text-sm font-medium whitespace-nowrap"
                 >
-                  {texts["contactUs"] || t("common.contactUs")}
+                  <FormattedText text={texts["contactUs"] || t("common.contactUs")} />
                 </Link>
               </div>
             </div>
@@ -351,7 +352,7 @@ Unitree Humanoid R1
                   {texts["ourRobots"] && (
                     <>
                       <div className="px-6 py-3 text-white/60 text-xs font-semibold uppercase">
-                        {texts["ourRobots"]}
+                        <FormattedText text={texts["ourRobots"]} />
                       </div>
                       <Link
                         href={`/${lang}/robots`}                        
@@ -359,7 +360,7 @@ Unitree Humanoid R1
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="block px-8 py-2 text-white hover:bg-white/10 transition-colors text-sm"
                       >
-                        {lang === "ar" ? "عرض الكل" : "View all"}
+                        <FormattedText text={t("common.robotsViewAll")} />
                       </Link>
                       <Link
                         href={`/${lang}/robots/g1`}
@@ -422,7 +423,7 @@ Unitree Humanoid R1
                               onClick={handleMainClick}
                               className="block px-6 py-3 text-white hover:bg-white/10 transition-colors text-sm font-medium"
                             >
-                              {value}
+                              <FormattedText text={value} />
                             </Link>
                             {aboutSectionLinks.map((item) => (
                               <Link
@@ -431,7 +432,7 @@ Unitree Humanoid R1
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="block px-10 py-2 text-white/90 hover:bg-white/10 transition-colors text-sm"
                               >
-                                {item.label}
+                                <FormattedText text={item.label} />
                               </Link>
                             ))}
                           </Fragment>
@@ -445,7 +446,7 @@ Unitree Humanoid R1
                           onClick={handleMainClick}
                           className="block px-6 py-3 text-white hover:bg-white/10 transition-colors text-sm font-medium"
                         >
-                          {value}
+                          <FormattedText text={value} />
                         </Link>
                       )
                     })}
@@ -454,35 +455,35 @@ Unitree Humanoid R1
                   {texts["ourServices"] && (
                     <>
                       <div className="px-6 py-3 text-white/60 text-xs font-semibold uppercase">
-                        {texts["ourServices"]}
+                        <FormattedText text={texts["ourServices"]} />
                       </div>
                       <Link
                         href={`/${lang}`}
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="block px-8 py-2 text-white hover:bg-white/10 transition-colors text-sm"
                       >
-                        {serviceSections[0]}
+                        <FormattedText text={serviceSections[0] ?? ""} />
                       </Link>
                       <Link
                         href={`/${lang}/expo`}
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="block px-8 py-2 text-white hover:bg-white/10 transition-colors text-sm"
                       >
-                        {serviceSections[1]}
+                        <FormattedText text={serviceSections[1] ?? ""} />
                       </Link>
                       <Link
                         href={`/${lang}/media`}
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="block px-8 py-2 text-white hover:bg-white/10 transition-colors text-sm"
                       >
-                        {serviceSections[2]}
+                        <FormattedText text={serviceSections[2] ?? ""} />
                       </Link>
                       <Link
                         href={`/${lang}/innovation`}
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="block px-8 py-2 text-white hover:bg-white/10 transition-colors text-sm"
                       >
-                        {serviceSections[3]}
+                        <FormattedText text={serviceSections[3] ?? ""} />
                       </Link>
                     </>
                   )}
@@ -495,7 +496,7 @@ Unitree Humanoid R1
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="block w-full px-5 py-2 bg-white text-black rounded-full hover:bg-gray-100 transition-colors text-sm font-medium text-center"
                     >
-                      {texts["contactUs"] || t("common.contactUs")}
+                      <FormattedText text={texts["contactUs"] || t("common.contactUs")} />
                     </Link>
                   </div>
                 </nav>

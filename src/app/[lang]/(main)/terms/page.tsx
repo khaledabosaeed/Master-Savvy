@@ -15,7 +15,7 @@ export default async function Terms({ params }: TermsPageProps) {
   if (!isAppLanguage(lang)) {
     notFound()
   }
-  const dict = getDictionary(lang)
+  const dict = await getDictionary(lang)
   const texts = termsPageHeaderTexts(dict)
 
   return (

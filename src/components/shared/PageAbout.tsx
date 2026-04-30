@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useIsMobile } from "@/hooks/useIsMobile"
 import { staggerContainer } from "@/lib/animations"
+import FormattedText from "./FormattedText"
 
 export type Language = "en" | "ar"
 
@@ -133,7 +134,7 @@ export default function PageAbout({ title, description, images }: PageAboutProps
                 textShadow: '0 4px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 255, 255, 0.1)'
               }}
             >
-              {title}
+              <FormattedText text={title} />
             </motion.h2>
 
             {/* خط ديكوري */}
@@ -157,7 +158,7 @@ export default function PageAbout({ title, description, images }: PageAboutProps
                 textShadow: '0 2px 10px rgba(0, 0, 0, 0.2)'
               }}
             >
-              {description}
+              <FormattedText text={description} />
             </motion.p>
 
             {/* تأثير إضاءة خفيف - مخفي على الموبايل */}

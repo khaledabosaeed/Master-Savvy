@@ -15,7 +15,7 @@ export default async function Privacy({ params }: PrivacyPageProps) {
   if (!isAppLanguage(lang)) {
     notFound()
   }
-  const dict = getDictionary(lang)
+  const dict = await getDictionary(lang)
   const texts = privacyPageHeaderTexts(dict)
 
   return (

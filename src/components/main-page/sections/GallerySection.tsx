@@ -16,6 +16,7 @@ export interface GalleryImage {
 import Image from "next/image"
 import { motion } from "framer-motion"
 import styles from "./GallerySection.module.css"
+import FormattedText from "@/components/shared/FormattedText"
 
 export default function GallerySection() {
     const { language } = useLanguage()
@@ -74,7 +75,7 @@ export default function GallerySection() {
                     viewport={{ once: true, margin: "-100px" }}
                     variants={titleVariants}
                 >
-                    {content.title}
+                    <FormattedText text={content.title} />
                 </motion.h2>
 
 
@@ -150,7 +151,7 @@ export default function GallerySection() {
 ) : (
   <div className={styles.emptyState}>
     <p className={styles.emptyText}>
-      {content.emptyState}
+      <FormattedText text={content.emptyState} />
     </p>
   </div>
 )}

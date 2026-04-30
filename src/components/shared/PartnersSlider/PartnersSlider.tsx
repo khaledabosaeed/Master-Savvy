@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, useAnimationFrame, useMotionValue, useTransform } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import FormattedText from '../FormattedText';
 
 const PartnersSlider: React.FC = () => {
     const { t } = useTranslation()
@@ -62,7 +63,7 @@ const PartnersSlider: React.FC = () => {
           className="text-center mb-8 sm:mb-10 md:mb-12"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-foreground">
-            {t("partnersSlider.heading")}
+            <FormattedText text={t("partnersSlider.heading")} />
           </h2>
         </motion.div>
 

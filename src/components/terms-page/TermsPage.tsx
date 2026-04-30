@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { FileText } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
+import FormattedText from "@/components/shared/FormattedText"
 
 type Section = {
   title: string
@@ -77,8 +78,12 @@ export default function TermsPage() {
               </div>
             </motion.div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">{t("terms.title")}</h1>
-            <p className="text-gray-600 text-lg">{t("terms.lastUpdated")}</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
+              <FormattedText text={t("terms.title")} />
+            </h1>
+            <p className="text-gray-600 text-lg">
+              <FormattedText text={t("terms.lastUpdated")} />
+            </p>
           </motion.div>
         </div>
       </section>
@@ -96,20 +101,20 @@ export default function TermsPage() {
                 className="mb-12"
               >
                 <h2 className={`text-2xl md:text-3xl font-bold text-gray-900 mb-6 ${isRTL ? "text-right" : "text-left"}`}>
-                  {section.title}
+                  <FormattedText text={section.title} />
                 </h2>
 
                 <p
                   className={`text-gray-700 leading-relaxed text-lg mb-6 whitespace-pre-line ${isRTL ? "text-right" : "text-left"}`}
                 >
-                  {section.content}
+                  <FormattedText text={section.content} />
                 </p>
 
                 {section.list && section.list.length > 0 && (
                   <ul className={`space-y-3 mb-6 ${isRTL ? "text-right" : "text-left"}`}>
                     {section.list.map((item, i) => (
                       <li key={i} className={`text-gray-700 text-lg ${isRTL ? "text-right" : "text-left"}`}>
-                        {item}
+                        <FormattedText text={item} />
                       </li>
                     ))}
                   </ul>
@@ -117,7 +122,7 @@ export default function TermsPage() {
 
                 {section.footer ? (
                   <p className={`text-gray-700 leading-relaxed text-lg ${isRTL ? "text-right" : "text-left"}`}>
-                    {section.footer}
+                    <FormattedText text={section.footer} />
                   </p>
                 ) : null}
 

@@ -19,7 +19,7 @@ export default async function ExpoPage({ params }: ExpoPageProps) {
   if (!isAppLanguage(lang)) {
     notFound()
   }
-  const dict = getDictionary(lang)
+  const dict = await getDictionary(lang)
   const { texts, imageSliderHeading } = expoPageHeaderTexts(dict)
 
   const sliderImages: ImageItem[] = Array.from({ length: 29 }, (_, i) => ({

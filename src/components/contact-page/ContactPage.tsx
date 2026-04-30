@@ -7,6 +7,7 @@ import { useIsMobile } from "@/hooks/useIsMobile"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
 import { staggerContainer, fadeInUp } from "@/lib/animations"
+import FormattedText from "@/components/shared/FormattedText"
 
 export default function ContactPage() {
   const { language } = useLanguage()
@@ -120,7 +121,7 @@ export default function ContactPage() {
               className={isRTL ? "text-right" : "text-left"}
             >
               <h2 className="text-3xl mt-20 md:text-4xl font-bold text-gray-900 mb-12 text-center">
-                {t("contact.formTitle")}
+                <FormattedText text={t("contact.formTitle")} />
               </h2>
 
               <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(260px,320px)] gap-10 lg:gap-12 items-start">
@@ -138,7 +139,7 @@ export default function ContactPage() {
                     <label
                       className={`block text-sm font-medium text-gray-700 mb-2 ${isRTL ? "text-right" : "text-left"}`}
                     >
-                      {t("contact.fullName")}
+                      <FormattedText text={t("contact.fullName")} />
                     </label>
                     <input
                       type="text"
@@ -158,7 +159,7 @@ export default function ContactPage() {
                     <label
                       className={`block text-sm font-medium text-gray-700 mb-2 ${isRTL ? "text-right" : "text-left"}`}
                     >
-                      {t("contact.email")}
+                      <FormattedText text={t("contact.email")} />
                     </label>
                     <input
                       type="email"
@@ -178,7 +179,7 @@ export default function ContactPage() {
                     <label
                       className={`block text-sm font-medium text-gray-700 mb-2 ${isRTL ? "text-right" : "text-left"}`}
                     >
-                      {t("contact.phone")}
+                      <FormattedText text={t("contact.phone")} />
                     </label>
                     <input
                       type="tel"
@@ -197,7 +198,7 @@ export default function ContactPage() {
                     <label
                       className={`block text-sm font-medium text-gray-700 mb-2 ${isRTL ? "text-right" : "text-left"}`}
                     >
-                      {t("contact.companyName")}
+                      <FormattedText text={t("contact.companyName")} />
                     </label>
                     <input
                       type="text"
@@ -214,7 +215,7 @@ export default function ContactPage() {
                     <label
                       className={`block text-sm font-medium text-gray-700 mb-2 ${isRTL ? "text-right" : "text-left"}`}
                     >
-                      {t("contact.jobTitle")}
+                      <FormattedText text={t("contact.jobTitle")} />
                     </label>
                     <input
                       type="text"
@@ -232,7 +233,7 @@ export default function ContactPage() {
                   <label
                     className={`block text-sm font-medium text-gray-700 mb-2 ${isRTL ? "text-right" : "text-left"}`}
                   >
-                    {t("contact.savvySolutions")}
+                    <FormattedText text={t("contact.savvySolutions")} />
                   </label>
                   <div
                     ref={solutionsScrollRef}
@@ -263,7 +264,7 @@ export default function ContactPage() {
                           className={`text-sm text-gray-700 ${isRTL ? "text-right" : "text-left"}`}
                           dir={isRTL ? "rtl" : "ltr"}
                         >
-                          {option}
+                          <FormattedText text={option} />
                         </span>
                       </label>
                     ))}
@@ -274,7 +275,7 @@ export default function ContactPage() {
                   <label
                     className={`block text-sm font-medium text-gray-700 mb-2 ${isRTL ? "text-right" : "text-left"}`}
                   >
-                    {t("contact.message")}
+                    <FormattedText text={t("contact.message")} />
                   </label>
                   <textarea
                     name="message"
@@ -295,9 +296,9 @@ export default function ContactPage() {
                     className="w-full px-8 py-4 bg-[#4361EE] text-white rounded-md font-bold text-base hover:bg-[#3651DE] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? (
-                      <span>{t("contact.sending")}</span>
+                      <FormattedText text={t("contact.sending")} />
                     ) : (
-                      <span>{t("contact.send")}</span>
+                      <FormattedText text={t("contact.send")} />
                     )}
                   </button>
                 </motion.div>
@@ -312,7 +313,7 @@ export default function ContactPage() {
                     <div className={`flex items-center gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>
                       <CheckCircle className="w-5 h-5 text-green-600 shrink-0" />
                       <p className={`text-green-700 font-medium text-sm ${isRTL ? "text-right" : "text-left"}`}>
-                        {t("contact.successMessage")}
+                        <FormattedText text={t("contact.successMessage")} />
                       </p>
                     </div>
                   </motion.div>
@@ -327,7 +328,7 @@ export default function ContactPage() {
                     <div className={`flex items-center gap-3 ${isRTL ? "flex-row-reverse" : ""}`}>
                       <AlertCircle className="w-5 h-5 text-red-600 shrink-0" />
                       <p className={`text-red-700 font-medium text-sm ${isRTL ? "text-right" : "text-left"}`}>
-                        {t("contact.errorMessage")}
+                        <FormattedText text={t("contact.errorMessage")} />
                       </p>
                     </div>
                   </motion.div>
@@ -339,38 +340,54 @@ export default function ContactPage() {
               className={`order-2 lg:order-none rounded-lg border border-gray-200 bg-gray-50 p-6 ${isRTL ? "text-right" : "text-left"}`}
               dir={isRTL ? "rtl" : "ltr"}
             >
-              <h2 className="text-lg font-bold text-gray-900 mb-5">{t("contact.sidebarTitle")}</h2>
+              <h2 className="text-lg font-bold text-gray-900 mb-5">
+                <FormattedText text={t("contact.sidebarTitle")} />
+              </h2>
               <ul className="space-y-5 text-sm text-gray-700">
                 <li className="flex items-center gap-3 cursor-pointer hover:bg-gray-100/80 rounded px-2 py-1.5 -mx-2">
                   <Phone className="w-5 h-5 text-[#4361EE] shrink-0 mt-0.5" aria-hidden />
                   <div className="min-w-0 flex-1">
-                    <p className="font-medium text-gray-900">{t("contact.sidebarPhoneLabel")}</p>
+                    <p className="font-medium text-gray-900">
+                      <FormattedText text={t("contact.sidebarPhoneLabel")} />
+                    </p>
                     <a href={`tel:${t("contact.sidebarPhone")}`} className="text-[#4361EE] hover:underline break-all">
-                      {t("contact.sidebarPhone")}
+                      <FormattedText text={t("contact.sidebarPhone")} />
                     </a>
                   </div>
                 </li>
                 <li className="flex items-center gap-3 cursor-pointer hover:bg-gray-100/80 rounded px-2 py-1.5 -mx-2">
                   <Mail className="w-5 h-5 text-[#4361EE] shrink-0 mt-0.5" aria-hidden />
                   <div className="min-w-0 flex-1">
-                    <p className="font-medium text-gray-900">{t("contact.sidebarEmailLabel")}</p>
+                    <p className="font-medium text-gray-900">
+                      <FormattedText text={t("contact.sidebarEmailLabel")} />
+                    </p>
                     <a href={`mailto:${t("contact.sidebarEmail")}`} className="text-[#4361EE] hover:underline break-all">
-                      {t("contact.sidebarEmail")}
+                      <FormattedText text={t("contact.sidebarEmail")} />
                     </a>
                   </div>
                 </li>
                 <li className="flex items-center gap-3 cursor-pointer hover:bg-gray-100/80 rounded px-2 py-1.5 -mx-2">
                   <MapPin className="w-5 h-5 text-[#4361EE] shrink-0 mt-0.5" aria-hidden />
                   <div className="min-w-0 flex-1">
-                    <p className="font-medium text-gray-900">{t("contact.sidebarAddressLabel")}</p>
-                    <p className="whitespace-pre-line break-words">{Object.values(t("contact.sidebarAddress", { returnObjects: true }) as Record<string, string>).join(", ")}</p>
+                    <p className="font-medium text-gray-900">
+                      <FormattedText text={t("contact.sidebarAddressLabel")} />
+                    </p>
+                    <FormattedText
+                      text={Object.values(t("contact.sidebarAddress", { returnObjects: true }) as Record<string, string>).join(", ")}
+                      className="whitespace-pre-line break-words"
+                    />
                   </div>
                 </li>
                 <li className="flex items-center gap-3 cursor-pointer hover:bg-gray-100/80 rounded px-2 py-1.5 -mx-2">
                   <Clock className="w-5 h-5 text-[#4361EE] shrink-0 mt-0.5" aria-hidden />
                   <div className="min-w-0 flex-1">
-                    <p className="font-medium text-gray-900">{t("contact.sidebarHoursLabel")}</p>
-                    <p className="whitespace-pre-line break-words">{Object.values(t("contact.sidebarHours", { returnObjects: true }) as Record<string, string>).join(", ")}</p>
+                    <p className="font-medium text-gray-900">
+                      <FormattedText text={t("contact.sidebarHoursLabel")} />
+                    </p>
+                    <FormattedText
+                      text={Object.values(t("contact.sidebarHours", { returnObjects: true }) as Record<string, string>).join(", ")}
+                      className="whitespace-pre-line break-words"
+                    />
                   </div>
                 </li>
               </ul>
@@ -392,7 +409,9 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{t("contact.faqTitle")}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              <FormattedText text={t("contact.faqTitle")} />
+            </h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {faqs.map((faq, index) => (
@@ -404,8 +423,12 @@ export default function ContactPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className={`${isRTL ? "text-right" : "text-left"}`}
               >
-                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">{faq.question}</h3>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">{faq.answer}</p>
+                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-4">
+                  <FormattedText text={faq.question} />
+                </h3>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                  <FormattedText text={faq.answer} />
+                </p>
               </motion.div>
             ))}
           </div>

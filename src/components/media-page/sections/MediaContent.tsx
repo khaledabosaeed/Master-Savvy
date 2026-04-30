@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Clock, Users, Heart, UserCheck } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
+import FormattedText from "@/components/shared/FormattedText"
 
 export default function MediaContent() {
   const { language } = useLanguage()
@@ -57,11 +58,11 @@ export default function MediaContent() {
             </motion.button> */}
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              {t("media.content.bottomTitle")}
+              <FormattedText text={t("media.content.bottomTitle")} />
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              {t("media.content.bottomDescription")}
+              <FormattedText text={t("media.content.bottomDescription")} />
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -84,7 +85,7 @@ export default function MediaContent() {
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <p className={`text-gray-900 font-medium ${isRTL ? 'text-right' : 'text-left'}`}>
-                      {feature.text}
+                      <FormattedText text={feature.text} />
                     </p>
                   </motion.a>
                 )
@@ -96,4 +97,3 @@ export default function MediaContent() {
     </section>
   )
 }
-

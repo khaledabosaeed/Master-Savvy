@@ -5,6 +5,7 @@ import Image from "next/image"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
 import { fadeInUp, viewportConfig, sectionSlideUp } from "@/lib/animations"
+import FormattedText from "@/components/shared/FormattedText"
 
 // Partner logos data - you can add your logo paths here
 const partners = [
@@ -79,10 +80,10 @@ export default function ExpoPartners() {
                         className={`flex-shrink-0 lg:w-1/3 ${isRTL ? "text-right" : "text-left"}`}
                     >
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
-                            {t("expo.partners.title")}
+                            <FormattedText text={t("expo.partners.title")} />
                         </h2>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3">
-                            {t("expo.partners.subtitle")}
+                            <FormattedText text={t("expo.partners.subtitle")} />
                         </h2>
                     </motion.div>
 

@@ -15,6 +15,7 @@ import {
   // crossfade,
   sectionSlideUp,
 } from "@/lib/animations"
+import FormattedText from "@/components/shared/FormattedText"
 
 function MadiaProjects() {
   const { language } = useLanguage()
@@ -157,10 +158,10 @@ function MadiaProjects() {
           className={`text-center mb-6 ${isRTL ? 'rtl' : 'ltr'}`}
         >
           <h2 className="text-3xl md:text-4xl  nolg:text-5xl font-bold text-gray-900 mb-3">
-            {title}
+            <FormattedText text={title} />
           </h2>
           <p className="text-gray-500 text-sm md:text-base">
-            {subtitle}
+            <FormattedText text={subtitle} />
           </p>
         </motion.div>
 
@@ -206,7 +207,7 @@ function MadiaProjects() {
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  {project.title}
+                  <FormattedText text={project.title} />
                   {activeProject === index && (
                     <motion.div
                       layoutId="activeTab"
@@ -278,7 +279,7 @@ function MadiaProjects() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 }}
                 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                {currentProject.title}
+                <FormattedText text={currentProject.title} />
               </motion.h3>
 
               <motion.p
@@ -287,7 +288,7 @@ function MadiaProjects() {
                 transition={{ delay: 0.3 }}
                 className="text-base md:text-lg text-gray-600 leading-relaxed"
               >
-                {currentProject.description}
+                <FormattedText text={currentProject.description} />
               </motion.p>
 
               {/* CTA Button */}

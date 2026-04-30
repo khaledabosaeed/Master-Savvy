@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
+import FormattedText from "@/components/shared/FormattedText"
 
 export default function ExpoHero() {
   const { language } = useLanguage()
@@ -34,7 +35,7 @@ export default function ExpoHero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
             >
-              {t("expo.hero.title")}
+              <FormattedText text={t("expo.hero.title")} />
             </motion.h1>
 
             <motion.p
@@ -43,7 +44,7 @@ export default function ExpoHero() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed"
             >
-              {t("expo.hero.subtitle")}
+              <FormattedText text={t("expo.hero.subtitle")} />
             </motion.p>
 
             <motion.div
@@ -58,7 +59,7 @@ export default function ExpoHero() {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {t("expo.hero.contactUs")}
+                <FormattedText text={t("expo.hero.contactUs")} />
               </motion.a>
 
               <motion.a
@@ -67,7 +68,7 @@ export default function ExpoHero() {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {t("expo.hero.learnMore")}
+                <FormattedText text={t("expo.hero.learnMore")} />
               </motion.a>
             </motion.div>
           </motion.div>

@@ -6,6 +6,7 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
+import FormattedText from "@/components/shared/FormattedText"
 
 export default function UnrealHero() {
   const [animate, setAnimate] = useState(false)
@@ -83,7 +84,7 @@ export default function UnrealHero() {
             {/* Badge - Top Right */}
             <motion.div variants={itemVariants} className={`mb-6 ${isRTL ? '' : ''}`}>
               <span className="inline-block bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
-                {t("media.hero.badge")}
+                <FormattedText text={t("media.hero.badge")} />
               </span>
             </motion.div>
 
@@ -92,7 +93,7 @@ export default function UnrealHero() {
               variants={itemVariants}
               className={`text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight ${isRTL ? 'text-right' : 'text-left'}`}
             >
-              {t("media.hero.title")}
+              <FormattedText text={t("media.hero.title")} />
             </motion.h1>
 
             {/* Description */}
@@ -100,7 +101,7 @@ export default function UnrealHero() {
               variants={itemVariants}
               className={`text-sm md:text-base text-gray-600 mb-8 leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}
             >
-              {t("media.hero.description")}
+              <FormattedText text={t("media.hero.description")} />
             </motion.p>
 
             {/* CTA Buttons */}
@@ -114,7 +115,7 @@ export default function UnrealHero() {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {t("media.hero.primaryButton")}
+                <FormattedText text={t("media.hero.primaryButton")} />
               </motion.a>
 
               <motion.a
@@ -123,7 +124,7 @@ export default function UnrealHero() {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {t("media.hero.secondaryButton")}
+                <FormattedText text={t("media.hero.secondaryButton")} />
               </motion.a>
             </motion.div>
           </motion.div>

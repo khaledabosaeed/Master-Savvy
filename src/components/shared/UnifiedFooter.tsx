@@ -8,6 +8,7 @@ import Image from "next/image"
 import { useIsMobile } from "@/hooks/useIsMobile"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
+import FormattedText from "./FormattedText"
 
 export default function UnifiedFooter() {
   const { language } = useLanguage()
@@ -77,7 +78,7 @@ export default function UnifiedFooter() {
               <Image src="/footer.svg" alt="Savvy Logo" width={120} height={60} className="h-12 w-auto" />
             </div>
             <p className={`text-sm text-gray-600 leading-relaxed ${isRTL ? "text-right" : "text-left"}`}>
-              {t("common.gateway")}
+              <FormattedText text={t("common.gateway")} />
             </p>
           </motion.div>
 
@@ -94,16 +95,18 @@ export default function UnifiedFooter() {
                   href={section.titleHref}
                   className="text-base font-bold mb-4 text-gray-900 hover:text-blue-600 transition-colors duration-200 inline-block"
                 >
-                  {section.title}
+                  <FormattedText text={section.title} />
                 </a>
               ) : (
-                <h3 className="text-base font-bold mb-4 text-gray-900">{section.title}</h3>
+                <h3 className="text-base font-bold mb-4 text-gray-900">
+                  <FormattedText text={section.title} />
+                </h3>
               )}
               <ul className="space-y-2.5">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
                     <a href={link.href} className="text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200">
-                      {link.label}
+                      <FormattedText text={link.label} />
                     </a>
                   </li>
                 ))}
@@ -146,13 +149,13 @@ export default function UnifiedFooter() {
           </div>
 
           <div className={`flex flex-col md:flex-row items-center gap-4 text-sm text-gray-500 ${isRTL ? "md:flex-row-reverse" : ""}`}>
-            <span>{t("common.copyrightFull")}</span>
+            <FormattedText text={t("common.copyrightFull")} />
             <div className="flex items-center gap-4">
               <a href={`/${lang}/privacy`} className="hover:text-gray-900 transition-colors">
-                {t("common.privacyPolicy")}
+                <FormattedText text={t("common.privacyPolicy")} />
               </a>
               <a href={`/${lang}/terms`} className="hover:text-gray-900 transition-colors">
-                {t("common.termsOfUse")}
+                <FormattedText text={t("common.termsOfUse")} />
               </a>
             </div>
           </div>

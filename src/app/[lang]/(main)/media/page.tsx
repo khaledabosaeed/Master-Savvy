@@ -18,7 +18,7 @@ export default async function MediaPage({ params }: MediaPageProps) {
   if (!isAppLanguage(lang)) {
     notFound()
   }
-  const dict = getDictionary(lang)
+  const dict = await getDictionary(lang)
   const texts = mediaPageHeaderTexts(dict)
 
   return (

@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import FormattedText from "@/components/shared/FormattedText"
 
 export default function LatestNews() {
     const { language } = useLanguage()
@@ -55,7 +56,7 @@ export default function LatestNews() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    {content.sectionTitle}
+                    <FormattedText text={content.sectionTitle} />
                 </motion.h2>
 
                 {/* News Cards */}
@@ -89,15 +90,15 @@ export default function LatestNews() {
                             {/* Content */}
                             <div className="p-6 flex flex-col gap-4">
                                 <h3 className="text-xl font-semibold text-gray-900 line-clamp-2 min-h-[3.5rem] leading-relaxed">
-                                    {card.title}
+                                    <FormattedText text={card.title} />
                                 </h3>
                                 <div className="flex justify-between items-center pt-4 border-t border-gray-200">
-                                    <span className="text-sm text-gray-500">{card.date}</span>
+                                    <FormattedText text={card.date} className="text-sm text-gray-500" />
                                     <Link
                                         href={`/${lang}${card.link.startsWith("/") ? card.link : `/${card.link}`}`}
                                         className="px-6 py-2.5 bg-blue-600 text-white rounded-lg text-sm font-semibold hover:bg-blue-700 transition-all duration-300 hover:-translate-y-0.5"
                                     >
-                                        {card.buttonText}
+                                        <FormattedText text={card.buttonText} />
                                     </Link>
                                 </div>
                             </div>
