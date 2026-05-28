@@ -258,7 +258,7 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
                 )}
 
                 {/* Robots Dropdown */}
-                {texts["ourRobots"] && (
+                {/* {texts["ourRobots"] && (
                   <div
                     ref={robotsDropdownRef}
                     className="relative"
@@ -321,7 +321,7 @@ Unitree Humanoid R1
                       )}
                     </AnimatePresence>
                   </div>
-                )}
+                )} */}
               </nav>
 
               {/* Language Switcher & Contact Button */}

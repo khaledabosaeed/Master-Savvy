@@ -13,7 +13,7 @@ export default async function Home({ params }: HomePageProps) {
     notFound()
   }
 
-  const { texts, galleryHeading } = await getHomePageTexts(lang)
+  const { texts } = await getHomePageTexts(lang)
 
-  return <HomePageClient texts={texts} galleryHeading={galleryHeading} />
+  return <HomePageClient texts={texts} />
 }
