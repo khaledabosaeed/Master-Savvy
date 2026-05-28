@@ -22,9 +22,11 @@ interface UnifiedHeaderProps {
   logoAlt?: string
   logoSrc?: string
   transparentHeader?: boolean
+  /** When true, slides the header out of view (e.g. innovation sticky tabs take over) */
+  hideOnScroll?: boolean
 }
 
-export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner = true, logoHref, logoAlt = "Savvy", logoSrc = "/Savvy 2 1.svg", transparentHeader = false }: UnifiedHeaderProps) {
+export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner = true, logoHref, logoAlt = "Savvy", logoSrc = "/Savvy 2 1.svg", transparentHeader = false, hideOnScroll = false }: UnifiedHeaderProps) {
   const { language } = useLanguage()
   const { t } = useTranslation()
   const isMobile = useIsMobile()
@@ -118,21 +120,22 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
     }, 200)
   }
 
-  const isTransparent = transparentHeader && !isScrolled
+  const isTransparent = transparentHeader && !isScrolled && !hideOnScroll
   const navTextClass = isTransparent ? "text-white hover:text-white/90" : "text-gray-700 hover:text-gray-900"
 
   return (
     <>
       <motion.header
         animate={{
-          top: isScrolled ? "0px" : (hasBanner ? (isMobile ? "35px" : "40px") : "0px")
+          top: hideOnScroll ? "0px" : isScrolled ? "0px" : (hasBanner ? (isMobile ? "35px" : "40px") : "0px"),
+          y: hideOnScroll ? "-100%" : "0%",
         }}
         transition={{
           duration: isMobile ? 0.2 : 0.3,
           ease: [0.16, 1, 0.3, 1]
         }}
         className={`fixed left-0 right-0 ${isMobileMenuOpen ? "z-[1000]" : "z-40"} mb-10 md:mb-0 transition-colors duration-300 ${
-          transparentHeader && !isScrolled
+          transparentHeader && !isScrolled && !hideOnScroll
             ? "bg-transparent shadow-none"
             : "bg-white/95 backdrop-blur-md shadow-md"
         }`}

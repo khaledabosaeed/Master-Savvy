@@ -660,6 +660,20 @@ export const carouselSlide = (direction: number, isRTL: boolean = false) => ({
 });
 
 /**
+ * Infinite horizontal marquee (duplicate items for seamless loop)
+ */
+export const infiniteMarqueeKeyframes = ['0%', '-50%'] as const;
+
+export const infiniteMarqueeTransition = {
+  x: {
+    repeat: Infinity,
+    repeatType: 'loop' as const,
+    duration: 45,
+    ease: 'linear' as const,
+  },
+};
+
+/**
  * Crossfade transition
  */
 export const crossfade: Variants = {

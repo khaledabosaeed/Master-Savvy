@@ -1,8 +1,4 @@
-import PageTransition from "@/components/shared/PageTransition/PageTransition"
-import InnovationHero from "@/components/innovation-page/sections/InnovationHero"
-import InnovationSolutions from "@/components/innovation-page/sections/InnovationSolutions"
-import UnifiedHeader from "@/components/shared/UnifiedHeader"
-import ExpoPartners from "@/components/expo-page/sections/ExpoPartners"
+import InnovationPageClient from "@/components/innovation-page/InnovationPageClient"
 import { getDictionary } from "@/i18n/getDictionary"
 import { innovationPageHeaderTexts } from "@/i18n/page-header-texts"
 import { isAppLanguage } from "@/i18n/settings"
@@ -20,23 +16,5 @@ export default async function InnovationPage({ params }: InnovationPageProps) {
   const dict = await getDictionary(lang)
   const texts = innovationPageHeaderTexts(dict)
 
-  return (
-    <>
-      <UnifiedHeader texts={texts} hasBanner={false} logoSrc="/innovation/invo.svg" logoHref="#hero" />
-
-      <PageTransition>
-        <section id="hero">
-          <InnovationHero />
-        </section>
-
-        <section id="solutions">
-          <InnovationSolutions />
-        </section>
-
-        <section id="partners">
-          <ExpoPartners />
-        </section>
-      </PageTransition>
-    </>
-  )
+  return <InnovationPageClient texts={texts} lang={lang} />
 }

@@ -178,8 +178,324 @@
   },
   "innovation": {
     "hero": {
-      "title": "22 years bringing global technologies to the Saudi market, positioned for real impact.",
-      "subtitle": "We bridge global innovation with Saudi market needs by localizing advanced technologies and engineering tailored solutions across supply chain optimization, industrial automation, energy infrastructure, inspection, and security systems, ensuring compliance, reliability, and measurable operational impact."
+      "eyebrow": "Pudu Robotics Solutions",
+      "title": "Industry Solutions",
+      "subtitle": "Revolutionizing Ten Major Industries with Smart Robotic Solutions.",
+      "exploreCta": "Explore solutions",
+      "primaryCta": "Explore industries",
+      "scrollHint": "Scroll to industries"
+    },
+    "industriesNavLabel": "Industries",
+    "industriesSectionTitle": "Robotics by Industry",
+    "industriesSectionSubtitle": "Governed, purpose-driven Pudu deployments mapped to the sectors where automation creates measurable operational impact.",
+    "exploreIndustry": "Learn More",
+    "backToIndustries": "All industries",
+    "useCasesTitle": "Use Cases",
+    "robotsTitle": "Recommended Pudu Robots",
+    "robotsSubtitle": "Robot models selected for this industry's workflows, traffic patterns, and facility constraints.",
+    "otherIndustriesTitle": "Explore Other Industries",
+    "contactCta": "Discuss your deployment",
+    "industries": {
+      "food-beverage": {
+        "title": "Food & Beverage",
+        "shortTitle": "Food & Beverage",
+        "headline": "Serve faster across dining rooms, kitchens, and guest floors.",
+        "summary": "In today's challenging F&B landscape, where labor costs are high, staff turnover is rampant, service efficiency lags, and competition is fierce, PUDU robots enhance operational efficiency and profitability across food delivery, dish return, cleaning, and guest reception scenarios.",
+        "imageAlt": "Restaurant interior with Pudu service robot",
+        "useCasesIntro": "Restaurants and F&B operators deploy Pudu robots to stabilize service during peak hours without sacrificing guest experience.",
+        "highlights": [
+          "Table-side food and beverage delivery",
+          "Dish return and bussing automation",
+          "Lobby and reception guest guidance"
+        ],
+        "useCases": [
+          {
+            "title": "Food delivery runs",
+            "description": "HolaBot and BellaBot carry orders from kitchen pass to tables with steady, predictable routes."
+          },
+          {
+            "title": "Dish return loops",
+            "description": "Robots collect used dishes and return them to the wash area, keeping dining rooms clear during rush periods."
+          },
+          {
+            "title": "Guest reception support",
+            "description": "KettyBot greets guests at entry points and guides them to seating or pickup zones."
+          }
+        ]
+      },
+      "retail": {
+        "title": "Retail",
+        "shortTitle": "Retail",
+        "headline": "Turn every aisle into a responsive service lane.",
+        "summary": "Pudu robots guide shoppers, deliver goods to counters, and keep high-traffic retail zones moving without adding headcount pressure during peak hours.",
+        "imageAlt": "Modern retail store interior with shoppers",
+        "useCasesIntro": "Retail teams use Pudu robots to extend in-store service without slowing checkout or floor operations.",
+        "highlights": [
+          "In-store product delivery to fitting rooms and counters",
+          "Promotional roaming that draws traffic to campaign zones",
+          "After-hours restocking support across large-format stores"
+        ],
+        "useCases": [
+          {
+            "title": "Guided product delivery",
+            "description": "BellaBot and FlashBot move items from stock areas to service desks, reducing wait time during promotional peaks."
+          },
+          {
+            "title": "Campaign floor presence",
+            "description": "KettyBot carries branded screens through aisles, pairing physical product placement with digital messaging."
+          },
+          {
+            "title": "Multi-floor coordination",
+            "description": "Robots navigate elevators and wide concourses in malls, keeping service consistent across levels."
+          }
+        ]
+      },
+      "hospitality": {
+        "title": "Hospitality",
+        "shortTitle": "Hospitality",
+        "headline": "Guest service that arrives on time, every time.",
+        "summary": "From room delivery to lobby assistance, Pudu robots help hotels and resorts maintain premium guest experiences while easing staff load on repetitive routes.",
+        "imageAlt": "Luxury hotel lobby with guests",
+        "useCasesIntro": "Hospitality operators deploy robots for predictable routes that guests notice and remember.",
+        "highlights": [
+          "Room service and amenity delivery",
+          "Lobby guidance and information support",
+          "Banquet and event logistics inside large venues"
+        ],
+        "useCases": [
+          {
+            "title": "In-room delivery",
+            "description": "BellaBot handles towels, amenities, and small orders with quiet, reliable runs through corridors."
+          },
+          {
+            "title": "Lobby concierge support",
+            "description": "HolaBot greets guests and routes them to reception, restaurants, or conference areas."
+          },
+          {
+            "title": "Event service loops",
+            "description": "KettyBot supports catering cycles during conferences and weddings across sprawling properties."
+          }
+        ]
+      },
+      "industrial-logistics": {
+        "title": "Industrial Facility / Warehouse / Logistics",
+        "shortTitle": "Industrial Facility/Warehouse/Logistics",
+        "headline": "Move materials safely across complex facility layouts.",
+        "summary": "Pudu T300 and delivery platforms automate repetitive transport between production lines, staging zones, and dispatch areas with governed routing.",
+        "imageAlt": "Warehouse with shelving and logistics operations",
+        "useCasesIntro": "Industrial sites reduce manual transport bottlenecks with robots built for heavy routes and tight schedules.",
+        "highlights": [
+          "Line-side material delivery",
+          "Cross-dock and staging zone transport",
+          "Night-shift replenishment without fatigue risk"
+        ],
+        "useCases": [
+          {
+            "title": "Intralogistics towing",
+            "description": "T300 pulls carts between production cells, keeping assembly lines supplied on rhythm."
+          },
+          {
+            "title": "Staging zone distribution",
+            "description": "FlashBot and PuduBot 2 move picked items to packing stations across large warehouses."
+          },
+          {
+            "title": "Shift handover continuity",
+            "description": "Robots maintain transport cadence across shift changes, reducing idle time at handoff points."
+          }
+        ]
+      },
+      "healthcare": {
+        "title": "Health Care",
+        "shortTitle": "Health Care",
+        "headline": "Support clinical teams with reliable indoor logistics.",
+        "summary": "Pudu robots handle supply runs, specimen transport support, and facility cleaning cycles so clinical staff stay focused on patient care.",
+        "imageAlt": "Modern hospital corridor",
+        "useCasesIntro": "Healthcare facilities need predictable, hygienic automation that respects controlled zones and busy corridors.",
+        "highlights": [
+          "Medical supply delivery between departments",
+          "Sanitation support in high-touch areas",
+          "Visitor guidance in large medical campuses"
+        ],
+        "useCases": [
+          {
+            "title": "Supply chain runs",
+            "description": "PuduBot 2 and KettyBot move consumables from central stores to wards on fixed schedules."
+          },
+          {
+            "title": "Facility sanitation",
+            "description": "CC1 maintains floor hygiene in lobbies, corridors, and outpatient waiting areas."
+          },
+          {
+            "title": "Campus navigation",
+            "description": "Robots guide visitors to departments, reducing front-desk congestion at peak hours."
+          }
+        ]
+      },
+      "transportation": {
+        "title": "Transportation and Related Services",
+        "shortTitle": "Transportation and Related Service",
+        "headline": "Keep passengers moving through busy transit environments.",
+        "summary": "Airports, stations, and transit hubs use Pudu robots for wayfinding, retail delivery, and facility support across long concourses.",
+        "imageAlt": "Modern transit terminal with travelers",
+        "useCasesIntro": "Transport hubs benefit from robots that operate continuously across wide indoor distances.",
+        "highlights": [
+          "Passenger guidance across terminals",
+          "Retail and F&B delivery on concourses",
+          "Facility support during peak travel windows"
+        ],
+        "useCases": [
+          {
+            "title": "Concourse wayfinding",
+            "description": "KettyBot and PuduBot 2 guide passengers to gates, lounges, and service counters."
+          },
+          {
+            "title": "Remote retail delivery",
+            "description": "FlashBot delivers orders from airport retail units to waiting areas and lounges."
+          },
+          {
+            "title": "Peak-hour support",
+            "description": "Robots maintain service loops when human teams are stretched across multiple zones."
+          }
+        ]
+      },
+      "entertainment-sports": {
+        "title": "Entertainment and Sports",
+        "shortTitle": "Entertainment and Sports",
+        "headline": "Scale service across venues built for crowds.",
+        "summary": "Stadiums, arenas, and entertainment complexes use Pudu robots for concession support, guest guidance, and back-of-house logistics during events.",
+        "imageAlt": "Sports stadium during an event",
+        "useCasesIntro": "High-capacity venues need automation that performs under crowd density and event-time pressure.",
+        "highlights": [
+          "Concession and merchandise delivery routes",
+          "VIP and hospitality zone support",
+          "Back-of-house transport during live events"
+        ],
+        "useCases": [
+          {
+            "title": "In-venue delivery",
+            "description": "BellaBot supports premium seating zones with food and merchandise runs."
+          },
+          {
+            "title": "Guest engagement",
+            "description": "HolaBot and KettyBot interact with visitors in fan zones and sponsor activations."
+          },
+          {
+            "title": "Event logistics",
+            "description": "FlashBot moves equipment and supplies between staging areas during setup and teardown."
+          }
+        ]
+      },
+      "real-estate": {
+        "title": "Real Estate & Property Services",
+        "shortTitle": "Real Estate & Property Services",
+        "headline": "Run smarter buildings with automated indoor service.",
+        "summary": "Property managers deploy Pudu robots for tenant services, facility tours, and cleaning across commercial towers and mixed-use developments.",
+        "imageAlt": "Modern commercial building exterior",
+        "useCasesIntro": "Real estate operators use robots to elevate tenant experience while standardizing facility operations.",
+        "highlights": [
+          "Tenant amenity and mail delivery",
+          "Property tour and visitor guidance",
+          "Common-area cleaning and upkeep"
+        ],
+        "useCases": [
+          {
+            "title": "Tenant services",
+            "description": "BellaBot delivers packages and amenities to office floors on request."
+          },
+          {
+            "title": "Leasing support",
+            "description": "KettyBot guides prospects through show units and amenity floors."
+          },
+          {
+            "title": "Lobby maintenance",
+            "description": "CC1 keeps entrance zones and shared corridors presentable throughout the day."
+          }
+        ]
+      },
+      "education": {
+        "title": "Education",
+        "shortTitle": "Education",
+        "headline": "Bring practical robotics into campus operations.",
+        "summary": "Universities and schools use Pudu robots for library logistics, campus guidance, and facility support across large educational sites.",
+        "imageAlt": "University campus with students",
+        "useCasesIntro": "Educational campuses combine operational efficiency with visible innovation for students and visitors.",
+        "highlights": [
+          "Library and resource center delivery",
+          "Campus navigation for visitors and events",
+          "Facility support across multi-building sites"
+        ],
+        "useCases": [
+          {
+            "title": "Resource delivery",
+            "description": "PuduBot 2 moves books, materials, and equipment between library zones."
+          },
+          {
+            "title": "Open day guidance",
+            "description": "KettyBot supports orientation events with route guidance and information display."
+          },
+          {
+            "title": "Facility operations",
+            "description": "HolaBot assists staff during conferences, exams, and large campus gatherings."
+          }
+        ]
+      },
+      "public-service": {
+        "title": "Public Service",
+        "shortTitle": "Public Service",
+        "headline": "Extend public service capacity with governed automation.",
+        "summary": "Government buildings, civic centers, and public facilities use Pudu robots for visitor support, internal logistics, and facility maintenance.",
+        "imageAlt": "Public service building interior",
+        "useCasesIntro": "Public institutions need reliable automation that supports citizens without disrupting regulated workflows.",
+        "highlights": [
+          "Citizen wayfinding in large service centers",
+          "Internal document and supply transport",
+          "Facility cleaning in high-traffic public areas"
+        ],
+        "useCases": [
+          {
+            "title": "Service center guidance",
+            "description": "PuduBot 2 and KettyBot help visitors reach the correct service counters faster."
+          },
+          {
+            "title": "Internal logistics",
+            "description": "T300 and FlashBot move documents and supplies between departments on schedule."
+          },
+          {
+            "title": "Public area upkeep",
+            "description": "CC1 maintains cleanliness in lobbies, halls, and waiting zones throughout operating hours."
+          }
+        ]
+      }
+    },
+    "robots": {
+      "bellabot": {
+        "name": "BellaBot",
+        "description": "Premium delivery robot for restaurants, retail, and hospitality with stable tray transport and smooth navigation."
+      },
+      "kettybot": {
+        "name": "KettyBot",
+        "description": "Delivery and marketing robot with an integrated display for guided service and promotional content."
+      },
+      "holabot": {
+        "name": "HolaBot",
+        "description": "Restaurant service robot designed for front-of-house interaction and reliable dish delivery."
+      },
+      "flashbot": {
+        "name": "FlashBot",
+        "description": "Fast indoor delivery robot for high-frequency routes across large commercial spaces."
+      },
+      "cc1": {
+        "name": "CC1",
+        "description": "AI-powered cleaning robot for hard-floor maintenance in lobbies, corridors, and public zones."
+      },
+      "t300": {
+        "name": "T300",
+        "description": "Industrial towing robot for material transport across warehouses and production facilities."
+      },
+      "pudubot2": {
+        "name": "PuduBot 2",
+        "description": "Versatile delivery platform for multi-scenario indoor logistics across sectors."
+      }
     },
     "about": {
       "title": "Savvy Innovation is an R&D program featuring the Mr.savvy robot, camera-tracking screens, and AR maps. We develop intelligent content on instant dashboards, implement smart home experiences, and ensure full PDPL compliance. We continuously test and improve based on real-world usage.",
@@ -214,70 +530,70 @@
   "media": {
     "hero": {
       "badge": "Boost Your Visibility",
-      "title": "Turn Your Facade into an Attraction… A Screen That Speaks for You.",
-      "description": "Transform your company into a powerful visual message with immersive content and interactive screens operating 24/7, highlighting your business at every moment.",
+      "title": "Your building facade, working as a brand screen 24/7",
+      "description": "Put your brand on immersive screens and interactive displays that run around the clock, so your message stays visible in high-traffic locations.",
       "statsLabel1": "Active Screens",
       "statsLabel2": "Uptime",
-      "primaryButton": "Learn More",
-      "secondaryButton": "Contact Us",
-      "imageAlt": "NHC Building - Innovation Center"
+      "primaryButton": "Explore our work",
+      "secondaryButton": "Contact us",
+      "imageAlt": "NHC Building, Innovation Center"
     },
     "about": {
       "badge": "About Us",
-      "title": "We Produce Professional Content",
-      "description": "Including 4K video production, motion graphics design, screen and social media designs, quick video editing, content management, publication, sponsored ads, influencer collaboration, and effective media coverage.",
+      "title": "Full-service content and production",
+      "description": "From 4K video and motion graphics to screen content, social media, editing, publishing, paid ads, influencer partnerships, and media coverage.",
       "feature1Title": "Unlimited Creativity",
-      "feature1Description": "Transform your ideas into stunning content",
+      "feature1Description": "We turn your ideas into content people stop to watch",
       "feature2Title": "Fast Production",
-      "feature2Description": "High-quality projects in record time",
+      "feature2Description": "High-quality delivery on tight timelines",
       "feature3Title": "Professional Quality",
-      "feature3Description": "World-class standards in every detail"
+      "feature3Description": "Production standards built for major brands and events"
     },
     "content": {
-      "topTitle": "Creating Unique Content! More Beautiful… Simpler…",
-      "topDescription": "Immersive digital content features technologies like Hyper Realistic, Anamorphic, and AR to create vivid, interactive scenes with high visual quality, enriched with AI-driven, interactive, 3D content suitable for all marketing needs.",
-      "bottomTitle": "With the ability to display content on both indoor and outdoor digital screens for continuous commercial use, 24/7",
-      "bottomDescription": "A network of indoor and outdoor screens operating 24/7, featuring high-brightness displays and weather-resistant design. It includes remote content management, smart targeting, and scene analysis capabilities that measure total audience reach, dwell time, age groups, and emotional engagement—helping boost campaign effectiveness by up to 50%.",
+      "topTitle": "Immersive content for every screen and event",
+      "topDescription": "We create hyper-realistic visuals, anamorphic projections, and augmented reality experiences for marketing, exhibitions, and brand activations that need to stop people in their tracks.",
+      "bottomTitle": "Indoor and outdoor screens, live 24/7",
+      "bottomDescription": "Our screen network runs around the clock with high-brightness, weather-resistant displays. Manage content remotely, target audiences precisely, and measure what works: visitor counts, dwell time, age groups, and engagement. Campaigns see up to 50% better results.",
       "activeEngagements": "Active Engagements",
       "uptime": "Uptime",
       "hours": "Hours",
-      "feature1": "Dwell Time Analysis",
-      "feature2": "Total Visitors and Attendance",
-      "feature3": "Emotion and Impression Analysis",
-      "feature4": "Age and Gender Analysis",
-      "button": "First of Its Kind in Saudi Arabia"
+      "feature1": "Dwell time tracking",
+      "feature2": "Visitor and footfall counts",
+      "feature3": "Emotion and impression analysis",
+      "feature4": "Age and gender demographics",
+      "button": "First of its kind in Saudi Arabia"
     },
     "whySavvy": {
       "title": "Why Savvy Media?",
-      "subtitle": "Because your message deserves to be showcased beautifully and effectively",
-      "feature1Title": "Comprehensive Display Solutions",
-      "feature1Description": "A network of indoor and outdoor screens built to commercial standards, operating around the clock",
-      "feature2Title": "Immersive Content Elevating Brand Presence",
-      "feature2Description": "Hyper Realistic, AR, and 3D technologies provide a powerful and engaging visual experience for your audience",
-      "feature3Title": "Data-Driven Targeting and Measurement",
-      "feature3Description": "Accurate analytics of visitor movements and interactions to optimize campaign performance and boost results"
+      "subtitle": "Because your message deserves to be seen clearly, beautifully, and at scale",
+      "feature1Title": "Complete display solutions",
+      "feature1Description": "Indoor and outdoor screens built to commercial standards, running around the clock",
+      "feature2Title": "Immersive content that lifts your brand",
+      "feature2Description": "Hyper-realistic visuals, augmented reality, and 3D experiences built to hold attention",
+      "feature3Title": "Targeting and measurement backed by data",
+      "feature3Description": "Track how people move, stop, and respond so you can improve each campaign"
     },
     "projects": {
       "badge": "Our Projects",
-      "title": "Growing Your Project Is Our Priority",
-      "subtitle": "We are not your typical marketing team. We help brands grow through clear strategy, creative energy, and a human touch.",
-      "project1Title": "Media Facade Screens",
-      "project1Description": "Large-scale facade screens across Saudi Arabia giving your brand a striking presence in high-traffic cities.",
-      "project2Title": "Content and Production",
-      "project2Description": "Comprehensive production including 4K filming, motion graphics, screen and social media content, fast editing, paid promotion, and influencer/media management."
+      "title": "Growing your project is our priority",
+      "subtitle": "We combine strategy, creative production, and screen networks to help brands reach more people in Saudi Arabia.",
+      "project1Title": "Media facade screens",
+      "project1Description": "Large facade screens across Saudi Arabia that put your brand in front of high-traffic city audiences.",
+      "project2Title": "Content and production",
+      "project2Description": "End-to-end production: 4K filming, motion graphics, screen and social content, editing, paid promotion, and influencer management."
     },
     "services": {
       "badge": "Our Services",
-      "title": "Elevate Your Brand with Growth-Driven Strategies",
-      "subtitle": "Driven by innovation, we enhance your brand presence and expand your business reach to achieve its full growth potential.",
-      "service1": "Media Facades and Giant Screens",
-      "service2": "Outdoor Advertising",
-      "service3": "On-Site 4K Filming",
-      "service4": "Animation and Infographic Videos",
-      "service5": "Fast Production",
-      "service6": "Social Media (AR / EN)",
-      "service7": "Partnerships with Social Media Influencers",
-      "service8": "50-Square-Meter Screen (Used for Real Estate Filming)"
+      "title": "Services built to grow your brand",
+      "subtitle": "From giant screens to social campaigns, we help you reach the right audience with content that performs.",
+      "service1": "Media facades and giant screens",
+      "service2": "Outdoor advertising",
+      "service3": "On-site 4K filming",
+      "service4": "Animation and infographic videos",
+      "service5": "Fast-turn production",
+      "service6": "Social media (Arabic and English)",
+      "service7": "Influencer partnerships",
+      "service8": "50 m² studio screen for real estate shoots"
     }
   },
   "news": {

@@ -48,9 +48,18 @@ export function innovationPageHeaderTexts(d: LocaleDictionary): PageHeaderTexts 
   const c = d.common
   return {
     main: c.main,
-    solutions: c.solutions,
-    partners: c.partnersLabel,
-    ourRobots: c.robots,
+    industries: d.innovation.industriesNavLabel,
+    contactUs: c.contactUs,
+  }
+}
+
+export function innovationIndustryPageHeaderTexts(d: LocaleDictionary): PageHeaderTexts {
+  const c = d.common
+  return {
+    main: c.main,
+    "use-cases": d.innovation.useCasesTitle,
+    robots: d.innovation.robotsTitle,
+    "other-industries": d.innovation.otherIndustriesTitle,
     contactUs: c.contactUs,
   }
 }
