@@ -57,7 +57,7 @@ export function innovationIndustryPageHeaderTexts(d: LocaleDictionary): PageHead
   const c = d.common
   return {
     main: c.main,
-    "use-cases": d.innovation.useCasesTitle,
+    impact: d.innovation.impactNavLabel,
     robots: d.innovation.robotsTitle,
     "other-industries": d.innovation.otherIndustriesTitle,
     contactUs: c.contactUs,

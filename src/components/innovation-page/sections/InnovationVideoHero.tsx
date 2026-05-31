@@ -5,6 +5,7 @@ import { ChevronDown } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
 import FormattedText from "@/components/shared/FormattedText"
+import { INNOVATION_HERO_VIDEO } from "@/components/innovation-page/data/industries"
 import { cascadeStagger, fadeIn, fadeInUp, heroTitleReveal } from "@/lib/animations"
 
 export default function InnovationVideoHero() {
@@ -16,7 +17,7 @@ export default function InnovationVideoHero() {
   return (
     <section id="hero" className="relative h-screen min-h-[600px] w-full overflow-hidden">
       <video
-        src="/innovation/Savvy Innovation Site web_LQ_2.mp4"
+        src={INNOVATION_HERO_VIDEO}
         autoPlay
         loop
         muted

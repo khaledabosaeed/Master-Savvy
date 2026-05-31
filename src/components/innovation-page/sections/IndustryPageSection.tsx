@@ -47,11 +47,6 @@ export default function IndustryPageSection({ industry, isFirst }: IndustryPageS
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.25 }}
-            onViewportEnter={() => {
-              // #region agent log
-              fetch('http://127.0.0.1:7875/ingest/52d72fea-007b-40ff-8c4a-89fd4e6c5937',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'cb7e6c'},body:JSON.stringify({sessionId:'cb7e6c',location:'IndustryPageSection.tsx:onViewportEnter',message:'section animation triggered',data:{slug:industry.slug,scrollY:window.scrollY},timestamp:Date.now(),hypothesisId:'D'})}).catch(()=>{});
-              // #endregion
-            }}
           >
             <Image
               src={industry.image}

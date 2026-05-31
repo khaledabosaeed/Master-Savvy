@@ -190,7 +190,8 @@
     "industriesSectionSubtitle": "Governed, purpose-driven Pudu deployments mapped to the sectors where automation creates measurable operational impact.",
     "exploreIndustry": "Learn More",
     "backToIndustries": "All industries",
-    "useCasesTitle": "Use Cases",
+    "impactNavLabel": "Impact",
+    "impactFootnote": "*Information Source: PUDU Cloud",
     "robotsTitle": "Recommended Pudu Robots",
     "robotsSubtitle": "Robot models selected for this industry's workflows, traffic patterns, and facility constraints.",
     "otherIndustriesTitle": "Explore Other Industries",
@@ -202,24 +203,39 @@
         "headline": "Serve faster across dining rooms, kitchens, and guest floors.",
         "summary": "In today's challenging F&B landscape, where labor costs are high, staff turnover is rampant, service efficiency lags, and competition is fierce, PUDU robots enhance operational efficiency and profitability across food delivery, dish return, cleaning, and guest reception scenarios.",
         "imageAlt": "Restaurant interior with Pudu service robot",
-        "useCasesIntro": "Restaurants and F&B operators deploy Pudu robots to stabilize service during peak hours without sacrificing guest experience.",
+        "impactTitle": "PUDU Empowers Food & Beverage Upgrades",
         "highlights": [
           "Table-side food and beverage delivery",
           "Dish return and bussing automation",
           "Lobby and reception guest guidance"
         ],
-        "useCases": [
+        "impactStats": [
           {
-            "title": "Food delivery runs",
-            "description": "HolaBot and BellaBot carry orders from kitchen pass to tables with steady, predictable routes."
+            "icon": "efficiency",
+            "label": "Faster Table-Side Delivery During Peak Hours",
+            "value": "30%+"
           },
           {
-            "title": "Dish return loops",
-            "description": "Robots collect used dishes and return them to the wash area, keeping dining rooms clear during rush periods."
+            "icon": "delivery",
+            "label": "Reduction in Staff Walking Distance",
+            "value": "40%"
           },
           {
-            "title": "Guest reception support",
-            "description": "KettyBot greets guests at entry points and guides them to seating or pickup zones."
+            "icon": "cleaning",
+            "label": "Improvement in Floor Cleaning Efficiency",
+            "value": "2-3x"
+          },
+          {
+            "icon": "service",
+            "label": "Guest Reception Coverage",
+            "value": "100%"
+          }
+        ],
+        "scenarios": [
+          {
+            "title": "Multi-Scenario Coverage",
+            "subtitle": "Table Service · Dish Return · Lobby Reception · Floor Cleaning",
+            "imageAlt": "Isometric view of Pudu robots serving across a restaurant"
           }
         ]
       },
@@ -229,24 +245,39 @@
         "headline": "Turn every aisle into a responsive service lane.",
         "summary": "Pudu robots guide shoppers, deliver goods to counters, and keep high-traffic retail zones moving without adding headcount pressure during peak hours.",
         "imageAlt": "Modern retail store interior with shoppers",
-        "useCasesIntro": "Retail teams use Pudu robots to extend in-store service without slowing checkout or floor operations.",
+        "impactTitle": "PUDU Empowers Retail Upgrades",
         "highlights": [
           "In-store product delivery to fitting rooms and counters",
           "Promotional roaming that draws traffic to campaign zones",
           "After-hours restocking support across large-format stores"
         ],
-        "useCases": [
+        "impactStats": [
           {
-            "title": "Guided product delivery",
-            "description": "BellaBot and FlashBot move items from stock areas to service desks, reducing wait time during promotional peaks."
+            "icon": "efficiency",
+            "label": "Reduction in Customer Wait Time",
+            "value": "35%"
           },
           {
-            "title": "Campaign floor presence",
-            "description": "KettyBot carries branded screens through aisles, pairing physical product placement with digital messaging."
+            "icon": "delivery",
+            "label": "In-Store Product Delivery Speed",
+            "value": "2x"
           },
           {
-            "title": "Multi-floor coordination",
-            "description": "Robots navigate elevators and wide concourses in malls, keeping service consistent across levels."
+            "icon": "automation",
+            "label": "Promotional Floor Coverage",
+            "value": "24/7"
+          },
+          {
+            "icon": "digitization",
+            "label": "Campaign Engagement Tracking",
+            "value": "100%"
+          }
+        ],
+        "scenarios": [
+          {
+            "title": "Multi-Scenario Coverage",
+            "subtitle": "In-Store Delivery · Promotional Roaming · After-Hours Restocking",
+            "imageAlt": "Isometric view of Pudu robots operating across a retail store"
           }
         ]
       },
@@ -256,24 +287,39 @@
         "headline": "Guest service that arrives on time, every time.",
         "summary": "From room delivery to lobby assistance, Pudu robots help hotels and resorts maintain premium guest experiences while easing staff load on repetitive routes.",
         "imageAlt": "Luxury hotel lobby with guests",
-        "useCasesIntro": "Hospitality operators deploy robots for predictable routes that guests notice and remember.",
+        "impactTitle": "PUDU Empowers Hospitality Upgrades",
         "highlights": [
           "Room service and amenity delivery",
           "Lobby guidance and information support",
           "Banquet and event logistics inside large venues"
         ],
-        "useCases": [
+        "impactStats": [
           {
-            "title": "In-room delivery",
-            "description": "BellaBot handles towels, amenities, and small orders with quiet, reliable runs through corridors."
+            "icon": "delivery",
+            "label": "On-Time Room Service Delivery",
+            "value": "95%+"
           },
           {
-            "title": "Lobby concierge support",
-            "description": "HolaBot greets guests and routes them to reception, restaurants, or conference areas."
+            "icon": "accuracy",
+            "label": "Lobby Guidance Accuracy",
+            "value": "100%"
           },
           {
-            "title": "Event service loops",
-            "description": "KettyBot supports catering cycles during conferences and weddings across sprawling properties."
+            "icon": "efficiency",
+            "label": "Event Service Loop Efficiency",
+            "value": "2x"
+          },
+          {
+            "icon": "cleaning",
+            "label": "Common Area Cleaning Coverage",
+            "value": "100%"
+          }
+        ],
+        "scenarios": [
+          {
+            "title": "Multi-Scenario Coverage",
+            "subtitle": "Room Service · Lobby Guidance · Banquet & Event Logistics",
+            "imageAlt": "Isometric view of Pudu robots serving across a hotel"
           }
         ]
       },
@@ -283,24 +329,39 @@
         "headline": "Move materials safely across complex facility layouts.",
         "summary": "Pudu T300 and delivery platforms automate repetitive transport between production lines, staging zones, and dispatch areas with governed routing.",
         "imageAlt": "Warehouse with shelving and logistics operations",
-        "useCasesIntro": "Industrial sites reduce manual transport bottlenecks with robots built for heavy routes and tight schedules.",
+        "impactTitle": "PUDU Empowers Industrial & Logistics Upgrades",
         "highlights": [
           "Line-side material delivery",
           "Cross-dock and staging zone transport",
           "Night-shift replenishment without fatigue risk"
         ],
-        "useCases": [
+        "impactStats": [
           {
-            "title": "Intralogistics towing",
-            "description": "T300 pulls carts between production cells, keeping assembly lines supplied on rhythm."
+            "icon": "automation",
+            "label": "Line-Side Material Delivery Reliability",
+            "value": "99%+"
           },
           {
-            "title": "Staging zone distribution",
-            "description": "FlashBot and PuduBot 2 move picked items to packing stations across large warehouses."
+            "icon": "efficiency",
+            "label": "Cross-Dock Transport Efficiency",
+            "value": "2-3x"
           },
           {
-            "title": "Shift handover continuity",
-            "description": "Robots maintain transport cadence across shift changes, reducing idle time at handoff points."
+            "icon": "delivery",
+            "label": "Reduction in Manual Cart Towing",
+            "value": "50%"
+          },
+          {
+            "icon": "uptime",
+            "label": "Night-Shift Transport Continuity",
+            "value": "24/7"
+          }
+        ],
+        "scenarios": [
+          {
+            "title": "Multi-Scenario Coverage",
+            "subtitle": "Line-Side Delivery · Cross-Dock Transport · Night-Shift Replenishment",
+            "imageAlt": "Isometric view of Pudu robots operating across a warehouse"
           }
         ]
       },
@@ -310,24 +371,39 @@
         "headline": "Support clinical teams with reliable indoor logistics.",
         "summary": "Pudu robots handle supply runs, specimen transport support, and facility cleaning cycles so clinical staff stay focused on patient care.",
         "imageAlt": "Modern hospital corridor",
-        "useCasesIntro": "Healthcare facilities need predictable, hygienic automation that respects controlled zones and busy corridors.",
+        "impactTitle": "PUDU Empowers Healthcare Upgrades",
         "highlights": [
           "Medical supply delivery between departments",
           "Sanitation support in high-touch areas",
           "Visitor guidance in large medical campuses"
         ],
-        "useCases": [
+        "impactStats": [
           {
-            "title": "Supply chain runs",
-            "description": "PuduBot 2 and KettyBot move consumables from central stores to wards on fixed schedules."
+            "icon": "safety",
+            "label": "Hygienic Supply Route Compliance",
+            "value": "100%"
           },
           {
-            "title": "Facility sanitation",
-            "description": "CC1 maintains floor hygiene in lobbies, corridors, and outpatient waiting areas."
+            "icon": "delivery",
+            "label": "Ward Supply Delivery On Schedule",
+            "value": "95%+"
           },
           {
-            "title": "Campus navigation",
-            "description": "Robots guide visitors to departments, reducing front-desk congestion at peak hours."
+            "icon": "cleaning",
+            "label": "High-Touch Area Floor Hygiene",
+            "value": "100%"
+          },
+          {
+            "icon": "accuracy",
+            "label": "Visitor Campus Navigation Accuracy",
+            "value": "100%"
+          }
+        ],
+        "scenarios": [
+          {
+            "title": "Multi-Scenario Coverage",
+            "subtitle": "Medical Supply Delivery · Sanitation Support · Visitor Guidance",
+            "imageAlt": "Isometric view of Pudu robots operating across a hospital"
           }
         ]
       },
@@ -337,24 +413,39 @@
         "headline": "Keep passengers moving through busy transit environments.",
         "summary": "Airports, stations, and transit hubs use Pudu robots for wayfinding, retail delivery, and facility support across long concourses.",
         "imageAlt": "Modern transit terminal with travelers",
-        "useCasesIntro": "Transport hubs benefit from robots that operate continuously across wide indoor distances.",
+        "impactTitle": "PUDU Empowers Transportation Upgrades",
         "highlights": [
           "Passenger guidance across terminals",
           "Retail and F&B delivery on concourses",
           "Facility support during peak travel windows"
         ],
-        "useCases": [
+        "impactStats": [
           {
-            "title": "Concourse wayfinding",
-            "description": "KettyBot and PuduBot 2 guide passengers to gates, lounges, and service counters."
+            "icon": "accuracy",
+            "label": "Passenger Wayfinding Accuracy",
+            "value": "100%"
           },
           {
-            "title": "Remote retail delivery",
-            "description": "FlashBot delivers orders from airport retail units to waiting areas and lounges."
+            "icon": "delivery",
+            "label": "Concourse Retail Delivery Speed",
+            "value": "2x"
           },
           {
-            "title": "Peak-hour support",
-            "description": "Robots maintain service loops when human teams are stretched across multiple zones."
+            "icon": "uptime",
+            "label": "Peak-Hour Service Availability",
+            "value": "24/7"
+          },
+          {
+            "icon": "efficiency",
+            "label": "Staff Coverage Across Zones",
+            "value": "40%+"
+          }
+        ],
+        "scenarios": [
+          {
+            "title": "Multi-Scenario Coverage",
+            "subtitle": "Passenger Guidance · Concourse Retail · Peak-Hour Facility Support",
+            "imageAlt": "Isometric view of Pudu robots operating across a transit terminal"
           }
         ]
       },
@@ -364,24 +455,39 @@
         "headline": "Scale service across venues built for crowds.",
         "summary": "Stadiums, arenas, and entertainment complexes use Pudu robots for concession support, guest guidance, and back-of-house logistics during events.",
         "imageAlt": "Sports stadium during an event",
-        "useCasesIntro": "High-capacity venues need automation that performs under crowd density and event-time pressure.",
+        "impactTitle": "PUDU Empowers Entertainment & Sports Upgrades",
         "highlights": [
           "Concession and merchandise delivery routes",
           "VIP and hospitality zone support",
           "Back-of-house transport during live events"
         ],
-        "useCases": [
+        "impactStats": [
           {
-            "title": "In-venue delivery",
-            "description": "BellaBot supports premium seating zones with food and merchandise runs."
+            "icon": "delivery",
+            "label": "In-Venue Premium Seat Delivery",
+            "value": "2x"
           },
           {
-            "title": "Guest engagement",
-            "description": "HolaBot and KettyBot interact with visitors in fan zones and sponsor activations."
+            "icon": "service",
+            "label": "Fan Zone Engagement Coverage",
+            "value": "100%"
           },
           {
-            "title": "Event logistics",
-            "description": "FlashBot moves equipment and supplies between staging areas during setup and teardown."
+            "icon": "efficiency",
+            "label": "Back-of-House Transport Efficiency",
+            "value": "50%+"
+          },
+          {
+            "icon": "uptime",
+            "label": "Live Event Service Continuity",
+            "value": "100%"
+          }
+        ],
+        "scenarios": [
+          {
+            "title": "Multi-Scenario Coverage",
+            "subtitle": "Concession Delivery · VIP Hospitality · Back-of-House Transport",
+            "imageAlt": "Isometric view of Pudu robots operating across a stadium"
           }
         ]
       },
@@ -391,24 +497,39 @@
         "headline": "Run smarter buildings with automated indoor service.",
         "summary": "Property managers deploy Pudu robots for tenant services, facility tours, and cleaning across commercial towers and mixed-use developments.",
         "imageAlt": "Modern commercial building exterior",
-        "useCasesIntro": "Real estate operators use robots to elevate tenant experience while standardizing facility operations.",
+        "impactTitle": "PUDU Empowers Real Estate Upgrades",
         "highlights": [
           "Tenant amenity and mail delivery",
           "Property tour and visitor guidance",
           "Common-area cleaning and upkeep"
         ],
-        "useCases": [
+        "impactStats": [
           {
-            "title": "Tenant services",
-            "description": "BellaBot delivers packages and amenities to office floors on request."
+            "icon": "delivery",
+            "label": "Tenant Amenity Delivery On Request",
+            "value": "95%+"
           },
           {
-            "title": "Leasing support",
-            "description": "KettyBot guides prospects through show units and amenity floors."
+            "icon": "accuracy",
+            "label": "Property Tour Guidance Accuracy",
+            "value": "100%"
           },
           {
-            "title": "Lobby maintenance",
-            "description": "CC1 keeps entrance zones and shared corridors presentable throughout the day."
+            "icon": "cleaning",
+            "label": "Lobby and Corridor Upkeep",
+            "value": "100%"
+          },
+          {
+            "icon": "efficiency",
+            "label": "Common Area Service Efficiency",
+            "value": "2x"
+          }
+        ],
+        "scenarios": [
+          {
+            "title": "Multi-Scenario Coverage",
+            "subtitle": "Tenant Amenity Delivery · Property Tours · Common-Area Cleaning",
+            "imageAlt": "Isometric view of Pudu robots operating across a commercial building"
           }
         ]
       },
@@ -418,24 +539,39 @@
         "headline": "Bring practical robotics into campus operations.",
         "summary": "Universities and schools use Pudu robots for library logistics, campus guidance, and facility support across large educational sites.",
         "imageAlt": "University campus with students",
-        "useCasesIntro": "Educational campuses combine operational efficiency with visible innovation for students and visitors.",
+        "impactTitle": "PUDU Empowers Education Upgrades",
         "highlights": [
           "Library and resource center delivery",
           "Campus navigation for visitors and events",
           "Facility support across multi-building sites"
         ],
-        "useCases": [
+        "impactStats": [
           {
-            "title": "Resource delivery",
-            "description": "PuduBot 2 moves books, materials, and equipment between library zones."
+            "icon": "accuracy",
+            "label": "Accuracy in Guided Tours",
+            "value": "100%"
           },
           {
-            "title": "Open day guidance",
-            "description": "KettyBot supports orientation events with route guidance and information display."
+            "icon": "cleaning",
+            "label": "Improvement in Floor Cleaning Efficiency",
+            "value": "2-3x"
           },
           {
-            "title": "Facility operations",
-            "description": "HolaBot assists staff during conferences, exams, and large campus gatherings."
+            "icon": "delivery",
+            "label": "Reduction in Manual Delivery Walking",
+            "value": "50%"
+          },
+          {
+            "icon": "digitization",
+            "label": "Digitization of Floor Cleaning Services",
+            "value": "100%"
+          }
+        ],
+        "scenarios": [
+          {
+            "title": "Multi-Scenario Coverage",
+            "subtitle": "Reception & Guided Tours · Food & Beverage Delivery · Floor Cleaning",
+            "imageAlt": "Isometric view of Pudu robots operating across a school campus"
           }
         ]
       },
@@ -445,24 +581,39 @@
         "headline": "Extend public service capacity with governed automation.",
         "summary": "Government buildings, civic centers, and public facilities use Pudu robots for visitor support, internal logistics, and facility maintenance.",
         "imageAlt": "Public service building interior",
-        "useCasesIntro": "Public institutions need reliable automation that supports citizens without disrupting regulated workflows.",
+        "impactTitle": "PUDU Empowers Public Service Upgrades",
         "highlights": [
           "Citizen wayfinding in large service centers",
           "Internal document and supply transport",
           "Facility cleaning in high-traffic public areas"
         ],
-        "useCases": [
+        "impactStats": [
           {
-            "title": "Service center guidance",
-            "description": "PuduBot 2 and KettyBot help visitors reach the correct service counters faster."
+            "icon": "accuracy",
+            "label": "Service Center Wayfinding Accuracy",
+            "value": "100%"
           },
           {
-            "title": "Internal logistics",
-            "description": "T300 and FlashBot move documents and supplies between departments on schedule."
+            "icon": "delivery",
+            "label": "Internal Document Transport Efficiency",
+            "value": "2x"
           },
           {
-            "title": "Public area upkeep",
-            "description": "CC1 maintains cleanliness in lobbies, halls, and waiting zones throughout operating hours."
+            "icon": "cleaning",
+            "label": "Public Area Cleaning Coverage",
+            "value": "100%"
+          },
+          {
+            "icon": "safety",
+            "label": "Governed Automation Compliance",
+            "value": "100%"
+          }
+        ],
+        "scenarios": [
+          {
+            "title": "Multi-Scenario Coverage",
+            "subtitle": "Citizen Wayfinding · Internal Document Transport · Public Area Cleaning",
+            "imageAlt": "Isometric view of Pudu robots operating across a public service building"
           }
         ]
       }

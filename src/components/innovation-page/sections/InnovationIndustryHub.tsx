@@ -1,7 +1,7 @@
 "use client"
 
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react"
-import { AnimatePresence, motion } from "framer-motion"
+import { useCallback, useEffect, useRef, useState } from "react"
+import { motion } from "framer-motion"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
 import FormattedText from "@/components/shared/FormattedText"
@@ -12,9 +12,10 @@ import {
 } from "@/components/innovation-page/data/industries"
 import InnovationVideoHero from "./InnovationVideoHero"
 import IndustryPageSection from "./IndustryPageSection"
-import { fadeInUp, transitions } from "@/lib/animations"
+import { fadeInUp } from "@/lib/animations"
 
 const DEFAULT_NAV_HEIGHT = 96
+const NAV_ROOT_MARGIN = `-${DEFAULT_NAV_HEIGHT}px 0px -40% 0px`
 
 interface InnovationIndustryHubProps {
   onScrollPastHero?: (past: boolean) => void
@@ -45,7 +46,7 @@ function IndustryPillNav({
     >
       <div
         className={`flex w-max min-w-full flex-nowrap gap-2 md:w-full md:flex-wrap md:justify-center ${
-          compact ? "py-0.5" : "py-1"
+          "py-0.5"
         }`}
         role="tablist"
         aria-label={t("innovation.industriesNavLabel")}
@@ -63,23 +64,14 @@ function IndustryPillNav({
               aria-selected={isActive}
               onClick={() => onSelect(industry.slug)}
               className={`relative shrink-0 rounded-full font-medium whitespace-nowrap transition-colors duration-200 ${
-                compact ? "px-4 py-2 text-[0.8125rem]" : "px-5 py-2.5 text-sm"
+                "px-4 py-2 text-[0.8125rem]"
               } ${
                 isActive
-                  ? "text-[oklch(0.99_0.003_260)]"
+                  ? "bg-[oklch(0.38_0.16_264)] text-[oklch(0.99_0.003_260)] shadow-[0_2px_12px_oklch(0.38_0.16_264/0.28)]"
                   : "text-[oklch(0.48_0.014_260)] hover:bg-[oklch(0.94_0.006_260)] hover:text-[oklch(0.28_0.012_260)]"
               }`}
             >
-              {isActive && (
-                <motion.span
-                  layoutId="industryPill"
-                  className="absolute inset-0 rounded-full bg-[oklch(0.38_0.16_264)] shadow-[0_2px_12px_oklch(0.38_0.16_264/0.28)]"
-                  transition={transitions.spring}
-                />
-              )}
-              <span className="relative z-10">
-                <FormattedText text={t(`innovation.industries.${industry.slug}.shortTitle`)} />
-              </span>
+              <FormattedText text={t(`innovation.industries.${industry.slug}.shortTitle`)} />
             </button>
           )
         })}
@@ -90,47 +82,53 @@ function IndustryPillNav({
 
 export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIndustryHubProps) {
   const { language } = useLanguage()
-  const { t } = useTranslation()
   const isRTL = language === "ar"
 
   const [activeSlug, setActiveSlug] = useState<IndustrySlug>("food-beverage")
   const [tabsCompact, setTabsCompact] = useState(false)
-  const [navHeight, setNavHeight] = useState(DEFAULT_NAV_HEIGHT)
   const tabRefs = useRef<Partial<Record<IndustrySlug, HTMLButtonElement | null>>>({})
   const pillScrollRef = useRef<HTMLDivElement>(null)
   const heroSentinelRef = useRef<HTMLDivElement>(null)
   const navCompactSentinelRef = useRef<HTMLDivElement>(null)
   const navRef = useRef<HTMLDivElement>(null)
+  const navHeightRef = useRef(DEFAULT_NAV_HEIGHT)
+  const activeSlugRef = useRef<IndustrySlug>("food-beverage")
   const isScrollingToSection = useRef(false)
 
-  const scrollActiveTabIntoView = useCallback(() => {
-    const btn = tabRefs.current[activeSlug]
+  const scrollActiveTabIntoView = useCallback((slug: IndustrySlug) => {
+    const btn = tabRefs.current[slug]
     if (!btn) return
-
     if (window.matchMedia("(min-width: 768px)").matches) return
-
     btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" })
-  }, [activeSlug])
+  }, [])
 
-  const scrollToIndustry = useCallback(
-    (slug: IndustrySlug, smooth = true) => {
-      const el = document.getElementById(slug)
-      if (!el) return
+  const scrollToIndustry = useCallback((slug: IndustrySlug, smooth = true) => {
+    const el = document.getElementById(slug)
+    if (!el) return
 
-      isScrollingToSection.current = true
-      const top = el.getBoundingClientRect().top + window.scrollY - navHeight
+    isScrollingToSection.current = true
+    const top = el.getBoundingClientRect().top + window.scrollY - navHeightRef.current
 
-      window.scrollTo({ top, behavior: smooth ? "smooth" : "auto" })
+    window.scrollTo({ top, behavior: smooth ? "smooth" : "auto" })
 
-      window.setTimeout(
-        () => {
-          isScrollingToSection.current = false
-        },
-        smooth ? 700 : 50
-      )
-    },
-    [navHeight]
-  )
+    window.setTimeout(
+      () => {
+        isScrollingToSection.current = false
+      },
+      smooth ? 700 : 50
+    )
+  }, [])
+
+  const setActiveIndustry = useCallback((slug: IndustrySlug, updateHash: boolean) => {
+    if (activeSlugRef.current === slug) return
+
+    activeSlugRef.current = slug
+    setActiveSlug(slug)
+
+    if (updateHash) {
+      window.history.replaceState(null, "", `#${slug}`)
+    }
+  }, [])
 
   useEffect(() => {
     const nav = navRef.current
@@ -138,10 +136,7 @@ export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIn
 
     const syncHeight = () => {
       const height = nav.offsetHeight
-      // #region agent log
-      fetch('http://127.0.0.1:7875/ingest/52d72fea-007b-40ff-8c4a-89fd4e6c5937',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'cb7e6c'},body:JSON.stringify({sessionId:'cb7e6c',location:'InnovationIndustryHub.tsx:syncHeight',message:'nav ResizeObserver fired',data:{height,prevNavHeight:navHeight,tabsCompact},timestamp:Date.now(),hypothesisId:'B'})}).catch(()=>{});
-      // #endregion
-      setNavHeight(height)
+      navHeightRef.current = height
       document.documentElement.style.setProperty("--innovation-nav-height", `${height}px`)
     }
 
@@ -154,18 +149,13 @@ export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIn
     }
   }, [tabsCompact])
 
-  useLayoutEffect(() => {
-    const frame = requestAnimationFrame(scrollActiveTabIntoView)
-    return () => cancelAnimationFrame(frame)
-  }, [scrollActiveTabIntoView, tabsCompact, language])
-
   useEffect(() => {
     const hash = window.location.hash.replace("#", "")
     if (!isIndustrySlug(hash)) return
 
-    setActiveSlug(hash)
+    setActiveIndustry(hash, false)
     requestAnimationFrame(() => scrollToIndustry(hash, false))
-  }, [scrollToIndustry])
+  }, [scrollToIndustry, setActiveIndustry])
 
   useEffect(() => {
     const sentinel = heroSentinelRef.current
@@ -174,9 +164,6 @@ export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIn
     const observer = new IntersectionObserver(
       ([entry]) => {
         const pastHero = !entry.isIntersecting && entry.boundingClientRect.top < 0
-        // #region agent log
-        fetch('http://127.0.0.1:7875/ingest/52d72fea-007b-40ff-8c4a-89fd4e6c5937',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'cb7e6c'},body:JSON.stringify({sessionId:'cb7e6c',location:'InnovationIndustryHub.tsx:heroSentinel',message:'hero sentinel IO',data:{pastHero,isIntersecting:entry.isIntersecting,top:entry.boundingClientRect.top,scrollY:window.scrollY},timestamp:Date.now(),hypothesisId:'A'})}).catch(()=>{});
-        // #endregion
         onScrollPastHero?.(pastHero)
       },
       { threshold: 0 }
@@ -193,10 +180,7 @@ export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIn
     const observer = new IntersectionObserver(
       ([entry]) => {
         const compact = !entry.isIntersecting && entry.boundingClientRect.top < 0
-        // #region agent log
-        fetch('http://127.0.0.1:7875/ingest/52d72fea-007b-40ff-8c4a-89fd4e6c5937',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'cb7e6c'},body:JSON.stringify({sessionId:'cb7e6c',location:'InnovationIndustryHub.tsx:navCompactSentinel',message:'compact sentinel IO',data:{compact,isIntersecting:entry.isIntersecting,top:entry.boundingClientRect.top,scrollY:window.scrollY},timestamp:Date.now(),hypothesisId:'B'})}).catch(()=>{});
-        // #endregion
-        setTabsCompact(compact)
+        setTabsCompact((prev) => (prev === compact ? prev : compact))
       },
       { threshold: 0, rootMargin: "0px 0px -20% 0px" }
     )
@@ -216,16 +200,12 @@ export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIn
         ([entry]) => {
           if (isScrollingToSection.current) return
           if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
-            // #region agent log
-            fetch('http://127.0.0.1:7875/ingest/52d72fea-007b-40ff-8c4a-89fd4e6c5937',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'cb7e6c'},body:JSON.stringify({sessionId:'cb7e6c',location:'InnovationIndustryHub.tsx:industryIO',message:'industry section active',data:{slug:industry.slug,ratio:entry.intersectionRatio,scrollY:window.scrollY,navHeight},timestamp:Date.now(),hypothesisId:'C'})}).catch(()=>{});
-            // #endregion
-            setActiveSlug(industry.slug)
-            window.history.replaceState(null, "", `#${industry.slug}`)
+            setActiveIndustry(industry.slug, true)
           }
         },
         {
-          threshold: [0.35, 0.5, 0.65],
-          rootMargin: `-${navHeight}px 0px -40% 0px`,
+          threshold: 0.35,
+          rootMargin: NAV_ROOT_MARGIN,
         }
       )
 
@@ -234,44 +214,15 @@ export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIn
     })
 
     return () => observers.forEach((o) => o.disconnect())
-  }, [navHeight])
-
-  useEffect(() => {
-    let rafId = 0
-    let lastLog = 0
-    const onScroll = () => {
-      cancelAnimationFrame(rafId)
-      rafId = requestAnimationFrame(() => {
-        const now = Date.now()
-        if (now - lastLog < 200) return
-        lastLog = now
-        const industriesEl = document.getElementById("industries")
-        const rect = industriesEl?.getBoundingClientRect()
-        // #region agent log
-        fetch('http://127.0.0.1:7875/ingest/52d72fea-007b-40ff-8c4a-89fd4e6c5937',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'cb7e6c'},body:JSON.stringify({sessionId:'cb7e6c',location:'InnovationIndustryHub.tsx:scroll',message:'scroll sample',data:{scrollY:window.scrollY,industriesTop:rect?.top,tabsCompact,navHeight},timestamp:now,hypothesisId:'E'})}).catch(()=>{});
-        // #endregion
-      })
-    }
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => {
-      window.removeEventListener("scroll", onScroll)
-      cancelAnimationFrame(rafId)
-    }
-  }, [tabsCompact, navHeight])
-
-  useEffect(() => {
-    // #region agent log
-    fetch('http://127.0.0.1:7875/ingest/52d72fea-007b-40ff-8c4a-89fd4e6c5937',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'cb7e6c'},body:JSON.stringify({sessionId:'cb7e6c',location:'InnovationIndustryHub.tsx:industryObservers',message:'industry observers recreated',data:{navHeight,observerCount:INDUSTRIES.length},timestamp:Date.now(),hypothesisId:'B'})}).catch(()=>{});
-    // #endregion
-  }, [navHeight])
+  }, [setActiveIndustry])
 
   const selectIndustry = useCallback(
     (slug: IndustrySlug) => {
-      setActiveSlug(slug)
-      window.history.replaceState(null, "", `#${slug}`)
+      setActiveIndustry(slug, true)
+      scrollActiveTabIntoView(slug)
       scrollToIndustry(slug)
     },
-    [scrollToIndustry]
+    [scrollActiveTabIntoView, scrollToIndustry, setActiveIndustry]
   )
 
   return (
@@ -283,49 +234,24 @@ export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIn
 
         <div
           ref={navRef}
-          className={`sticky top-0 z-50 transition-[background-color,box-shadow] duration-300 ${
+          className={`sticky top-0 z-50 ${
             tabsCompact
-              ? "bg-[oklch(0.99_0.002_260)]/95 shadow-[0_1px_0_oklch(0.9_0.006_260),0_8px_24px_-12px_oklch(0.2_0.02_260/0.12)] backdrop-blur-md"
+              ? "bg-[oklch(0.99_0.002_260)] shadow-[0_1px_0_oklch(0.9_0.006_260)]"
               : "bg-[oklch(0.985_0.003_260)]"
           }`}
         >
           <div className="px-[clamp(1.25rem,4vw,3rem)]">
             <div className="mx-auto max-w-[82rem]">
               <div
-                className={`transition-[padding] duration-300 ${
-                  tabsCompact
-                    ? "py-3 md:py-3.5"
-                    : "pt-[clamp(2.5rem,6vw,4rem)] pb-[clamp(1.5rem,3vw,2rem)]"
-                }`}
+                className={
+         "py-3 md:py-3.5"
+                }
               >
-                {/* <AnimatePresence initial={false}>
-                  {!tabsCompact && (
-                    <motion.header
-                      key="industries-intro"
-                      initial={{ opacity: 0, y: 16 }} 
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -12 }}
-                      transition={transitions.medium}
-                      className={`mb-[clamp(1.5rem,4vw,2.25rem)] max-w-2xl ${isRTL ? "mr-auto text-right" : "text-left"}`}
-                    >
-                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[oklch(0.48_0.14_264)]">
-                        <FormattedText text={t("innovation.industriesNavLabel")} />
-                      </p>
-                      <h2 className="mt-3 text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-[1.12] tracking-[-0.02em] text-[oklch(0.16_0.012_260)]">
-                        <FormattedText text={t("innovation.industriesSectionTitle")} />
-                      </h2>
-                      <p className="mt-4 text-[clamp(0.9375rem,1.5vw,1.0625rem)] leading-[1.7] text-[oklch(0.48_0.014_260)]">
-                        <FormattedText text={t("innovation.industriesSectionSubtitle")} />
-                      </p>
-                    </motion.header>
-                  )}
-                </AnimatePresence> */}
-
                 <div
-                  className={`rounded-2xl border transition-[padding,background-color,border-color,box-shadow] duration-300 ${
+                  className={`rounded-2xl border border-[oklch(0.92_0.005_260)] bg-white ${
                     tabsCompact
-                      ? "border-[oklch(0.92_0.005_260)] bg-white/90 p-1.5 shadow-[0_2px_12px_-4px_oklch(0.2_0.02_260/0.08)]"
-                      : "border-[oklch(0.92_0.005_260)] bg-white p-[clamp(0.75rem,2vw,1rem)] shadow-[0_4px_24px_-8px_oklch(0.2_0.02_260/0.08)]"
+                      ? "p-1.5 shadow-[0_1px_6px_-2px_oklch(0.2_0.02_260/0.08)]"
+                      : "p-[clamp(0.75rem,2vw,1rem)] shadow-[0_4px_24px_-8px_oklch(0.2_0.02_260/0.08)]"
                   }`}
                 >
                   <IndustryPillNav

@@ -19,10 +19,15 @@ export type PuduRobotKey =
   | "t300"
   | "pudubot2"
 
+export interface IndustryScenario {
+  image: string
+}
+
 export interface IndustryConfig {
   slug: IndustrySlug
   image: string
   robots: PuduRobotKey[]
+  scenarios?: IndustryScenario[]
 }
 
 export const INDUSTRY_SLUGS: IndustrySlug[] = [
@@ -38,56 +43,85 @@ export const INDUSTRY_SLUGS: IndustrySlug[] = [
   "public-service",
 ]
 
+export const INNOVATION_HERO_VIDEO =
+  "https://cdn.savvyworld.ai/master/PUDU_Industry_Solutions_29dd55ee9d.mp4"
+
+const SCENARIO_IMAGE_BASE = "https://cdn.savvyworld.ai/master/Robtics-pages"
+
+/** Isometric multi-scenario illustrations per industry */
+export const INDUSTRY_SCENARIO_IMAGES: Record<IndustrySlug, string> = {
+  "food-beverage": `${SCENARIO_IMAGE_BASE}/_68694792ca.webp`,
+  retail: `${SCENARIO_IMAGE_BASE}/_80d200d980.webp`,
+  hospitality: `${SCENARIO_IMAGE_BASE}/_aaa66f1fc9.webp`,
+  "industrial-logistics": `${SCENARIO_IMAGE_BASE}/_c7680a5a1b.webp`,
+  healthcare: `${SCENARIO_IMAGE_BASE}/_a81a02f812.webp`,
+  transportation: `${SCENARIO_IMAGE_BASE}/_760afca0ea.webp`,
+  "entertainment-sports": `${SCENARIO_IMAGE_BASE}/_c89f272bff.webp`,
+  "real-estate": `${SCENARIO_IMAGE_BASE}/_494d2b48c7.webp`,
+  education: `${SCENARIO_IMAGE_BASE}/_048eb90ab6.webp`,
+  "public-service": `${SCENARIO_IMAGE_BASE}/_a81a02f812.webp`,
+}
+
 export const INDUSTRIES: IndustryConfig[] = [
   {
     slug: "food-beverage",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80",
+    image: "https://cdn.savvyworld.ai/master/Food_and_Beverage_ecca2bbd37.webp",
     robots: ["holabot", "bellabot", "kettybot"],
+    scenarios: [{ image: INDUSTRY_SCENARIO_IMAGES["food-beverage"] }],
   },
   {
     slug: "retail",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=80",
+    image: "https://cdn.savvyworld.ai/master/_a9690a9d5d.webp",
     robots: ["bellabot", "kettybot", "flashbot"],
+    scenarios: [{ image: INDUSTRY_SCENARIO_IMAGES.retail }],
   },
   {
     slug: "hospitality",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80",
+    image: "https://cdn.savvyworld.ai/master/Hospitality_e4c88c98ae.webp",
     robots: ["bellabot", "holabot", "kettybot"],
+    scenarios: [{ image: INDUSTRY_SCENARIO_IMAGES.hospitality }],
   },
   {
     slug: "industrial-logistics",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80",
+    image: "https://cdn.savvyworld.ai/master/_373b0fa367.webp",
     robots: ["t300", "flashbot", "pudubot2"],
+    scenarios: [{ image: INDUSTRY_SCENARIO_IMAGES["industrial-logistics"] }],
   },
   {
     slug: "healthcare",
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd02d6b0a?auto=format&fit=crop&w=1600&q=80",
+    image: "https://cdn.savvyworld.ai/master/_d8c688b5e6.webp",
     robots: ["cc1", "kettybot", "pudubot2"],
+    scenarios: [{ image: INDUSTRY_SCENARIO_IMAGES.healthcare }],
   },
   {
     slug: "transportation",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1600&q=80",
+    image: "https://cdn.savvyworld.ai/master/Transportation_and_Related_Service_ab54fbe5b6.webp",
     robots: ["flashbot", "pudubot2", "t300"],
+    scenarios: [{ image: INDUSTRY_SCENARIO_IMAGES.transportation }],
   },
   {
     slug: "entertainment-sports",
-    image: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1600&q=80",
+    image: "https://cdn.savvyworld.ai/master/Entertainment_and_Sports_03db28cf1f.webp",
     robots: ["holabot", "bellabot", "kettybot"],
+    scenarios: [{ image: INDUSTRY_SCENARIO_IMAGES["entertainment-sports"] }],
   },
   {
     slug: "real-estate",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
+    image: "https://cdn.savvyworld.ai/master/Residential_and_Office_Buildings_81b4141216.webp",
     robots: ["cc1", "kettybot", "bellabot"],
+    scenarios: [{ image: INDUSTRY_SCENARIO_IMAGES["real-estate"] }],
   },
   {
     slug: "education",
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80",
+    image: "https://cdn.savvyworld.ai/master/_50cce29ac7.webp",
     robots: ["pudubot2", "kettybot", "holabot"],
+    scenarios: [{ image: INDUSTRY_SCENARIO_IMAGES.education }],
   },
   {
     slug: "public-service",
-    image: "https://images.unsplash.com/photo-1577968657460-9c8965919027?auto=format&fit=crop&w=1600&q=80",
+    image: "https://cdn.savvyworld.ai/master/_fa2aeeca28.webp",
     robots: ["cc1", "pudubot2", "t300"],
+    scenarios: [{ image: INDUSTRY_SCENARIO_IMAGES["public-service"] }],
   },
 ]
 
