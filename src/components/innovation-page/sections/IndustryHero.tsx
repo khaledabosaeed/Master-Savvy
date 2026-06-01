@@ -1,36 +1,42 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ArrowLeft } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
 import FormattedText from "@/components/shared/FormattedText"
-import type { IndustryConfig } from "@/components/innovation-page/data/industries"
+import RemoteMediaImage from "@/components/shared/RemoteMediaImage"
+import type { IndustrySlug } from "@/components/innovation-page/data/industries"
+import { getIndustryImageUrl } from "@/lib/innovation-media"
 import { cascadeStagger, fadeInUp, heroTitleReveal, staggerItem } from "@/lib/animations"
 
 interface IndustryHeroProps {
-  industry: IndustryConfig
+  slug: IndustrySlug
 }
 
-export default function IndustryHero({ industry }: IndustryHeroProps) {
+export default function IndustryHero({ slug }: IndustryHeroProps) {
   const { language } = useLanguage()
   const { t } = useTranslation()
   const lang = language as "en" | "ar"
   const isRTL = lang === "ar"
-  const baseKey = `innovation.industries.${industry.slug}`
+  const baseKey = `innovation.industries.${slug}`
+  const heroImage = getIndustryImageUrl(t, slug)
 
   return (
     <section className="relative min-h-[70vh] overflow-hidden">
-      <Image
-        src={industry.image}
-        alt={t(`${baseKey}.imageAlt`)}
-        fill
-        priority
-        className="object-cover"
-        sizes="100vw"
-      />
+      {heroImage ? (
+        <RemoteMediaImage
+          src={heroImage}
+          alt={t(`${baseKey}.imageAlt`)}
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+      ) : (
+        <div className="absolute inset-0 bg-[oklch(0.2_0.01_260)]" aria-hidden />
+      )}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-950/85 via-gray-950/60 to-gray-950/30" />
 
       <motion.div

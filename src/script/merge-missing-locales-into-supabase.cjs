@@ -5,11 +5,13 @@
  *
  * Usage:
  *   NEXT_PUBLIC_SUPABASE_URL=... SUPABASE_SERVICE_ROLE_KEY=... npm run merge:translations
- *   ... --dry-run           # preview only, no writes; lists paths in repo JSON missing from DB
- *   ... --dry-run --verbose  # also list paths where repo and DB both exist but values differ (DB wins on merge)
+ *   ... --dry-run                    # preview only, no writes; lists paths in repo JSON missing from DB
+ *   ... --dry-run --verbose          # also list paths where repo and DB both exist but values differ (DB wins on merge)
+ *   ... --section=innovation         # only add missing keys under the `innovation` section (other DB sections untouched)
  *
  * Run from repo root (the folder that contains `package.json` and `public/`).
  * Or from repo root: `npm run merge:translations -- --dry-run`
+ * Innovation only: `npm run merge:innovation -- --dry-run`
  *
  * After a real run, redeploy or revalidateTag("translations") so Next cached getDictionary() refreshes.
  */
@@ -20,6 +22,18 @@ const { createClient } = require("@supabase/supabase-js")
 const root = path.join(__dirname, "..", "..")
 const dryRun = process.argv.includes("--dry-run")
 const verbose = process.argv.includes("--verbose")
+
+function parseSectionArg() {
+  const eq = process.argv.find((a) => a.startsWith("--section="))
+  if (eq) return eq.slice("--section=".length).trim() || null
+  const idx = process.argv.indexOf("--section")
+  if (idx !== -1 && process.argv[idx + 1] && !process.argv[idx + 1].startsWith("-")) {
+    return process.argv[idx + 1].trim()
+  }
+  return null
+}
+
+const sectionFilter = parseSectionArg()
 
 function isPlainObject(value) {
   return typeof value === "object" && value !== null && !Array.isArray(value)
@@ -95,6 +109,10 @@ async function main() {
     auth: { persistSession: false, autoRefreshToken: false },
   })
 
+  if (sectionFilter) {
+    console.log(`Section filter: "${sectionFilter}" (only missing keys under this branch)`)
+  }
+
   if (dryRun) {
     console.log("\nDRY RUN — no database writes")
     console.log(
@@ -130,13 +148,38 @@ async function main() {
         ? row.content
         : {}
 
-    const onlyInFile = topLevelKeysOnlyInBase(fileContent, dbContent)
-    if (onlyInFile.length > 0) {
-      console.log(`Top-level keys present only in repo file: ${onlyInFile.join(", ")}`)
+    const fileSlice = sectionFilter ? fileContent[sectionFilter] : fileContent
+    const dbSlice =
+      sectionFilter && isPlainObject(dbContent[sectionFilter])
+        ? dbContent[sectionFilter]
+        : sectionFilter
+          ? {}
+          : dbContent
+
+    if (sectionFilter && fileSlice === undefined) {
+      console.warn(
+        `[${locale}] Section "${sectionFilter}" not found in public/locales/${locale}.json — skipped.`
+      )
+      continue
     }
 
-    const missingPaths = getMissingPaths(fileContent, dbContent)
-    const changedPaths = getChangedPaths(fileContent, dbContent)
+    if (!sectionFilter) {
+      const onlyInFile = topLevelKeysOnlyInBase(fileContent, dbContent)
+      if (onlyInFile.length > 0) {
+        console.log(`Top-level keys present only in repo file: ${onlyInFile.join(", ")}`)
+      }
+    }
+
+    const missingPaths = getMissingPaths(
+      fileSlice ?? {},
+      dbSlice ?? {},
+      sectionFilter ?? ""
+    )
+    const changedPaths = getChangedPaths(
+      fileSlice ?? {},
+      dbSlice ?? {},
+      sectionFilter ?? ""
+    )
 
     if (missingPaths.length > 0) {
       console.log(`In locale file, not in database (${missingPaths.length}):`)
@@ -153,7 +196,13 @@ async function main() {
       if (changedPaths.length > 50) console.log(`  ... and ${changedPaths.length - 50} more`)
     }
 
-    const next = addOnlyMissingKeysFromFile(dbContent, fileContent)
+    let next
+    if (sectionFilter) {
+      const mergedSection = addOnlyMissingKeysFromFile(dbSlice ?? {}, fileSlice ?? {})
+      next = { ...dbContent, [sectionFilter]: mergedSection }
+    } else {
+      next = addOnlyMissingKeysFromFile(dbContent, fileContent)
+    }
 
     if (dryRun) {
       console.log(

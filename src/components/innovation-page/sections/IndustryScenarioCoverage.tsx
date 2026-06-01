@@ -2,27 +2,23 @@
 
 import { useTranslation } from "react-i18next"
 import ImageHeaderFeature from "@/components/shared/ImageHeaderFeature"
-import type { IndustryConfig } from "@/components/innovation-page/data/industries"
+import type { IndustrySlug } from "@/components/innovation-page/data/industries"
+import { parseTranslationMediaUrl } from "@/lib/innovation-media"
 
 interface IndustryScenarioCoverageProps {
-  industry: IndustryConfig
+  slug: IndustrySlug
 }
 
 interface ScenarioContent {
   title: string
   subtitle?: string
   imageAlt: string
+  imageUrl?: string
 }
 
-export default function IndustryScenarioCoverage({ industry }: IndustryScenarioCoverageProps) {
+export default function IndustryScenarioCoverage({ slug }: IndustryScenarioCoverageProps) {
   const { t } = useTranslation()
-  const baseKey = `innovation.industries.${industry.slug}`
-  const scenarios = industry.scenarios ?? []
-
-  if (scenarios.length === 0) {
-    return null
-  }
-
+  const baseKey = `innovation.industries.${slug}`
   const scenarioContent = t(`${baseKey}.scenarios`, { returnObjects: true }) as ScenarioContent[]
 
   if (!Array.isArray(scenarioContent) || scenarioContent.length === 0) {
@@ -32,19 +28,26 @@ export default function IndustryScenarioCoverage({ industry }: IndustryScenarioC
   return (
     <section className="bg-white py-[clamp(4rem,8vw,6.5rem)]" id="scenarios">
       <div className="mx-auto flex w-full max-w-[80rem] flex-col gap-[clamp(4rem,8vw,6.5rem)] px-[clamp(1rem,3vw,2.5rem)]">
-        {scenarios.map((scenario, index) => {
-          const content = scenarioContent[index]
+        {scenarioContent.map((content, index) => {
+          if (!content?.title) {
+            return null
+          }
 
-          if (!content) {
+          const imageUrl = parseTranslationMediaUrl(
+            content.imageUrl ?? "",
+            `${baseKey}.scenarios[${index}].imageUrl`
+          )
+
+          if (!imageUrl) {
             return null
           }
 
           return (
             <ImageHeaderFeature
-              key={`${industry.slug}-scenario-${index}`}
+              key={`${slug}-scenario-${index}`}
               header={content.title}
               subtitle={content.subtitle}
-              imageUrl={scenario.image}
+              imageUrl={imageUrl}
               imageAlt={content.imageAlt}
             />
           )

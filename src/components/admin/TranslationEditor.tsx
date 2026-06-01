@@ -3,7 +3,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
 import { Search } from "lucide-react"
-import RichTextArea from "@/components/admin/RichTextArea"
+import InnovationUseCasesEditor from "@/components/admin/InnovationUseCasesEditor"
+import ValueField from "@/components/admin/ValueField"
+import {
+  INDUSTRY_SLUGS,
+  type IndustrySlug,
+} from "@/components/innovation-page/data/industries"
 
 type JsonValue = unknown
 
@@ -147,142 +152,6 @@ function collectMatches(
   return results
 }
 
-function ValueField({
-  path,
-  value,
-  onChange,
-  depth,
-}: {
-  path: string
-  value: JsonValue
-  onChange: (next: JsonValue) => void
-  depth: number
-}) {
-  const pad = Math.min(depth, 6) * 10
-
-  if (value === null) {
-    return (
-      <span className="text-xs text-zinc-500" style={{ marginLeft: pad }}>
-        null
-      </span>
-    )
-  }
-
-  if (typeof value === "string") {
-    return (
-      <RichTextArea
-        key={path}
-        id={path}
-        label={formatPathDisplay(path)}
-        value={value}
-        onChange={(next) => onChange(next)}
-        padLeft={pad}
-      />
-    )
-  }
-
-  if (typeof value === "number") {
-    return (
-      <div className="min-w-0" style={{ marginLeft: pad }}>
-        <label
-          htmlFor={path}
-          className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-zinc-500"
-        >
-          {formatPathDisplay(path)}
-        </label>
-        <input
-          id={path}
-          type="number"
-          value={Number.isNaN(value) ? "" : value}
-          onChange={(e) => {
-            const n = parseFloat(e.target.value)
-            onChange(Number.isNaN(n) ? 0 : n)
-          }}
-          className="w-full max-w-xs rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 font-mono text-sm text-zinc-100 outline-none focus:border-primary"
-        />
-      </div>
-    )
-  }
-
-  if (typeof value === "boolean") {
-    return (
-      <div style={{ marginLeft: pad }}>
-        <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-zinc-500">
-          {formatPathDisplay(path)}
-        </label>
-        <label className="inline-flex items-center gap-2 text-sm text-zinc-200">
-          <input
-            type="checkbox"
-            checked={value}
-            onChange={(e) => onChange(e.target.checked)}
-            className="h-4 w-4 rounded border-zinc-600"
-          />
-          {String(value)}
-        </label>
-      </div>
-    )
-  }
-
-  if (Array.isArray(value)) {
-    return (
-      <div className="flex flex-col gap-4 border-l-2 border-zinc-800 pl-4" style={{ marginLeft: pad }}>
-        <span className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">
-          {formatPathDisplay(path)}
-        </span>
-        {value.map((item, i) => (
-          <div
-            key={`${path}[${i}]`}
-            className="rounded-lg border border-zinc-800 bg-zinc-900/50 p-3"
-          >
-            <div className="mb-2 text-xs font-medium text-zinc-500">Item [{i}]</div>
-            <ValueField
-              path={`${path}[${i}]`}
-              value={item}
-              depth={0}
-              onChange={(next) => {
-                const copy = [...value]
-                copy[i] = next
-                onChange(copy)
-              }}
-            />
-          </div>
-        ))}
-      </div>
-    )
-  }
-
-  if (isPlainObject(value)) {
-    const entries = Object.entries(value)
-    return (
-      <div className="flex flex-col gap-4 border-l-2 border-zinc-800 pl-4" style={{ marginLeft: pad }}>
-        {depth > 0 && (
-          <span className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">
-            {formatPathDisplay(path)}
-          </span>
-        )}
-        {entries.map(([key, child]) => (
-          <div key={key} className="min-w-0">
-            <ValueField
-              path={`${path}.${key}`}
-              value={child}
-              depth={depth + 1}
-              onChange={(next) => {
-                onChange({ ...value, [key]: next })
-              }}
-            />
-          </div>
-        ))}
-      </div>
-    )
-  }
-
-  return (
-    <span className="text-xs text-zinc-400" style={{ marginLeft: pad }}>
-      {String(value)}
-    </span>
-  )
-}
-
 type LocaleTab = "en" | "ar"
 
 type PreviewTarget =
@@ -299,12 +168,19 @@ type PreviewTarget =
   | "go2"
   | "h2"
 
-function previewPathFor(loc: LocaleTab, target: PreviewTarget): string {
+function previewPathFor(
+  loc: LocaleTab,
+  target: PreviewTarget,
+  innovationSlug?: IndustrySlug | null
+): string {
   const base = `/${loc}`
   switch (target) {
     case "home":
       return base
     case "innovation":
+      return innovationSlug
+        ? `${base}/innovation/${innovationSlug}`
+        : `${base}/innovation`
     case "expo":
     case "media":
     case "contact":
@@ -392,6 +268,143 @@ function applyRobotsRobotPageEdit(
 
 const ROBOT_PRODUCT_SLUGS = new Set<RobotSidebarPage>(["r1", "g1", "go2", "h2"])
 
+type InnovationPageFocus = "hub" | IndustrySlug
+
+const INDUSTRY_SLUG_SET = new Set<string>(INDUSTRY_SLUGS)
+
+const HUB_INDUSTRY_CARD_KEYS = [
+  "title",
+  "shortTitle",
+  "summary",
+  "imageAlt",
+  "imageUrl",
+] as const
+
+function extractInnovationHub(
+  innovation: Record<string, JsonValue>
+): Record<string, JsonValue> {
+  const out: Record<string, JsonValue> = {}
+  for (const [key, value] of Object.entries(innovation)) {
+    if (key !== "industries") {
+      out[key] = value
+    }
+  }
+
+  const industries = innovation.industries
+  if (isPlainObject(industries)) {
+    const hubIndustries: Record<string, JsonValue> = {}
+    for (const slug of INDUSTRY_SLUGS) {
+      const industry = (industries as Record<string, JsonValue>)[slug]
+      if (!isPlainObject(industry)) continue
+      const card: Record<string, JsonValue> = {}
+      for (const field of HUB_INDUSTRY_CARD_KEYS) {
+        if (industry[field] !== undefined) {
+          card[field] = industry[field]
+        }
+      }
+      if (Object.keys(card).length > 0) {
+        hubIndustries[slug] = card
+      }
+    }
+    if (Object.keys(hubIndustries).length > 0) {
+      out.industries = hubIndustries
+    }
+  }
+
+  return out
+}
+
+function extractInnovationForIndustry(
+  innovation: Record<string, JsonValue>,
+  slug: IndustrySlug
+): Record<string, JsonValue> {
+  const industries = innovation.industries
+  const slice =
+    isPlainObject(industries) &&
+    (industries as Record<string, JsonValue>)[slug] !== undefined
+      ? (industries as Record<string, JsonValue>)[slug]
+      : {}
+  return { industries: { [slug]: slice } }
+}
+
+function applyInnovationPageEdit(
+  fullInnovation: Record<string, JsonValue>,
+  focus: InnovationPageFocus,
+  edited: Record<string, JsonValue>
+): Record<string, JsonValue> {
+  if (focus === "hub") {
+    const merged = { ...fullInnovation }
+    const { industries: editedIndustries, ...rootEdited } = edited
+    Object.assign(merged, rootEdited)
+
+    if (isPlainObject(editedIndustries)) {
+      const prevIndustries = isPlainObject(merged.industries)
+        ? { ...(merged.industries as Record<string, JsonValue>) }
+        : {}
+      for (const [slug, patch] of Object.entries(editedIndustries)) {
+        if (!isPlainObject(patch)) continue
+        const prev = isPlainObject(prevIndustries[slug])
+          ? { ...(prevIndustries[slug] as Record<string, JsonValue>) }
+          : {}
+        for (const [field, value] of Object.entries(patch)) {
+          prev[field] = value
+        }
+        prevIndustries[slug] = prev
+      }
+      merged.industries = prevIndustries
+    }
+
+    return merged
+  }
+
+  const merged = { ...fullInnovation }
+  const prevIndustries = isPlainObject(merged.industries)
+    ? { ...(merged.industries as Record<string, JsonValue>) }
+    : {}
+  const editedIndustries = edited.industries
+  if (isPlainObject(editedIndustries)) {
+    for (const [slug, value] of Object.entries(editedIndustries)) {
+      prevIndustries[slug] = value
+    }
+  }
+  merged.industries = prevIndustries
+  return merged
+}
+
+function inferInnovationPageFromMatchPath(path: string): InnovationPageFocus {
+  if (path === "innovation" || !path.startsWith("innovation.")) {
+    return "hub"
+  }
+  const parts = path.split(".")
+  if (
+    parts.length >= 3 &&
+    parts[1] === "industries" &&
+    INDUSTRY_SLUG_SET.has(parts[2])
+  ) {
+    return parts[2] as IndustrySlug
+  }
+  return "hub"
+}
+
+function innovationIndustryLabel(
+  content: Record<string, JsonValue> | null,
+  slug: IndustrySlug
+): string {
+  if (!content || !isPlainObject(content.innovation)) {
+    return slug
+  }
+  const industries = (content.innovation as Record<string, JsonValue>).industries
+  if (!isPlainObject(industries)) {
+    return slug
+  }
+  const industry = (industries as Record<string, JsonValue>)[slug]
+  if (!isPlainObject(industry)) {
+    return slug
+  }
+  const shortTitle = industry.shortTitle
+  return typeof shortTitle === "string" && shortTitle.trim() ? shortTitle : slug
+}
+
 /** From a full field path under `robots.*`, pick which robot sidebar page to open so the field exists in the scoped editor. */
 function inferRobotPageFromMatchPath(path: string): RobotSidebarPage {
   if (path === "robots" || !path.startsWith("robots.")) return "robots"
@@ -448,7 +461,8 @@ const WEBSITE_PAGE_ENTRIES: {
     target: "innovation",
     section: "innovation",
     title: "Innovation",
-    description: "Innovation page hero, services, solutions, and about copy.",
+    description:
+      "Industry hub hero, shared labels, and per-industry detail page copy.",
   },
   {
     target: "expo",
@@ -493,6 +507,8 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
   const [robotPageFocus, setRobotPageFocus] = useState<RobotSidebarPage | null>(
     null
   )
+  const [innovationPageFocus, setInnovationPageFocus] =
+    useState<InnovationPageFocus>("hub")
   const [content, setContent] = useState<Record<string, JsonValue> | null>(null)
   const [baseline, setBaseline] = useState<Record<string, JsonValue> | null>(null)
   const [activeSection, setActiveSection] = useState<string | null>(null)
@@ -623,7 +639,14 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
       cancelled = true
       for (const t of timers) clearTimeout(t)
     }
-  }, [scrollToFieldPath, loading, activeSection, robotPageFocus, content])
+  }, [
+    scrollToFieldPath,
+    loading,
+    activeSection,
+    robotPageFocus,
+    innovationPageFocus,
+    content,
+  ])
 
   const topLevelKeys = useMemo(
     () =>
@@ -681,6 +704,16 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
       robotPageFocus
     )
   }, [content, robotPageFocus])
+
+  const innovationScopedSlice = useMemo(() => {
+    if (!content || !isPlainObject(content.innovation)) {
+      return null
+    }
+    const innovation = content.innovation as Record<string, JsonValue>
+    return innovationPageFocus === "hub"
+      ? extractInnovationHub(innovation)
+      : extractInnovationForIndustry(innovation, innovationPageFocus)
+  }, [content, innovationPageFocus])
 
   useEffect(() => {
     if (!content || filteredKeys.length === 0) return
@@ -758,7 +791,13 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
     activeSection in (content ?? {}) &&
     dirty
 
-  const previewPath = previewPathFor(locale, previewTarget)
+  const previewPath = previewPathFor(
+    locale,
+    previewTarget,
+    previewTarget === "innovation" && innovationPageFocus !== "hub"
+      ? innovationPageFocus
+      : null
+  )
 
   return (
     <div
@@ -922,6 +961,9 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                           onClick={() => {
                             setPreviewTarget(entry.target)
                             setRobotPageFocus(null)
+                            if (entry.section === "innovation") {
+                              setInnovationPageFocus("hub")
+                            }
                             setActiveSection(entry.section)
                           }}
                           className={`flex w-full flex-col gap-0.5 rounded-lg px-2.5 py-2 text-left text-sm transition ${
@@ -942,6 +984,62 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                   })}
                 </ul>
               </div>
+
+              {content?.innovation && (
+                <div className="mb-4 border-b border-zinc-800 pb-3">
+                  <p className="mb-2 px-2 text-[10px] font-bold uppercase tracking-wider text-zinc-600">
+                    Innovation pages
+                  </p>
+                  <ul className="space-y-0.5">
+                    <li>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setPreviewTarget("innovation")
+                          setInnovationPageFocus("hub")
+                          setActiveSection("innovation")
+                          setRobotPageFocus(null)
+                        }}
+                        className={`flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-sm transition ${
+                          activeSection === "innovation" &&
+                          innovationPageFocus === "hub"
+                            ? "bg-primary/20 font-medium text-white ring-1 ring-primary/40"
+                            : "text-zinc-400 hover:bg-zinc-800 hover:text-white"
+                        }`}
+                      >
+                        <span className="truncate">Hub overview</span>
+                      </button>
+                    </li>
+                    {INDUSTRY_SLUGS.map((slug) => {
+                      const selected =
+                        activeSection === "innovation" &&
+                        innovationPageFocus === slug
+                      return (
+                        <li key={slug}>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setPreviewTarget("innovation")
+                              setInnovationPageFocus(slug)
+                              setActiveSection("innovation")
+                              setRobotPageFocus(null)
+                            }}
+                            className={`flex w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-sm transition ${
+                              selected
+                                ? "bg-primary/20 font-medium text-white ring-1 ring-primary/40"
+                                : "text-zinc-400 hover:bg-zinc-800 hover:text-white"
+                            }`}
+                          >
+                            <span className="truncate">
+                              {innovationIndustryLabel(content, slug)}
+                            </span>
+                          </button>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
+              )}
 
               {siteSidebarKeys.length > 0 && (
                 <div className="mb-4 border-b border-zinc-800 pb-3">
@@ -1059,6 +1157,13 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                                 setPreviewTarget(
                                   page === "robots" ? "robots" : page
                                 )
+                              } else if (m.section === "innovation") {
+                                const page = inferInnovationPageFromMatchPath(
+                                  m.path
+                                )
+                                setInnovationPageFocus(page)
+                                setPreviewTarget("innovation")
+                                setRobotPageFocus(null)
                               } else {
                                 setRobotPageFocus(null)
                               }
@@ -1147,7 +1252,15 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                         : "Robots overview"}
                     </span>
                   )}
-                  {activeSection !== "robots" && (
+                  {activeSection === "innovation" && (
+                    <span className="text-sm text-zinc-400">
+                      ·{" "}
+                      {innovationPageFocus === "hub"
+                        ? "Hub overview"
+                        : innovationIndustryLabel(content, innovationPageFocus)}
+                    </span>
+                  )}
+                  {activeSection !== "robots" && activeSection !== "innovation" && (
                     <span className="text-sm text-zinc-400">
                       ·{" "}
                       {WEBSITE_PAGE_ENTRIES.find((e) => e.section === activeSection)
@@ -1194,6 +1307,146 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                         })
                       }}
                     />
+                  </>
+                ) : activeSection === "innovation" ? (
+                  <>
+                    {innovationScopedSlice &&
+                      Object.keys(innovationScopedSlice).length === 0 && (
+                        <p className="mb-4 text-sm text-amber-200/90">
+                          No innovation copy found for this view yet.
+                        </p>
+                      )}
+                    {innovationPageFocus !== "hub" &&
+                      isPlainObject(innovationScopedSlice?.industries) && (() => {
+                        const industriesBlock =
+                          innovationScopedSlice!.industries as Record<
+                            string,
+                            JsonValue
+                          >
+                        const industryBlock = industriesBlock[innovationPageFocus]
+                        const industryRecord = isPlainObject(industryBlock)
+                          ? (industryBlock as Record<string, JsonValue>)
+                          : {}
+                        const useCases = Array.isArray(industryRecord.useCases)
+                          ? (industryRecord.useCases as JsonValue[])
+                          : []
+                        const industryWithoutUseCases = Object.fromEntries(
+                          Object.entries(industryRecord).filter(
+                            ([key]) => key !== "useCases"
+                          )
+                        )
+
+                        return (
+                        <>
+                          <InnovationUseCasesEditor
+                            industrySlug={innovationPageFocus}
+                            useCases={useCases}
+                            onChange={(nextUseCases) => {
+                              setContent((prev) => {
+                                if (!prev || !isPlainObject(prev.innovation)) {
+                                  return prev
+                                }
+                                const full = prev.innovation as Record<
+                                  string,
+                                  JsonValue
+                                >
+                                const industries = isPlainObject(full.industries)
+                                  ? {
+                                      ...(full.industries as Record<
+                                        string,
+                                        JsonValue
+                                      >),
+                                    }
+                                  : {}
+                                const prevIndustry = isPlainObject(
+                                  industries[innovationPageFocus]
+                                )
+                                  ? {
+                                      ...(industries[
+                                        innovationPageFocus
+                                      ] as Record<string, JsonValue>),
+                                    }
+                                  : {}
+                                industries[innovationPageFocus] = {
+                                  ...prevIndustry,
+                                  useCases: nextUseCases,
+                                }
+                                const updated = applyInnovationPageEdit(
+                                  full,
+                                  innovationPageFocus,
+                                  { industries }
+                                )
+                                return { ...prev, innovation: updated }
+                              })
+                            }}
+                          />
+                          <ValueField
+                            path={`innovation.industries.${innovationPageFocus}`}
+                            value={industryWithoutUseCases}
+                            depth={0}
+                            onChange={(nextIndustry) => {
+                              setContent((prev) => {
+                                if (!prev || !isPlainObject(prev.innovation)) {
+                                  return prev
+                                }
+                                const full = prev.innovation as Record<
+                                  string,
+                                  JsonValue
+                                >
+                                const industries = isPlainObject(full.industries)
+                                  ? {
+                                      ...(full.industries as Record<
+                                        string,
+                                        JsonValue
+                                      >),
+                                    }
+                                  : {}
+                                const prevIndustry = isPlainObject(
+                                  industries[innovationPageFocus]
+                                )
+                                  ? {
+                                      ...(industries[
+                                        innovationPageFocus
+                                      ] as Record<string, JsonValue>),
+                                    }
+                                  : {}
+                                industries[innovationPageFocus] = {
+                                  ...prevIndustry,
+                                  ...(nextIndustry as Record<string, JsonValue>),
+                                }
+                                const updated = applyInnovationPageEdit(
+                                  full,
+                                  innovationPageFocus,
+                                  { industries }
+                                )
+                                return { ...prev, innovation: updated }
+                              })
+                            }}
+                          />
+                        </>
+                        )
+                      })()}
+                    {innovationPageFocus === "hub" && (
+                      <ValueField
+                        path="innovation"
+                        value={innovationScopedSlice ?? {}}
+                        depth={0}
+                        onChange={(next) => {
+                          setContent((prev) => {
+                            if (!prev || !isPlainObject(prev.innovation)) {
+                              return prev
+                            }
+                            const full = prev.innovation as Record<string, JsonValue>
+                            const updated = applyInnovationPageEdit(
+                              full,
+                              innovationPageFocus,
+                              next as Record<string, JsonValue>
+                            )
+                            return { ...prev, innovation: updated }
+                          })
+                        }}
+                      />
+                    )}
                   </>
                 ) : (
                   <ValueField

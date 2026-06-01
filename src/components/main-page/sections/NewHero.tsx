@@ -3,14 +3,12 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import Link from "next/link"
 import { useEffect, useState } from "react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useIsMobile } from "@/hooks/useIsMobile"
 import { useTranslation } from "react-i18next"
 import { FaInstagram, FaSnapchatGhost, FaTiktok } from "react-icons/fa"
 import { FaLinkedinIn } from "react-icons/fa6"
-import { Leaf, Wind, Brain, Bot } from "lucide-react"
 import FormattedText from "@/components/shared/FormattedText"
 
 export default function NewHero() {
@@ -20,12 +18,7 @@ export default function NewHero() {
   const isMobile = useIsMobile()
   const lang = language as "en" | "ar"
   const isRTL = lang === "ar"
-  const goalTexts = [0, 1, 2, 3].map((i) => t(`hero.goals.${i}`))
-  const getGoalHref = (i: number): string | null => {
-    const path = String(t(`hero.goalLinks.${i}`)).trim()
-    if (!path) return null
-    return `/${lang}${path.startsWith("/") ? path : `/${path}`}`
-  }
+
 
   useEffect(() => {
     setAnimate(true)
@@ -112,28 +105,6 @@ export default function NewHero() {
     }
   }
 
-  const goalsContainerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delayChildren: isMobile ? 0.2 : 0.4,
-        staggerChildren: isMobile ? 0.06 : 0.1,
-      },
-    },
-  }
-
-  const goalItemVariants = {
-    hidden: { opacity: 0, y: 12 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.4,
-        ease: [0.22, 0.61, 0.36, 1] as any,
-      },
-    },
-  }
 
   return (
     <section className="relative  flex flex-col pt-[100px] md:pt-[120px] overflow-visible md:overflow-hidden">

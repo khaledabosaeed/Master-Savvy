@@ -1,13 +1,14 @@
 "use client"
 
 import { useEffect } from "react"
-import Image from "next/image"
 import Link from "next/link"
 import { motion, useAnimationControls, useReducedMotion } from "framer-motion"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
 import FormattedText from "@/components/shared/FormattedText"
+import RemoteMediaImage from "@/components/shared/RemoteMediaImage"
 import { INDUSTRIES, type IndustrySlug } from "@/components/innovation-page/data/industries"
+import { getIndustryImageUrl } from "@/lib/innovation-media"
 import {
   infiniteMarqueeKeyframes,
   infiniteMarqueeTransition,
@@ -78,14 +79,17 @@ export default function IndustriesSlider({ currentSlug }: IndustriesSliderProps)
             >
               {loopItems.map((industry, index) => {
                 const baseKey = `innovation.industries.${industry.slug}`
+                const imageUrl = getIndustryImageUrl(t, industry.slug)
+                if (!imageUrl) return null
+
                 return (
                   <Link
                     key={`${industry.slug}-${index}`}
                     href={`/${lang}/innovation/${industry.slug}`}
                     className="group relative h-52 w-72 shrink-0 overflow-hidden rounded-2xl shadow-md transition-shadow hover:shadow-xl"
                   >
-                    <Image
-                      src={industry.image}
+                    <RemoteMediaImage
+                      src={imageUrl}
                       alt={t(`${baseKey}.imageAlt`)}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"

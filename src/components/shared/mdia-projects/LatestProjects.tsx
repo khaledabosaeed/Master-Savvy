@@ -4,7 +4,6 @@ import { useState, memo, useCallback, useRef, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
-import Counter from "../Counter"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
 import type { Language } from "./content"
@@ -24,7 +23,6 @@ function MadiaProjects() {
   const isRTL = lang === "ar"
 
   const [activeProject, setActiveProject] = useState(0)
-  const [photoIndex, setPhotoIndex] = useState(0)
   const [showArrows, setShowArrows] = useState({ left: false, right: false })
   const tabsContainerRef = useRef<HTMLDivElement>(null)
 
@@ -36,35 +34,8 @@ function MadiaProjects() {
 
   const handleTabClick = useCallback((index: number) => {
     setActiveProject(index)
-    setPhotoIndex(0) // Reset photo index when changing project
   }, [])
 
-  const handlePreviousPhoto = useCallback(() => {
-    if (currentProject?.images && currentProject.images.length > 0) {
-      setPhotoIndex((prev) => {
-        // Move back by 4, or to the last valid group if at the beginning
-        if (prev <= 3) {
-          // Find the last valid starting index for a group of 4
-          const lastIndex = Math.max(0, currentProject.images.length - 4)
-          return lastIndex
-        }
-        return prev - 4
-      })
-    }
-  }, [currentProject?.images])
-
-  const handleNextPhoto = useCallback(() => {
-    if (currentProject?.images && currentProject.images.length > 0) {
-      setPhotoIndex((prev) => {
-        // Move forward by 4, or loop to start if at the end
-        const maxIndex = Math.max(0, currentProject.images.length - 4)
-        if (prev >= maxIndex) {
-          return 0
-        }
-        return prev + 4
-      })
-    }
-  }, [currentProject?.images])
 
   // Check if tabs overflow and show/hide arrows
   useEffect(() => {
@@ -125,20 +96,7 @@ function MadiaProjects() {
     })
   }, [isRTL])  
 
-  const getDriveEmbedUrl = (url: string): string => {
-    if (!url) return ""
-  
-    // استخراج الـ fileId من روابط Google Drive
-    const regExp =
-      /(?:\/file\/d\/|id=)([a-zA-Z0-9_-]{10,})/
-    const match = url.match(regExp)
-    const fileId = match ? match[1] : null
-  
-    if (!fileId) return url
-  
-    // رابط embed
-    return `https://drive.google.com/file/d/${fileId}/preview`
-  }
+
   
 
   // Safety check after hooks

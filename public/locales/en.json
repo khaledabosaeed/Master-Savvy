@@ -59,7 +59,6 @@
       "2": "Net-Zero Emissions Solutions",
       "3": "Responsible Artificial Intelligence (AI)"
     },
-
     "ctaButton": "Contact Us",
     "partners": "Partners who trusted us to create different experiences… you're next",
     "socialTiktok": "Follow us on TikTok",
@@ -74,9 +73,18 @@
     "socialProof": {
       "title": "Trusted at major exhibitions",
       "stats": [
-        { "value": "8000+", "label": "Visitors" },
-        { "value": "60+", "label": "Company visits" },
-        { "value": "250M+", "label": "Social impressions" }
+        {
+          "value": "8000+",
+          "label": "Visitors"
+        },
+        {
+          "value": "60+",
+          "label": "Company visits"
+        },
+        {
+          "value": "250M+",
+          "label": "Social impressions"
+        }
       ]
     },
     "useCases": {
@@ -103,7 +111,6 @@
         }
       ]
     },
-
     "finalCta": {
       "title": "Book a consultation",
       "subtitle": "Tell us about your project — our team will respond with next steps.",
@@ -183,7 +190,8 @@
       "subtitle": "Revolutionizing Ten Major Industries with Smart Robotic Solutions.",
       "exploreCta": "Explore solutions",
       "primaryCta": "Explore industries",
-      "scrollHint": "Scroll to industries"
+      "scrollHint": "Scroll to industries",
+      "videoUrl": "https://cdn.savvyworld.ai/master/PUDU_Industry_Solutions_29dd55ee9d.mp4"
     },
     "industriesNavLabel": "Industries",
     "industriesSectionTitle": "Robotics by Industry",
@@ -235,8 +243,149 @@
           {
             "title": "Multi-Scenario Coverage",
             "subtitle": "Table Service · Dish Return · Lobby Reception · Floor Cleaning",
-            "imageAlt": "Isometric view of Pudu robots serving across a restaurant"
+            "imageAlt": "Isometric view of Pudu robots serving across a restaurant",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_68694792ca.webp"
           }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "About Table Service",
+            "slides": [
+              {
+                "robotName": "HolaBot",
+                "imageAlt": "HolaBot delivering dishes in a restaurant dining room",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot serving food at a restaurant table",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Peak-hour table service slows when staff walk long routes between kitchen and dining areas.",
+                "High labor turnover makes consistent service quality difficult to maintain.",
+                "Manual tray carrying increases spill risk and staff fatigue during busy shifts."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Stable multi-tray delivery designed for restaurant floor layouts.",
+                "Smooth navigation around diners, furniture, and narrow aisles.",
+                "Frees front-of-house staff to focus on guest interaction and upselling."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot restaurant service robot",
+                "features": [
+                  "Front-of-house interaction with reliable dish delivery.",
+                  "Multi-tray transport for table-side service.",
+                  "Designed for high-frequency restaurant routes."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot premium delivery robot",
+                "features": [
+                  "Premium delivery for restaurants and hospitality.",
+                  "Stable tray transport with smooth navigation.",
+                  "Ideal for peak-hour table service loops."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "holabot",
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "holabot",
+              "bellabot"
+            ]
+          },
+          {
+            "aboutTitle": "About Dish Return & Reception",
+            "slides": [
+              {
+                "robotName": "HolaBot",
+                "imageAlt": "HolaBot collecting dishes in a restaurant",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot guiding guests in a restaurant lobby",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Bussing and dish return compete with active table service during rush periods.",
+                "Lobby reception coverage drops when staff are pulled to the floor.",
+                "Inconsistent guest guidance at entry points during large bookings."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Dedicated bussing routes that run parallel to active service.",
+                "Integrated display on KettyBot for menus, promotions, and wayfinding.",
+                "24/7 lobby presence without adding headcount."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot on a dish return route",
+                "features": [
+                  "Reliable dish return and bussing automation.",
+                  "Runs repetitive back-of-house loops efficiently.",
+                  "Reduces staff walking distance by up to 40%."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot in a restaurant lobby",
+                "features": [
+                  "Delivery and marketing robot with integrated display.",
+                  "Guest guidance and promotional content at entry.",
+                  "Dual role: service support and brand engagement."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "holabot",
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "holabot",
+              "kettybot"
+            ]
+          }
+        ],
+        "imageUrl": "https://cdn.savvyworld.ai/master/Food_and_Beverage_ecca2bbd37.webp",
+        "recommendedRobots": [
+          "holabot",
+          "bellabot",
+          "kettybot"
         ]
       },
       "retail": {
@@ -277,8 +426,149 @@
           {
             "title": "Multi-Scenario Coverage",
             "subtitle": "In-Store Delivery · Promotional Roaming · After-Hours Restocking",
-            "imageAlt": "Isometric view of Pudu robots operating across a retail store"
+            "imageAlt": "Isometric view of Pudu robots operating across a retail store",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_80d200d980.webp"
           }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "About In-Store Delivery",
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot delivering products in a retail store",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "FlashBot",
+                "imageAlt": "FlashBot on a fast in-store delivery route",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Customers wait longer when staff must walk products to fitting rooms and counters.",
+                "Peak shopping hours stretch associate availability across large store footprints.",
+                "Click-and-collect handoffs create bottlenecks at service desks."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "In-store delivery to counters and fitting rooms without added headcount.",
+                "Fast route optimization across high-traffic retail aisles.",
+                "Consistent service speed that scales during seasonal peaks."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot retail delivery robot",
+                "features": [
+                  "Stable product delivery across store zones.",
+                  "Smooth navigation in crowded aisles.",
+                  "Reliable loops from stockroom to service points."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "FlashBot",
+                "imageAlt": "FlashBot fast delivery robot",
+                "features": [
+                  "High-frequency indoor delivery routes.",
+                  "Compact design for narrow retail corridors.",
+                  "2x faster in-store product delivery."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "bellabot",
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "bellabot",
+              "flashbot"
+            ]
+          },
+          {
+            "aboutTitle": "About Promotional Roaming",
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot displaying promotions in a retail store",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot roaming a campaign zone",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Campaign zones miss traffic when promotional staff cannot cover the full floor.",
+                "Static signage fails to adapt messaging to time-of-day or audience flow.",
+                "After-hours restocking pulls associates away from daytime customer service."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Roaming promotional displays that draw shoppers to campaign areas.",
+                "Digitized engagement tracking for in-store marketing.",
+                "Flexible redeployment between promotional and delivery roles."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot promotional retail robot",
+                "features": [
+                  "Integrated display for campaigns and product info.",
+                  "24/7 promotional floor coverage.",
+                  "Guides shoppers to featured product zones."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot supporting retail operations",
+                "features": [
+                  "Versatile delivery for restocking support.",
+                  "Reliable operation across large-format stores.",
+                  "Complements promotional roaming workflows."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "kettybot",
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "kettybot",
+              "bellabot"
+            ]
+          }
+        ],
+        "imageUrl": "https://cdn.savvyworld.ai/master/_a9690a9d5d.webp",
+        "recommendedRobots": [
+          "bellabot",
+          "kettybot",
+          "flashbot"
         ]
       },
       "hospitality": {
@@ -319,8 +609,149 @@
           {
             "title": "Multi-Scenario Coverage",
             "subtitle": "Room Service · Lobby Guidance · Banquet & Event Logistics",
-            "imageAlt": "Isometric view of Pudu robots serving across a hotel"
+            "imageAlt": "Isometric view of Pudu robots serving across a hotel",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_aaa66f1fc9.webp"
           }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "About Room Service",
+            "slides": [
+              {
+                "robotName": "HolaBot",
+                "imageAlt": "HolaBot delivering room service in a hotel",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot with amenities in a hotel corridor",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Room service delays during peak check-in and dining hours.",
+                "Staff spend significant time on repetitive corridor routes.",
+                "Guest expectations for timely amenity delivery continue to rise."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "95%+ on-time room service delivery across hotel floors.",
+                "Secure, stable transport for food, amenities, and linens.",
+                "Elevator integration for multi-floor autonomous routes."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot hotel room service robot",
+                "features": [
+                  "Reliable room service and amenity delivery.",
+                  "Front-of-house presence with smooth navigation.",
+                  "Designed for hotel corridor layouts."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot premium hotel delivery robot",
+                "features": [
+                  "Premium delivery experience for guest-facing routes.",
+                  "Stable tray transport for in-room dining.",
+                  "Consistent service during peak occupancy."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "holabot",
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "holabot",
+              "bellabot"
+            ]
+          },
+          {
+            "aboutTitle": "About Lobby & Event Logistics",
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot guiding guests in a hotel lobby",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot supporting a hotel banquet event",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Lobby guidance gaps when concierge teams handle multiple guest requests.",
+                "Banquet and event logistics require rapid, repeatable transport loops.",
+                "Large venues struggle to maintain consistent information support."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "100% lobby guidance accuracy with display-enabled robots.",
+                "2x event service loop efficiency for banquet operations.",
+                "Scalable deployment across lobbies, ballrooms, and conference wings."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot hotel lobby robot",
+                "features": [
+                  "Lobby guidance and information support.",
+                  "Integrated display for events and promotions.",
+                  "100% navigation accuracy for guest wayfinding."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot event logistics robot",
+                "features": [
+                  "Reliable transport for banquet and event setups.",
+                  "Handles repetitive back-of-house event routes.",
+                  "Maintains service quality during live events."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "kettybot",
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "kettybot",
+              "bellabot"
+            ]
+          }
+        ],
+        "imageUrl": "https://cdn.savvyworld.ai/master/Hospitality_e4c88c98ae.webp",
+        "recommendedRobots": [
+          "bellabot",
+          "holabot",
+          "kettybot"
         ]
       },
       "industrial-logistics": {
@@ -361,8 +792,159 @@
           {
             "title": "Multi-Scenario Coverage",
             "subtitle": "Line-Side Delivery · Cross-Dock Transport · Night-Shift Replenishment",
-            "imageAlt": "Isometric view of Pudu robots operating across a warehouse"
+            "imageAlt": "Isometric view of Pudu robots operating across a warehouse",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_c7680a5a1b.webp"
           }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "About Material Delivery",
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max delivery robot in a warehouse corridor",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 industrial towing robot on a production floor",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 navigating a logistics staging zone",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "High-volume logistics consuming staff time and increasing labor costs.",
+                "Inefficient manual cart deliveries between production lines and staging zones.",
+                "Safety risks from fatigue during repetitive night-shift transport runs.",
+                "Difficulty coordinating cross-floor routes without dedicated automation."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Autonomous cross-floor navigation with elevator and gate integration.",
+                "IoT-ready fleet management for real-time route visibility.",
+                "Secure, PIN-protected compartments for sensitive materials.",
+                "Scalable deployment from single-site pilots to multi-facility rollouts."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300 industrial towing robot",
+                "features": [
+                  "300 kg payload for heavy material carts.",
+                  "VSLAM+ deployment without facility modification.",
+                  "Autonomous towing between production and staging zones."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max secure delivery robot",
+                "features": [
+                  "20 kg capacity with multi-compartment secure delivery.",
+                  "PIN/NFC authentication for controlled access.",
+                  "Fast indoor routes across large commercial spaces."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "flashbot",
+              "t300",
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "t300",
+              "flashbot"
+            ]
+          },
+          {
+            "aboutTitle": "About Cross-Dock Transport",
+            "slides": [
+              {
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 moving pallets in a cross-dock facility",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 delivering between dock doors",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Bottlenecks at dock doors during peak receiving windows.",
+                "Manual handoffs between inbound and outbound staging areas.",
+                "Inconsistent routing causing delays in dispatch readiness.",
+                "Limited visibility into intra-facility transfer status."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Governed routing between dock zones with predictable ETAs.",
+                "Fleet scheduling aligned to shift-based throughput targets.",
+                "Minimal infrastructure changes for rapid pilot deployment.",
+                "Integration-ready APIs for WMS and facility management systems."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300 towing cart in a cross-dock area",
+                "features": [
+                  "High-capacity towing for pallet and cart moves.",
+                  "Multi-floor routing across warehouse zones.",
+                  "Built for continuous operation in industrial environments."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2 on a cross-dock transfer route",
+                "features": [
+                  "Flexible delivery platform for mixed-load transfers.",
+                  "Compact footprint for narrow dock-side corridors.",
+                  "Quick redeployment across multiple facility zones."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "t300",
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "t300",
+              "pudubot2"
+            ]
+          }
+        ],
+        "imageUrl": "https://cdn.savvyworld.ai/master/_373b0fa367.webp",
+        "recommendedRobots": [
+          "t300",
+          "flashbot",
+          "pudubot2"
         ]
       },
       "healthcare": {
@@ -403,8 +985,149 @@
           {
             "title": "Multi-Scenario Coverage",
             "subtitle": "Medical Supply Delivery · Sanitation Support · Visitor Guidance",
-            "imageAlt": "Isometric view of Pudu robots operating across a hospital"
+            "imageAlt": "Isometric view of Pudu robots operating across a hospital",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_a81a02f812.webp"
           }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "About Medical Supply Delivery",
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 delivering supplies in a hospital corridor",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot navigating a medical facility",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Clinical staff lose time on supply runs between departments and wards.",
+                "Manual transport increases risk of delayed ward replenishment.",
+                "Peak admission periods strain existing logistics workflows."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "95%+ on-schedule ward supply delivery.",
+                "Hygienic, governed routes compliant with facility protocols.",
+                "Frees clinical teams to stay focused on patient care."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2 hospital delivery robot",
+                "features": [
+                  "Versatile indoor logistics across hospital zones.",
+                  "Reliable supply runs between departments.",
+                  "Compact design for clinical corridors."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot medical facility robot",
+                "features": [
+                  "Visitor guidance across large medical campuses.",
+                  "Display-enabled information support.",
+                  "Dual role: logistics and campus navigation."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "pudubot2",
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "pudubot2",
+              "kettybot"
+            ]
+          },
+          {
+            "aboutTitle": "About Sanitation & Visitor Guidance",
+            "slides": [
+              {
+                "robotName": "CC1",
+                "imageAlt": "CC1 cleaning robot in a hospital corridor",
+                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot guiding visitors in a hospital lobby",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "High-touch areas require consistent floor hygiene between peak traffic windows.",
+                "Visitors struggle to navigate large medical campuses without dedicated staff.",
+                "Cleaning cycles compete with clinical logistics for staff availability."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "100% high-touch area floor hygiene coverage with CC1.",
+                "100% visitor campus navigation accuracy.",
+                "Automated cleaning cycles that run alongside supply delivery."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "CC1",
+                "imageAlt": "CC1 AI cleaning robot",
+                "features": [
+                  "AI-powered hard-floor maintenance.",
+                  "Ideal for lobbies, corridors, and public zones.",
+                  "100% coverage in high-touch areas."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot visitor guidance robot",
+                "features": [
+                  "Accurate campus wayfinding for visitors.",
+                  "Integrated display for department information.",
+                  "Reduces front-desk navigation requests."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "cc1",
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "cc1",
+              "kettybot"
+            ]
+          }
+        ],
+        "imageUrl": "https://cdn.savvyworld.ai/master/_d8c688b5e6.webp",
+        "recommendedRobots": [
+          "cc1",
+          "kettybot",
+          "pudubot2"
         ]
       },
       "transportation": {
@@ -445,8 +1168,149 @@
           {
             "title": "Multi-Scenario Coverage",
             "subtitle": "Passenger Guidance · Concourse Retail · Peak-Hour Facility Support",
-            "imageAlt": "Isometric view of Pudu robots operating across a transit terminal"
+            "imageAlt": "Isometric view of Pudu robots operating across a transit terminal",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_760afca0ea.webp"
           }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "About Passenger Guidance",
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 guiding passengers in a transit terminal",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "FlashBot",
+                "imageAlt": "FlashBot moving through a transit concourse",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Passengers miss connections when wayfinding staff cannot cover long concourses.",
+                "Peak travel windows overwhelm fixed information desks.",
+                "Multilingual guidance needs exceed available human staffing."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "100% passenger wayfinding accuracy across terminal zones.",
+                "Mobile guidance that adapts to gate changes and congestion.",
+                "24/7 availability during peak and off-peak travel windows."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2 transit guidance robot",
+                "features": [
+                  "Versatile platform for passenger wayfinding.",
+                  "Reliable navigation across long concourses.",
+                  "Scalable across multi-terminal deployments."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "FlashBot",
+                "imageAlt": "FlashBot transit concourse robot",
+                "features": [
+                  "Fast indoor routes for time-sensitive deliveries.",
+                  "Compact design for crowded transit environments.",
+                  "Supports retail and F&B concourse operations."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "pudubot2",
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "pudubot2",
+              "flashbot"
+            ]
+          },
+          {
+            "aboutTitle": "About Concourse Retail & Facility Support",
+            "slides": [
+              {
+                "robotName": "FlashBot",
+                "imageAlt": "FlashBot delivering on a transit concourse",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 supporting facility logistics in a terminal",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Concourse retail delivery slows when staff must cross long distances.",
+                "Facility support teams are stretched during peak departure windows.",
+                "Heavy-load transport between back-of-house and retail zones is manual."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "2x concourse retail delivery speed with autonomous routes.",
+                "40%+ improved staff coverage across terminal zones.",
+                "Heavy-load T300 support for back-of-house facility logistics."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "FlashBot",
+                "imageAlt": "FlashBot concourse delivery robot",
+                "features": [
+                  "High-frequency delivery across long concourses.",
+                  "Secure compartments for retail handoffs.",
+                  "2x faster concourse delivery routes."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300 terminal logistics robot",
+                "features": [
+                  "300 kg payload for facility and cargo moves.",
+                  "Autonomous towing between terminal zones.",
+                  "Built for continuous peak-hour operation."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "flashbot",
+              "t300"
+            ],
+            "solutionKeys": [
+              "flashbot",
+              "t300"
+            ]
+          }
+        ],
+        "imageUrl": "https://cdn.savvyworld.ai/master/Transportation_and_Related_Service_ab54fbe5b6.webp",
+        "recommendedRobots": [
+          "flashbot",
+          "pudubot2",
+          "t300"
         ]
       },
       "entertainment-sports": {
@@ -487,8 +1351,149 @@
           {
             "title": "Multi-Scenario Coverage",
             "subtitle": "Concession Delivery · VIP Hospitality · Back-of-House Transport",
-            "imageAlt": "Isometric view of Pudu robots operating across a stadium"
+            "imageAlt": "Isometric view of Pudu robots operating across a stadium",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_c89f272bff.webp"
           }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "About Concession Delivery",
+            "slides": [
+              {
+                "robotName": "HolaBot",
+                "imageAlt": "HolaBot delivering concessions in a stadium",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot serving premium seats at a venue",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Concession routes break down when crowds block staff paths during live events.",
+                "Premium seat delivery cannot scale with manual runners alone.",
+                "Merchandise handoffs slow during halftime and intermission rushes."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "2x in-venue premium seat delivery capacity.",
+                "Reliable navigation through crowd-adjacent venue routes.",
+                "100% live event service continuity with autonomous loops."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot stadium concession robot",
+                "features": [
+                  "Front-of-house delivery during live events.",
+                  "Multi-tray transport for concession orders.",
+                  "Designed for high-traffic venue environments."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot premium venue delivery robot",
+                "features": [
+                  "Premium delivery to VIP and premium seating.",
+                  "Stable transport for food and merchandise.",
+                  "2x faster in-seat service during events."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "holabot",
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "holabot",
+              "bellabot"
+            ]
+          },
+          {
+            "aboutTitle": "About VIP & Back-of-House Transport",
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot in a VIP hospitality zone",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "HolaBot",
+                "imageAlt": "HolaBot on a back-of-house venue route",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "VIP hospitality zones need dedicated service without pulling floor staff.",
+                "Back-of-house transport bottlenecks during event setup and teardown.",
+                "Fan zone engagement requires mobile, interactive presence."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "100% fan zone engagement coverage with display-enabled robots.",
+                "50%+ back-of-house transport efficiency during live events.",
+                "Flexible redeployment between VIP service and logistics routes."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot VIP zone robot",
+                "features": [
+                  "Display-enabled engagement in fan and VIP zones.",
+                  "Promotional content and guest guidance.",
+                  "100% coverage during live events."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot back-of-house venue robot",
+                "features": [
+                  "Reliable back-of-house transport loops.",
+                  "50%+ efficiency for event logistics.",
+                  "Handles repetitive routes during setup and teardown."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "kettybot",
+              "holabot"
+            ],
+            "solutionKeys": [
+              "kettybot",
+              "holabot"
+            ]
+          }
+        ],
+        "imageUrl": "https://cdn.savvyworld.ai/master/Entertainment_and_Sports_03db28cf1f.webp",
+        "recommendedRobots": [
+          "holabot",
+          "bellabot",
+          "kettybot"
         ]
       },
       "real-estate": {
@@ -529,8 +1534,149 @@
           {
             "title": "Multi-Scenario Coverage",
             "subtitle": "Tenant Amenity Delivery · Property Tours · Common-Area Cleaning",
-            "imageAlt": "Isometric view of Pudu robots operating across a commercial building"
+            "imageAlt": "Isometric view of Pudu robots operating across a commercial building",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_494d2b48c7.webp"
           }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "About Tenant Amenity Delivery",
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot delivering amenities in a commercial building",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot in a building lobby",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Tenant amenity and mail delivery requests compete with front-desk priorities.",
+                "High-rise buildings require time-consuming vertical and horizontal routes.",
+                "After-hours delivery expectations exceed available concierge staffing."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "95%+ on-request tenant amenity delivery.",
+                "Elevator-integrated routes across commercial towers.",
+                "Consistent service without adding property management headcount."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot building amenity delivery robot",
+                "features": [
+                  "Reliable amenity and mail delivery to tenants.",
+                  "Smooth navigation across lobby and floor corridors.",
+                  "Premium service experience for commercial properties."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot property services robot",
+                "features": [
+                  "Lobby presence with display-enabled information.",
+                  "Supports tenant services and visitor guidance.",
+                  "Flexible role across mixed-use developments."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "bellabot",
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "bellabot",
+              "kettybot"
+            ]
+          },
+          {
+            "aboutTitle": "About Property Tours & Cleaning",
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot leading a property tour",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "CC1",
+                "imageAlt": "CC1 cleaning a building lobby",
+                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Property tours require staff time that could serve active tenants.",
+                "Common-area cleaning must keep pace with high foot traffic.",
+                "Visitor guidance accuracy drops in large mixed-use developments."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "100% property tour guidance accuracy with autonomous routes.",
+                "100% lobby and corridor upkeep coverage with CC1.",
+                "2x common area service efficiency across building zones."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot property tour robot",
+                "features": [
+                  "Guided property tours with integrated display.",
+                  "100% navigation accuracy for visitors.",
+                  "Reduces staff time on repetitive tour routes."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "CC1",
+                "imageAlt": "CC1 building cleaning robot",
+                "features": [
+                  "AI-powered floor maintenance for lobbies and corridors.",
+                  "100% common area cleaning coverage.",
+                  "Runs scheduled cycles alongside tenant services."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "kettybot",
+              "cc1"
+            ],
+            "solutionKeys": [
+              "kettybot",
+              "cc1"
+            ]
+          }
+        ],
+        "imageUrl": "https://cdn.savvyworld.ai/master/Residential_and_Office_Buildings_81b4141216.webp",
+        "recommendedRobots": [
+          "cc1",
+          "kettybot",
+          "bellabot"
         ]
       },
       "education": {
@@ -571,8 +1717,149 @@
           {
             "title": "Multi-Scenario Coverage",
             "subtitle": "Reception & Guided Tours · Food & Beverage Delivery · Floor Cleaning",
-            "imageAlt": "Isometric view of Pudu robots operating across a school campus"
+            "imageAlt": "Isometric view of Pudu robots operating across a school campus",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_048eb90ab6.webp"
           }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "About Library & Resource Delivery",
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 delivering resources across a campus",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "HolaBot",
+                "imageAlt": "HolaBot in a university library",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Library and resource center staff spend hours on inter-building delivery.",
+                "Large campuses create long walking distances between departments.",
+                "Manual delivery walking reduces time available for student support."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "50% reduction in manual delivery walking across campus sites.",
+                "Reliable routes between libraries, labs, and resource centers.",
+                "Scalable across multi-building educational facilities."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2 campus delivery robot",
+                "features": [
+                  "Versatile delivery across campus buildings.",
+                  "Reliable indoor logistics for resource centers.",
+                  "50% less manual walking for staff."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot library service robot",
+                "features": [
+                  "Front-of-house presence in library environments.",
+                  "Handles resource delivery and guest interaction.",
+                  "Designed for educational facility layouts."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "pudubot2",
+              "holabot"
+            ],
+            "solutionKeys": [
+              "pudubot2",
+              "holabot"
+            ]
+          },
+          {
+            "aboutTitle": "About Campus Navigation & Tours",
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot guiding visitors on a university campus",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 supporting a campus event",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Visitors and event attendees struggle to navigate sprawling campus layouts.",
+                "Guided tours require staff that could support active operations.",
+                "Open-day events overwhelm fixed information points."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "100% accuracy in guided campus tours.",
+                "Display-enabled robots for event schedules and department info.",
+                "Facility support across multi-building sites without added headcount."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot campus tour robot",
+                "features": [
+                  "100% accurate guided tours for visitors.",
+                  "Integrated display for events and campus info.",
+                  "Mobile wayfinding across large educational sites."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2 campus operations robot",
+                "features": [
+                  "Facility support across multi-building campuses.",
+                  "Flexible delivery for events and departments.",
+                  "Reliable operation during open days and conferences."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "kettybot",
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "kettybot",
+              "pudubot2"
+            ]
+          }
+        ],
+        "imageUrl": "https://cdn.savvyworld.ai/master/_50cce29ac7.webp",
+        "recommendedRobots": [
+          "pudubot2",
+          "kettybot",
+          "holabot"
         ]
       },
       "public-service": {
@@ -613,39 +1900,168 @@
           {
             "title": "Multi-Scenario Coverage",
             "subtitle": "Citizen Wayfinding · Internal Document Transport · Public Area Cleaning",
-            "imageAlt": "Isometric view of Pudu robots operating across a public service building"
+            "imageAlt": "Isometric view of Pudu robots operating across a public service building",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_a81a02f812.webp"
           }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "About Citizen Wayfinding",
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 guiding citizens in a public service center",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Citizens miss appointments when wayfinding staff cannot cover large service centers.",
+                "Multilingual guidance needs exceed fixed information desk capacity.",
+                "Peak service windows create congestion at entry and queue areas."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "100% service center wayfinding accuracy.",
+                "Mobile guidance that adapts to queue layouts and room changes.",
+                "24/7 availability in high-traffic public facilities."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2 public service robot",
+                "features": [
+                  "Accurate citizen wayfinding in service centers.",
+                  "Reliable navigation across civic facility layouts.",
+                  "Reduces front-desk congestion during peak hours."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ]
+          },
+          {
+            "aboutTitle": "About Internal Logistics & Cleaning",
+            "slides": [
+              {
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 transporting documents in a government building",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "robotName": "CC1",
+                "imageAlt": "CC1 cleaning a public service lobby",
+                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "challenges": {
+              "heading": "Challenges",
+              "items": [
+                "Internal document and supply transport relies on manual staff couriers.",
+                "High-traffic public areas require consistent cleaning between service peaks.",
+                "Heavy-load moves between departments slow administrative workflows."
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "2x internal document transport efficiency.",
+                "100% public area cleaning coverage with CC1.",
+                "Governed automation suitable for public sector compliance requirements."
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300 government facility robot",
+                "features": [
+                  "Heavy-load transport for documents and supplies.",
+                  "Autonomous towing between departments.",
+                  "2x internal logistics efficiency."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+              },
+              {
+                "name": "CC1",
+                "imageAlt": "CC1 public facility cleaning robot",
+                "features": [
+                  "AI-powered cleaning for high-traffic public areas.",
+                  "100% coverage in lobbies and corridors.",
+                  "Scheduled cycles aligned to service center hours."
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "/{lang}/contact",
+                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+              }
+            ],
+            "slideKeys": [
+              "t300",
+              "cc1"
+            ],
+            "solutionKeys": [
+              "t300",
+              "cc1"
+            ]
+          }
+        ],
+        "imageUrl": "https://cdn.savvyworld.ai/master/_fa2aeeca28.webp",
+        "recommendedRobots": [
+          "cc1",
+          "pudubot2",
+          "t300"
         ]
       }
     },
     "robots": {
       "bellabot": {
         "name": "BellaBot",
-        "description": "Premium delivery robot for restaurants, retail, and hospitality with stable tray transport and smooth navigation."
+        "description": "Premium delivery robot for restaurants, retail, and hospitality with stable tray transport and smooth navigation.",
+        "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
       },
       "kettybot": {
         "name": "KettyBot",
-        "description": "Delivery and marketing robot with an integrated display for guided service and promotional content."
+        "description": "Delivery and marketing robot with an integrated display for guided service and promotional content.",
+        "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
       },
       "holabot": {
         "name": "HolaBot",
-        "description": "Restaurant service robot designed for front-of-house interaction and reliable dish delivery."
+        "description": "Restaurant service robot designed for front-of-house interaction and reliable dish delivery.",
+        "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
       },
       "flashbot": {
         "name": "FlashBot",
-        "description": "Fast indoor delivery robot for high-frequency routes across large commercial spaces."
+        "description": "Fast indoor delivery robot for high-frequency routes across large commercial spaces.",
+        "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
       },
       "cc1": {
         "name": "CC1",
-        "description": "AI-powered cleaning robot for hard-floor maintenance in lobbies, corridors, and public zones."
+        "description": "AI-powered cleaning robot for hard-floor maintenance in lobbies, corridors, and public zones.",
+        "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
       },
       "t300": {
         "name": "T300",
-        "description": "Industrial towing robot for material transport across warehouses and production facilities."
+        "description": "Industrial towing robot for material transport across warehouses and production facilities.",
+        "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
       },
       "pudubot2": {
         "name": "PuduBot 2",
-        "description": "Versatile delivery platform for multi-scenario indoor logistics across sectors."
+        "description": "Versatile delivery platform for multi-scenario indoor logistics across sectors.",
+        "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
       }
     },
     "about": {
@@ -875,7 +2291,7 @@
     "sidebarHoursLabel": "Business hours",
     "sidebarHours": "24/7",
     "solutionOther": "Other",
-    "solutionOptionGroups": [ 
+    "solutionOptionGroups": [
       {
         "title": "Savvy Innovation",
         "options": [
@@ -902,7 +2318,7 @@
         ]
       }
     ],
-      "solutionOptions": [
+    "solutionOptions": [
       "Advisory services in Data Management",
       "Advisory services in Responsible AI",
       " Industrial robots (firefighting, inspection, security)",
@@ -938,7 +2354,6 @@
     "question6": "What is Savvy Innovation?",
     "answer6": "Savvy Innovation links AI, digital interaction, and green solutions to develop more sustainable urban spaces, providing solutions geared toward the future of cities and experiences."
   },
-
   "common": {
     "main": "Home",
     "news": "News",
@@ -1006,13 +2421,13 @@
       {
         "id": "expo",
         "title": "Savvy Expo",
-          "description": "We turn your brand into unforgettable experiences… through",
-          "features": [
-            "Building strategic partnerships",
-            "Focusing on engaging and purposeful entertainment activities",
-            "Creating attractive and interactive experiences with visitors",
-            "Leveraging the world of robotics with strong media presence (Mr. Savvy & Haksha characters)"
-          ],
+        "description": "We turn your brand into unforgettable experiences… through",
+        "features": [
+          "Building strategic partnerships",
+          "Focusing on engaging and purposeful entertainment activities",
+          "Creating attractive and interactive experiences with visitors",
+          "Leveraging the world of robotics with strong media presence (Mr. Savvy & Haksha characters)"
+        ],
         "icon": "/home-page/icons/expo-icon.svg",
         "image": "/sections/expo-image.jpg",
         "link": "/expo",

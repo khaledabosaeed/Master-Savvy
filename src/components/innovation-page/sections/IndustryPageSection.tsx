@@ -1,23 +1,23 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
 import FormattedText from "@/components/shared/FormattedText"
-import type { IndustryConfig } from "@/components/innovation-page/data/industries"
+import RemoteMediaImage from "@/components/shared/RemoteMediaImage"
+import type { IndustryRef } from "@/components/innovation-page/data/industries"
+import { getIndustryImageUrl } from "@/lib/innovation-media"
 import {
   cascadeStagger,
   fadeInUp,
   heroImageReveal,
   staggerItem,
-  viewportConfig,
 } from "@/lib/animations"
 
 interface IndustryPageSectionProps {
-  industry: IndustryConfig
+  industry: IndustryRef
   isFirst?: boolean
 }
 
@@ -27,6 +27,7 @@ export default function IndustryPageSection({ industry, isFirst }: IndustryPageS
   const lang = language as "en" | "ar"
   const isRTL = lang === "ar"
   const baseKey = `innovation.industries.${industry.slug}`
+  const cardImage = getIndustryImageUrl(t, industry.slug)
 
   return (
     <section
@@ -48,13 +49,17 @@ export default function IndustryPageSection({ industry, isFirst }: IndustryPageS
             whileInView="visible"
             viewport={{ once: true, amount: 0.25 }}
           >
-            <Image
-              src={industry.image}
-              alt={t(`${baseKey}.imageAlt`)}
-              fill
-              className="object-cover object-center transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)]"
-              sizes="(max-width: 768px) 100vw, 1200px"
-            />
+            {cardImage ? (
+              <RemoteMediaImage
+                src={cardImage}
+                alt={t(`${baseKey}.imageAlt`)}
+                fill
+                className="object-cover object-center transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)]"
+                sizes="(max-width: 768px) 100vw, 1200px"
+              />
+            ) : (
+              <div className="h-full w-full bg-[oklch(0.2_0.01_260)]" aria-hidden />
+            )}
           </motion.div>
 
           <motion.div

@@ -107,18 +107,6 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
     }, 200)
   }
 
-  const handleRobotsMouseEnter = () => {
-    if (robotsTimeoutRef.current) {
-      clearTimeout(robotsTimeoutRef.current)
-    }
-    setIsRobotsOpen(true)
-  }
-
-  const handleRobotsMouseLeave = () => {
-    robotsTimeoutRef.current = setTimeout(() => {
-      setIsRobotsOpen(false)
-    }, 200)
-  }
 
   const isTransparent = transparentHeader && !isScrolled && !hideOnScroll
   const navTextClass = isTransparent ? "text-white hover:text-white/90" : "text-gray-700 hover:text-gray-900"

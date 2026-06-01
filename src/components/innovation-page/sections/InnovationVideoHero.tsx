@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
 import FormattedText from "@/components/shared/FormattedText"
-import { INNOVATION_HERO_VIDEO } from "@/components/innovation-page/data/industries"
+import { getInnovationHeroVideoUrl } from "@/lib/innovation-media"
 import { cascadeStagger, fadeIn, fadeInUp, heroTitleReveal } from "@/lib/animations"
 
 export default function InnovationVideoHero() {
@@ -13,17 +13,22 @@ export default function InnovationVideoHero() {
   const { t } = useTranslation()
   const lang = language as "en" | "ar"
   const isRTL = lang === "ar"
+  const heroVideo = getInnovationHeroVideoUrl(t)
 
   return (
     <section id="hero" className="relative h-screen min-h-[600px] w-full overflow-hidden">
-      <video
-        src={INNOVATION_HERO_VIDEO}
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 h-full w-full object-cover"
-      />
+      {heroVideo ? (
+        <video
+          src={heroVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      ) : (
+        <div className="absolute inset-0 bg-[oklch(0.15_0.01_260)]" aria-hidden />
+      )}
 
       <div className="absolute inset-0 bg-gradient-to-b from-gray-950/50 via-gray-950/35 to-gray-950/65" />
 
