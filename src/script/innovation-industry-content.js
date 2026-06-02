@@ -16,6 +16,60 @@ const INDUSTRY_SLUGS = [
   "public-service",
 ]
 
+/** Icon keys per industry panel item (same order as locale copy arrays). */
+const industryItemIcons = {
+  "food-beverage": {
+    challenges: ["cost", "workforce", "speed", "experience"],
+    puduHelp: ["delivery", "service", "cleaning"],
+    results: ["efficiency", "cost", "experience", "productivity"],
+  },
+  retail: {
+    challenges: ["speed", "experience", "guidance", "workforce"],
+    puduHelp: ["guidance", "delivery", "service", "cleaning"],
+    results: ["experience", "efficiency", "workforce"],
+  },
+  hospitality: {
+    challenges: ["experience", "delivery", "speed", "efficiency"],
+    puduHelp: ["delivery", "guidance", "automation", "cleaning"],
+    results: ["experience", "efficiency", "service"],
+  },
+  "industrial-logistics": {
+    challenges: ["transport", "safety", "efficiency", "warehouse"],
+    puduHelp: ["transport", "production", "warehouse", "automation"],
+    results: ["automation", "productivity", "safety"],
+  },
+  healthcare: {
+    challenges: ["workforce", "transport", "sanitization", "uptime"],
+    puduHelp: ["samples", "medicine", "delivery", "sanitization"],
+    results: ["service", "efficiency", "safety"],
+  },
+  transportation: {
+    challenges: [],
+    puduHelp: ["guidance", "delivery", "service", "cleaning"],
+    results: [],
+  },
+  "entertainment-sports": {
+    challenges: [],
+    puduHelp: ["service", "guidance", "events", "transport"],
+    results: [],
+  },
+  "real-estate": {
+    challenges: [],
+    puduHelp: ["service", "building", "cleaning", "delivery"],
+    results: [],
+  },
+  education: {
+    challenges: [],
+    puduHelp: ["guidance", "transport", "education", "events"],
+    results: [],
+  },
+  "public-service": {
+    challenges: [],
+    puduHelp: ["service", "guidance", "transport", "maintenance"],
+    results: [],
+  },
+}
+
 const hubCopy = {
   en: {
     hero: {
@@ -387,19 +441,35 @@ const industriesCopy = {
 
 function buildHubSummary(items, locale) {
   if (!items.length) return ""
-  const joined = items.slice(0, 3).join(locale === "ar" ? " · " : " · ")
-  return joined
+  return items.slice(0, 3).join(locale === "ar" ? " · " : " · ")
 }
 
-function buildImpactStats(results) {
-  return results.map((label) => ({
-    icon: "service",
+function buildPanelItems(labels, icons = []) {
+  return labels.map((label, index) => ({
+    icon: icons[index] ?? "service",
     label,
-    value: "✓",
   }))
 }
 
-function buildUseCase(industry, headings, locale) {
+function buildImpactPanels(slug, copy, headings) {
+  const icons = industryItemIcons[slug] ?? {}
+  return {
+    challenges: {
+      heading: headings.challenges,
+      items: buildPanelItems(copy.challenges ?? [], icons.challenges),
+    },
+    puduHelp: {
+      heading: headings.puduHelp,
+      items: buildPanelItems(copy.puduHelp ?? [], icons.puduHelp),
+    },
+    results: {
+      heading: headings.results,
+      items: buildPanelItems(copy.results ?? [], icons.results),
+    },
+  }
+}
+
+function buildUseCase(industry, headings) {
   const existingUseCase = industry.useCases?.[0]
   const slide =
     existingUseCase?.slides?.[0] ??
@@ -415,44 +485,36 @@ function buildUseCase(industry, headings, locale) {
     return industry.useCases
   }
 
-  const useCase = {
-    aboutTitle: industry.title,
-    slides: [slide],
-    challenges: {
-      heading: headings.challenges,
-      items: industry.challenges ?? [],
+  return [
+    {
+      aboutTitle: industry.title,
+      slides: [slide],
+      challenges: {
+        heading: headings.challenges,
+        items: [],
+      },
+      whyChoose: {
+        heading: headings.puduHelp,
+        items: [],
+      },
+      solutionsTitle: headings.puduHelp,
+      solutions: [],
+      slideKeys: existingUseCase?.slideKeys?.slice(0, 1) ?? ["bellabot"],
+      solutionKeys: [],
     },
-    whyChoose: {
-      heading: headings.puduHelp,
-      items: industry.puduHelp ?? [],
-    },
-    solutionsTitle: headings.puduHelp,
-    solutions: [],
-    slideKeys: existingUseCase?.slideKeys?.slice(0, 1) ?? ["bellabot"],
-    solutionKeys: [],
-  }
-
-  return [useCase]
+  ]
 }
 
-function applyIndustryPatch(existing, copy, headings, locale) {
+function applyIndustryPatch(existing, slug, copy, headings, locale) {
   const next = { ...existing }
   next.title = copy.title
   next.shortTitle = copy.shortTitle
   next.headline = copy.title
-  next.summary = buildHubSummary(copy.puduHelp, locale)
-  next.impactTitle = headings.results
-  next.impactStats = buildImpactStats(copy.results)
-
-  const patched = {
-    ...next,
-    challenges: copy.challenges,
-    puduHelp: copy.puduHelp,
-    results: copy.results,
-  }
-
-  next.useCases = buildUseCase(patched, headings, locale)
-
+  next.summary = buildHubSummary(copy.puduHelp ?? [], locale)
+  next.impactPanels = buildImpactPanels(slug, copy, headings)
+  delete next.impactTitle
+  delete next.impactStats
+  next.useCases = buildUseCase(next, headings)
   return next
 }
 
@@ -468,7 +530,7 @@ function applyInnovationPatch(innovation, locale) {
     const existing = industries[slug]
     const copy = copyBySlug[slug]
     if (!existing || !copy) continue
-    industries[slug] = applyIndustryPatch(existing, copy, hub.panelHeadings, locale)
+    industries[slug] = applyIndustryPatch(existing, slug, copy, hub.panelHeadings, locale)
   }
   next.industries = industries
 
@@ -479,5 +541,6 @@ module.exports = {
   INDUSTRY_SLUGS,
   hubCopy,
   industriesCopy,
+  industryItemIcons,
   applyInnovationPatch,
 }

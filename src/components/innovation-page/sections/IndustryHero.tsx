@@ -24,7 +24,7 @@ export default function IndustryHero({ slug }: IndustryHeroProps) {
   const heroImage = getIndustryImageUrl(t, slug)
 
   return (
-    <section className="relative min-h-[70vh] overflow-hidden">
+    <section className="relative min-h-[100vh] overflow-hidden">
       {heroImage ? (
         <RemoteMediaImage
           src={heroImage}
@@ -32,7 +32,7 @@ export default function IndustryHero({ slug }: IndustryHeroProps) {
           fill
           priority
           className="object-cover"
-          sizes="100vw"
+          sizes="100vw 100vh"
         />
       ) : (
         <div className="absolute inset-0 bg-[oklch(0.2_0.01_260)]" aria-hidden />

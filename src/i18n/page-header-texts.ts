@@ -58,7 +58,6 @@ export function innovationIndustryPageHeaderTexts(d: LocaleDictionary): PageHead
   return {
     main: c.main,
     impact: d.innovation.impactNavLabel,
-    robots: d.innovation.robotsTitle,
     "other-industries": d.innovation.otherIndustriesTitle,
     contactUs: c.contactUs,
   }

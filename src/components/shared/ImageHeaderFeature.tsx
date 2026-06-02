@@ -38,21 +38,20 @@ export default function ImageHeaderFeature({
       </motion.header>
 
       <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportConfig}
-        variants={fadeInUp}
-        className="relative w-full max-w-[64rem]"
-      >
-        <Image
-          src={imageUrl}
-          alt={imageAlt}
-          width={1280}
-          height={720}
-          className="h-auto w-full object-contain"
-          sizes="(max-width: 768px) 100vw, 1024px"
-        />
-      </motion.div>
+  initial="hidden"
+  whileInView="visible"
+  viewport={viewportConfig}
+  variants={fadeInUp}
+  className="relative w-screen"
+>
+  <Image
+    src={imageUrl}
+    alt={imageAlt}
+    width={2000}
+    height={720}
+    className="w-full h-auto object-cover"
+  />
+</motion.div>
     </article>
   )
 }

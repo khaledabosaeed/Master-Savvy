@@ -1,7 +1,6 @@
 "use client"
 
 import IndustryHero from "@/components/innovation-page/sections/IndustryHero"
-// import IndustryRobots from "@/components/innovation-page/sections/IndustryRobots"
 import IndustryImpactStats from "@/components/innovation-page/sections/IndustryImpactStats"
 import IndustryScenarioCoverage from "@/components/innovation-page/sections/IndustryScenarioCoverage"
 import IndustryUseCaseSection from "@/components/innovation-page/sections/IndustryUseCaseSection"
@@ -38,7 +37,6 @@ export default function IndustryDetailPage({ industry }: IndustryDetailPageProps
       ) : (
         <>
         </>
-        // <IndustryRobots slug={industry.slug} />
       )}
 
       <IndustriesSlider currentSlug={industry.slug} />

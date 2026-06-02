@@ -6,16 +6,82 @@ import { useTranslation } from "react-i18next"
 import FormattedText from "@/components/shared/FormattedText"
 import { getImpactStatIcon } from "@/components/innovation-page/data/impact-stat-icons"
 import type { IndustrySlug } from "@/components/innovation-page/data/industries"
-import { fastStagger, sectionSlideUp, staggerItem, viewportConfig } from "@/lib/animations"
+import { fastStagger, staggerItem, viewportConfig } from "@/lib/animations"
 
 interface IndustryImpactStatsProps {
   slug: IndustrySlug
 }
 
-interface ImpactStat {
+interface ImpactPanelItem {
   icon: string
   label: string
-  value: string
+}
+
+interface ImpactPanel {
+  heading: string
+  items: ImpactPanelItem[]
+}
+
+interface ImpactPanels {
+  challenges?: ImpactPanel
+  puduHelp?: ImpactPanel
+  results?: ImpactPanel
+}
+
+type PanelAccent = "challenge" | "solution" | "result"
+
+function ImpactPanelBlock({
+  panel,
+  accent,
+  isRTL,
+}: {
+  panel: ImpactPanel
+  accent: PanelAccent
+  isRTL: boolean
+}) {
+  if (!panel.items?.length) {
+    return null
+  }
+
+  const accentClass =
+    accent === "challenge"
+      ? "border-t-[3px] border-t-[oklch(0.68_0.17_55)]"
+      : accent === "solution"
+        ? "border-t-[3px] border-t-[oklch(0.52_0.12_264)]"
+        : "border-t-[3px] border-t-[oklch(0.58_0.14_155)]"
+
+  return (
+    <motion.article
+      variants={staggerItem}
+      className={`flex flex-col rounded-[0.875rem] bg-white p-[clamp(1.25rem,2.5vw,1.75rem)] shadow-[0_4px_24px_-8px_oklch(0.2_0.02_260/0.08)] ${accentClass} ${isRTL ? "text-right" : "text-left"}`}
+    >
+      <h2 className="text-[clamp(1rem,1.8vw,1.125rem)] font-bold leading-[1.25] text-[oklch(0.18_0.01_260)]">
+        <FormattedText text={panel.heading} />
+      </h2>
+      <ul className="mt-[clamp(0.875rem,1.75vw,1.125rem)] space-y-[0.75rem]">
+        {panel.items.map((item, index) => {
+          const Icon = getImpactStatIcon(item.icon)
+
+          return (
+            <li
+              key={index}
+              className={`flex items-start gap-[0.75rem] ${isRTL ? "flex-row-reverse" : ""}`}
+            >
+              <span
+                className="mt-[0.125rem] flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[oklch(0.96_0.006_260)] text-[oklch(0.38_0.12_264)]"
+                aria-hidden
+              >
+                <Icon className="h-4 w-4" strokeWidth={1.75} />
+              </span>
+              <span className="min-w-0 flex-1 pt-[0.1875rem] text-[clamp(0.8125rem,1.4vw,0.9375rem)] leading-[1.55] text-[oklch(0.42_0.02_260)]">
+                <FormattedText text={item.label} />
+              </span>
+            </li>
+          )
+        })}
+      </ul>
+    </motion.article>
+  )
 }
 
 export default function IndustryImpactStats({ slug }: IndustryImpactStatsProps) {
@@ -23,11 +89,34 @@ export default function IndustryImpactStats({ slug }: IndustryImpactStatsProps) 
   const { t } = useTranslation()
   const isRTL = language === "ar"
   const baseKey = `innovation.industries.${slug}`
-  const impactStats = t(`${baseKey}.impactStats`, { returnObjects: true }) as ImpactStat[]
+  const impactPanels = t(`${baseKey}.impactPanels`, { returnObjects: true }) as ImpactPanels
 
-  if (!Array.isArray(impactStats) || impactStats.length === 0) {
+  const panels = [
+    impactPanels?.challenges?.items?.length
+      ? { key: "challenges", panel: impactPanels.challenges, accent: "challenge" as const }
+      : null,
+    impactPanels?.puduHelp?.items?.length
+      ? { key: "puduHelp", panel: impactPanels.puduHelp, accent: "solution" as const }
+      : null,
+    impactPanels?.results?.items?.length
+      ? { key: "results", panel: impactPanels.results, accent: "result" as const }
+      : null,
+  ].filter(Boolean) as {
+    key: string
+    panel: ImpactPanel
+    accent: PanelAccent
+  }[]
+
+  if (panels.length === 0) {
     return null
   }
+
+  const gridClass =
+    panels.length === 1
+      ? "mx-auto max-w-[36rem]"
+      : panels.length === 2
+        ? "grid grid-cols-1 gap-[clamp(1rem,2vw,1.25rem)] md:grid-cols-2"
+        : "grid grid-cols-1 gap-[clamp(1rem,2vw,1.25rem)] lg:grid-cols-3"
 
   return (
     <section
@@ -35,60 +124,23 @@ export default function IndustryImpactStats({ slug }: IndustryImpactStatsProps) 
       id="impact"
     >
       <div className="mx-auto w-full max-w-[80rem] px-[clamp(1rem,3vw,2.5rem)]">
-        <motion.header
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportConfig}
-          variants={sectionSlideUp}
-          className="mb-[clamp(2rem,4vw,3.25rem)] text-center"
-        >
-          <h2 className="text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold leading-[1.15] tracking-[-0.02em] text-[oklch(0.18_0.01_260)]">
-            <FormattedText text={t(`${baseKey}.impactTitle`)} />
-          </h2>
-        </motion.header>
-
         <motion.div
-          className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,11rem),1fr))] gap-[clamp(0.75rem,1.5vw,1rem)]"
+          className={gridClass}
           dir={isRTL ? "rtl" : "ltr"}
           initial="hidden"
           whileInView="visible"
           viewport={viewportConfig}
           variants={fastStagger}
         >
-          {impactStats.map((stat, index) => {
-            const Icon = getImpactStatIcon(stat.icon)
-
-            return (
-              <motion.article
-                key={index}
-                variants={staggerItem}
-                className="flex min-h-[clamp(10rem,22vw,13rem)] flex-col items-center justify-center gap-[clamp(0.75rem,1.5vw,1rem)] rounded-[0.875rem] border border-[oklch(0.92_0.005_260)] bg-white px-[clamp(1rem,2vw,1.5rem)] py-[clamp(1.25rem,2.5vw,1.75rem)] text-center shadow-[0_4px_24px_-8px_oklch(0.2_0.02_260/0.08)]"
-              >
-                <Icon
-                  className="h-[clamp(2rem,4vw,2.5rem)] w-[clamp(2rem,4vw,2.5rem)] shrink-0 text-[oklch(0.18_0.01_260)]"
-                  strokeWidth={1.5}
-                  aria-hidden
-                />
-                <p className="text-[clamp(0.8125rem,1.4vw,0.9375rem)] leading-[1.5] text-[oklch(0.5_0.015_260)]">
-                  <FormattedText text={stat.label} />
-                </p>
-                <p className="text-[clamp(1.5rem,3vw,2rem)] font-bold leading-none tracking-[-0.02em] text-[oklch(0.52_0.12_264)]">
-                  <FormattedText text={stat.value} />
-                </p>
-              </motion.article>
-            )
-          })}
+          {panels.map(({ key, panel, accent }) => (
+            <ImpactPanelBlock
+              key={key}
+              panel={panel}
+              accent={accent}
+              isRTL={isRTL}
+            />
+          ))}
         </motion.div>
-
-        <motion.p
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportConfig}
-          variants={sectionSlideUp}
-          className={`mt-[clamp(1.5rem,3vw,2rem)] text-[0.75rem] leading-[1.5] text-[oklch(0.48_0.02_260)] ${isRTL ? "text-left" : "text-right"}`}
-        >
-          <FormattedText text={t("innovation.impactFootnote")} />
-        </motion.p>
       </div>
     </section>
   )

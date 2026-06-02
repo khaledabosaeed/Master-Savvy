@@ -34,7 +34,6 @@ const TOP_LEVEL_KEYS = new Set([
   "exploreIndustry",
   "backToIndustries",
   "impactNavLabel",
-  "impactFootnote",
   "otherIndustriesTitle",
   "industries",
 ])
@@ -48,13 +47,13 @@ const INDUSTRY_KEYS = new Set([
   "summary",
   "imageAlt",
   "imageUrl",
-  "impactTitle",
-  "impactStats",
+  "impactPanels",
   "scenarios",
   "useCases",
 ])
 
-const IMPACT_STAT_KEYS = new Set(["icon", "label", "value"])
+const IMPACT_PANEL_KEYS = new Set(["challenges", "puduHelp", "results"])
+const IMPACT_PANEL_ITEM_KEYS = new Set(["icon", "label"])
 const SCENARIO_KEYS = new Set(["title", "subtitle", "imageAlt", "imageUrl"])
 const USE_CASE_KEYS = new Set([
   "aboutTitle",
@@ -111,6 +110,27 @@ function pruneArrayItems(items, allowedKeys, pruneObject) {
   })
 }
 
+function pruneImpactPanel(panel) {
+  if (!isPlainObject(panel)) return panel
+  const next = pruneObjectByAllowedKeys(panel, PANEL_KEYS)
+  if (Array.isArray(next.items)) {
+    next.items = pruneArrayItems(next.items, IMPACT_PANEL_ITEM_KEYS, (obj, allowed) =>
+      pruneObjectByAllowedKeys(obj, allowed)
+    )
+  }
+  return next
+}
+
+function pruneImpactPanels(impactPanels) {
+  if (!isPlainObject(impactPanels)) return impactPanels
+  const next = {}
+  for (const key of IMPACT_PANEL_KEYS) {
+    if (!(key in impactPanels)) continue
+    next[key] = pruneImpactPanel(impactPanels[key])
+  }
+  return next
+}
+
 function pruneUseCase(useCase) {
   if (!isPlainObject(useCase)) return useCase
   const next = {}
@@ -152,10 +172,8 @@ function pruneIndustry(industry) {
   for (const key of INDUSTRY_KEYS) {
     if (!(key in industry)) continue
     const value = industry[key]
-    if (key === "impactStats") {
-      next.impactStats = pruneArrayItems(value, IMPACT_STAT_KEYS, (obj, allowed) =>
-        pruneObjectByAllowedKeys(obj, allowed)
-      )
+    if (key === "impactPanels") {
+      next.impactPanels = pruneImpactPanels(value)
     } else if (key === "scenarios") {
       next.scenarios = pruneArrayItems(value, SCENARIO_KEYS, (obj, allowed) =>
         pruneObjectByAllowedKeys(obj, allowed)
