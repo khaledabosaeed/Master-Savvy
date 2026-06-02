@@ -10,7 +10,9 @@
     "seed:translations": "node src/script/seed-translations.cjs",
     "merge:translations": "node src/script/merge-missing-locales-into-supabase.cjs",
     "merge:innovation": "node src/script/merge-missing-locales-into-supabase.cjs --section=innovation",
-    "merge:innovation-media": "node src/script/merge-innovation-media-into-supabase.cjs"
+    "merge:innovation-media": "node src/script/merge-innovation-media-into-supabase.cjs",
+    "update:innovation-content": "node src/script/update-innovation-industry-content.cjs",
+    "prune:innovation-keys": "node src/script/prune-unused-innovation-keys.cjs"
   },
   "dependencies": {
     "@next/third-parties": "^16.1.0",

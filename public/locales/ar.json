@@ -185,17 +185,12 @@
   },
   "innovation": {
     "hero": {
-      "eyebrow": "حلول روبوتات Pudu",
       "title": "حلول القطاعات",
       "subtitle": "نُحدث ثورة في عشرة قطاعات رئيسية بحلول روبوتية ذكية.",
-      "exploreCta": "استكشف الحلول",
-      "primaryCta": "استكشف القطاعات",
       "scrollHint": "انتقل إلى القطاعات",
       "videoUrl": "https://cdn.savvyworld.ai/master/PUDU_Industry_Solutions_29dd55ee9d.mp4"
     },
     "industriesNavLabel": "القطاعات",
-    "industriesSectionTitle": "الروبوتات حسب القطاع",
-    "industriesSectionSubtitle": "حلول Pudu محكومة وموجهة بالأهداف، مصممة للقطاعات التي يحقق فيها الأتمتة أثرًا تشغيليًا قابلًا للقياس.",
     "exploreIndustry": "اعرف المزيد",
     "backToIndustries": "جميع القطاعات",
     "impactNavLabel": "الأثر",
@@ -211,12 +206,8 @@
         "headline": "خدمة أسرع عبر قاعات الطعام والمطابخ وردهات الضيوف.",
         "summary": "في ظل تحديات قطاع الأغذية والم beverages اليوم، حيث ترتفع تكاليف العمالة ودوران المو staff ويتباطأ كفاءة الخدمة وتشتد المنافسة، تعزز روبوتات PUDU الكفاءة التشغيلية والربحية في توصيل الطعام وإرجاع الأطباق والتنظيف واستقبال الضيوف.",
         "imageAlt": "مطعم مع روبوت خدمة Pudu",
+        "imageUrl": "https://cdn.savvyworld.ai/master/Food_and_Beverage_ecca2bbd37.webp",
         "impactTitle": "PUDU تعزز تطوير قطاع الأغذية والمشروبات",
-        "highlights": [
-          "توصيل الطعام والم beverages إلى الطاولات",
-          "أتمتة إرجاع الأطباق",
-          "إرشاد الضيوف في الردهة والاستقبال"
-        ],
         "impactStats": [
           {
             "icon": "efficiency",
@@ -283,26 +274,26 @@
               {
                 "name": "HolaBot",
                 "imageAlt": "HolaBot روبوت خدمة مطاعم",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "تفاعل أمامي مع توصيل أطباق موثوق.",
                   "نقل متعدد الصواني لخدمة الطاولات.",
                   "مصمم لمسارات مطاعم عالية التكرار."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "BellaBot",
                 "imageAlt": "BellaBot روبوت توصيل فاخر",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "توصيل فاخر للمطاعم والضيافة.",
                   "نقل صواني مستقر مع ملاحة سلسة.",
                   "م ideal لحلقات خدمة الطاولات في الذروة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -349,26 +340,26 @@
               {
                 "name": "HolaBot",
                 "imageAlt": "HolaBot في مسار إرجاع أطباق",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "أتمتة موثوقة لإرجاع الأطباق.",
                   "حلقات كف backend متكررة بكفاءة.",
                   "يقلل مسافة مشي المو staff حتى 40%."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "KettyBot",
                 "imageAlt": "KettyBot في ردهة مطعم",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "روبوت توصيل وتسويق بشاشة مدمجة.",
                   "إرشاد الضيوف ومحتوى ترويجي عند المدخل.",
                   "دور مزدوج: دعم الخدمة والت engagement مع العلامة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -381,7 +372,6 @@
             ]
           }
         ],
-        "imageUrl": "https://cdn.savvyworld.ai/master/Food_and_Beverage_ecca2bbd37.webp",
         "recommendedRobots": [
           "holabot",
           "bellabot",
@@ -394,12 +384,8 @@
         "headline": "حوّل كل ممر إلى مسار خدمة متجاوب.",
         "summary": "روبوتات Pudu ترشد المتسوقين وتسلّم البضائع إلى نقاط الدفع وتحافظ على حركة مناطق التجزئة المزدحمة دون ضغط إضافي على المو staff في أوقات الذروة.",
         "imageAlt": "متجر تجزئة حديث",
+        "imageUrl": "https://cdn.savvyworld.ai/master/_a9690a9d5d.webp",
         "impactTitle": "PUDU تعزز تطوير قطاع التجزئة",
-        "highlights": [
-          "توصيل المنتجات إلى غرف القياس ونقاط الخدمة",
-          "جولات ترويجية تجذب الزوار إلى مناطق الحملات",
-          "دعم إعادة التخزين بعد ساعات العمل في المتاجر الكبيرة"
-        ],
         "impactStats": [
           {
             "icon": "efficiency",
@@ -466,26 +452,26 @@
               {
                 "name": "BellaBot",
                 "imageAlt": "BellaBot روبوت تجزئة",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "توصيل منتجات مستقر عبر مناطق المتجر.",
                   "ملاحة سلسة في الممرات المزدحمة.",
                   "حلقات موثوقة من المخزن إلى نقاط الخدمة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "FlashBot",
                 "imageAlt": "FlashBot روبوت توصيل سريع",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "مسارات توصيل داخلية عالية التكرار.",
                   "تصميم compact للممرات الضيقة.",
                   "توصيل داخل المتجر أسرع 2x."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -532,26 +518,26 @@
               {
                 "name": "KettyBot",
                 "imageAlt": "KettyBot روبوت ترويج",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "شاشة مدمجة للحملات ومعلومات المنتجات.",
                   "تغطية ترويجية 24/7 على الأرضية.",
                   "يرشد المتسوقين إلى مناطق المنتجات المميزة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "BellaBot",
                 "imageAlt": "BellaBot يدعم عمليات التجزئة",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "توصيل مرن لدعم إعادة التخزين.",
                   "تشغيل موثوق في المتاجر الكبيرة.",
                   "يكمل سير عمل الجولات الترويجية."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -564,7 +550,6 @@
             ]
           }
         ],
-        "imageUrl": "https://cdn.savvyworld.ai/master/_a9690a9d5d.webp",
         "recommendedRobots": [
           "bellabot",
           "kettybot",
@@ -577,12 +562,8 @@
         "headline": "خدمة ضيوف تصل في الوقت المناسب، في كل مرة.",
         "summary": "من التوصيل إلى الغرف إلى المساعدة في الردهة، روبوتات Pudu تساعد الفنادق والمنتجعات على الحفاظ على تجربة ضيوف مميزة مع تخفيف عبء المسارات المتكررة على المو staff.",
         "imageAlt": "ردهة فندق فاخرة",
+        "imageUrl": "https://cdn.savvyworld.ai/master/Hospitality_e4c88c98ae.webp",
         "impactTitle": "PUDU تعزز تطوير قطاع الضيافة",
-        "highlights": [
-          "توصيل خدمة الغرف والمرافق",
-          "إرشاد في الردهة ودعم المعلومات",
-          "لوجستيات المآدب والفعاليات داخل المواقع الكبيرة"
-        ],
         "impactStats": [
           {
             "icon": "delivery",
@@ -649,26 +630,26 @@
               {
                 "name": "HolaBot",
                 "imageAlt": "HolaBot روبوت خدمة غرف",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "توصيل موثوق لخدمة الغرف والمرافق.",
                   "حضور أمامي مع ملاحة سلسة.",
                   "مصمم لممرات الفنادق."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "BellaBot",
                 "imageAlt": "BellaBot روبوت فندق فاخر",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "تجربة توصيل فاخرة للمسارات المو facing للضيوف.",
                   "نقل صواني مستقر لتناول الطعام في الغرف.",
                   "خدمة ثابتة خلال فترات الإشغال الكامل."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -715,26 +696,26 @@
               {
                 "name": "KettyBot",
                 "imageAlt": "KettyBot روبوت ردهة فندق",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "إرشاد الردهة ودعم المعلومات.",
                   "شاشة مدمجة للفعاليات والعروض.",
                   "100% دقة إرشاد للضيوف."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "BellaBot",
                 "imageAlt": "BellaBot روبوت لوجستيات فعاليات",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "نقل موثوق لإعداد المآدب والفعاليات.",
                   "مسارات backend متكررة للفعاليات.",
                   "جودة خدمة أثناء الفعاليات الحية."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -747,7 +728,6 @@
             ]
           }
         ],
-        "imageUrl": "https://cdn.savvyworld.ai/master/Hospitality_e4c88c98ae.webp",
         "recommendedRobots": [
           "bellabot",
           "holabot",
@@ -760,12 +740,8 @@
         "headline": "انقل المواد بأمان عبر تخطيطات المنشآت المعقدة.",
         "summary": "Pudu T300 ومنصات التوصيل تؤتمت النقل المتكرر بين خطوط الإنتاج ومناطق التجهيز ومناطق الإرسال بمسارات محكومة.",
         "imageAlt": "مستودع ولوجستيات",
+        "imageUrl": "https://cdn.savvyworld.ai/master/_373b0fa367.webp",
         "impactTitle": "PUDU تعزز تطوير القطاع الصناعي واللوجستيات",
-        "highlights": [
-          "توصيل المواد بجانب خط الإنتاج",
-          "نقل بين مناطق التجهيز والشحن",
-          "تزويد ليلي دون مخاطر الإرهاق"
-        ],
         "impactStats": [
           {
             "icon": "automation",
@@ -839,26 +815,26 @@
               {
                 "name": "PUDU T300",
                 "imageAlt": "روبوت سحب صناعي PUDU T300",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "حمولة 300 كجم لعربات المواد الثقيلة.",
                   "نشر VSLAM+ دون تعديل على المنشأة.",
                   "سحب مستقل بين الإنتاج ومناطق التجهيز."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "FlashBot Max",
                 "imageAlt": "روبوت توصيل آمن FlashBot Max",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "سعة 20 كجم مع توصيل متعدد الحجرات الآمن.",
                   "مصادقة PIN/NFC للوصول المُتحكم.",
                   "مسارات داخلية سريعة عبر المساحات التجارية الكبيرة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -908,26 +884,26 @@
               {
                 "name": "PUDU T300",
                 "imageAlt": "PUDU T300 يسحب عربة في منطقة cross-dock",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "سحب عالي السعة لنقل المنصات والعربات.",
                   "توجيه متعدد الطوابق عبر مناطق المستودع.",
                   "مصمم للتشغيل المستمر في البيئات الصناعية."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "PuduBot 2",
                 "imageAlt": "PuduBot 2 على مسار نقل cross-dock",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "منصة توصيل مرنة للنقل بحمولات متنوعة.",
                   "بصمة صغيرة للممرات الضيقة بجانب الشحن.",
                   "إعادة نشر سريعة عبر مناطق متعددة في المنشأة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -940,7 +916,6 @@
             ]
           }
         ],
-        "imageUrl": "https://cdn.savvyworld.ai/master/_373b0fa367.webp",
         "recommendedRobots": [
           "t300",
           "flashbot",
@@ -953,12 +928,8 @@
         "headline": "ادعم الفرق السريرية بلوجستيات داخلية موثوقة.",
         "summary": "روبوتات Pudu تتولى جولات الإمداد ودعم نقل العينات ودورات التنظيف حتى يركز الطاقم الطبي على رعاية المرضى.",
         "imageAlt": "ممر مستشفى حديث",
+        "imageUrl": "https://cdn.savvyworld.ai/master/_d8c688b5e6.webp",
         "impactTitle": "PUDU تعزز تطوير قطاع الرعاية الصحية",
-        "highlights": [
-          "توصيل المستلزمات الطبية بين الأقسام",
-          "دعم التعقيم في المناطق عالية اللمس",
-          "إرشاد الزوار في campuses طبية كبيرة"
-        ],
         "impactStats": [
           {
             "icon": "safety",
@@ -1025,26 +996,26 @@
               {
                 "name": "PuduBot 2",
                 "imageAlt": "PuduBot 2 روبوت مستشفى",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "لوجستيات داخلية متنوعة عبر مناطق المستشفى.",
                   "جولات إمداد موثوقة بين الأقسام.",
                   "تصميم compact لممرات سريرية."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "KettyBot",
                 "imageAlt": "KettyBot روبوت منشأة طبية",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "إرشاد الزوار في campuses طبية كبيرة.",
                   "دعم معلوماتي بشاشة مدمجة.",
                   "دور مزدوج: لوجستيات وإرشاد campus."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -1091,26 +1062,26 @@
               {
                 "name": "CC1",
                 "imageAlt": "CC1 روبوت تنظيف بالذكاء الاصطناعي",
+                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "صيانة أرضيات صلبة بالذكاء الاصطناعي.",
                   "م ideal للردهات والممرات والمناطق العامة.",
                   "100% تغطية في المناطق عالية اللمس."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "KettyBot",
                 "imageAlt": "KettyBot روبوت إرشاد زوار",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "إرشاد campus دقيق للزوار.",
                   "شاشة مدمجة لمعلومات الأقسام.",
                   "يقلل طلبات الإرشاد على مكتب الاستقبال."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -1123,7 +1094,6 @@
             ]
           }
         ],
-        "imageUrl": "https://cdn.savvyworld.ai/master/_d8c688b5e6.webp",
         "recommendedRobots": [
           "cc1",
           "kettybot",
@@ -1136,12 +1106,8 @@
         "headline": "حافظ على حركة المسافرين في بيئات النقل المزدحمة.",
         "summary": "المطارات والمحطات ومراكز النقل تستخدم روبوتات Pudu للإرشاد وتوصيل التجزئة ودعم المرافق عبر الممرات الطويلة.",
         "imageAlt": "محطة نقل حديثة",
+        "imageUrl": "https://cdn.savvyworld.ai/master/Transportation_and_Related_Service_ab54fbe5b6.webp",
         "impactTitle": "PUDU تعزز تطوير قطاع النقل",
-        "highlights": [
-          "إرشاد المسافرين عبر المحطات",
-          "توصيل التجزئة والمأكولات على الممرات",
-          "دعم المرافق في فترات السفر الذروة"
-        ],
         "impactStats": [
           {
             "icon": "accuracy",
@@ -1208,26 +1174,26 @@
               {
                 "name": "PuduBot 2",
                 "imageAlt": "PuduBot 2 روبوت إرشاد نقل",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "منصة متنوعة لإرشاد المسافرين.",
                   "ملاحة موثوقة عبر concourses طويلة.",
                   "قابل للتوسع عبر محطات متعددة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "FlashBot",
                 "imageAlt": "FlashBot روبوت concourse",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "مسارات داخلية سريعة للتوصيل العاجل.",
                   "تصميم compact لبيئات النقل المزدحمة.",
                   "يدعم عمليات التجزئة والمأكولات."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -1274,26 +1240,26 @@
               {
                 "name": "FlashBot",
                 "imageAlt": "FlashBot روبوت توصيل concourse",
+                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "توصيل عالي التكرار عبر concourses طويلة.",
                   "حجرات آمنة لتسليم التجزئة.",
                   "مسارات توصيل أسرع 2x."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "PUDU T300",
                 "imageAlt": "PUDU T300 روبوت لوجستيات محطة",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "حمولة 300 كجم لنقل المرافق والبضائع.",
                   "سحب مستقل بين مناطق المحطة.",
                   "مصمم للتشغيل المستمر في الذروة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -1306,7 +1272,6 @@
             ]
           }
         ],
-        "imageUrl": "https://cdn.savvyworld.ai/master/Transportation_and_Related_Service_ab54fbe5b6.webp",
         "recommendedRobots": [
           "flashbot",
           "pudubot2",
@@ -1319,12 +1284,8 @@
         "headline": "وسّع الخدمة عبر venues م built للحشود.",
         "summary": "الملاعب والساحات والمجمعات الترفيهية تستخدم روبوتات Pudu لدعم الم concessions والإرشاد واللوجستيات خلف الكواليس أثناء الفعاليات.",
         "imageAlt": "ملعب رياضي أثناء فعالية",
+        "imageUrl": "https://cdn.savvyworld.ai/master/Entertainment_and_Sports_03db28cf1f.webp",
         "impactTitle": "PUDU تعزز تطوير قطاع الترفيه والرياضة",
-        "highlights": [
-          "مسارات توصيل الم concessions وال merchandise",
-          "دعم مناطق VIP والضيافة",
-          "نقل خلف الكواليس أثناء الفعاليات الحية"
-        ],
         "impactStats": [
           {
             "icon": "delivery",
@@ -1391,26 +1352,26 @@
               {
                 "name": "HolaBot",
                 "imageAlt": "HolaBot روبوت concessions",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "توصيل أمامي أثناء الفعاليات الحية.",
                   "نقل متعدد الصواني لطلبات ال concessions.",
                   "مصمم لبيئات venues عالية الحركة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "BellaBot",
                 "imageAlt": "BellaBot روبوت venue فاخر",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "توصيل premium لمقاعد VIP.",
                   "نقل مستقر للطعام وال merchandise.",
                   "خدمة in-seat أسرع 2x أثناء الفعاليات."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -1457,26 +1418,26 @@
               {
                 "name": "KettyBot",
                 "imageAlt": "KettyBot روبوت VIP",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "engagement بشاشة في مناطق fans وVIP.",
                   "محتوى ترويجي وإرشاد ضيوف.",
                   "100% تغطية أثناء الفعاليات الحية."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "HolaBot",
                 "imageAlt": "HolaBot روبوت backend venue",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "حلقات نقل backend موثوقة.",
                   "كفاءة 50%+ للوجستيات.",
                   "مسارات متكررة أثناء الإعداد والتفكيك."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -1489,7 +1450,6 @@
             ]
           }
         ],
-        "imageUrl": "https://cdn.savvyworld.ai/master/Entertainment_and_Sports_03db28cf1f.webp",
         "recommendedRobots": [
           "holabot",
           "bellabot",
@@ -1502,12 +1462,8 @@
         "headline": "شغّل مبانٍ أذكى بخدمة داخلية مؤتمتة.",
         "summary": "مديرو العقارات ينشرون روبوتات Pudu لخدمات المستأجرين وجولات المرافق والتنظيف في الأبراج التجارية والم mixed-use.",
         "imageAlt": "مبنى تجاري حديث",
+        "imageUrl": "https://cdn.savvyworld.ai/master/Residential_and_Office_Buildings_81b4141216.webp",
         "impactTitle": "PUDU تعزز تطوير قطاع العقارات",
-        "highlights": [
-          "توصيل مرافق ومراسلات للمستأجرين",
-          "جولات عقارية وإرشاد زوار",
-          "تنظيف وصيانة المناطق المشتركة"
-        ],
         "impactStats": [
           {
             "icon": "delivery",
@@ -1574,26 +1530,26 @@
               {
                 "name": "BellaBot",
                 "imageAlt": "BellaBot روبوت توصيل مرافق",
+                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "توصيل موثوق للمرافق والبريد.",
                   "ملاحة سلسة في الردهات والممرات.",
                   "تجربة خدمة فاخرة للعقارات التجارية."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "KettyBot",
                 "imageAlt": "KettyBot روبوت خدمات عقارية",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "حضور في الردهة بشاشة معلومات.",
                   "يدعم خدمات المستأجرين وإرشاد الزوار.",
                   "دور مرن في الت developments mixed-use."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -1640,26 +1596,26 @@
               {
                 "name": "KettyBot",
                 "imageAlt": "KettyBot روبوت جولة عقارية",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "جولات موجهة بشاشة مدمجة.",
                   "100% دقة إرشاد للزوار.",
                   "يقلل وقت المو staff في الجولات المتكررة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "CC1",
                 "imageAlt": "CC1 روبوت تنظيف مباني",
+                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "صيانة أرضيات بالذكاء الاصطناعي للردهات.",
                   "100% تغطية للمناطق المشتركة.",
                   "دورات مجدولة إلى جانب خدمات المستأجرين."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -1672,7 +1628,6 @@
             ]
           }
         ],
-        "imageUrl": "https://cdn.savvyworld.ai/master/Residential_and_Office_Buildings_81b4141216.webp",
         "recommendedRobots": [
           "cc1",
           "kettybot",
@@ -1685,12 +1640,8 @@
         "headline": "ادمج الروبوتات العملية في عمليات الح campus.",
         "summary": "الجامعات والمدارس تستخدم روبوتات Pudu للوجستيات المكتبية والإرشاد ودعم المرافق عبر sites تعليمية كبيرة.",
         "imageAlt": "campus جامعي",
+        "imageUrl": "https://cdn.savvyworld.ai/master/_50cce29ac7.webp",
         "impactTitle": "PUDU تعزز تطوير قطاع التعليم",
-        "highlights": [
-          "توصيل المكتبة ومراكز الموارد",
-          "إرشاد campus للزوار والفعاليات",
-          "دعم المرافق عبر مبانٍ متعددة"
-        ],
         "impactStats": [
           {
             "icon": "accuracy",
@@ -1757,26 +1708,26 @@
               {
                 "name": "PuduBot 2",
                 "imageAlt": "PuduBot 2 روبوت campus",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "توصيل متنوع عبر مباني campus.",
                   "لوجستيات موثوقة لمراكز الموارد.",
                   "50% أقل مشيًا يدويًا للمو staff."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "HolaBot",
                 "imageAlt": "HolaBot روبوت مكتبة",
+                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "حضور أمامي في بيئات المكتبات.",
                   "توصيل موارد وتفاعل مع الزوار.",
                   "مصمم لتخطيطات المنشآت التعليمية."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -1823,26 +1774,26 @@
               {
                 "name": "KettyBot",
                 "imageAlt": "KettyBot روبوت جولة campus",
+                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "100% دقة في الجولات للزوار.",
                   "شاشة للفعاليات ومعلومات campus.",
                   "إرشاد متحرك في المواقع التعليمية الكبيرة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1535378648346-b14a50899904?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "PuduBot 2",
                 "imageAlt": "PuduBot 2 روبوت عمليات campus",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "دعم مرافق عبر campuses متعددة.",
                   "توصيل مرن للفعاليات والأقسام.",
                   "تشغيل موثوق في أيام الأبواب المفتوحة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -1855,7 +1806,6 @@
             ]
           }
         ],
-        "imageUrl": "https://cdn.savvyworld.ai/master/_50cce29ac7.webp",
         "recommendedRobots": [
           "pudubot2",
           "kettybot",
@@ -1868,12 +1818,8 @@
         "headline": "وسّع قدرة الخدمة العامة بأتمتة محكومة.",
         "summary": "المباني الحكومية والمراكز المدنية والمرافق العامة تستخدم روبوتات Pudu لدعم الزوار واللوجستيات الداخلية وصيانة المرافق.",
         "imageAlt": "مبنى خدمة عامة",
+        "imageUrl": "https://cdn.savvyworld.ai/master/_fa2aeeca28.webp",
         "impactTitle": "PUDU تعزز تطوير قطاع الخدمة العامة",
-        "highlights": [
-          "إرشاد المواطنين في مراكز الخدمة الكبيرة",
-          "نقل داخلي للوثائق والمستلزمات",
-          "تنظيف المرافق في المناطق العامة المزدحمة"
-        ],
         "impactStats": [
           {
             "icon": "accuracy",
@@ -1935,14 +1881,14 @@
               {
                 "name": "PuduBot 2",
                 "imageAlt": "PuduBot 2 روبوت خدمة عامة",
+                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "إرشاد دقيق للمواطنين.",
                   "ملاحة موثوقة في المرافق المدنية.",
                   "يقلل ازدحام مكتب الاستقبال."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -1987,26 +1933,26 @@
               {
                 "name": "PUDU T300",
                 "imageAlt": "PUDU T300 روبوت منشأة حكومية",
+                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "نقل أحloads للمستندات والإمدادات.",
                   "سحب مستقل بين الأقسام.",
                   "كفاءة لوجستيات داخلية 2x."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1565514020169-026cb4c4a2de?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               },
               {
                 "name": "CC1",
                 "imageAlt": "CC1 روبوت تنظيف مرافق عامة",
+                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
                 "features": [
                   "تنظيف بالذكاء الاصطناعي للمناطق المزدحمة.",
                   "100% تغطية في الردهات والممرات.",
                   "دورات مجدولة حسب ساعات مركز الخدمة."
                 ],
                 "learnMoreLabel": "اعرف المزيد",
-                "href": "/{lang}/contact",
-                "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+                "href": "/{lang}/contact"
               }
             ],
             "slideKeys": [
@@ -2019,7 +1965,6 @@
             ]
           }
         ],
-        "imageUrl": "https://cdn.savvyworld.ai/master/_fa2aeeca28.webp",
         "recommendedRobots": [
           "cc1",
           "pudubot2",
@@ -2063,35 +2008,6 @@
         "description": "منصة توصيل متعددة الاستخدامات للوجستيات الداخلية عبر القطاعات.",
         "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
       }
-    },
-    "about": {
-      "title": "ساڤي إنوفيشن برنامج بحث وتطوير يضم روبوت مستر ساڤي مع شاشات تتبع الكاميرا وخرائط AR. نطوّر محتوى ذكيًا بلوحات فورية، وننفّذ تجارب للمنازل الذكية، مع التزام كامل بـ PDPL. نختبر ونحسّن باستمرار وفق الاستخدام الحقيقي.",
-      "description": "تحول Savvy Innovation الأفكار إلى واقع من خلال الذكاء الاصطناعي المتقدم، وحلول الطاقة المستدامة، والروبوتات المتطورة التي تشكل مستقبل التكنولوجيا."
-    },
-    "services": {
-      "title": "ما الخدمات التي نقدمها؟",
-      "service1Title": "عروض التكنولوجيا المستدامة",
-      "service1Description": "حلول تقنية مبتكرة وصديقة للبيئة تعزز الاستدامة والمسؤولية البيئية.",
-      "service2Title": "الأنواع شبيهة بتقنيات عصرية (حجر روبوتا)",
-      "service2Description": "روبوتات شبيهة بالبشر متطورة مصممة لتعزيز الأتمتة والتفاعل بين الإنسان والروبوت.",
-      "service3Title": "حلول السيارات الكهربائية",
-      "service3Description": "تقنيات شاملة للمركبات الكهربائية وبنية تحتية للشحن من أجل النقل المستدام.",
-      "service4Title": "أنظمة الذكاء الذكية",
-      "service4Description": "أنظمة ذكاء اصطناعي متطورة تعمل على تحسين العمليات وتعزيز قدرات اتخاذ القرار.",
-      "service5Title": "التعاون مع المنتدى السعودي للعمل الأخضرللتكنولوجيا",
-      "service5Description": "شراكات استراتيجية تعزز الابتكار في التكنولوجيا الخضراء ومبادرات التنمية المستدامة."
-    },
-    "solutions": {
-      "title": "حلول ساڤي إبتكار",
-      "subtitle": "توطين الابتكار، وتمكين نمو المملكة",
-      "solution1Title": "الروبوتات الصناعية",
-      "solution1Description": "حلول روبوتية متقدمة للإطفاء، والفحص الصناعي، والحراسة الأمنية، مُصممة ضمن أطر تشغيل مُتحكَّم بها ومُحوكَمة وآمنة لضمان السلامة، والامتثال التنظيمي، وسلامة البيانات، وأداء موثوق في البيئات ذات المهام الحرجة.",
-      "solution2Title": "الطاقة الخضراء",
-      "solution2Description": "لول الطاقة الخضراء المتكاملة، من أنظمة الطاقة الشمسية والمباني المستدامة إلى تقنيات الإسمنت الصديق للبيئة، تسهم في خفض استهلاك الطاقة، وتحسين الكفاءة التشغيلية، وتحقيق عوائد طويلة الأمد، وتسريع مسارات الحياد الصفري وخفض الانبعاثات بما يتماشى مع رؤية 2030.",
-      "solution3Title": "مستر ساڤي",
-      "solution3Description": "تطوّر ساڤي روبوتات مُحوكَمة وموجّهة بالأهداف لتحقيق أثر صناعي مستدام. ويُمثّل مستر ساڤي، السفير الروبوتي البشري للمنصة، نموذجًا للذكاء الاصطناعي المسؤول، والأتمتة المُحوكَمة والأخلاقية، والتقنيات الخضراء.",
-      "solution4Title": "المنازل الذكية",
-      "solution4Description": "مدعومة بخوارزميات متقدمة لتوفير الطاقة، تعمل هذه المنصة المتكاملة على تحسين الكفاءة التشغيلية للمجتمعات، وربط السكان والزوار وفرق إدارة المرافق، وتبسيط عمليات الدفع والخدمات، وتمكين أتمتة المنازل الذكية مع إدارة مفاتيح رقمية آمنة وسلسة."
     }
   },
   "media": {

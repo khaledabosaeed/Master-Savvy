@@ -1,7 +1,7 @@
 "use client"
 
 import IndustryHero from "@/components/innovation-page/sections/IndustryHero"
-import IndustryRobots from "@/components/innovation-page/sections/IndustryRobots"
+// import IndustryRobots from "@/components/innovation-page/sections/IndustryRobots"
 import IndustryImpactStats from "@/components/innovation-page/sections/IndustryImpactStats"
 import IndustryScenarioCoverage from "@/components/innovation-page/sections/IndustryScenarioCoverage"
 import IndustryUseCaseSection from "@/components/innovation-page/sections/IndustryUseCaseSection"
@@ -23,6 +23,7 @@ export default function IndustryDetailPage({ industry }: IndustryDetailPageProps
         <IndustryHero slug={industry.slug} />
       </section>
       <IndustryImpactStats slug={industry.slug} />
+      <IndustryScenarioCoverage slug={industry.slug} />
       {hasUseCases ? (
         useCaseEntries.map(({ index, slideKeys, solutionKeys }) => (
           <IndustryUseCaseSection
@@ -36,10 +37,10 @@ export default function IndustryDetailPage({ industry }: IndustryDetailPageProps
         ))
       ) : (
         <>
-          <IndustryScenarioCoverage slug={industry.slug} />
-          <IndustryRobots slug={industry.slug} />
         </>
+        // <IndustryRobots slug={industry.slug} />
       )}
+
       <IndustriesSlider currentSlug={industry.slug} />
     </>
   )
