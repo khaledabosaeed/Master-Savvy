@@ -1,6 +1,5 @@
 import en from "../../public/locales/en.json"
 import ar from "../../public/locales/ar.json"
-import { unstable_cache } from "next/cache"
 import { createClient } from "@supabase/supabase-js"
 import type { AppLanguage } from "./settings"
 
@@ -34,31 +33,29 @@ function mergeDictionary(
   return merged
 }
 
-const getSupabaseDictionary = unstable_cache(
-  async (lang: AppLanguage): Promise<DictionaryValue | null> => {
-    const url = process.env.NEXT_PUBLIC_SUPABASE_URL
-    const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-    if (!url || !key) return null
+async function getSupabaseDictionary(
+  lang: AppLanguage
+): Promise<DictionaryValue | null> {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  if (!url || !key) return null
 
-    const supabase = createClient(url, key, {
-      auth: { persistSession: false, autoRefreshToken: false },
-    })
+  const supabase = createClient(url, key, {
+    auth: { persistSession: false, autoRefreshToken: false },
+  })
 
-    const { data, error } = await supabase
-      .from("translations")
-      .select("content")
-      .eq("locale", lang)
-      .maybeSingle()
+  const { data, error } = await supabase
+    .from("translations")
+    .select("content")
+    .eq("locale", lang)
+    .maybeSingle()
 
-    if (error || !isRecord(data?.content)) {
-      return null
-    }
+  if (error || !isRecord(data?.content)) {
+    return null
+  }
 
-    return data.content
-  },
-  ["translations"],
-  { tags: ["translations"] }
-)
+  return data.content
+}
 
 export async function getDictionary(lang: AppLanguage): Promise<LocaleDictionary> {
   // Supabase is the source of truth when configured; local JSON fills gaps and

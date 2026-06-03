@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "seed:translations": "node src/script/seed-translations.cjs",
+    "seed:industry-use-cases": "node src/script/seed-industry-use-cases.cjs",
     "merge:translations": "node src/script/merge-missing-locales-into-supabase.cjs",
     "merge:innovation": "node src/script/merge-missing-locales-into-supabase.cjs --section=innovation",
     "merge:innovation-media": "node src/script/merge-innovation-media-into-supabase.cjs",

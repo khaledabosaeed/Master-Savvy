@@ -8,6 +8,8 @@ import { getDictionary } from "@/i18n/getDictionary";
 
 type Language = 'en' | 'ar';
 
+export const dynamic = "force-dynamic"
+
 
 
 const expoArabic = localFont({
