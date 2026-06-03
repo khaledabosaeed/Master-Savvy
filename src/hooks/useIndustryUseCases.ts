@@ -14,12 +14,17 @@ export function useIndustryUseCases(slug: IndustrySlug): IndustryUseCaseEntry[] 
   const { t } = useTranslation()
   const key = `innovation.industries.${slug}.useCases`
   const raw = t(key, { returnObjects: true })
+  const list = Array.isArray(raw)
+    ? raw
+    : raw && typeof raw === "object"
+      ? Object.values(raw as Record<string, unknown>)
+      : []
 
-  if (!Array.isArray(raw) || raw.length === 0) {
+  if (list.length === 0) {
     return []
   }
 
-  return raw.map((entry, index) => {
+  return list.map((entry, index) => {
     const useCase = entry as InnovationUseCaseData
     return {
       index,

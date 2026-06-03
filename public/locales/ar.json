@@ -274,28 +274,152 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "الأغذية والمشروبات",
+            "aboutTitle": "خدمة الطاولات والتوصيل",
+            "slideKeys": [
+              "holabot",
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "holabot",
+              "bellabot"
+            ],
             "slides": [
               {
                 "robotName": "HolaBot",
-                "imageAlt": "HolaBot يوصل الأطباق في قاعة مطعم",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "imageAlt": "HolaBot — خدمة الطاولات والتوصيل",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات الأغذية والمشروبات",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "ارتفاع تكاليف التشغيل"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص العمالة"
+                },
+                {
+                  "icon": "speed",
+                  "label": "سرعة الخدمة"
+                },
+                {
+                  "icon": "experience",
+                  "label": "رضا العملاء"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "توصيل الطعام والمشروبات",
+                "استقبال العملاء",
+                "التنظيف الذاتي"
+              ]
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/holabot"
+              },
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "تنظيف الأرضيات",
             "slideKeys": [
-              "holabot"
+              "holabot",
+              "kettybot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "holabot",
+              "kettybot"
+            ],
+            "slides": [
+              {
+                "robotName": "HolaBot",
+                "imageAlt": "HolaBot — تنظيف الأرضيات",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات الأغذية والمشروبات",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "ارتفاع تكاليف التشغيل"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص العمالة"
+                },
+                {
+                  "icon": "speed",
+                  "label": "سرعة الخدمة"
+                },
+                {
+                  "icon": "experience",
+                  "label": "رضا العملاء"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "توصيل الطعام والمشروبات",
+                "استقبال العملاء",
+                "التنظيف الذاتي"
+              ]
+            },
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/holabot"
+              },
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
           }
         ]
       },
@@ -377,57 +501,191 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "التجزئة",
+            "aboutTitle": "التوصيل داخل المتجر",
+            "slideKeys": [
+              "bellabot",
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "bellabot",
+              "flashbot"
+            ],
             "slides": [
               {
                 "robotName": "BellaBot",
-                "imageAlt": "BellaBot يوصل منتجات في متجر",
-                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                "imageAlt": "BellaBot — التوصيل داخل المتجر",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات التجزئة",
+              "items": [
+                {
+                  "icon": "speed",
+                  "label": "إدارة أوقات الذروة"
+                },
+                {
+                  "icon": "experience",
+                  "label": "خدمة العملاء"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "توجيه الزوار"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص الموظفين"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "إرشاد المتسوقين",
+                "توصيل المنتجات",
+                "دعم نقاط البيع",
+                "تنظيف المتاجر"
+              ]
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              },
+              {
+                "name": "FlashBot",
+                "imageAlt": "FlashBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "إرشاد المتسوقين",
             "slideKeys": [
+              "kettybot",
               "bellabot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "kettybot",
+              "bellabot"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — إرشاد المتسوقين",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات التجزئة",
+              "items": [
+                {
+                  "icon": "speed",
+                  "label": "إدارة أوقات الذروة"
+                },
+                {
+                  "icon": "experience",
+                  "label": "خدمة العملاء"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "توجيه الزوار"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص الموظفين"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "إرشاد المتسوقين",
+                "توصيل المنتجات",
+                "دعم نقاط البيع",
+                "تنظيف المتاجر"
+              ]
+            },
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              },
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
           }
         ]
       },
       "hospitality": {
         "title": "الضيافة",
         "shortTitle": "الضيافة",
-        "headline": "الضيافة",
-        "summary": "خدمة الغرف · الإرشاد والاستقبال · التوصيل الذاتي",
+        "headline": "روبوتات PUDU للضيافة",
+        "summary": "ضيافة أذكى · خدمة أسرع · ضيوف أسعد — تساعد روبوتات PUDU الفنادق والمنتجعات على تقديم تجربة ضيوف أكثر كفاءة واستمرارية.",
         "imageAlt": "ردهة فندق فاخرة",
         "imageUrl": "https://cdn.savvyworld.ai/master/Hospitality_e4c88c98ae.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "التحديات",
+            "heading": "تحديات قطاع الضيافة",
             "items": [
               {
                 "icon": "experience",
-                "label": "تجربة الضيف"
-              },
-              {
-                "icon": "delivery",
-                "label": "التوصيل الداخلي"
+                "label": "ارتفاع توقعات الضيوف"
               },
               {
                 "icon": "speed",
-                "label": "الخدمة السريعة"
+                "label": "الحاجة إلى خدمة أسرع وأكثر استمرارية"
               },
               {
-                "icon": "efficiency",
-                "label": "جودة التشغيل"
+                "icon": "workforce",
+                "label": "نقص الكوادر التشغيلية"
+              },
+              {
+                "icon": "events",
+                "label": "إدارة أوقات الذروة"
+              },
+              {
+                "icon": "building",
+                "label": "تشغيل المنشآت متعددة الطوابق"
+              },
+              {
+                "icon": "service",
+                "label": "الحفاظ على جودة الخدمة طوال الوقت"
               }
             ]
           },
@@ -436,36 +694,60 @@
             "items": [
               {
                 "icon": "delivery",
-                "label": "خدمة الغرف"
+                "label": "خدمة الغرف الذكية"
               },
               {
                 "icon": "guidance",
-                "label": "الإرشاد والاستقبال"
+                "label": "استقبال وإرشاد الضيوف"
               },
               {
-                "icon": "automation",
-                "label": "التوصيل الذاتي"
+                "icon": "transport",
+                "label": "دعم العمليات الفندقية"
+              },
+              {
+                "icon": "events",
+                "label": "دعم الفعاليات والمؤتمرات"
               },
               {
                 "icon": "cleaning",
-                "label": "تنظيف المرافق"
+                "label": "التنظيف الذكي"
+              },
+              {
+                "icon": "uptime",
+                "label": "العمل على مدار الساعة"
               }
             ]
           },
           "results": {
-            "heading": "النتائج",
+            "heading": "النتائج المتوقعة",
             "items": [
               {
                 "icon": "experience",
-                "label": "تجربة ضيوف متميزة"
+                "label": "تحسين تجربة الضيوف"
+              },
+              {
+                "icon": "speed",
+                "label": "تسريع الاستجابة للطلبات"
               },
               {
                 "icon": "efficiency",
-                "label": "تشغيل أكثر كفاءة"
+                "label": "رفع كفاءة العمليات"
+              },
+              {
+                "icon": "automation",
+                "label": "تقليل الأعمال المتكررة"
+              },
+              {
+                "icon": "productivity",
+                "label": "زيادة إنتاجية الموظفين"
+              },
+              {
+                "icon": "digitization",
+                "label": "تعزيز صورة المنشأة كوجهة مبتكرة"
               },
               {
                 "icon": "service",
-                "label": "تحسين جودة الخدمة"
+                "label": "تحسين جودة الخدمة بشكل مستمر"
               }
             ]
           }
@@ -473,64 +755,398 @@
         "scenarios": [
           {
             "title": "تغطية متعددة السيناريوهات",
-            "subtitle": "خدمة الغرف · إرشاد الردهة · لوجستيات المآدب والفعاليات",
+            "subtitle": "وصول الضيوف · خدمة الغرف · الطعام · الفعاليات · التنظيف الذاتي",
             "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر فندق",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_aaa66f1fc9.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "الضيافة",
+            "aboutTitle": "وصول الضيوف → الترحيب والإرشاد",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "HolaBot",
-                "imageAlt": "HolaBot يوصل خدمة الغرف في فندق",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — وصول الضيوف → الترحيب والإرشاد",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات قطاع الضيافة",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "ارتفاع توقعات الضيوف"
+                },
+                {
+                  "icon": "speed",
+                  "label": "الحاجة إلى خدمة أسرع وأكثر استمرارية"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص الكوادر التشغيلية"
+                },
+                {
+                  "icon": "events",
+                  "label": "إدارة أوقات الذروة"
+                },
+                {
+                  "icon": "building",
+                  "label": "تشغيل المنشآت متعددة الطوابق"
+                },
+                {
+                  "icon": "service",
+                  "label": "الحفاظ على جودة الخدمة طوال الوقت"
+                }
+              ]
             },
             "whyChoose": {
               "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
+              "items": [
+                "استقبال وإرشاد الضيوف — مساعدة الزوار في الوصول إلى الغرف والمرافق وقاعات الاجتماعات."
+              ]
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "إرشاد الضيوف",
+                  "معلومات الفعاليات",
+                  "التفاعل الرقمي",
+                  "مساعدة الزوار"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "إقامة الضيوف → خدمة الغرف والمستلزمات",
             "slideKeys": [
-              "holabot"
+              "flashbot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — إقامة الضيوف → خدمة الغرف والمستلزمات",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الضيافة",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "ارتفاع توقعات الضيوف"
+                },
+                {
+                  "icon": "speed",
+                  "label": "الحاجة إلى خدمة أسرع وأكثر استمرارية"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص الكوادر التشغيلية"
+                },
+                {
+                  "icon": "events",
+                  "label": "إدارة أوقات الذروة"
+                },
+                {
+                  "icon": "building",
+                  "label": "تشغيل المنشآت متعددة الطوابق"
+                },
+                {
+                  "icon": "service",
+                  "label": "الحفاظ على جودة الخدمة طوال الوقت"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "خدمة الغرف الذكية — توصيل الطعام والمشروبات والمستلزمات إلى الغرف بشكل آمن وفعال."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "توصيل الطلبات وخدمة الغرف",
+                  "التكامل مع المصاعد",
+                  "التنقل بين الطوابق",
+                  "نقل الطعام والمستلزمات بشكل آمن"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "تجربة الطعام → خدمة المأكولات والمشروبات",
+            "slideKeys": [
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "bellabot"
+            ],
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot — تجربة الطعام → خدمة المأكولات والمشروبات",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الضيافة",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "ارتفاع توقعات الضيوف"
+                },
+                {
+                  "icon": "speed",
+                  "label": "الحاجة إلى خدمة أسرع وأكثر استمرارية"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص الكوادر التشغيلية"
+                },
+                {
+                  "icon": "events",
+                  "label": "إدارة أوقات الذروة"
+                },
+                {
+                  "icon": "building",
+                  "label": "تشغيل المنشآت متعددة الطوابق"
+                },
+                {
+                  "icon": "service",
+                  "label": "الحفاظ على جودة الخدمة طوال الوقت"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "توصيل الطعام والمشروبات مع دعم تفاعلي للضيوف داخل المطاعم والصالات."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "تجربة ضيافة تفاعلية",
+                  "توصيل الطعام والمشروبات",
+                  "دعم خدمة الضيوف",
+                  "دعم عمليات المطاعم والصالات"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "الفعاليات والاجتماعات → اللوجستيات ومساعدة الضيوف",
+            "slideKeys": [
+              "bellabot",
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "bellabot",
+              "kettybot"
+            ],
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot — الفعاليات والاجتماعات → اللوجستيات ومساعدة الضيوف",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الضيافة",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "ارتفاع توقعات الضيوف"
+                },
+                {
+                  "icon": "speed",
+                  "label": "الحاجة إلى خدمة أسرع وأكثر استمرارية"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص الكوادر التشغيلية"
+                },
+                {
+                  "icon": "events",
+                  "label": "إدارة أوقات الذروة"
+                },
+                {
+                  "icon": "building",
+                  "label": "تشغيل المنشآت متعددة الطوابق"
+                },
+                {
+                  "icon": "service",
+                  "label": "الحفاظ على جودة الخدمة طوال الوقت"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "دعم الفعاليات والمؤتمرات — المساعدة في الخدمات اللوجستية للمعارض والاجتماعات والمناسبات."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "تجربة ضيافة تفاعلية",
+                  "توصيل الطعام والمشروبات",
+                  "دعم خدمة الضيوف",
+                  "دعم عمليات المطاعم والصالات"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              },
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "إرشاد الضيوف",
+                  "معلومات الفعاليات",
+                  "التفاعل الرقمي",
+                  "مساعدة الزوار"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "عمليات المرافق → التنظيف الذاتي",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — عمليات المرافق → التنظيف الذاتي",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الضيافة",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "ارتفاع توقعات الضيوف"
+                },
+                {
+                  "icon": "speed",
+                  "label": "الحاجة إلى خدمة أسرع وأكثر استمرارية"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص الكوادر التشغيلية"
+                },
+                {
+                  "icon": "events",
+                  "label": "إدارة أوقات الذروة"
+                },
+                {
+                  "icon": "building",
+                  "label": "تشغيل المنشآت متعددة الطوابق"
+                },
+                {
+                  "icon": "service",
+                  "label": "الحفاظ على جودة الخدمة طوال الوقت"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "التنظيف الذكي — الحفاظ على نظافة الممرات والردهات والمناطق المشتركة."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "تنظيف الممرات والردهات",
+                  "التنظيف الذاتي الذكي",
+                  "رفع معايير النظافة",
+                  "دعم فرق المرافق"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
       "industrial-logistics": {
         "title": "الصناعة واللوجستيات",
         "shortTitle": "الصناعة واللوجستيات",
-        "headline": "الصناعة واللوجستيات",
-        "summary": "نقل المواد · دعم خطوط الإنتاج · أتمتة المستودعات",
+        "headline": "روبوتات PUDU للعمليات الصناعية واللوجستية",
+        "summary": "نقل مواد أذكى · عمليات أكثر أماناً · إنتاجية أعلى — تساعد روبوتات PUDU المصانع والمستودعات على أتمتة نقل المواد وتحسين تدفق البضائع.",
         "imageAlt": "مستودع ولوجستيات",
         "imageUrl": "https://cdn.savvyworld.ai/master/_373b0fa367.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "التحديات",
+            "heading": "تحديات القطاع الصناعي واللوجستي",
             "items": [
               {
-                "icon": "transport",
-                "label": "النقل المتكرر"
+                "icon": "cost",
+                "label": "ارتفاع تكاليف التشغيل"
+              },
+              {
+                "icon": "workforce",
+                "label": "نقص العمالة المؤهلة"
               },
               {
                 "icon": "safety",
-                "label": "السلامة"
+                "label": "الحاجة إلى تحسين السلامة"
               },
               {
-                "icon": "efficiency",
-                "label": "الكفاءة التشغيلية"
+                "icon": "transport",
+                "label": "تكرار عمليات النقل الداخلية"
               },
               {
                 "icon": "warehouse",
-                "label": "إدارة المستودعات"
+                "label": "ازدحام الممرات ومناطق التحميل"
+              },
+              {
+                "icon": "uptime",
+                "label": "الحاجة إلى تشغيل مستمر 24/7"
               }
             ]
           },
@@ -538,37 +1154,61 @@
             "heading": "كيف تساعد روبوتات PUDU",
             "items": [
               {
-                "icon": "transport",
-                "label": "نقل المواد"
-              },
-              {
                 "icon": "production",
-                "label": "دعم خطوط الإنتاج"
+                "label": "نقل المواد بين خطوط الإنتاج"
               },
               {
                 "icon": "warehouse",
-                "label": "أتمتة المستودعات"
+                "label": "دعم المستودعات ومراكز التوزيع"
               },
               {
                 "icon": "automation",
-                "label": "التنقل الذاتي"
+                "label": "أتمتة النقل الداخلي"
+              },
+              {
+                "icon": "delivery",
+                "label": "دعم عمليات الشحن والاستلام"
+              },
+              {
+                "icon": "building",
+                "label": "تشغيل متعدد الطوابق"
+              },
+              {
+                "icon": "digitization",
+                "label": "مراقبة وإدارة الأسطول"
               }
             ]
           },
           "results": {
-            "heading": "النتائج",
+            "heading": "النتائج المتوقعة",
             "items": [
               {
-                "icon": "automation",
-                "label": "تقليل العمل اليدوي"
+                "icon": "productivity",
+                "label": "زيادة الإنتاجية"
               },
               {
-                "icon": "productivity",
-                "label": "رفع الإنتاجية"
+                "icon": "automation",
+                "label": "تقليل الأعمال اليدوية"
               },
               {
                 "icon": "safety",
-                "label": "تحسين السلامة"
+                "label": "رفع مستويات السلامة"
+              },
+              {
+                "icon": "transport",
+                "label": "تحسين تدفق المواد"
+              },
+              {
+                "icon": "speed",
+                "label": "تقليل أوقات الانتظار"
+              },
+              {
+                "icon": "efficiency",
+                "label": "رفع كفاءة العمليات اللوجستية"
+              },
+              {
+                "icon": "uptime",
+                "label": "تشغيل مستمر على مدار الساعة"
               }
             ]
           }
@@ -576,64 +1216,568 @@
         "scenarios": [
           {
             "title": "تغطية متعددة السيناريوهات",
-            "subtitle": "التوصيل بجانب خط الإنتاج · النقل بين مناطق التجهيز · التزويد الليلي",
+            "subtitle": "الاستلام · التخزين · الإنتاج · مراقبة الجودة · التعبئة · الشحن · التشغيل 24/7",
             "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر مستودع",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_c7680a5a1b.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "الصناعة واللوجستيات",
+            "aboutTitle": "الاستلام → وصول المواد والفرز",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
             "slides": [
               {
-                "robotName": "FlashBot Max",
-                "imageAlt": "روبوت توصيل FlashBot Max في ممر مستودع",
-                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — الاستلام → وصول المواد والفرز",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات القطاع الصناعي واللوجستي",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "ارتفاع تكاليف التشغيل"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص العمالة المؤهلة"
+                },
+                {
+                  "icon": "safety",
+                  "label": "الحاجة إلى تحسين السلامة"
+                },
+                {
+                  "icon": "transport",
+                  "label": "تكرار عمليات النقل الداخلية"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "ازدحام الممرات ومناطق التحميل"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "الحاجة إلى تشغيل مستمر 24/7"
+                }
+              ]
             },
             "whyChoose": {
               "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
+              "items": [
+                "دعم عمليات الشحن والاستلام — تحسين تدفق المواد بين مناطق الاستلام والتجهيز والإرسال."
+              ]
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "نقل المواد والطرود",
+                  "مرونة عالية للممرات الضيقة",
+                  "عمليات النقل الداخلية",
+                  "المستودعات ومراكز التوزيع"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "التخزين → النقل داخل المستودع",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — التخزين → النقل داخل المستودع",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الصناعي واللوجستي",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "ارتفاع تكاليف التشغيل"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص العمالة المؤهلة"
+                },
+                {
+                  "icon": "safety",
+                  "label": "الحاجة إلى تحسين السلامة"
+                },
+                {
+                  "icon": "transport",
+                  "label": "تكرار عمليات النقل الداخلية"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "ازدحام الممرات ومناطق التحميل"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "الحاجة إلى تشغيل مستمر 24/7"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "دعم المستودعات ومراكز التوزيع — نقل البضائع بين مناطق التخزين والتجهيز والشحن."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "نقل المواد والطرود",
+                  "مرونة عالية للممرات الضيقة",
+                  "عمليات النقل الداخلية",
+                  "المستودعات ومراكز التوزيع"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "الإنتاج → تغذية خط الإنتاج ونقل المواد",
+            "slideKeys": [
+              "t300"
+            ],
+            "solutionKeys": [
+              "t300"
+            ],
+            "slides": [
+              {
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 — الإنتاج → تغذية خط الإنتاج ونقل المواد",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الصناعي واللوجستي",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "ارتفاع تكاليف التشغيل"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص العمالة المؤهلة"
+                },
+                {
+                  "icon": "safety",
+                  "label": "الحاجة إلى تحسين السلامة"
+                },
+                {
+                  "icon": "transport",
+                  "label": "تكرار عمليات النقل الداخلية"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "ازدحام الممرات ومناطق التحميل"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "الحاجة إلى تشغيل مستمر 24/7"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "نقل المواد بين خطوط الإنتاج — نقل المواد الخام والمنتجات نصف المصنعة بين محطات العمل بشكل مستقل."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300",
+                "imageUrl": "",
+                "features": [
+                  "نقل وسحب العربات",
+                  "حمولة تصل إلى 300 كجم",
+                  "أتمتة نقل المواد",
+                  "العمل في البيئات الصناعية",
+                  "التنقل الذاتي عبر المنشآت"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "مراقبة الجودة → نقل العينات والمكونات الآمن",
             "slideKeys": [
               "flashbot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — مراقبة الجودة → نقل العينات والمكونات الآمن",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الصناعي واللوجستي",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "ارتفاع تكاليف التشغيل"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص العمالة المؤهلة"
+                },
+                {
+                  "icon": "safety",
+                  "label": "الحاجة إلى تحسين السلامة"
+                },
+                {
+                  "icon": "transport",
+                  "label": "تكرار عمليات النقل الداخلية"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "ازدحام الممرات ومناطق التحميل"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "الحاجة إلى تشغيل مستمر 24/7"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "نقل المواد الحساسة مع حجرات آمنة متعددة ومصادقة PIN و NFC."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "نقل المواد الحساسة",
+                  "حجرات آمنة متعددة",
+                  "مصادقة PIN و NFC",
+                  "تنقل متعدد الطوابق",
+                  "تكامل مع المصاعد"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "التعبئة → النقل بين محطات التعبئة",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — التعبئة → النقل بين محطات التعبئة",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الصناعي واللوجستي",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "ارتفاع تكاليف التشغيل"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص العمالة المؤهلة"
+                },
+                {
+                  "icon": "safety",
+                  "label": "الحاجة إلى تحسين السلامة"
+                },
+                {
+                  "icon": "transport",
+                  "label": "تكرار عمليات النقل الداخلية"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "ازدحام الممرات ومناطق التحميل"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "الحاجة إلى تشغيل مستمر 24/7"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "أتمتة النقل الداخلي — تقليل الاعتماد على العربات اليدوية وعمليات النقل التقليدية."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "نقل المواد والطرود",
+                  "مرونة عالية للممرات الضيقة",
+                  "عمليات النقل الداخلية",
+                  "المستودعات ومراكز التوزيع"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "الشحن → لوجستيات الصادر والإرسال",
+            "slideKeys": [
+              "t300",
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "t300",
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 — الشحن → لوجستيات الصادر والإرسال",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الصناعي واللوجستي",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "ارتفاع تكاليف التشغيل"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص العمالة المؤهلة"
+                },
+                {
+                  "icon": "safety",
+                  "label": "الحاجة إلى تحسين السلامة"
+                },
+                {
+                  "icon": "transport",
+                  "label": "تكرار عمليات النقل الداخلية"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "ازدحام الممرات ومناطق التحميل"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "الحاجة إلى تشغيل مستمر 24/7"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "تحسين تدفق المواد بين مناطق التجهيز والمعالجة والشحن."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300",
+                "imageUrl": "",
+                "features": [
+                  "نقل وسحب العربات",
+                  "حمولة تصل إلى 300 كجم",
+                  "أتمتة نقل المواد",
+                  "العمل في البيئات الصناعية",
+                  "التنقل الذاتي عبر المنشآت"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              },
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "نقل المواد والطرود",
+                  "مرونة عالية للممرات الضيقة",
+                  "عمليات النقل الداخلية",
+                  "المستودعات ومراكز التوزيع"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "التشغيل 24/7 → تدفق مواد ذاتي مستمر",
+            "slideKeys": [
+              "t300",
+              "pudubot2",
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "t300",
+              "pudubot2",
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 — التشغيل 24/7 → تدفق مواد ذاتي مستمر",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الصناعي واللوجستي",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "ارتفاع تكاليف التشغيل"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص العمالة المؤهلة"
+                },
+                {
+                  "icon": "safety",
+                  "label": "الحاجة إلى تحسين السلامة"
+                },
+                {
+                  "icon": "transport",
+                  "label": "تكرار عمليات النقل الداخلية"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "ازدحام الممرات ومناطق التحميل"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "الحاجة إلى تشغيل مستمر 24/7"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "مراقبة وإدارة الأسطول — متابعة حركة الروبوتات والمهام التشغيلية بشكل لحظي.",
+                "تشغيل متعدد الطوابق — التنقل بين الطوابق والمناطق المختلفة عبر تكامل المصاعد والبنية الذكية."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300",
+                "imageUrl": "",
+                "features": [
+                  "نقل وسحب العربات",
+                  "حمولة تصل إلى 300 كجم",
+                  "أتمتة نقل المواد",
+                  "العمل في البيئات الصناعية",
+                  "التنقل الذاتي عبر المنشآت"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              },
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "نقل المواد والطرود",
+                  "مرونة عالية للممرات الضيقة",
+                  "عمليات النقل الداخلية",
+                  "المستودعات ومراكز التوزيع"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              },
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "نقل المواد الحساسة",
+                  "حجرات آمنة متعددة",
+                  "مصادقة PIN و NFC",
+                  "تنقل متعدد الطوابق",
+                  "تكامل مع المصاعد"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
           }
         ]
       },
       "healthcare": {
         "title": "الرعاية الصحية",
         "shortTitle": "الرعاية الصحية",
-        "headline": "الرعاية الصحية",
-        "summary": "نقل العينات · توزيع الأدوية · نقل المستلزمات",
+        "headline": "روبوتات PUDU للرعاية الصحية",
+        "summary": "رعاية أفضل للمرضى · كفاءة تشغيلية أعلى · خدمات صحية أذكى — تساعد روبوتات PUDU المستشفيات على أتمتة اللوجستيات الداخلية وتحسين تجربة المرضى.",
         "imageAlt": "ممر مستشفى حديث",
         "imageUrl": "https://cdn.savvyworld.ai/master/_d8c688b5e6.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "التحديات",
+            "heading": "تحديات قطاع الرعاية الصحية",
             "items": [
               {
                 "icon": "workforce",
-                "label": "ضغط العمل"
+                "label": "ضغط متزايد على الكوادر الطبية"
+              },
+              {
+                "icon": "experience",
+                "label": "الحاجة إلى تحسين تجربة المرضى"
               },
               {
                 "icon": "transport",
-                "label": "نقل الإمدادات"
+                "label": "نقل المستلزمات والعينات بين الأقسام"
+              },
+              {
+                "icon": "building",
+                "label": "إدارة المنشآت الطبية الكبيرة"
               },
               {
                 "icon": "sanitization",
-                "label": "العدوى"
+                "label": "الحفاظ على أعلى معايير النظافة"
               },
               {
                 "icon": "uptime",
-                "label": "إدارة الوقت"
+                "label": "تقديم خدمات متواصلة على مدار الساعة"
               }
             ]
           },
@@ -641,37 +1785,61 @@
             "heading": "كيف تساعد روبوتات PUDU",
             "items": [
               {
-                "icon": "samples",
-                "label": "نقل العينات"
-              },
-              {
                 "icon": "medicine",
-                "label": "توزيع الأدوية"
+                "label": "نقل المستلزمات الطبية"
               },
               {
                 "icon": "delivery",
-                "label": "نقل المستلزمات"
+                "label": "دعم الخدمات اللوجستية الداخلية"
               },
               {
-                "icon": "sanitization",
-                "label": "التعقيم والتنظيف"
+                "icon": "guidance",
+                "label": "إرشاد المرضى والزوار"
+              },
+              {
+                "icon": "samples",
+                "label": "دعم المختبرات"
+              },
+              {
+                "icon": "cleaning",
+                "label": "التنظيف الذكي"
+              },
+              {
+                "icon": "uptime",
+                "label": "تشغيل على مدار الساعة"
               }
             ]
           },
           "results": {
-            "heading": "النتائج",
+            "heading": "النتائج المتوقعة",
             "items": [
               {
-                "icon": "service",
-                "label": "وقت أكبر لرعاية المرضى"
+                "icon": "experience",
+                "label": "تحسين تجربة المرضى"
               },
               {
                 "icon": "efficiency",
-                "label": "تحسين الكفاءة"
+                "label": "رفع كفاءة الخدمات الصحية"
               },
               {
-                "icon": "safety",
-                "label": "تقليل المخاطر"
+                "icon": "automation",
+                "label": "تقليل الأعمال التشغيلية المتكررة"
+              },
+              {
+                "icon": "productivity",
+                "label": "زيادة إنتاجية الموظفين"
+              },
+              {
+                "icon": "transport",
+                "label": "تحسين الخدمات اللوجستية الداخلية"
+              },
+              {
+                "icon": "sanitization",
+                "label": "رفع معايير النظافة والسلامة"
+              },
+              {
+                "icon": "speed",
+                "label": "تحسين استجابة الخدمات الطبية"
               }
             ]
           }
@@ -679,35 +1847,512 @@
         "scenarios": [
           {
             "title": "تغطية متعددة السيناريوهات",
-            "subtitle": "توصيل المستلزمات الطبية · دعم التعقيم · إرشاد الزوار",
+            "subtitle": "وصول المريض · سلسلة الإمداد · المختبر · رعاية المرضى · نظافة المرافق · التشغيل 24/7",
             "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر مستشفى",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_a81a02f812.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "الرعاية الصحية",
+            "aboutTitle": "وصول المريض → إرشاد الزوار",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "PuduBot 2",
-                "imageAlt": "PuduBot 2 يوصل مستلزمات في ممر مستشفى",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — وصول المريض → إرشاد الزوار",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات قطاع الرعاية الصحية",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "ضغط متزايد على الكوادر الطبية"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المرضى"
+                },
+                {
+                  "icon": "transport",
+                  "label": "نقل المستلزمات والعينات بين الأقسام"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المنشآت الطبية الكبيرة"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على أعلى معايير النظافة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات متواصلة على مدار الساعة"
+                }
+              ]
             },
             "whyChoose": {
               "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
+              "items": [
+                "إرشاد المرضى والزوار — مساعدة المرضى والزوار في الوصول إلى العيادات والأقسام والمرافق المختلفة."
+              ]
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "إرشاد المرضى والزوار",
+                  "معلومات الأقسام والعيادات",
+                  "التفاعل مع المراجعين",
+                  "تقليل الضغط على مكاتب الاستقبال"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "التسجيل والاستقبال → المساعدة في التنقل",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — التسجيل والاستقبال → المساعدة في التنقل",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الرعاية الصحية",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "ضغط متزايد على الكوادر الطبية"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المرضى"
+                },
+                {
+                  "icon": "transport",
+                  "label": "نقل المستلزمات والعينات بين الأقسام"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المنشآت الطبية الكبيرة"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على أعلى معايير النظافة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات متواصلة على مدار الساعة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "التفاعل مع المراجعين ومعلومات الأقسام والعيادات لتقليل الضغط على مكاتب الاستقبال."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "إرشاد المرضى والزوار",
+                  "معلومات الأقسام والعيادات",
+                  "التفاعل مع المراجعين",
+                  "تقليل الضغط على مكاتب الاستقبال"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "الصيدلية وسلسلة الإمداد → نقل المستلزمات الطبية",
             "slideKeys": [
               "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — الصيدلية وسلسلة الإمداد → نقل المستلزمات الطبية",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الرعاية الصحية",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "ضغط متزايد على الكوادر الطبية"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المرضى"
+                },
+                {
+                  "icon": "transport",
+                  "label": "نقل المستلزمات والعينات بين الأقسام"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المنشآت الطبية الكبيرة"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على أعلى معايير النظافة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات متواصلة على مدار الساعة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "نقل المستلزمات الطبية — نقل الأدوية والمستهلكات والمستلزمات الطبية بين الأقسام المختلفة."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "نقل المستلزمات الطبية",
+                  "الخدمات اللوجستية الداخلية",
+                  "نقل الأدوية والمواد الطبية",
+                  "التنقل بين الأقسام المختلفة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "عمليات المختبر → نقل العينات الآمن",
+            "slideKeys": [
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — عمليات المختبر → نقل العينات الآمن",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الرعاية الصحية",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "ضغط متزايد على الكوادر الطبية"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المرضى"
+                },
+                {
+                  "icon": "transport",
+                  "label": "نقل المستلزمات والعينات بين الأقسام"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المنشآت الطبية الكبيرة"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على أعلى معايير النظافة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات متواصلة على مدار الساعة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "دعم المختبرات — نقل العينات والوثائق بين المختبرات والأقسام وفق مسارات محددة وآمنة."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "نقل المواد الحساسة",
+                  "حجرات آمنة متعددة",
+                  "مصادقة PIN و NFC",
+                  "التكامل مع المصاعد",
+                  "التنقل بين الطوابق"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "مناطق رعاية المرضى → دعم اللوجستيات الداخلية",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — مناطق رعاية المرضى → دعم اللوجستيات الداخلية",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الرعاية الصحية",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "ضغط متزايد على الكوادر الطبية"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المرضى"
+                },
+                {
+                  "icon": "transport",
+                  "label": "نقل المستلزمات والعينات بين الأقسام"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المنشآت الطبية الكبيرة"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على أعلى معايير النظافة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات متواصلة على مدار الساعة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "دعم الخدمات اللوجستية الداخلية — تحسين تدفق المواد والإمدادات بين الصيدليات والمختبرات والأجنحة الطبية."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "نقل المستلزمات الطبية",
+                  "الخدمات اللوجستية الداخلية",
+                  "نقل الأدوية والمواد الطبية",
+                  "التنقل بين الأقسام المختلفة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "نظافة المرافق → التنظيف الذاتي",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — نظافة المرافق → التنظيف الذاتي",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الرعاية الصحية",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "ضغط متزايد على الكوادر الطبية"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المرضى"
+                },
+                {
+                  "icon": "transport",
+                  "label": "نقل المستلزمات والعينات بين الأقسام"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المنشآت الطبية الكبيرة"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على أعلى معايير النظافة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات متواصلة على مدار الساعة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "التنظيف الذكي — الحفاظ على نظافة الممرات والردهات والمناطق العامة بشكل مستمر."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "تنظيف الممرات والردهات",
+                  "التنظيف الذاتي الذكي",
+                  "دعم فرق النظافة",
+                  "رفع معايير التعقيم والنظافة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "عمليات المستشفى 24/7 → دعم لوجستي وخدمي مستمر",
+            "slideKeys": [
+              "pudubot2",
+              "flashbot",
+              "cc1"
+            ],
+            "solutionKeys": [
+              "pudubot2",
+              "flashbot",
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — عمليات المستشفى 24/7 → دعم لوجستي وخدمي مستمر",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الرعاية الصحية",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "ضغط متزايد على الكوادر الطبية"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المرضى"
+                },
+                {
+                  "icon": "transport",
+                  "label": "نقل المستلزمات والعينات بين الأقسام"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المنشآت الطبية الكبيرة"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على أعلى معايير النظافة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات متواصلة على مدار الساعة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": [
+                "تشغيل على مدار الساعة — دعم العمليات اليومية دون انقطاع على مدار 24 ساعة."
+              ]
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "نقل المستلزمات الطبية",
+                  "الخدمات اللوجستية الداخلية",
+                  "نقل الأدوية والمواد الطبية",
+                  "التنقل بين الأقسام المختلفة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              },
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "نقل المواد الحساسة",
+                  "حجرات آمنة متعددة",
+                  "مصادقة PIN و NFC",
+                  "التكامل مع المصاعد",
+                  "التنقل بين الطوابق"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              },
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "تنظيف الممرات والردهات",
+                  "التنظيف الذاتي الذكي",
+                  "دعم فرق النظافة",
+                  "رفع معايير التعقيم والنظافة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
@@ -759,28 +2404,124 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "النقل",
+            "aboutTitle": "إرشاد المسافرين",
+            "slideKeys": [
+              "pudubot2",
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "pudubot2",
+              "flashbot"
+            ],
             "slides": [
               {
-                "robotName": "PuduBot 2",
-                "imageAlt": "PuduBot 2 يرشد مسافرين في محطة",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "robotName": "PUDUbot2",
+                "imageAlt": "PUDUbot2 — إرشاد المسافرين",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات النقل",
+              "items": [
+                ""
+              ]
             },
             "whyChoose": {
-              "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "الإرشاد الذكي",
+                "توصيل الطلبات",
+                "خدمة المسافرين",
+                "تنظيف المرافق"
+              ]
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "PUDUbot2",
+                "imageAlt": "PUDUbot2",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              },
+              {
+                "name": "FlashBot",
+                "imageAlt": "FlashBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "دعم المرافق",
             "slideKeys": [
-              "pudubot2"
+              "flashbot",
+              "t300"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "flashbot",
+              "t300"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot",
+                "imageAlt": "FlashBot — دعم المرافق",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات النقل",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "الإرشاد الذكي",
+                "توصيل الطلبات",
+                "خدمة المسافرين",
+                "تنظيف المرافق"
+              ]
+            },
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "FlashBot",
+                "imageAlt": "FlashBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              },
+              {
+                "name": "T300",
+                "imageAlt": "T300",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              }
+            ]
           }
         ]
       },
@@ -832,28 +2573,124 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "الترفيه والرياضة",
+            "aboutTitle": "توصيل نقاط البيع",
+            "slideKeys": [
+              "holabot",
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "holabot",
+              "bellabot"
+            ],
             "slides": [
               {
                 "robotName": "HolaBot",
-                "imageAlt": "HolaBot يوصل concessions في ملعب",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "imageAlt": "HolaBot — توصيل نقاط البيع",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات الترفيه والرياضة",
+              "items": [
+                ""
+              ]
             },
             "whyChoose": {
-              "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "خدمة الزوار",
+                "الإرشاد",
+                "دعم الفعاليات",
+                "الخدمات اللوجستية"
+              ]
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/holabot"
+              },
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "إرشاد الزوار",
             "slideKeys": [
+              "kettybot",
               "holabot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "kettybot",
+              "holabot"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — إرشاد الزوار",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات الترفيه والرياضة",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "خدمة الزوار",
+                "الإرشاد",
+                "دعم الفعاليات",
+                "الخدمات اللوجستية"
+              ]
+            },
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              },
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/holabot"
+              }
+            ]
           }
         ]
       },
@@ -905,28 +2742,124 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "العقارات",
+            "aboutTitle": "توصيل خدمات المستأجرين",
+            "slideKeys": [
+              "bellabot",
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "bellabot",
+              "kettybot"
+            ],
             "slides": [
               {
                 "robotName": "BellaBot",
-                "imageAlt": "BellaBot يوصل مرافق في مبنى تجاري",
-                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                "imageAlt": "BellaBot — توصيل خدمات المستأجرين",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات العقارات",
+              "items": [
+                ""
+              ]
             },
             "whyChoose": {
-              "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "خدمة المستأجرين",
+                "جولات المرافق",
+                "التنظيف الذكي",
+                "التوصيل الداخلي"
+              ]
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              },
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "جولات في العقار",
             "slideKeys": [
-              "bellabot"
+              "kettybot",
+              "cc1"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "kettybot",
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — جولات في العقار",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات العقارات",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "خدمة المستأجرين",
+                "جولات المرافق",
+                "التنظيف الذكي",
+                "التوصيل الداخلي"
+              ]
+            },
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              },
+              {
+                "name": "CC1",
+                "imageAlt": "CC1",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
@@ -978,28 +2911,124 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "التعليم",
+            "aboutTitle": "الاستقبال والجولات",
+            "slideKeys": [
+              "pudubot2",
+              "holabot"
+            ],
+            "solutionKeys": [
+              "pudubot2",
+              "holabot"
+            ],
             "slides": [
               {
-                "robotName": "PuduBot 2",
-                "imageAlt": "PuduBot 2 يوصل موارد عبر campus",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "robotName": "PUDUbot2",
+                "imageAlt": "PUDUbot2 — الاستقبال والجولات",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات التعليم",
+              "items": [
+                ""
+              ]
             },
             "whyChoose": {
-              "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "الإرشاد داخل الحرم",
+                "الخدمات اللوجستية",
+                "التفاعل مع الطلاب",
+                "دعم الفعاليات"
+              ]
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "PUDUbot2",
+                "imageAlt": "PUDUbot2",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              },
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/holabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "لوجستيات الحرم",
             "slideKeys": [
+              "kettybot",
               "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "kettybot",
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — لوجستيات الحرم",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات التعليم",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "الإرشاد داخل الحرم",
+                "الخدمات اللوجستية",
+                "التفاعل مع الطلاب",
+                "دعم الفعاليات"
+              ]
+            },
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              },
+              {
+                "name": "PUDUbot2",
+                "imageAlt": "PUDUbot2",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
           }
         ]
       },
@@ -1051,28 +3080,110 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "القطاع الحكومي",
-            "slides": [
-              {
-                "robotName": "PuduBot 2",
-                "imageAlt": "PuduBot 2 يرشد مواطنين في مركز خدمة",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
-              }
-            ],
-            "challenges": {
-              "heading": "التحديات",
-              "items": []
-            },
-            "whyChoose": {
-              "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
-            },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "aboutTitle": "خدمات الزوار",
             "slideKeys": [
               "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PUDUbot2",
+                "imageAlt": "PUDUbot2 — خدمات الزوار",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الحكومي",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "خدمة المراجعين",
+                "التوجيه الذكي",
+                "النقل الداخلي",
+                "صيانة المرافق"
+              ]
+            },
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "PUDUbot2",
+                "imageAlt": "PUDUbot2",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "النقل الداخلي",
+            "slideKeys": [
+              "t300",
+              "cc1"
+            ],
+            "solutionKeys": [
+              "t300",
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "T300",
+                "imageAlt": "T300 — النقل الداخلي",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الحكومي",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "لماذا تختار Pudu Robotics؟",
+              "items": [
+                "خدمة المراجعين",
+                "التوجيه الذكي",
+                "النقل الداخلي",
+                "صيانة المرافق"
+              ]
+            },
+            "solutionsTitle": "الحلول الروبوتية",
+            "solutions": [
+              {
+                "name": "T300",
+                "imageAlt": "T300",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              },
+              {
+                "name": "CC1",
+                "imageAlt": "CC1",
+                "imageUrl": "",
+                "features": [
+                  "تنقل ذاتي وتشغيل موثوق",
+                  "مصمم لبيئات تجارية عالية الحركة",
+                  "يتكامل مع سير العمل الحالي"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       }

@@ -1341,6 +1341,8 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                           <InnovationUseCasesEditor
                             industrySlug={innovationPageFocus}
                             useCases={useCases}
+                            industryRecord={industryRecord}
+                            locale={locale}
                             onChange={(nextUseCases) => {
                               setContent((prev) => {
                                 if (!prev || !isPlainObject(prev.innovation)) {

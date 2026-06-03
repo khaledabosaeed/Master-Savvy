@@ -274,28 +274,152 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Food & Beverage",
+            "aboutTitle": "Table Service & Delivery",
+            "slideKeys": [
+              "holabot",
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "holabot",
+              "bellabot"
+            ],
             "slides": [
               {
                 "robotName": "HolaBot",
-                "imageAlt": "HolaBot delivering dishes in a restaurant dining room",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "imageAlt": "HolaBot — Table Service & Delivery",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Food & Beverage Industry Challenges",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "High operating costs"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Labor shortages"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Service speed"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Customer satisfaction"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
-              "items": []
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Food and beverage delivery",
+                "Customer reception",
+                "Self-cleaning"
+              ]
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/holabot"
+              },
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Floor Cleaning",
             "slideKeys": [
-              "holabot"
+              "holabot",
+              "kettybot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "holabot",
+              "kettybot"
+            ],
+            "slides": [
+              {
+                "robotName": "HolaBot",
+                "imageAlt": "HolaBot — Floor Cleaning",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Food & Beverage Industry Challenges",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "High operating costs"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Labor shortages"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Service speed"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Customer satisfaction"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Food and beverage delivery",
+                "Customer reception",
+                "Self-cleaning"
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/holabot"
+              },
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
           }
         ]
       },
@@ -377,95 +501,253 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Retail",
+            "aboutTitle": "In-Store Delivery",
+            "slideKeys": [
+              "bellabot",
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "bellabot",
+              "flashbot"
+            ],
             "slides": [
               {
                 "robotName": "BellaBot",
-                "imageAlt": "BellaBot delivering products in a retail store",
-                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                "imageAlt": "BellaBot — In-Store Delivery",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Retail Industry Challenges",
+              "items": [
+                {
+                  "icon": "speed",
+                  "label": "Managing peak hours"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Customer service"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "Visitor guidance"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Staff shortages"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
-              "items": []
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Shopper guidance",
+                "Product delivery",
+                "Point-of-sale support",
+                "Store cleaning"
+              ]
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              },
+              {
+                "name": "FlashBot",
+                "imageAlt": "FlashBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Shopper Guidance",
             "slideKeys": [
+              "kettybot",
               "bellabot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "kettybot",
+              "bellabot"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Shopper Guidance",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Retail Industry Challenges",
+              "items": [
+                {
+                  "icon": "speed",
+                  "label": "Managing peak hours"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Customer service"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "Visitor guidance"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Staff shortages"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Shopper guidance",
+                "Product delivery",
+                "Point-of-sale support",
+                "Store cleaning"
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              },
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
           }
         ]
       },
       "hospitality": {
         "title": "Hospitality",
         "shortTitle": "Hospitality",
-        "headline": "Hospitality",
-        "summary": "Room service · Guidance and reception · Autonomous delivery",
+        "headline": "PUDU Robotics for Hospitality",
+        "summary": "Smarter Hospitality · Faster Service · Happier Guests — PUDU Robotics helps hotels, resorts, and hospitality destinations deliver a more efficient and consistent guest experience.",
         "imageAlt": "Luxury hotel lobby with guests",
         "imageUrl": "https://cdn.savvyworld.ai/master/Hospitality_e4c88c98ae.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "Challenges",
+            "heading": "Hospitality Industry Challenges",
             "items": [
               {
                 "icon": "experience",
-                "label": "Guest experience"
-              },
-              {
-                "icon": "delivery",
-                "label": "In-room delivery"
+                "label": "Rising guest expectations"
               },
               {
                 "icon": "speed",
-                "label": "Fast service"
+                "label": "Need for faster and more consistent service"
               },
               {
-                "icon": "efficiency",
-                "label": "Operational quality"
+                "icon": "workforce",
+                "label": "Staff shortages and turnover"
+              },
+              {
+                "icon": "events",
+                "label": "Managing peak occupancy periods"
+              },
+              {
+                "icon": "building",
+                "label": "Operating multi-floor facilities"
+              },
+              {
+                "icon": "service",
+                "label": "Maintaining service quality at all times"
               }
             ]
           },
           "puduHelp": {
-            "heading": "How PUDU Robots Help",
+            "heading": "How PUDU Helps",
             "items": [
               {
                 "icon": "delivery",
-                "label": "Room service"
+                "label": "Smart Room Service"
               },
               {
                 "icon": "guidance",
-                "label": "Guidance and reception"
+                "label": "Guest Reception & Guidance"
               },
               {
-                "icon": "automation",
-                "label": "Autonomous delivery"
+                "icon": "transport",
+                "label": "Hotel Operations Support"
+              },
+              {
+                "icon": "events",
+                "label": "Events & Conference Support"
               },
               {
                 "icon": "cleaning",
-                "label": "Facility cleaning"
+                "label": "Smart Cleaning"
+              },
+              {
+                "icon": "uptime",
+                "label": "24/7 Operations Support"
               }
             ]
           },
           "results": {
-            "heading": "Results",
+            "heading": "Expected Outcomes",
             "items": [
               {
                 "icon": "experience",
-                "label": "Outstanding guest experience"
+                "label": "Enhanced guest experience"
+              },
+              {
+                "icon": "speed",
+                "label": "Faster service response times"
               },
               {
                 "icon": "efficiency",
-                "label": "More efficient operations"
+                "label": "Improved operational efficiency"
+              },
+              {
+                "icon": "automation",
+                "label": "Reduced repetitive tasks"
+              },
+              {
+                "icon": "productivity",
+                "label": "Higher staff productivity"
+              },
+              {
+                "icon": "digitization",
+                "label": "Stronger innovation-driven brand image"
               },
               {
                 "icon": "service",
-                "label": "Improved service quality"
+                "label": "More consistent service quality"
               }
             ]
           }
@@ -473,102 +755,460 @@
         "scenarios": [
           {
             "title": "Multi-Scenario Coverage",
-            "subtitle": "Room Service · Lobby Guidance · Banquet & Event Logistics",
+            "subtitle": "Guest Arrival · Room Service · Dining · Events · Autonomous Cleaning",
             "imageAlt": "Isometric view of Pudu robots serving across a hotel",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_aaa66f1fc9.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "Hospitality",
+            "aboutTitle": "Guest Arrival → Welcome & Guidance",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "HolaBot",
-                "imageAlt": "HolaBot delivering room service in a hotel",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Guest Arrival → Welcome & Guidance",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Hospitality Industry Challenges",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "Rising guest expectations"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Need for faster and more consistent service"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Staff shortages and turnover"
+                },
+                {
+                  "icon": "events",
+                  "label": "Managing peak occupancy periods"
+                },
+                {
+                  "icon": "building",
+                  "label": "Operating multi-floor facilities"
+                },
+                {
+                  "icon": "service",
+                  "label": "Maintaining service quality at all times"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
-              "items": []
+              "heading": "How PUDU Helps",
+              "items": [
+                "Guest Reception & Guidance — Help visitors navigate rooms, facilities, meeting spaces, and hotel services."
+              ]
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Guest guidance",
+                  "Event information",
+                  "Digital engagement",
+                  "Visitor assistance"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Guest Stay → Room Service & Amenities",
             "slideKeys": [
-              "holabot"
+              "flashbot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — Guest Stay → Room Service & Amenities",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Hospitality Industry Challenges",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "Rising guest expectations"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Need for faster and more consistent service"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Staff shortages and turnover"
+                },
+                {
+                  "icon": "events",
+                  "label": "Managing peak occupancy periods"
+                },
+                {
+                  "icon": "building",
+                  "label": "Operating multi-floor facilities"
+                },
+                {
+                  "icon": "service",
+                  "label": "Maintaining service quality at all times"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Smart Room Service — Deliver food, beverages, amenities, and guest requests safely and efficiently."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "Room service delivery",
+                  "Elevator integration",
+                  "Multi-floor operations",
+                  "Secure delivery of food and amenities"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Dining Experience → Food & Beverage Service",
+            "slideKeys": [
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "bellabot"
+            ],
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot — Dining Experience → Food & Beverage Service",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Hospitality Industry Challenges",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "Rising guest expectations"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Need for faster and more consistent service"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Staff shortages and turnover"
+                },
+                {
+                  "icon": "events",
+                  "label": "Managing peak occupancy periods"
+                },
+                {
+                  "icon": "building",
+                  "label": "Operating multi-floor facilities"
+                },
+                {
+                  "icon": "service",
+                  "label": "Maintaining service quality at all times"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Food and beverage delivery with interactive guest-facing service support in restaurants and lounges."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "Interactive hospitality experience",
+                  "Food and beverage delivery",
+                  "Guest-facing service support",
+                  "Restaurant and lounge operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Events & Meetings → Logistics & Guest Assistance",
+            "slideKeys": [
+              "bellabot",
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "bellabot",
+              "kettybot"
+            ],
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot — Events & Meetings → Logistics & Guest Assistance",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Hospitality Industry Challenges",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "Rising guest expectations"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Need for faster and more consistent service"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Staff shortages and turnover"
+                },
+                {
+                  "icon": "events",
+                  "label": "Managing peak occupancy periods"
+                },
+                {
+                  "icon": "building",
+                  "label": "Operating multi-floor facilities"
+                },
+                {
+                  "icon": "service",
+                  "label": "Maintaining service quality at all times"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Events & Conference Support — Assist with logistics and guest services during conferences, exhibitions, and events."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "Interactive hospitality experience",
+                  "Food and beverage delivery",
+                  "Guest-facing service support",
+                  "Restaurant and lounge operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              },
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Guest guidance",
+                  "Event information",
+                  "Digital engagement",
+                  "Visitor assistance"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Facility Operations → Autonomous Cleaning",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — Facility Operations → Autonomous Cleaning",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Hospitality Industry Challenges",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "Rising guest expectations"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Need for faster and more consistent service"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Staff shortages and turnover"
+                },
+                {
+                  "icon": "events",
+                  "label": "Managing peak occupancy periods"
+                },
+                {
+                  "icon": "building",
+                  "label": "Operating multi-floor facilities"
+                },
+                {
+                  "icon": "service",
+                  "label": "Maintaining service quality at all times"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Smart Cleaning — Maintain cleaner hallways, lobbies, and public spaces throughout the day."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "Lobby and hallway cleaning",
+                  "Autonomous cleaning operations",
+                  "Higher hygiene standards",
+                  "Facilities support"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
       "industrial-logistics": {
         "title": "Industrial & Logistics",
         "shortTitle": "Industrial & Logistics",
-        "headline": "Industrial & Logistics",
-        "summary": "Material transport · Production line support · Warehouse automation",
+        "headline": "PUDU Robotics for Industrial & Logistics Operations",
+        "summary": "Smarter Material Movement · Safer Operations · Higher Productivity — PUDU Robotics helps factories, warehouses, and logistics facilities automate material transportation and improve goods flow.",
         "imageAlt": "Warehouse with shelving and logistics operations",
         "imageUrl": "https://cdn.savvyworld.ai/master/_373b0fa367.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "Challenges",
+            "heading": "Industry Challenges",
             "items": [
               {
-                "icon": "transport",
-                "label": "Repetitive transport"
+                "icon": "cost",
+                "label": "Rising operational costs"
+              },
+              {
+                "icon": "workforce",
+                "label": "Labor shortages"
               },
               {
                 "icon": "safety",
-                "label": "Safety"
+                "label": "Workplace safety requirements"
               },
               {
-                "icon": "efficiency",
-                "label": "Operational efficiency"
+                "icon": "transport",
+                "label": "Repetitive internal transportation"
               },
               {
                 "icon": "warehouse",
-                "label": "Warehouse management"
+                "label": "Congested warehouse and loading areas"
+              },
+              {
+                "icon": "uptime",
+                "label": "Need for continuous 24/7 operations"
               }
             ]
           },
           "puduHelp": {
-            "heading": "How PUDU Robots Help",
+            "heading": "How PUDU Helps",
             "items": [
               {
-                "icon": "transport",
-                "label": "Material transport"
-              },
-              {
                 "icon": "production",
-                "label": "Production line support"
+                "label": "Production Line Material Transport"
               },
               {
                 "icon": "warehouse",
-                "label": "Warehouse automation"
+                "label": "Warehouse & Distribution Support"
               },
               {
                 "icon": "automation",
-                "label": "Autonomous mobility"
+                "label": "Internal Logistics Automation"
+              },
+              {
+                "icon": "delivery",
+                "label": "Shipping & Receiving Operations"
+              },
+              {
+                "icon": "building",
+                "label": "Multi-Floor Operations"
+              },
+              {
+                "icon": "digitization",
+                "label": "Fleet Management & Visibility"
               }
             ]
           },
           "results": {
-            "heading": "Results",
+            "heading": "Expected Outcomes",
             "items": [
-              {
-                "icon": "automation",
-                "label": "Reduced manual work"
-              },
               {
                 "icon": "productivity",
                 "label": "Higher productivity"
               },
               {
+                "icon": "automation",
+                "label": "Reduced manual labor"
+              },
+              {
                 "icon": "safety",
-                "label": "Improved safety"
+                "label": "Improved workplace safety"
+              },
+              {
+                "icon": "transport",
+                "label": "Better material flow"
+              },
+              {
+                "icon": "speed",
+                "label": "Reduced operational delays"
+              },
+              {
+                "icon": "efficiency",
+                "label": "Greater logistics efficiency"
+              },
+              {
+                "icon": "uptime",
+                "label": "Continuous 24/7 operations"
               }
             ]
           }
@@ -576,102 +1216,630 @@
         "scenarios": [
           {
             "title": "Multi-Scenario Coverage",
-            "subtitle": "Line-Side Delivery · Cross-Dock Transport · Night-Shift Replenishment",
+            "subtitle": "Receiving · Storage · Production · Quality Control · Packing · Shipping · 24/7 Operations",
             "imageAlt": "Isometric view of Pudu robots operating across a warehouse",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_c7680a5a1b.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "Industrial & Logistics",
+            "aboutTitle": "Receiving → Material Arrival & Sorting",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
             "slides": [
               {
-                "robotName": "FlashBot Max",
-                "imageAlt": "FlashBot Max delivery robot in a warehouse corridor",
-                "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Receiving → Material Arrival & Sorting",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Industry Challenges",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "Rising operational costs"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Labor shortages"
+                },
+                {
+                  "icon": "safety",
+                  "label": "Workplace safety requirements"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Repetitive internal transportation"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "Congested warehouse and loading areas"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Need for continuous 24/7 operations"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
-              "items": []
+              "heading": "How PUDU Helps",
+              "items": [
+                "Shipping & Receiving Operations — Improve material flow between receiving, processing, and outbound areas."
+              ]
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Flexible material transport",
+                  "Compact footprint",
+                  "Internal logistics operations",
+                  "Warehouse and distribution workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Storage → Warehouse Transport",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Storage → Warehouse Transport",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Industry Challenges",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "Rising operational costs"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Labor shortages"
+                },
+                {
+                  "icon": "safety",
+                  "label": "Workplace safety requirements"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Repetitive internal transportation"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "Congested warehouse and loading areas"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Need for continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Warehouse & Distribution Support — Transport products between storage, staging, picking, and shipping zones."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Flexible material transport",
+                  "Compact footprint",
+                  "Internal logistics operations",
+                  "Warehouse and distribution workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Production → Line Feeding & Material Movement",
+            "slideKeys": [
+              "t300"
+            ],
+            "solutionKeys": [
+              "t300"
+            ],
+            "slides": [
+              {
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 — Production → Line Feeding & Material Movement",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Industry Challenges",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "Rising operational costs"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Labor shortages"
+                },
+                {
+                  "icon": "safety",
+                  "label": "Workplace safety requirements"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Repetitive internal transportation"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "Congested warehouse and loading areas"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Need for continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Production Line Material Transport — Move raw materials and work-in-progress items between workstations autonomously."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous cart towing",
+                  "Up to 300 kg payload",
+                  "Material transportation automation",
+                  "Industrial-grade operations",
+                  "Facility-wide navigation"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Quality Control → Secure Sample & Component Transport",
             "slideKeys": [
               "flashbot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — Quality Control → Secure Sample & Component Transport",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Industry Challenges",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "Rising operational costs"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Labor shortages"
+                },
+                {
+                  "icon": "safety",
+                  "label": "Workplace safety requirements"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Repetitive internal transportation"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "Congested warehouse and loading areas"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Need for continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Secure transport of sensitive materials with multi-compartment delivery and PIN/NFC authentication."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "Secure material transport",
+                  "Multi-compartment delivery",
+                  "PIN and NFC authentication",
+                  "Multi-floor operations",
+                  "Elevator integration"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Packing → Movement Between Packaging Stations",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Packing → Movement Between Packaging Stations",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Industry Challenges",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "Rising operational costs"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Labor shortages"
+                },
+                {
+                  "icon": "safety",
+                  "label": "Workplace safety requirements"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Repetitive internal transportation"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "Congested warehouse and loading areas"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Need for continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Internal Logistics Automation — Reduce dependency on manual carts and repetitive transportation tasks."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Flexible material transport",
+                  "Compact footprint",
+                  "Internal logistics operations",
+                  "Warehouse and distribution workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Shipping → Outbound Logistics & Dispatch Support",
+            "slideKeys": [
+              "t300",
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "t300",
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 — Shipping → Outbound Logistics & Dispatch Support",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Industry Challenges",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "Rising operational costs"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Labor shortages"
+                },
+                {
+                  "icon": "safety",
+                  "label": "Workplace safety requirements"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Repetitive internal transportation"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "Congested warehouse and loading areas"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Need for continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Improve material flow between staging, processing, and outbound shipping areas."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous cart towing",
+                  "Up to 300 kg payload",
+                  "Material transportation automation",
+                  "Industrial-grade operations",
+                  "Facility-wide navigation"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              },
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Flexible material transport",
+                  "Compact footprint",
+                  "Internal logistics operations",
+                  "Warehouse and distribution workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "24/7 Operations → Continuous Autonomous Material Flow",
+            "slideKeys": [
+              "t300",
+              "pudubot2",
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "t300",
+              "pudubot2",
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 — 24/7 Operations → Continuous Autonomous Material Flow",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Industry Challenges",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "Rising operational costs"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Labor shortages"
+                },
+                {
+                  "icon": "safety",
+                  "label": "Workplace safety requirements"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Repetitive internal transportation"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "Congested warehouse and loading areas"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Need for continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Fleet Management & Visibility — Monitor robot performance, routes, and operational activities in real time.",
+                "Multi-Floor Operations — Navigate across facilities using elevator integration and smart infrastructure."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous cart towing",
+                  "Up to 300 kg payload",
+                  "Material transportation automation",
+                  "Industrial-grade operations",
+                  "Facility-wide navigation"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              },
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Flexible material transport",
+                  "Compact footprint",
+                  "Internal logistics operations",
+                  "Warehouse and distribution workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              },
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "Secure material transport",
+                  "Multi-compartment delivery",
+                  "PIN and NFC authentication",
+                  "Multi-floor operations",
+                  "Elevator integration"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
           }
         ]
       },
       "healthcare": {
         "title": "Healthcare",
         "shortTitle": "Healthcare",
-        "headline": "Healthcare",
-        "summary": "Sample transport · Medicine distribution · Supply transport",
+        "headline": "PUDU Robotics for Healthcare",
+        "summary": "Better Patient Care · Higher Operational Efficiency · Smarter Healthcare Services — PUDU Robotics helps hospitals and healthcare campuses automate internal logistics and improve patient experience.",
         "imageAlt": "Modern hospital corridor",
         "imageUrl": "https://cdn.savvyworld.ai/master/_d8c688b5e6.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "Challenges",
+            "heading": "Healthcare Challenges",
             "items": [
               {
                 "icon": "workforce",
-                "label": "Workload pressure"
+                "label": "Growing pressure on healthcare staff"
+              },
+              {
+                "icon": "experience",
+                "label": "Need for better patient experiences"
               },
               {
                 "icon": "transport",
-                "label": "Supply transport"
+                "label": "Transporting supplies and samples between departments"
+              },
+              {
+                "icon": "building",
+                "label": "Managing large healthcare facilities"
               },
               {
                 "icon": "sanitization",
-                "label": "Infection control"
+                "label": "Maintaining high hygiene standards"
               },
               {
                 "icon": "uptime",
-                "label": "Time management"
+                "label": "Supporting continuous 24/7 operations"
               }
             ]
           },
           "puduHelp": {
-            "heading": "How PUDU Robots Help",
+            "heading": "How PUDU Helps",
             "items": [
               {
-                "icon": "samples",
-                "label": "Sample transport"
-              },
-              {
                 "icon": "medicine",
-                "label": "Medicine distribution"
+                "label": "Medical Supply Delivery"
               },
               {
                 "icon": "delivery",
-                "label": "Supply transport"
+                "label": "Internal Logistics Support"
               },
               {
-                "icon": "sanitization",
-                "label": "Sanitization and cleaning"
+                "icon": "guidance",
+                "label": "Patient & Visitor Guidance"
+              },
+              {
+                "icon": "samples",
+                "label": "Laboratory Support"
+              },
+              {
+                "icon": "cleaning",
+                "label": "Smart Cleaning"
+              },
+              {
+                "icon": "uptime",
+                "label": "Around-the-Clock Operations"
               }
             ]
           },
           "results": {
-            "heading": "Results",
+            "heading": "Expected Outcomes",
             "items": [
               {
-                "icon": "service",
-                "label": "More time for patient care"
+                "icon": "experience",
+                "label": "Improved patient experience"
               },
               {
                 "icon": "efficiency",
-                "label": "Improved efficiency"
+                "label": "Higher healthcare service efficiency"
               },
               {
-                "icon": "safety",
-                "label": "Reduced risk"
+                "icon": "automation",
+                "label": "Reduced repetitive operational tasks"
+              },
+              {
+                "icon": "productivity",
+                "label": "Greater staff productivity"
+              },
+              {
+                "icon": "transport",
+                "label": "Better internal logistics performance"
+              },
+              {
+                "icon": "sanitization",
+                "label": "Improved hygiene and safety standards"
+              },
+              {
+                "icon": "speed",
+                "label": "Faster service response times"
               }
             ]
           }
@@ -679,35 +1847,512 @@
         "scenarios": [
           {
             "title": "Multi-Scenario Coverage",
-            "subtitle": "Medical Supply Delivery · Sanitation Support · Visitor Guidance",
+            "subtitle": "Patient Arrival · Supply Chain · Laboratory · Patient Care · Facility Hygiene · 24/7 Operations",
             "imageAlt": "Isometric view of Pudu robots operating across a hospital",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_a81a02f812.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "Healthcare",
+            "aboutTitle": "Patient Arrival → Visitor Guidance",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "PuduBot 2",
-                "imageAlt": "PuduBot 2 delivering supplies in a hospital corridor",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Patient Arrival → Visitor Guidance",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Healthcare Challenges",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "Growing pressure on healthcare staff"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better patient experiences"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Transporting supplies and samples between departments"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large healthcare facilities"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining high hygiene standards"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting continuous 24/7 operations"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
-              "items": []
+              "heading": "How PUDU Helps",
+              "items": [
+                "Patient & Visitor Guidance — Help patients and visitors navigate clinics, departments, and healthcare facilities."
+              ]
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Patient and visitor guidance",
+                  "Department information services",
+                  "Interactive visitor engagement",
+                  "Reduced front-desk workload"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Registration & Reception → Navigation Assistance",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Registration & Reception → Navigation Assistance",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Healthcare Challenges",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "Growing pressure on healthcare staff"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better patient experiences"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Transporting supplies and samples between departments"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large healthcare facilities"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining high hygiene standards"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Interactive visitor engagement and department information services that reduce front-desk workload."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Patient and visitor guidance",
+                  "Department information services",
+                  "Interactive visitor engagement",
+                  "Reduced front-desk workload"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Pharmacy & Supply Chain → Medical Supply Transport",
             "slideKeys": [
               "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Pharmacy & Supply Chain → Medical Supply Transport",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Healthcare Challenges",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "Growing pressure on healthcare staff"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better patient experiences"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Transporting supplies and samples between departments"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large healthcare facilities"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining high hygiene standards"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Medical Supply Delivery — Transport medications, consumables, and medical supplies across departments."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Medical supply transportation",
+                  "Internal logistics workflows",
+                  "Medication and materials movement",
+                  "Inter-department operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Laboratory Operations → Secure Sample Transport",
+            "slideKeys": [
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — Laboratory Operations → Secure Sample Transport",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Healthcare Challenges",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "Growing pressure on healthcare staff"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better patient experiences"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Transporting supplies and samples between departments"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large healthcare facilities"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining high hygiene standards"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Laboratory Support — Transport samples and documents through secure and controlled workflows."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "Secure transport of sensitive materials",
+                  "Multi-compartment delivery",
+                  "PIN and NFC authentication",
+                  "Elevator integration",
+                  "Multi-floor operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Patient Care Areas → Internal Logistics Support",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Patient Care Areas → Internal Logistics Support",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Healthcare Challenges",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "Growing pressure on healthcare staff"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better patient experiences"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Transporting supplies and samples between departments"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large healthcare facilities"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining high hygiene standards"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Internal Logistics Support — Improve the flow of materials between pharmacies, laboratories, nursing stations, and wards."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Medical supply transportation",
+                  "Internal logistics workflows",
+                  "Medication and materials movement",
+                  "Inter-department operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Facility Hygiene → Autonomous Cleaning",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — Facility Hygiene → Autonomous Cleaning",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Healthcare Challenges",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "Growing pressure on healthcare staff"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better patient experiences"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Transporting supplies and samples between departments"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large healthcare facilities"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining high hygiene standards"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Smart Cleaning — Maintain cleaner hallways, lobbies, and public areas throughout the day."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "Hallway and lobby cleaning",
+                  "Autonomous cleaning operations",
+                  "Facilities support",
+                  "Enhanced hygiene standards"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "24/7 Hospital Operations → Continuous Logistics & Service Support",
+            "slideKeys": [
+              "pudubot2",
+              "flashbot",
+              "cc1"
+            ],
+            "solutionKeys": [
+              "pudubot2",
+              "flashbot",
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — 24/7 Hospital Operations → Continuous Logistics & Service Support",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Healthcare Challenges",
+              "items": [
+                {
+                  "icon": "workforce",
+                  "label": "Growing pressure on healthcare staff"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better patient experiences"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Transporting supplies and samples between departments"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large healthcare facilities"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining high hygiene standards"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting continuous 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": [
+                "Around-the-Clock Operations — Support healthcare operations continuously, 24 hours a day."
+              ]
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Medical supply transportation",
+                  "Internal logistics workflows",
+                  "Medication and materials movement",
+                  "Inter-department operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              },
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "Secure transport of sensitive materials",
+                  "Multi-compartment delivery",
+                  "PIN and NFC authentication",
+                  "Elevator integration",
+                  "Multi-floor operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              },
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "Hallway and lobby cleaning",
+                  "Autonomous cleaning operations",
+                  "Facilities support",
+                  "Enhanced hygiene standards"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
@@ -759,28 +2404,124 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Transportation",
+            "aboutTitle": "Passenger Guidance",
+            "slideKeys": [
+              "pudubot2",
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "pudubot2",
+              "flashbot"
+            ],
             "slides": [
               {
-                "robotName": "PuduBot 2",
-                "imageAlt": "PuduBot 2 guiding passengers in a transit terminal",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "robotName": "PUDUbot2",
+                "imageAlt": "PUDUbot2 — Passenger Guidance",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Transportation Industry Challenges",
+              "items": [
+                ""
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
-              "items": []
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Smart guidance",
+                "Order delivery",
+                "Passenger services",
+                "Facility cleaning"
+              ]
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "PUDUbot2",
+                "imageAlt": "PUDUbot2",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              },
+              {
+                "name": "FlashBot",
+                "imageAlt": "FlashBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Facility Support",
             "slideKeys": [
-              "pudubot2"
+              "flashbot",
+              "t300"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "flashbot",
+              "t300"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot",
+                "imageAlt": "FlashBot — Facility Support",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Transportation Industry Challenges",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Smart guidance",
+                "Order delivery",
+                "Passenger services",
+                "Facility cleaning"
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "FlashBot",
+                "imageAlt": "FlashBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              },
+              {
+                "name": "T300",
+                "imageAlt": "T300",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              }
+            ]
           }
         ]
       },
@@ -832,28 +2573,124 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Entertainment & Sports",
+            "aboutTitle": "Concession Delivery",
+            "slideKeys": [
+              "holabot",
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "holabot",
+              "bellabot"
+            ],
             "slides": [
               {
                 "robotName": "HolaBot",
-                "imageAlt": "HolaBot delivering concessions in a stadium",
-                "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                "imageAlt": "HolaBot — Concession Delivery",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Entertainment & Sports Industry Challenges",
+              "items": [
+                ""
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
-              "items": []
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Visitor services",
+                "Guidance",
+                "Event support",
+                "Logistics services"
+              ]
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/holabot"
+              },
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Visitor Guidance",
             "slideKeys": [
+              "kettybot",
               "holabot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "kettybot",
+              "holabot"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Visitor Guidance",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Entertainment & Sports Industry Challenges",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Visitor services",
+                "Guidance",
+                "Event support",
+                "Logistics services"
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              },
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/holabot"
+              }
+            ]
           }
         ]
       },
@@ -905,28 +2742,124 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Real Estate",
+            "aboutTitle": "Tenant Amenity Delivery",
+            "slideKeys": [
+              "bellabot",
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "bellabot",
+              "kettybot"
+            ],
             "slides": [
               {
                 "robotName": "BellaBot",
-                "imageAlt": "BellaBot delivering amenities in a commercial building",
-                "imageUrl": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+                "imageAlt": "BellaBot — Tenant Amenity Delivery",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Real Estate Industry Challenges",
+              "items": [
+                ""
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
-              "items": []
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Tenant services",
+                "Facility tours",
+                "Smart cleaning",
+                "Internal delivery"
+              ]
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              },
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Property Tours",
             "slideKeys": [
-              "bellabot"
+              "kettybot",
+              "cc1"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "kettybot",
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Property Tours",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Real Estate Industry Challenges",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Tenant services",
+                "Facility tours",
+                "Smart cleaning",
+                "Internal delivery"
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              },
+              {
+                "name": "CC1",
+                "imageAlt": "CC1",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
@@ -978,28 +2911,124 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Education",
+            "aboutTitle": "Reception & Guided Tours",
+            "slideKeys": [
+              "pudubot2",
+              "holabot"
+            ],
+            "solutionKeys": [
+              "pudubot2",
+              "holabot"
+            ],
             "slides": [
               {
-                "robotName": "PuduBot 2",
-                "imageAlt": "PuduBot 2 delivering resources across a campus",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
+                "robotName": "PUDUbot2",
+                "imageAlt": "PUDUbot2 — Reception & Guided Tours",
+                "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Education Industry Challenges",
+              "items": [
+                ""
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
-              "items": []
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "On-campus guidance",
+                "Logistics services",
+                "Student engagement",
+                "Event support"
+              ]
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "PUDUbot2",
+                "imageAlt": "PUDUbot2",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              },
+              {
+                "name": "HolaBot",
+                "imageAlt": "HolaBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/holabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Campus Logistics",
             "slideKeys": [
+              "kettybot",
               "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "kettybot",
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Campus Logistics",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Education Industry Challenges",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "On-campus guidance",
+                "Logistics services",
+                "Student engagement",
+                "Event support"
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              },
+              {
+                "name": "PUDUbot2",
+                "imageAlt": "PUDUbot2",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
           }
         ]
       },
@@ -1051,28 +3080,110 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Public Sector",
-            "slides": [
-              {
-                "robotName": "PuduBot 2",
-                "imageAlt": "PuduBot 2 guiding citizens in a public service center",
-                "imageUrl": "https://images.unsplash.com/photo-1526378722484-34553a2b2d7c?auto=format&fit=crop&w=800&q=80"
-              }
-            ],
-            "challenges": {
-              "heading": "Challenges",
-              "items": []
-            },
-            "whyChoose": {
-              "heading": "How PUDU Robots Help",
-              "items": []
-            },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "aboutTitle": "Visitor Services",
             "slideKeys": [
               "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PUDUbot2",
+                "imageAlt": "PUDUbot2 — Visitor Services",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Public Sector Industry Challenges",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Visitor services",
+                "Smart wayfinding",
+                "Internal transport",
+                "Facility maintenance"
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "PUDUbot2",
+                "imageAlt": "PUDUbot2",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Internal Transport",
+            "slideKeys": [
+              "t300",
+              "cc1"
+            ],
+            "solutionKeys": [
+              "t300",
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "T300",
+                "imageAlt": "T300 — Internal Transport",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Public Sector Industry Challenges",
+              "items": [
+                ""
+              ]
+            },
+            "whyChoose": {
+              "heading": "Why choose Pudu Robotics?",
+              "items": [
+                "Visitor services",
+                "Smart wayfinding",
+                "Internal transport",
+                "Facility maintenance"
+              ]
+            },
+            "solutionsTitle": "Robotic Solutions",
+            "solutions": [
+              {
+                "name": "T300",
+                "imageAlt": "T300",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              },
+              {
+                "name": "CC1",
+                "imageAlt": "CC1",
+                "imageUrl": "",
+                "features": [
+                  "Autonomous navigation and reliable operation",
+                  "Designed for high-traffic commercial environments",
+                  "Integrates with existing service workflows"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       }
