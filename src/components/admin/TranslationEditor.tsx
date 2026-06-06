@@ -1330,11 +1330,24 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                         const useCases = Array.isArray(industryRecord.useCases)
                           ? (industryRecord.useCases as JsonValue[])
                           : []
-                        const industryWithoutUseCases = Object.fromEntries(
-                          Object.entries(industryRecord).filter(
-                            ([key]) => key !== "useCases"
+                        const industryWithoutUseCases = (() => {
+                          const withoutUseCases = Object.fromEntries(
+                            Object.entries(industryRecord).filter(
+                              ([key]) => key !== "useCases"
+                            )
                           )
-                        )
+                          const impactPanels = withoutUseCases.impactPanels
+                          if (!isPlainObject(impactPanels)) {
+                            return withoutUseCases
+                          }
+
+                          const { challenges: _challenges, ...impactPanelsRest } =
+                            impactPanels as Record<string, JsonValue>
+                          return {
+                            ...withoutUseCases,
+                            impactPanels: impactPanelsRest,
+                          }
+                        })()
 
                         return (
                         <>
@@ -1343,6 +1356,57 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                             useCases={useCases}
                             industryRecord={industryRecord}
                             locale={locale}
+                            onChallengesChange={(nextChallenges) => {
+                              setContent((prev) => {
+                                if (!prev || !isPlainObject(prev.innovation)) {
+                                  return prev
+                                }
+                                const full = prev.innovation as Record<
+                                  string,
+                                  JsonValue
+                                >
+                                const industries = isPlainObject(full.industries)
+                                  ? {
+                                      ...(full.industries as Record<
+                                        string,
+                                        JsonValue
+                                      >),
+                                    }
+                                  : {}
+                                const prevIndustry = isPlainObject(
+                                  industries[innovationPageFocus]
+                                )
+                                  ? {
+                                      ...(industries[
+                                        innovationPageFocus
+                                      ] as Record<string, JsonValue>),
+                                    }
+                                  : {}
+                                const prevPanels = isPlainObject(
+                                  prevIndustry.impactPanels
+                                )
+                                  ? {
+                                      ...(prevIndustry.impactPanels as Record<
+                                        string,
+                                        JsonValue
+                                      >),
+                                    }
+                                  : {}
+                                industries[innovationPageFocus] = {
+                                  ...prevIndustry,
+                                  impactPanels: {
+                                    ...prevPanels,
+                                    challenges: nextChallenges,
+                                  },
+                                }
+                                const updated = applyInnovationPageEdit(
+                                  full,
+                                  innovationPageFocus,
+                                  { industries }
+                                )
+                                return { ...prev, innovation: updated }
+                              })
+                            }}
                             onChange={(nextUseCases) => {
                               setContent((prev) => {
                                 if (!prev || !isPlainObject(prev.innovation)) {
@@ -1412,9 +1476,32 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                                       ] as Record<string, JsonValue>),
                                     }
                                   : {}
+                                const prevPanels = isPlainObject(
+                                  prevIndustry.impactPanels
+                                )
+                                  ? {
+                                      ...(prevIndustry.impactPanels as Record<
+                                        string,
+                                        JsonValue
+                                      >),
+                                    }
+                                  : {}
+                                const nextPanels = isPlainObject(
+                                  (nextIndustry as Record<string, JsonValue>)
+                                    .impactPanels
+                                )
+                                  ? {
+                                      ...((nextIndustry as Record<string, JsonValue>)
+                                        .impactPanels as Record<string, JsonValue>),
+                                    }
+                                  : {}
                                 industries[innovationPageFocus] = {
                                   ...prevIndustry,
                                   ...(nextIndustry as Record<string, JsonValue>),
+                                  impactPanels: {
+                                    ...nextPanels,
+                                    challenges: prevPanels.challenges,
+                                  },
                                 }
                                 const updated = applyInnovationPageEdit(
                                   full,

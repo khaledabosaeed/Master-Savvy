@@ -2137,367 +2137,1982 @@
         ]
       },
       "transportation": {
-        "title": "النقل",
+        "title": "روبوتات PUDU لقطاع النقل والخدمات المرتبطة",
         "shortTitle": "النقل",
-        "headline": "النقل",
-        "summary": "الإرشاد الذكي · توصيل الطلبات · خدمة المسافرين",
+        "headline": "تجربة مسافرين أفضل · تشغيل أكثر كفاءة · خدمات تنقل أكثر ذكاءً",
+        "summary": "تساعد روبوتات PUDU المطارات ومحطات القطارات ومحطات المترو ومراكز النقل والموانئ ومرافق التنقل الحديثة على تحسين تجربة المسافرين، ودعم العمليات اليومية، وتقديم خدمات أكثر كفاءة واستمرارية.\n\nمن إرشاد المسافرين ونقل المواد إلى التنظيف الذكي والخدمات اللوجستية الداخلية، توفر روبوتات PUDU حلولاً عملية تدعم مستقبل النقل الذكي.",
         "imageAlt": "محطة نقل حديثة",
         "imageUrl": "https://cdn.savvyworld.ai/master/Transportation_and_Related_Service_ab54fbe5b6.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "التحديات",
-            "items": []
-          },
-          "puduHelp": {
-            "heading": "كيف تساعد روبوتات PUDU",
+            "heading": "تحديات قطاع النقل",
             "items": [
-              {
-                "icon": "guidance",
-                "label": "الإرشاد الذكي"
-              },
-              {
-                "icon": "delivery",
-                "label": "توصيل الطلبات"
-              },
-              {
-                "icon": "service",
-                "label": "خدمة المسافرين"
-              },
-              {
-                "icon": "cleaning",
-                "label": "تنظيف المرافق"
-              }
-            ]
-          },
-          "results": {
-            "heading": "النتائج",
-            "items": []
-          }
-        },
-        "scenarios": [
-          {
-            "title": "تغطية متعددة السيناريوهات",
-            "subtitle": "إرشاد المسافرين · تجزئة الممرات · دعم المرافق في ساعات الذروة",
-            "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر محطة نقل",
-            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_760afca0ea.webp"
-          }
-        ],
-        "useCases": [
-          {
-            "aboutTitle": "النقل",
-            "slides": [
-              {
-                "robotName": "PUDUbot2",
-                "imageAlt": "PUDUbot2 — إرشاد المسافرين",
-                "imageUrl": ""
-              }
-            ],
-            "challenges": {
-              "heading": "التحديات",
-              "items": []
-            },
-            "whyChoose": {
-              "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
-            },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
-            "slideKeys": [
-              "pudubot2"
-            ],
-            "solutionKeys": []
-          }
-        ]
-      },
-      "entertainment-sports": {
-        "title": "الترفيه والرياضة",
-        "shortTitle": "الترفيه والرياضة",
-        "headline": "الترفيه والرياضة",
-        "summary": "خدمة الزوار · الإرشاد · دعم الفعاليات",
-        "imageAlt": "ملعب رياضي أثناء فعالية",
-        "imageUrl": "https://cdn.savvyworld.ai/master/Entertainment_and_Sports_03db28cf1f.webp",
-        "impactPanels": {
-          "challenges": {
-            "heading": "التحديات",
-            "items": []
-          },
-          "puduHelp": {
-            "heading": "كيف تساعد روبوتات PUDU",
-            "items": [
-              {
-                "icon": "service",
-                "label": "خدمة الزوار"
-              },
-              {
-                "icon": "guidance",
-                "label": "الإرشاد"
-              },
               {
                 "icon": "events",
-                "label": "دعم الفعاليات"
+                "label": "ارتفاع أعداد الزوار والمسافرين"
               },
               {
-                "icon": "transport",
-                "label": "الخدمات اللوجستية"
-              }
-            ]
-          },
-          "results": {
-            "heading": "النتائج",
-            "items": []
-          }
-        },
-        "scenarios": [
-          {
-            "title": "تغطية متعددة السيناريوهات",
-            "subtitle": "توصيل الم concessions · ضيافة VIP · النقل خلف الكواليس",
-            "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر ملعب",
-            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_c89f272bff.webp"
-          }
-        ],
-        "useCases": [
-          {
-            "aboutTitle": "الترفيه والرياضة",
-            "slides": [
-              {
-                "robotName": "HolaBot",
-                "imageAlt": "HolaBot — توصيل نقاط البيع",
-                "imageUrl": ""
-              }
-            ],
-            "challenges": {
-              "heading": "التحديات",
-              "items": []
-            },
-            "whyChoose": {
-              "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
-            },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
-            "slideKeys": [
-              "holabot"
-            ],
-            "solutionKeys": []
-          }
-        ]
-      },
-      "real-estate": {
-        "title": "العقارات",
-        "shortTitle": "العقارات",
-        "headline": "العقارات",
-        "summary": "خدمة المستأجرين · جولات المرافق · التنظيف الذكي",
-        "imageAlt": "مبنى تجاري حديث",
-        "imageUrl": "https://cdn.savvyworld.ai/master/Residential_and_Office_Buildings_81b4141216.webp",
-        "impactPanels": {
-          "challenges": {
-            "heading": "التحديات",
-            "items": []
-          },
-          "puduHelp": {
-            "heading": "كيف تساعد روبوتات PUDU",
-            "items": [
-              {
-                "icon": "service",
-                "label": "خدمة المستأجرين"
+                "icon": "experience",
+                "label": "الحاجة إلى تحسين تجربة التنقل"
               },
               {
                 "icon": "building",
-                "label": "جولات المرافق"
+                "label": "إدارة المرافق الكبيرة والمعقدة"
+              },
+              {
+                "icon": "cleaning",
+                "label": "الحفاظ على نظافة المرافق العامة"
+              },
+              {
+                "icon": "uptime",
+                "label": "تقديم خدمات مستمرة على مدار الساعة"
+              },
+              {
+                "icon": "speed",
+                "label": "إدارة تدفق المسافرين خلال أوقات الذروة"
+              }
+            ]
+          },
+          "puduHelp": {
+            "heading": "كيف تساعد روبوتات PUDU",
+            "items": [
+              {
+                "icon": "guidance",
+                "label": "إرشاد المسافرين والزوار"
+              },
+              {
+                "icon": "service",
+                "label": "دعم مراكز المعلومات"
+              },
+              {
+                "icon": "transport",
+                "label": "الخدمات اللوجستية الداخلية"
+              },
+              {
+                "icon": "experience",
+                "label": "دعم خدمات كبار الشخصيات"
               },
               {
                 "icon": "cleaning",
                 "label": "التنظيف الذكي"
               },
               {
-                "icon": "delivery",
-                "label": "التوصيل الداخلي"
+                "icon": "uptime",
+                "label": "تشغيل على مدار الساعة"
               }
             ]
           },
           "results": {
-            "heading": "النتائج",
-            "items": []
+            "heading": "النتائج المتوقعة",
+            "items": [
+              {
+                "icon": "experience",
+                "label": "تحسين تجربة المسافرين"
+              },
+              {
+                "icon": "efficiency",
+                "label": "رفع كفاءة العمليات التشغيلية"
+              },
+              {
+                "icon": "automation",
+                "label": "تقليل الأعمال اليدوية المتكررة"
+              },
+              {
+                "icon": "productivity",
+                "label": "زيادة إنتاجية فرق العمل"
+              },
+              {
+                "icon": "transport",
+                "label": "تحسين الخدمات اللوجستية الداخلية"
+              },
+              {
+                "icon": "safety",
+                "label": "رفع معايير النظافة والسلامة"
+              },
+              {
+                "icon": "speed",
+                "label": "تحسين سرعة الاستجابة للخدمات"
+              }
+            ]
           }
         },
         "scenarios": [
           {
-            "title": "تغطية متعددة السيناريوهات",
-            "subtitle": "توصيل مرافق المستأجرين · جولات العقار · تنظيف المناطق المشتركة",
-            "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر مبنى تجاري",
-            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_494d2b48c7.webp"
+            "title": "أين يمكن استخدام روبوتات PUDU",
+            "subtitle": "المطارات · محطات القطارات · محطات المترو · مراكز النقل · الموانئ · صالات كبار الشخصيات · محطات الحافلات · مراكز الخدمات اللوجستية · المعابر الحدودية · مشاريع المدن الذكية",
+            "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر محطة نقل",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_760afca0ea.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "العقارات",
+            "aboutTitle": "وصول المسافر → الترحيب والإرشاد",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "BellaBot",
-                "imageAlt": "BellaBot — توصيل خدمات المستأجرين",
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — وصول المسافر → الترحيب والإرشاد",
                 "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات قطاع النقل",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد الزوار والمسافرين"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة التنقل"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المرافق الكبيرة والمعقدة"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المرافق العامة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات مستمرة على مدار الساعة"
+                },
+                {
+                  "icon": "speed",
+                  "label": "إدارة تدفق المسافرين خلال أوقات الذروة"
+                }
+              ]
             },
             "whyChoose": {
               "heading": "كيف تساعد روبوتات PUDU",
               "items": []
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "إرشاد المسافرين",
+                  "معلومات البوابات والخدمات",
+                  "شاشة تفاعلية للمعلومات",
+                  "تقليل الضغط على مكاتب الاستعلامات"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "عمليات المحطة → الخدمات اللوجستية الداخلية",
             "slideKeys": [
-              "bellabot"
+              "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — عمليات المحطة → الخدمات اللوجستية الداخلية",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع النقل",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد الزوار والمسافرين"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة التنقل"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المرافق الكبيرة والمعقدة"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المرافق العامة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات مستمرة على مدار الساعة"
+                },
+                {
+                  "icon": "speed",
+                  "label": "إدارة تدفق المسافرين خلال أوقات الذروة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "نقل المستلزمات والمواد",
+                  "الخدمات اللوجستية الداخلية",
+                  "دعم المرافق التشغيلية",
+                  "التنقل بين مناطق العمل المختلفة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "مناطق كبار الشخصيات → النقل الآمن ودعم الخدمات",
+            "slideKeys": [
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — مناطق كبار الشخصيات → النقل الآمن ودعم الخدمات",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع النقل",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد الزوار والمسافرين"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة التنقل"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المرافق الكبيرة والمعقدة"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المرافق العامة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات مستمرة على مدار الساعة"
+                },
+                {
+                  "icon": "speed",
+                  "label": "إدارة تدفق المسافرين خلال أوقات الذروة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "نقل المواد الحساسة",
+                  "حجرات آمنة متعددة",
+                  "مصادقة PIN و NFC",
+                  "التكامل مع المصاعد",
+                  "التشغيل متعدد الطوابق"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "المناطق العامة → التنظيف الذاتي",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — المناطق العامة → التنظيف الذاتي",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع النقل",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد الزوار والمسافرين"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة التنقل"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المرافق الكبيرة والمعقدة"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المرافق العامة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات مستمرة على مدار الساعة"
+                },
+                {
+                  "icon": "speed",
+                  "label": "إدارة تدفق المسافرين خلال أوقات الذروة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "تنظيف الصالات والممرات",
+                  "التنظيف الذاتي الذكي",
+                  "دعم فرق المرافق",
+                  "رفع معايير النظافة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
-      "education": {
-        "title": "التعليم",
-        "shortTitle": "التعليم",
-        "headline": "التعليم",
-        "summary": "الإرشاد داخل الحرم · الخدمات اللوجستية · التفاعل مع الطلاب",
-        "imageAlt": "campus جامعي",
-        "imageUrl": "https://cdn.savvyworld.ai/master/_50cce29ac7.webp",
+      "entertainment-sports": {
+        "title": "روبوتات PUDU لقطاع الترفيه والرياضة",
+        "shortTitle": "الترفيه والرياضة",
+        "headline": "تجربة زوار استثنائية · فعاليات أكثر كفاءة · وجهات ترفيهية أكثر ذكاءً",
+        "summary": "تساعد روبوتات PUDU الملاعب الرياضية والمجمعات الترفيهية ومراكز الفعاليات والمعارض والوجهات السياحية على تحسين تجربة الزوار، ودعم العمليات التشغيلية، وتعزيز الخدمات المقدمة خلال الفعاليات والمناسبات.\n\nمن إرشاد الزوار وتقديم المعلومات إلى الخدمات اللوجستية والتنظيف الذكي، توفر روبوتات PUDU حلولاً مبتكرة تدعم مستقبل الترفيه والرياضة.",
+        "imageAlt": "ملعب رياضي أثناء فعالية",
+        "imageUrl": "https://cdn.savvyworld.ai/master/Entertainment_and_Sports_03db28cf1f.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "التحديات",
-            "items": []
+            "heading": "تحديات قطاع الترفيه والرياضة",
+            "items": [
+              {
+                "icon": "events",
+                "label": "ارتفاع أعداد الزوار خلال الفعاليات"
+              },
+              {
+                "icon": "experience",
+                "label": "الحاجة إلى تحسين تجربة الجمهور"
+              },
+              {
+                "icon": "guidance",
+                "label": "إدارة الحشود والتنقل داخل المواقع"
+              },
+              {
+                "icon": "service",
+                "label": "دعم العمليات التشغيلية أثناء الفعاليات"
+              },
+              {
+                "icon": "cleaning",
+                "label": "الحفاظ على نظافة المرافق العامة"
+              },
+              {
+                "icon": "speed",
+                "label": "تقديم خدمات متواصلة خلال أوقات الذروة"
+              }
+            ]
           },
           "puduHelp": {
             "heading": "كيف تساعد روبوتات PUDU",
             "items": [
               {
                 "icon": "guidance",
-                "label": "الإرشاد داخل الحرم"
-              },
-              {
-                "icon": "transport",
-                "label": "الخدمات اللوجستية"
-              },
-              {
-                "icon": "education",
-                "label": "التفاعل مع الطلاب"
+                "label": "إرشاد الزوار والجماهير"
               },
               {
                 "icon": "events",
-                "label": "دعم الفعاليات"
+                "label": "دعم الفعاليات والمعارض"
+              },
+              {
+                "icon": "transport",
+                "label": "الخدمات اللوجستية الداخلية"
+              },
+              {
+                "icon": "experience",
+                "label": "دعم الضيافة وكبار الشخصيات"
+              },
+              {
+                "icon": "cleaning",
+                "label": "التنظيف الذكي"
+              },
+              {
+                "icon": "digitization",
+                "label": "التفاعل مع الزوار"
               }
             ]
           },
           "results": {
-            "heading": "النتائج",
-            "items": []
+            "heading": "النتائج المتوقعة",
+            "items": [
+              {
+                "icon": "experience",
+                "label": "تحسين تجربة الزوار"
+              },
+              {
+                "icon": "efficiency",
+                "label": "رفع كفاءة إدارة الفعاليات"
+              },
+              {
+                "icon": "automation",
+                "label": "تقليل الأعمال التشغيلية المتكررة"
+              },
+              {
+                "icon": "productivity",
+                "label": "زيادة إنتاجية فرق العمل"
+              },
+              {
+                "icon": "guidance",
+                "label": "تحسين تدفق الحشود"
+              },
+              {
+                "icon": "safety",
+                "label": "رفع معايير النظافة والسلامة"
+              },
+              {
+                "icon": "digitization",
+                "label": "تعزيز صورة الوجهة الترفيهية"
+              }
+            ]
           }
         },
         "scenarios": [
           {
-            "title": "تغطية متعددة السيناريوهات",
-            "subtitle": "الاستقبال والجولات الإرشادية · توصيل الأغذية والمشروبات · تنظيف الأرضيات",
-            "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر campus مدرسي",
-            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_048eb90ab6.webp"
+            "title": "أين يمكن استخدام روبوتات PUDU",
+            "subtitle": "الملاعب الرياضية · الساحات الرياضية · مراكز الفعاليات · مراكز المؤتمرات · المعارض · المجمعات الترفيهية · المدن الترفيهية · المتاحف · الوجهات السياحية · مشاريع الترفيه الذكية",
+            "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر ملعب",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_c89f272bff.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "التعليم",
+            "aboutTitle": "وصول الزوار → الترحيب والإرشاد",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "PUDUbot2",
-                "imageAlt": "PUDUbot2 — الاستقبال والجولات",
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — وصول الزوار → الترحيب والإرشاد",
                 "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات قطاع الترفيه والرياضة",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد الزوار خلال الفعاليات"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة الجمهور"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "إدارة الحشود والتنقل داخل المواقع"
+                },
+                {
+                  "icon": "service",
+                  "label": "دعم العمليات التشغيلية أثناء الفعاليات"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المرافق العامة"
+                },
+                {
+                  "icon": "speed",
+                  "label": "تقديم خدمات متواصلة خلال أوقات الذروة"
+                }
+              ]
             },
             "whyChoose": {
               "heading": "كيف تساعد روبوتات PUDU",
               "items": []
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "إرشاد الزوار",
+                  "معلومات الفعاليات",
+                  "الشاشات التفاعلية",
+                  "التفاعل مع الجمهور",
+                  "تقليل الضغط على مراكز المعلومات"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "مناطق الطعام والشراب → دعم الخدمة",
+            "slideKeys": [
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "bellabot"
+            ],
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot — مناطق الطعام والشراب → دعم الخدمة",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الترفيه والرياضة",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد الزوار خلال الفعاليات"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة الجمهور"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "إدارة الحشود والتنقل داخل المواقع"
+                },
+                {
+                  "icon": "service",
+                  "label": "دعم العمليات التشغيلية أثناء الفعاليات"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المرافق العامة"
+                },
+                {
+                  "icon": "speed",
+                  "label": "تقديم خدمات متواصلة خلال أوقات الذروة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "تقديم الضيافة",
+                  "توصيل المأكولات والمشروبات",
+                  "دعم المناطق الجماهيرية",
+                  "تحسين تجربة الزوار"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "عمليات الفعاليات → الخدمات اللوجستية الداخلية",
             "slideKeys": [
               "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — عمليات الفعاليات → الخدمات اللوجستية الداخلية",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الترفيه والرياضة",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد الزوار خلال الفعاليات"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة الجمهور"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "إدارة الحشود والتنقل داخل المواقع"
+                },
+                {
+                  "icon": "service",
+                  "label": "دعم العمليات التشغيلية أثناء الفعاليات"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المرافق العامة"
+                },
+                {
+                  "icon": "speed",
+                  "label": "تقديم خدمات متواصلة خلال أوقات الذروة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "الخدمات اللوجستية الداخلية",
+                  "نقل المعدات والمواد",
+                  "دعم فرق التشغيل",
+                  "التنقل بين مناطق الفعاليات"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "نظافة الموقع → التنظيف الذاتي",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — نظافة الموقع → التنظيف الذاتي",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع الترفيه والرياضة",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد الزوار خلال الفعاليات"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة الجمهور"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "إدارة الحشود والتنقل داخل المواقع"
+                },
+                {
+                  "icon": "service",
+                  "label": "دعم العمليات التشغيلية أثناء الفعاليات"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المرافق العامة"
+                },
+                {
+                  "icon": "speed",
+                  "label": "تقديم خدمات متواصلة خلال أوقات الذروة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "تنظيف الممرات والصالات",
+                  "التنظيف الذاتي الذكي",
+                  "دعم فرق المرافق",
+                  "الحفاظ على نظافة المواقع"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
-      "public-service": {
-        "title": "القطاع الحكومي",
-        "shortTitle": "القطاع الحكومي",
-        "headline": "القطاع الحكومي",
-        "summary": "خدمة المراجعين · التوجيه الذكي · النقل الداخلي",
-        "imageAlt": "مبنى خدمة عامة",
-        "imageUrl": "https://cdn.savvyworld.ai/master/_fa2aeeca28.webp",
+      "real-estate": {
+        "title": "روبوتات PUDU لقطاع العقارات وإدارة المرافق",
+        "shortTitle": "العقارات",
+        "headline": "تجربة مستأجرين أفضل · مبانٍ أكثر ذكاءً · تشغيل أكثر كفاءة",
+        "summary": "تساعد روبوتات PUDU الأبراج التجارية والمجمعات السكنية والمشاريع متعددة الاستخدامات والمراكز التجارية على تحسين تجربة المستأجرين والزوار، ورفع كفاءة العمليات التشغيلية، وتقديم خدمات عقارية أكثر ذكاءً واستدامة.\n\nمن خدمات المستأجرين والإرشاد إلى الخدمات اللوجستية الداخلية والتنظيف الذكي، توفر روبوتات PUDU حلولاً عملية تدعم مستقبل العقارات الذكية.",
+        "imageAlt": "مبنى تجاري حديث",
+        "imageUrl": "https://cdn.savvyworld.ai/master/Residential_and_Office_Buildings_81b4141216.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "التحديات",
-            "items": []
+            "heading": "تحديات قطاع العقارات",
+            "items": [
+              {
+                "icon": "experience",
+                "label": "ارتفاع توقعات المستأجرين"
+              },
+              {
+                "icon": "building",
+                "label": "إدارة المباني متعددة الطوابق"
+              },
+              {
+                "icon": "service",
+                "label": "الحاجة إلى تحسين جودة الخدمات"
+              },
+              {
+                "icon": "cost",
+                "label": "زيادة تكاليف التشغيل والصيانة"
+              },
+              {
+                "icon": "maintenance",
+                "label": "إدارة المرافق والمساحات المشتركة"
+              },
+              {
+                "icon": "cleaning",
+                "label": "الحفاظ على نظافة المباني والمرافق"
+              },
+              {
+                "icon": "uptime",
+                "label": "تقديم خدمات مستمرة على مدار الساعة"
+              }
+            ]
           },
           "puduHelp": {
             "heading": "كيف تساعد روبوتات PUDU",
             "items": [
               {
                 "icon": "service",
-                "label": "خدمة المراجعين"
+                "label": "خدمات المستأجرين والزوار"
               },
               {
                 "icon": "guidance",
-                "label": "التوجيه الذكي"
+                "label": "الإرشاد داخل المباني"
               },
               {
                 "icon": "transport",
-                "label": "النقل الداخلي"
+                "label": "الخدمات اللوجستية الداخلية"
               },
               {
-                "icon": "maintenance",
-                "label": "صيانة المرافق"
+                "icon": "experience",
+                "label": "دعم خدمات الاستقبال"
+              },
+              {
+                "icon": "cleaning",
+                "label": "التنظيف الذكي"
+              },
+              {
+                "icon": "building",
+                "label": "تشغيل متعدد الطوابق"
               }
             ]
           },
           "results": {
-            "heading": "النتائج",
-            "items": []
+            "heading": "النتائج المتوقعة",
+            "items": [
+              {
+                "icon": "experience",
+                "label": "تحسين تجربة المستأجرين"
+              },
+              {
+                "icon": "efficiency",
+                "label": "رفع كفاءة العمليات التشغيلية"
+              },
+              {
+                "icon": "automation",
+                "label": "تقليل الأعمال اليدوية المتكررة"
+              },
+              {
+                "icon": "productivity",
+                "label": "زيادة إنتاجية فرق المرافق"
+              },
+              {
+                "icon": "transport",
+                "label": "تحسين الخدمات اللوجستية الداخلية"
+              },
+              {
+                "icon": "safety",
+                "label": "رفع معايير النظافة والسلامة"
+              },
+              {
+                "icon": "digitization",
+                "label": "تعزيز صورة المشروع العقاري"
+              },
+              {
+                "icon": "service",
+                "label": "زيادة رضا المستأجرين والزوار"
+              }
+            ]
           }
         },
         "scenarios": [
           {
-            "title": "تغطية متعددة السيناريوهات",
-            "subtitle": "إرشاد المواطنين · نقل الوثائق الداخلية · تنظيف المناطق العامة",
+            "title": "أين يمكن استخدام روبوتات PUDU",
+            "subtitle": "الأبراج التجارية · المجمعات السكنية · المشاريع متعددة الاستخدامات · المجمعات المكتبية · المراكز التجارية · مراكز الأعمال · المناطق المالية · المشاريع العقارية الذكية · مرافق إدارة الممتلكات · مشاريع المدن الذكية",
+            "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر مبنى تجاري",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_494d2b48c7.webp"
+          }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "وصول الزوار → الترحيب والإرشاد",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — وصول الزوار → الترحيب والإرشاد",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع العقارات",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "ارتفاع توقعات المستأجرين"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المباني متعددة الطوابق"
+                },
+                {
+                  "icon": "service",
+                  "label": "الحاجة إلى تحسين جودة الخدمات"
+                },
+                {
+                  "icon": "cost",
+                  "label": "زيادة تكاليف التشغيل والصيانة"
+                },
+                {
+                  "icon": "maintenance",
+                  "label": "إدارة المرافق والمساحات المشتركة"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المباني والمرافق"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات مستمرة على مدار الساعة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "إرشاد الزوار",
+                  "معلومات المبنى والخدمات",
+                  "التفاعل مع المستأجرين",
+                  "تقليل الضغط على الاستقبال"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "خدمات المستأجرين → توصيل الطرود والمستندات",
+            "slideKeys": [
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — خدمات المستأجرين → توصيل الطرود والمستندات",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع العقارات",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "ارتفاع توقعات المستأجرين"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المباني متعددة الطوابق"
+                },
+                {
+                  "icon": "service",
+                  "label": "الحاجة إلى تحسين جودة الخدمات"
+                },
+                {
+                  "icon": "cost",
+                  "label": "زيادة تكاليف التشغيل والصيانة"
+                },
+                {
+                  "icon": "maintenance",
+                  "label": "إدارة المرافق والمساحات المشتركة"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المباني والمرافق"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات مستمرة على مدار الساعة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "نقل الطرود والمستندات",
+                  "حجرات آمنة متعددة",
+                  "مصادقة PIN و NFC",
+                  "التكامل مع المصاعد",
+                  "التشغيل متعدد الطوابق"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "عمليات المكاتب والمرافق → الخدمات اللوجستية الداخلية",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — عمليات المكاتب والمرافق → الخدمات اللوجستية الداخلية",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع العقارات",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "ارتفاع توقعات المستأجرين"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المباني متعددة الطوابق"
+                },
+                {
+                  "icon": "service",
+                  "label": "الحاجة إلى تحسين جودة الخدمات"
+                },
+                {
+                  "icon": "cost",
+                  "label": "زيادة تكاليف التشغيل والصيانة"
+                },
+                {
+                  "icon": "maintenance",
+                  "label": "إدارة المرافق والمساحات المشتركة"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المباني والمرافق"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات مستمرة على مدار الساعة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "الخدمات اللوجستية الداخلية",
+                  "نقل المواد والمستلزمات",
+                  "دعم فرق التشغيل",
+                  "التنقل بين المرافق المختلفة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "المناطق المشتركة → التنظيف الذاتي",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — المناطق المشتركة → التنظيف الذاتي",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع العقارات",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "ارتفاع توقعات المستأجرين"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المباني متعددة الطوابق"
+                },
+                {
+                  "icon": "service",
+                  "label": "الحاجة إلى تحسين جودة الخدمات"
+                },
+                {
+                  "icon": "cost",
+                  "label": "زيادة تكاليف التشغيل والصيانة"
+                },
+                {
+                  "icon": "maintenance",
+                  "label": "إدارة المرافق والمساحات المشتركة"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "الحفاظ على نظافة المباني والمرافق"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تقديم خدمات مستمرة على مدار الساعة"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "تنظيف الممرات والردهات",
+                  "التنظيف الذاتي الذكي",
+                  "دعم فرق المرافق",
+                  "رفع معايير النظافة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
+          }
+        ]
+      },
+      "education": {
+        "title": "روبوتات PUDU لقطاع التعليم",
+        "shortTitle": "التعليم",
+        "headline": "تجربة تعليمية أفضل · منشآت تعليمية أكثر ذكاءً · مستقبل تعليمي أكثر ابتكاراً",
+        "summary": "تساعد روبوتات PUDU المدارس والجامعات والكليات والمعاهد التعليمية ومراكز التدريب على تحسين تجربة الطلاب والزوار، ورفع كفاءة العمليات اليومية، وتعزيز بيئات التعلم الحديثة من خلال حلول روبوتية ذكية وآمنة.\n\nمن إرشاد الطلاب والزوار إلى الخدمات اللوجستية داخل المنشآت التعليمية والتنظيف الذكي، توفر روبوتات PUDU حلولاً عملية تدعم مستقبل التعليم.",
+        "imageAlt": "campus جامعي",
+        "imageUrl": "https://cdn.savvyworld.ai/master/_50cce29ac7.webp",
+        "impactPanels": {
+          "challenges": {
+            "heading": "تحديات قطاع التعليم",
+            "items": [
+              {
+                "icon": "events",
+                "label": "إدارة أعداد كبيرة من الطلاب والزوار"
+              },
+              {
+                "icon": "experience",
+                "label": "تحسين تجربة التعليم والخدمات"
+              },
+              {
+                "icon": "building",
+                "label": "تشغيل منشآت تعليمية واسعة ومتعددة المباني"
+              },
+              {
+                "icon": "efficiency",
+                "label": "رفع كفاءة الخدمات اليومية"
+              },
+              {
+                "icon": "sanitization",
+                "label": "الحفاظ على نظافة وسلامة المرافق التعليمية"
+              },
+              {
+                "icon": "digitization",
+                "label": "دعم التحول الرقمي والابتكار"
+              }
+            ]
+          },
+          "puduHelp": {
+            "heading": "كيف تساعد روبوتات PUDU",
+            "items": [
+              {
+                "icon": "guidance",
+                "label": "إرشاد الطلاب والزوار"
+              },
+              {
+                "icon": "service",
+                "label": "دعم مراكز المعلومات"
+              },
+              {
+                "icon": "transport",
+                "label": "الخدمات اللوجستية داخل المنشآت التعليمية"
+              },
+              {
+                "icon": "events",
+                "label": "دعم الفعاليات التعليمية"
+              },
+              {
+                "icon": "cleaning",
+                "label": "التنظيف الذكي"
+              },
+              {
+                "icon": "education",
+                "label": "تعزيز الابتكار والتعلم"
+              }
+            ]
+          },
+          "results": {
+            "heading": "النتائج المتوقعة",
+            "items": [
+              {
+                "icon": "experience",
+                "label": "تحسين تجربة الطلاب والزوار"
+              },
+              {
+                "icon": "efficiency",
+                "label": "رفع كفاءة العمليات اليومية"
+              },
+              {
+                "icon": "automation",
+                "label": "تقليل الأعمال التشغيلية المتكررة"
+              },
+              {
+                "icon": "productivity",
+                "label": "زيادة إنتاجية فرق العمل"
+              },
+              {
+                "icon": "transport",
+                "label": "تحسين الخدمات اللوجستية الداخلية"
+              },
+              {
+                "icon": "safety",
+                "label": "رفع معايير النظافة والسلامة"
+              },
+              {
+                "icon": "digitization",
+                "label": "تعزيز صورة المؤسسة التعليمية"
+              },
+              {
+                "icon": "education",
+                "label": "دعم ثقافة الابتكار والتقنيات الحديثة"
+              }
+            ]
+          }
+        },
+        "scenarios": [
+          {
+            "title": "أين يمكن استخدام روبوتات PUDU",
+            "subtitle": "المدارس · الجامعات · الكليات · المعاهد التعليمية · مراكز التدريب · المكتبات · مراكز الأبحاث · مراكز الابتكار · المختبرات التعليمية · المنشآت التعليمية الذكية",
+            "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر campus مدرسي",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_048eb90ab6.webp"
+          }
+        ],
+        "useCases": [
+          {
+            "aboutTitle": "وصول الطالب أو الزائر → الإرشاد والاستقبال الذكي",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
+            "slides": [
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — وصول الطالب أو الزائر → الإرشاد والاستقبال الذكي",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع التعليم",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "إدارة أعداد كبيرة من الطلاب والزوار"
+                },
+                {
+                  "icon": "experience",
+                  "label": "تحسين تجربة التعليم والخدمات"
+                },
+                {
+                  "icon": "building",
+                  "label": "تشغيل منشآت تعليمية واسعة ومتعددة المباني"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "رفع كفاءة الخدمات اليومية"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على نظافة وسلامة المرافق التعليمية"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "دعم التحول الرقمي والابتكار"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "إرشاد الطلاب والزوار",
+                  "معلومات المباني والقاعات",
+                  "التفاعل مع الطلاب",
+                  "دعم مراكز الاستقبال والمعلومات"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "المؤتمرات والمعارض التعليمية → دعم الفعاليات والزوار",
+            "slideKeys": [
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "bellabot"
+            ],
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot — المؤتمرات والمعارض التعليمية → دعم الفعاليات والزوار",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع التعليم",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "إدارة أعداد كبيرة من الطلاب والزوار"
+                },
+                {
+                  "icon": "experience",
+                  "label": "تحسين تجربة التعليم والخدمات"
+                },
+                {
+                  "icon": "building",
+                  "label": "تشغيل منشآت تعليمية واسعة ومتعددة المباني"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "رفع كفاءة الخدمات اليومية"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على نظافة وسلامة المرافق التعليمية"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "دعم التحول الرقمي والابتكار"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "الخدمات داخل المنشآت التعليمية",
+                  "توصيل المواد التعليمية",
+                  "دعم الفعاليات والأنشطة",
+                  "تعزيز تجربة الطلاب والزوار"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "المكتبات والخدمات التعليمية → نقل المواد والمستندات",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — المكتبات والخدمات التعليمية → نقل المواد والمستندات",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع التعليم",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "إدارة أعداد كبيرة من الطلاب والزوار"
+                },
+                {
+                  "icon": "experience",
+                  "label": "تحسين تجربة التعليم والخدمات"
+                },
+                {
+                  "icon": "building",
+                  "label": "تشغيل منشآت تعليمية واسعة ومتعددة المباني"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "رفع كفاءة الخدمات اليومية"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على نظافة وسلامة المرافق التعليمية"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "دعم التحول الرقمي والابتكار"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "الخدمات اللوجستية الداخلية",
+                  "نقل المستندات والمستلزمات",
+                  "دعم العمليات التشغيلية",
+                  "التنقل بين المباني المختلفة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "المرافق العامة → التنظيف الذكي المستمر",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — المرافق العامة → التنظيف الذكي المستمر",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات قطاع التعليم",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "إدارة أعداد كبيرة من الطلاب والزوار"
+                },
+                {
+                  "icon": "experience",
+                  "label": "تحسين تجربة التعليم والخدمات"
+                },
+                {
+                  "icon": "building",
+                  "label": "تشغيل منشآت تعليمية واسعة ومتعددة المباني"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "رفع كفاءة الخدمات اليومية"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على نظافة وسلامة المرافق التعليمية"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "دعم التحول الرقمي والابتكار"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "تنظيف القاعات والممرات",
+                  "التنظيف الذاتي الذكي",
+                  "دعم فرق المرافق",
+                  "رفع معايير النظافة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
+          }
+        ]
+      },
+      "public-service": {
+        "title": "روبوتات PUDU للقطاع الحكومي",
+        "shortTitle": "القطاع الحكومي",
+        "headline": "خدمات حكومية أكثر كفاءة · تجربة مستفيد أفضل · مرافق حكومية أكثر ذكاءً",
+        "summary": "تساعد روبوتات PUDU الجهات الحكومية والهيئات والمؤسسات العامة والمراكز الخدمية على تحسين تجربة المستفيدين، ورفع كفاءة العمليات اليومية، وتقديم خدمات أكثر سرعة واستدامة.\n\nمن إرشاد المراجعين والزوار إلى الخدمات اللوجستية الداخلية والتنظيف الذكي، توفر روبوتات PUDU حلولاً عملية تدعم مستقبل الخدمات الحكومية الذكية.",
+        "imageAlt": "مبنى خدمة عامة",
+        "imageUrl": "https://cdn.savvyworld.ai/master/_fa2aeeca28.webp",
+        "impactPanels": {
+          "challenges": {
+            "heading": "تحديات القطاع الحكومي",
+            "items": [
+              {
+                "icon": "events",
+                "label": "ارتفاع أعداد المراجعين والزوار"
+              },
+              {
+                "icon": "experience",
+                "label": "الحاجة إلى تحسين تجربة المستفيد"
+              },
+              {
+                "icon": "speed",
+                "label": "تقليل أوقات الانتظار"
+              },
+              {
+                "icon": "building",
+                "label": "إدارة المرافق الحكومية الكبيرة"
+              },
+              {
+                "icon": "efficiency",
+                "label": "رفع كفاءة العمليات التشغيلية"
+              },
+              {
+                "icon": "sanitization",
+                "label": "الحفاظ على نظافة وسلامة المرافق"
+              },
+              {
+                "icon": "digitization",
+                "label": "دعم مستهدفات التحول الرقمي"
+              }
+            ]
+          },
+          "puduHelp": {
+            "heading": "كيف تساعد روبوتات PUDU",
+            "items": [
+              {
+                "icon": "guidance",
+                "label": "إرشاد المراجعين والزوار"
+              },
+              {
+                "icon": "service",
+                "label": "دعم مراكز المعلومات"
+              },
+              {
+                "icon": "transport",
+                "label": "الخدمات اللوجستية الداخلية"
+              },
+              {
+                "icon": "experience",
+                "label": "دعم مكاتب الاستقبال"
+              },
+              {
+                "icon": "cleaning",
+                "label": "التنظيف الذكي"
+              },
+              {
+                "icon": "uptime",
+                "label": "تشغيل على مدار الساعة"
+              }
+            ]
+          },
+          "results": {
+            "heading": "النتائج المتوقعة",
+            "items": [
+              {
+                "icon": "experience",
+                "label": "تحسين تجربة المستفيد"
+              },
+              {
+                "icon": "speed",
+                "label": "تقليل أوقات الانتظار"
+              },
+              {
+                "icon": "efficiency",
+                "label": "رفع كفاءة الخدمات الحكومية"
+              },
+              {
+                "icon": "automation",
+                "label": "تقليل الأعمال التشغيلية المتكررة"
+              },
+              {
+                "icon": "productivity",
+                "label": "زيادة إنتاجية الموظفين"
+              },
+              {
+                "icon": "transport",
+                "label": "تحسين الخدمات اللوجستية الداخلية"
+              },
+              {
+                "icon": "safety",
+                "label": "رفع معايير النظافة والسلامة"
+              },
+              {
+                "icon": "digitization",
+                "label": "دعم برامج التحول الرقمي"
+              }
+            ]
+          }
+        },
+        "scenarios": [
+          {
+            "title": "أين يمكن استخدام روبوتات PUDU",
+            "subtitle": "الوزارات · الهيئات الحكومية · الأمانات والبلديات · المراكز الخدمية · مراكز خدمة المستفيدين · المحاكم · المطارات والمنافذ الحكومية · المراكز الإدارية · المجمعات الحكومية · مشاريع المدن الذكية",
             "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر مبنى خدمة عامة",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_a81a02f812.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "القطاع الحكومي",
+            "aboutTitle": "وصول المستفيد → الاستقبال والإرشاد الذكي",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "PUDUbot2",
-                "imageAlt": "PUDUbot2 — خدمات الزوار",
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — وصول المستفيد → الاستقبال والإرشاد الذكي",
                 "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات القطاع الحكومي",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد المراجعين والزوار"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المستفيد"
+                },
+                {
+                  "icon": "speed",
+                  "label": "تقليل أوقات الانتظار"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المرافق الحكومية الكبيرة"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "رفع كفاءة العمليات التشغيلية"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على نظافة وسلامة المرافق"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "دعم مستهدفات التحول الرقمي"
+                }
+              ]
             },
             "whyChoose": {
               "heading": "كيف تساعد روبوتات PUDU",
               "items": []
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "إرشاد المراجعين والزوار",
+                  "معلومات الخدمات الحكومية",
+                  "الشاشات التفاعلية",
+                  "تقليل الضغط على مراكز المعلومات والاستقبال"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "الفعاليات والمؤتمرات الحكومية → دعم الضيافة والخدمات المساندة",
+            "slideKeys": [
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "bellabot"
+            ],
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot — الفعاليات والمؤتمرات الحكومية → دعم الضيافة والخدمات المساندة",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الحكومي",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد المراجعين والزوار"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المستفيد"
+                },
+                {
+                  "icon": "speed",
+                  "label": "تقليل أوقات الانتظار"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المرافق الحكومية الكبيرة"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "رفع كفاءة العمليات التشغيلية"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على نظافة وسلامة المرافق"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "دعم مستهدفات التحول الرقمي"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "دعم الخدمات الداخلية",
+                  "المساعدة في الفعاليات والمؤتمرات الحكومية",
+                  "تعزيز تجربة الزوار",
+                  "الخدمات المساندة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "العمليات الداخلية → نقل المستندات والمستلزمات",
             "slideKeys": [
               "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — العمليات الداخلية → نقل المستندات والمستلزمات",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الحكومي",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد المراجعين والزوار"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المستفيد"
+                },
+                {
+                  "icon": "speed",
+                  "label": "تقليل أوقات الانتظار"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المرافق الحكومية الكبيرة"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "رفع كفاءة العمليات التشغيلية"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على نظافة وسلامة المرافق"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "دعم مستهدفات التحول الرقمي"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "الخدمات اللوجستية الداخلية",
+                  "نقل المستندات والمستلزمات",
+                  "دعم العمليات التشغيلية",
+                  "التنقل بين الإدارات المختلفة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "العمليات الآمنة → نقل المستندات الحساسة",
+            "slideKeys": [
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — العمليات الآمنة → نقل المستندات الحساسة",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الحكومي",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد المراجعين والزوار"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المستفيد"
+                },
+                {
+                  "icon": "speed",
+                  "label": "تقليل أوقات الانتظار"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المرافق الحكومية الكبيرة"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "رفع كفاءة العمليات التشغيلية"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على نظافة وسلامة المرافق"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "دعم مستهدفات التحول الرقمي"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "نقل المستندات الحساسة",
+                  "حجرات آمنة متعددة",
+                  "مصادقة PIN و NFC",
+                  "التكامل مع المصاعد",
+                  "التشغيل متعدد الطوابق"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "المرافق العامة → التنظيف الذكي المستمر",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — المرافق العامة → التنظيف الذكي المستمر",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "تحديات القطاع الحكومي",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "ارتفاع أعداد المراجعين والزوار"
+                },
+                {
+                  "icon": "experience",
+                  "label": "الحاجة إلى تحسين تجربة المستفيد"
+                },
+                {
+                  "icon": "speed",
+                  "label": "تقليل أوقات الانتظار"
+                },
+                {
+                  "icon": "building",
+                  "label": "إدارة المرافق الحكومية الكبيرة"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "رفع كفاءة العمليات التشغيلية"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "الحفاظ على نظافة وسلامة المرافق"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "دعم مستهدفات التحول الرقمي"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "كيف تساعد روبوتات PUDU",
+              "items": []
+            },
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "تنظيف الممرات والردهات",
+                  "التنظيف الذاتي الذكي",
+                  "دعم فرق المرافق",
+                  "رفع معايير النظافة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       }

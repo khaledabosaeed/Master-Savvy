@@ -2137,367 +2137,1982 @@
         ]
       },
       "transportation": {
-        "title": "Transportation",
+        "title": "PUDU Robotics for Transportation & Mobility",
         "shortTitle": "Transportation",
-        "headline": "Transportation",
-        "summary": "Smart guidance · Order delivery · Passenger services",
+        "headline": "Better Passenger Experience · Higher Operational Efficiency · Smarter Mobility Services",
+        "summary": "PUDU Robotics helps airports, railway stations, metro networks, transportation hubs, ports, and modern mobility facilities improve passenger experience, support daily operations, and deliver smarter services with greater efficiency and consistency.\n\nFrom passenger guidance and internal logistics to autonomous cleaning and facility support, PUDU provides practical solutions designed for the future of smart transportation.",
         "imageAlt": "Modern transit terminal with travelers",
         "imageUrl": "https://cdn.savvyworld.ai/master/Transportation_and_Related_Service_ab54fbe5b6.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "Challenges",
-            "items": []
-          },
-          "puduHelp": {
-            "heading": "How PUDU Robots Help",
+            "heading": "Transportation Challenges",
             "items": [
               {
-                "icon": "guidance",
-                "label": "Smart guidance"
+                "icon": "events",
+                "label": "Growing passenger volumes"
               },
               {
-                "icon": "delivery",
-                "label": "Order delivery"
+                "icon": "experience",
+                "label": "Need for better travel experiences"
               },
               {
-                "icon": "service",
-                "label": "Passenger services"
+                "icon": "building",
+                "label": "Managing large and complex facilities"
               },
               {
                 "icon": "cleaning",
-                "label": "Facility cleaning"
+                "label": "Maintaining cleanliness in public areas"
+              },
+              {
+                "icon": "uptime",
+                "label": "Supporting continuous 24/7 operations"
+              },
+              {
+                "icon": "speed",
+                "label": "Managing passenger flow during peak periods"
+              }
+            ]
+          },
+          "puduHelp": {
+            "heading": "How PUDU Helps",
+            "items": [
+              {
+                "icon": "guidance",
+                "label": "Passenger & Visitor Guidance"
+              },
+              {
+                "icon": "service",
+                "label": "Information Services"
+              },
+              {
+                "icon": "transport",
+                "label": "Internal Logistics Support"
+              },
+              {
+                "icon": "experience",
+                "label": "VIP Lounge Support"
+              },
+              {
+                "icon": "cleaning",
+                "label": "Smart Cleaning"
+              },
+              {
+                "icon": "uptime",
+                "label": "Around-the-Clock Operations"
               }
             ]
           },
           "results": {
-            "heading": "Results",
-            "items": []
+            "heading": "Expected Outcomes",
+            "items": [
+              {
+                "icon": "experience",
+                "label": "Enhanced passenger experience"
+              },
+              {
+                "icon": "efficiency",
+                "label": "Higher operational efficiency"
+              },
+              {
+                "icon": "automation",
+                "label": "Reduced repetitive tasks"
+              },
+              {
+                "icon": "productivity",
+                "label": "Greater workforce productivity"
+              },
+              {
+                "icon": "transport",
+                "label": "Improved internal logistics"
+              },
+              {
+                "icon": "safety",
+                "label": "Higher hygiene and safety standards"
+              },
+              {
+                "icon": "speed",
+                "label": "Faster service response times"
+              }
+            ]
           }
         },
         "scenarios": [
           {
-            "title": "Multi-Scenario Coverage",
-            "subtitle": "Passenger Guidance · Concourse Retail · Peak-Hour Facility Support",
+            "title": "Ideal Applications",
+            "subtitle": "Airports · Railway Stations · Metro Networks · Transportation Hubs · Ports · VIP Lounges · Bus Stations · Logistics Centers · Border Facilities · Smart City Mobility Projects",
             "imageAlt": "Isometric view of Pudu robots operating across a transit terminal",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_760afca0ea.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "Transportation",
+            "aboutTitle": "Passenger Arrival → Welcome & Guidance",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "PUDUbot2",
-                "imageAlt": "PUDUbot2 — Passenger Guidance",
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Passenger Arrival → Welcome & Guidance",
                 "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Transportation Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Growing passenger volumes"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better travel experiences"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large and complex facilities"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining cleanliness in public areas"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting continuous 24/7 operations"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Managing passenger flow during peak periods"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
+              "heading": "How PUDU Helps",
               "items": []
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Passenger guidance",
+                  "Gate and facility information",
+                  "Interactive information services",
+                  "Reduced front-desk workload"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Terminal Operations → Internal Logistics Support",
             "slideKeys": [
               "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Terminal Operations → Internal Logistics Support",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Transportation Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Growing passenger volumes"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better travel experiences"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large and complex facilities"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining cleanliness in public areas"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting continuous 24/7 operations"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Managing passenger flow during peak periods"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Material transportation",
+                  "Internal logistics workflows",
+                  "Operational facility support",
+                  "Multi-zone transportation"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "VIP Areas → Secure Transport & Service Support",
+            "slideKeys": [
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — VIP Areas → Secure Transport & Service Support",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Transportation Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Growing passenger volumes"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better travel experiences"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large and complex facilities"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining cleanliness in public areas"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting continuous 24/7 operations"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Managing passenger flow during peak periods"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "Secure transport of sensitive items",
+                  "Multi-compartment delivery",
+                  "PIN and NFC authentication",
+                  "Elevator integration",
+                  "Multi-floor operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Public Areas → Autonomous Cleaning",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — Public Areas → Autonomous Cleaning",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Transportation Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Growing passenger volumes"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better travel experiences"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large and complex facilities"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining cleanliness in public areas"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting continuous 24/7 operations"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Managing passenger flow during peak periods"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "Terminal and hallway cleaning",
+                  "Autonomous cleaning operations",
+                  "Facilities support",
+                  "Enhanced hygiene standards"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
       "entertainment-sports": {
-        "title": "Entertainment & Sports",
+        "title": "PUDU Robotics for Entertainment & Sports",
         "shortTitle": "Entertainment & Sports",
-        "headline": "Entertainment & Sports",
-        "summary": "Visitor services · Guidance · Event support",
+        "headline": "Exceptional Visitor Experiences · Smarter Events · More Efficient Venue Operations",
+        "summary": "PUDU Robotics helps stadiums, arenas, entertainment destinations, event venues, exhibitions, and tourism attractions improve visitor experiences, support daily operations, and enhance service delivery during events and large gatherings.\n\nFrom visitor guidance and information services to logistics support and autonomous cleaning, PUDU provides innovative solutions designed for the future of entertainment and sports.",
         "imageAlt": "Sports stadium during an event",
         "imageUrl": "https://cdn.savvyworld.ai/master/Entertainment_and_Sports_03db28cf1f.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "Challenges",
-            "items": []
-          },
-          "puduHelp": {
-            "heading": "How PUDU Robots Help",
+            "heading": "Industry Challenges",
             "items": [
               {
-                "icon": "service",
-                "label": "Visitor services"
+                "icon": "events",
+                "label": "Large visitor volumes during events"
+              },
+              {
+                "icon": "experience",
+                "label": "Need for better fan experiences"
               },
               {
                 "icon": "guidance",
-                "label": "Guidance"
+                "label": "Managing crowd movement"
+              },
+              {
+                "icon": "service",
+                "label": "Supporting event operations efficiently"
+              },
+              {
+                "icon": "cleaning",
+                "label": "Maintaining cleanliness in public spaces"
+              },
+              {
+                "icon": "speed",
+                "label": "Delivering services during peak periods"
+              }
+            ]
+          },
+          "puduHelp": {
+            "heading": "How PUDU Helps",
+            "items": [
+              {
+                "icon": "guidance",
+                "label": "Visitor & Fan Guidance"
               },
               {
                 "icon": "events",
-                "label": "Event support"
+                "label": "Event & Exhibition Support"
               },
               {
                 "icon": "transport",
-                "label": "Logistics services"
+                "label": "Internal Logistics Support"
+              },
+              {
+                "icon": "experience",
+                "label": "VIP Hospitality Support"
+              },
+              {
+                "icon": "cleaning",
+                "label": "Smart Cleaning"
+              },
+              {
+                "icon": "digitization",
+                "label": "Interactive Engagement"
               }
             ]
           },
           "results": {
-            "heading": "Results",
-            "items": []
+            "heading": "Expected Outcomes",
+            "items": [
+              {
+                "icon": "experience",
+                "label": "Enhanced visitor experience"
+              },
+              {
+                "icon": "efficiency",
+                "label": "More efficient event operations"
+              },
+              {
+                "icon": "automation",
+                "label": "Reduced repetitive operational tasks"
+              },
+              {
+                "icon": "productivity",
+                "label": "Higher workforce productivity"
+              },
+              {
+                "icon": "guidance",
+                "label": "Improved crowd flow management"
+              },
+              {
+                "icon": "safety",
+                "label": "Higher hygiene and safety standards"
+              },
+              {
+                "icon": "digitization",
+                "label": "Stronger destination brand image"
+              }
+            ]
           }
         },
         "scenarios": [
           {
-            "title": "Multi-Scenario Coverage",
-            "subtitle": "Concession Delivery · VIP Hospitality · Back-of-House Transport",
+            "title": "Ideal Applications",
+            "subtitle": "Sports Stadiums · Arenas · Event Centers · Convention Centers · Exhibitions · Entertainment Complexes · Theme Parks · Museums · Tourism Attractions · Smart Entertainment Destinations",
             "imageAlt": "Isometric view of Pudu robots operating across a stadium",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_c89f272bff.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "Entertainment & Sports",
+            "aboutTitle": "Arrival → Visitor Welcome & Guidance",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "HolaBot",
-                "imageAlt": "HolaBot — Concession Delivery",
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Arrival → Visitor Welcome & Guidance",
                 "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Industry Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Large visitor volumes during events"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better fan experiences"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "Managing crowd movement"
+                },
+                {
+                  "icon": "service",
+                  "label": "Supporting event operations efficiently"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining cleanliness in public spaces"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Delivering services during peak periods"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
+              "heading": "How PUDU Helps",
               "items": []
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Visitor guidance",
+                  "Event information",
+                  "Interactive displays",
+                  "Fan engagement",
+                  "Reduced information desk workload"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Food & Beverage Areas → Service Support",
             "slideKeys": [
-              "holabot"
+              "bellabot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "bellabot"
+            ],
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot — Food & Beverage Areas → Service Support",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Industry Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Large visitor volumes during events"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better fan experiences"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "Managing crowd movement"
+                },
+                {
+                  "icon": "service",
+                  "label": "Supporting event operations efficiently"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining cleanliness in public spaces"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Delivering services during peak periods"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "Hospitality services",
+                  "Food and beverage delivery",
+                  "Guest experience enhancement",
+                  "Crowded venue support"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Event Operations → Internal Logistics Support",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Event Operations → Internal Logistics Support",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Industry Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Large visitor volumes during events"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better fan experiences"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "Managing crowd movement"
+                },
+                {
+                  "icon": "service",
+                  "label": "Supporting event operations efficiently"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining cleanliness in public spaces"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Delivering services during peak periods"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Internal logistics support",
+                  "Equipment transportation",
+                  "Operational team support",
+                  "Multi-zone venue operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Venue Hygiene → Autonomous Cleaning",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — Venue Hygiene → Autonomous Cleaning",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Industry Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Large visitor volumes during events"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need for better fan experiences"
+                },
+                {
+                  "icon": "guidance",
+                  "label": "Managing crowd movement"
+                },
+                {
+                  "icon": "service",
+                  "label": "Supporting event operations efficiently"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining cleanliness in public spaces"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Delivering services during peak periods"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "Hallway and concourse cleaning",
+                  "Autonomous cleaning operations",
+                  "Facilities support",
+                  "Enhanced venue hygiene"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
       "real-estate": {
-        "title": "Real Estate",
+        "title": "PUDU Robotics for Real Estate & Property Management",
         "shortTitle": "Real Estate",
-        "headline": "Real Estate",
-        "summary": "Tenant services · Facility tours · Smart cleaning",
+        "headline": "Better Tenant Experiences · Smarter Buildings · More Efficient Operations",
+        "summary": "PUDU Robotics helps commercial towers, residential communities, mixed-use developments, business districts, and smart real estate projects improve tenant experiences, enhance operational efficiency, and deliver smarter property services.\n\nFrom visitor guidance and tenant services to internal logistics and autonomous cleaning, PUDU provides practical solutions designed for the future of smart buildings.",
         "imageAlt": "Modern commercial building exterior",
         "imageUrl": "https://cdn.savvyworld.ai/master/Residential_and_Office_Buildings_81b4141216.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "Challenges",
-            "items": []
-          },
-          "puduHelp": {
-            "heading": "How PUDU Robots Help",
+            "heading": "Real Estate Challenges",
             "items": [
               {
-                "icon": "service",
-                "label": "Tenant services"
+                "icon": "experience",
+                "label": "Rising tenant expectations"
               },
               {
                 "icon": "building",
-                "label": "Facility tours"
+                "label": "Managing multi-floor buildings"
+              },
+              {
+                "icon": "service",
+                "label": "Improving service quality"
+              },
+              {
+                "icon": "cost",
+                "label": "Increasing operational and maintenance costs"
+              },
+              {
+                "icon": "maintenance",
+                "label": "Managing shared facilities and common areas"
               },
               {
                 "icon": "cleaning",
-                "label": "Smart cleaning"
+                "label": "Maintaining building cleanliness"
               },
               {
-                "icon": "delivery",
-                "label": "Internal delivery"
+                "icon": "uptime",
+                "label": "Supporting 24/7 operations"
+              }
+            ]
+          },
+          "puduHelp": {
+            "heading": "How PUDU Helps",
+            "items": [
+              {
+                "icon": "service",
+                "label": "Tenant & Visitor Services"
+              },
+              {
+                "icon": "guidance",
+                "label": "Building Navigation"
+              },
+              {
+                "icon": "transport",
+                "label": "Internal Logistics Support"
+              },
+              {
+                "icon": "experience",
+                "label": "Reception Support"
+              },
+              {
+                "icon": "cleaning",
+                "label": "Smart Cleaning"
+              },
+              {
+                "icon": "building",
+                "label": "Multi-Floor Operations"
               }
             ]
           },
           "results": {
-            "heading": "Results",
-            "items": []
+            "heading": "Expected Outcomes",
+            "items": [
+              {
+                "icon": "experience",
+                "label": "Enhanced tenant experience"
+              },
+              {
+                "icon": "efficiency",
+                "label": "Higher operational efficiency"
+              },
+              {
+                "icon": "automation",
+                "label": "Reduced repetitive tasks"
+              },
+              {
+                "icon": "productivity",
+                "label": "Greater facilities team productivity"
+              },
+              {
+                "icon": "transport",
+                "label": "Improved internal logistics"
+              },
+              {
+                "icon": "safety",
+                "label": "Higher hygiene and safety standards"
+              },
+              {
+                "icon": "digitization",
+                "label": "Stronger property brand image"
+              },
+              {
+                "icon": "service",
+                "label": "Increased tenant satisfaction"
+              }
+            ]
           }
         },
         "scenarios": [
           {
-            "title": "Multi-Scenario Coverage",
-            "subtitle": "Tenant Amenity Delivery · Property Tours · Common-Area Cleaning",
+            "title": "Ideal Applications",
+            "subtitle": "Commercial Towers · Residential Communities · Mixed-Use Developments · Office Complexes · Shopping Centers · Business Parks · Financial Districts · Smart Real Estate Projects · Property Management Facilities · Smart City Developments",
             "imageAlt": "Isometric view of Pudu robots operating across a commercial building",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_494d2b48c7.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "Real Estate",
+            "aboutTitle": "Visitor Arrival → Welcome & Guidance",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "BellaBot",
-                "imageAlt": "BellaBot — Tenant Amenity Delivery",
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Visitor Arrival → Welcome & Guidance",
                 "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Real Estate Challenges",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "Rising tenant expectations"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing multi-floor buildings"
+                },
+                {
+                  "icon": "service",
+                  "label": "Improving service quality"
+                },
+                {
+                  "icon": "cost",
+                  "label": "Increasing operational and maintenance costs"
+                },
+                {
+                  "icon": "maintenance",
+                  "label": "Managing shared facilities and common areas"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining building cleanliness"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting 24/7 operations"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
+              "heading": "How PUDU Helps",
               "items": []
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Visitor guidance",
+                  "Building information services",
+                  "Tenant engagement",
+                  "Reduced reception workload"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Tenant Services → Parcel & Document Delivery",
             "slideKeys": [
-              "bellabot"
+              "flashbot"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — Tenant Services → Parcel & Document Delivery",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Real Estate Challenges",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "Rising tenant expectations"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing multi-floor buildings"
+                },
+                {
+                  "icon": "service",
+                  "label": "Improving service quality"
+                },
+                {
+                  "icon": "cost",
+                  "label": "Increasing operational and maintenance costs"
+                },
+                {
+                  "icon": "maintenance",
+                  "label": "Managing shared facilities and common areas"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining building cleanliness"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "Parcel and document delivery",
+                  "Secure multi-compartment transport",
+                  "PIN and NFC authentication",
+                  "Elevator integration",
+                  "Multi-floor operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Office & Facility Operations → Internal Logistics",
+            "slideKeys": [
+              "pudubot2"
+            ],
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Office & Facility Operations → Internal Logistics",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Real Estate Challenges",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "Rising tenant expectations"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing multi-floor buildings"
+                },
+                {
+                  "icon": "service",
+                  "label": "Improving service quality"
+                },
+                {
+                  "icon": "cost",
+                  "label": "Increasing operational and maintenance costs"
+                },
+                {
+                  "icon": "maintenance",
+                  "label": "Managing shared facilities and common areas"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining building cleanliness"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Internal logistics support",
+                  "Material transportation",
+                  "Facilities operations support",
+                  "Cross-building movement"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Common Areas → Autonomous Cleaning",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — Common Areas → Autonomous Cleaning",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Real Estate Challenges",
+              "items": [
+                {
+                  "icon": "experience",
+                  "label": "Rising tenant expectations"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing multi-floor buildings"
+                },
+                {
+                  "icon": "service",
+                  "label": "Improving service quality"
+                },
+                {
+                  "icon": "cost",
+                  "label": "Increasing operational and maintenance costs"
+                },
+                {
+                  "icon": "maintenance",
+                  "label": "Managing shared facilities and common areas"
+                },
+                {
+                  "icon": "cleaning",
+                  "label": "Maintaining building cleanliness"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Supporting 24/7 operations"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "Lobby and hallway cleaning",
+                  "Autonomous cleaning operations",
+                  "Facilities support",
+                  "Enhanced hygiene standards"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
       "education": {
-        "title": "Education",
+        "title": "PUDU Robotics for Education",
         "shortTitle": "Education",
-        "headline": "Education",
-        "summary": "On-campus guidance · Logistics services · Student engagement",
+        "headline": "Better Educational Experience · Smarter Educational Facilities · A More Innovative Future",
+        "summary": "PUDU Robotics helps schools, universities, colleges, training institutes, and educational centers improve student and visitor experiences, raise daily operational efficiency, and enhance modern learning environments through smart and safe robotic solutions.\n\nFrom guiding students and visitors to logistics within educational facilities and smart cleaning, PUDU provides practical solutions that support the future of education.",
         "imageAlt": "University campus with students",
         "imageUrl": "https://cdn.savvyworld.ai/master/_50cce29ac7.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "Challenges",
-            "items": []
+            "heading": "Education Sector Challenges",
+            "items": [
+              {
+                "icon": "events",
+                "label": "Managing large numbers of students and visitors"
+              },
+              {
+                "icon": "experience",
+                "label": "Improving education and service experience"
+              },
+              {
+                "icon": "building",
+                "label": "Operating large, multi-building educational facilities"
+              },
+              {
+                "icon": "efficiency",
+                "label": "Raising daily service efficiency"
+              },
+              {
+                "icon": "sanitization",
+                "label": "Maintaining facility cleanliness and safety"
+              },
+              {
+                "icon": "digitization",
+                "label": "Supporting digital transformation and innovation"
+              }
+            ]
           },
           "puduHelp": {
-            "heading": "How PUDU Robots Help",
+            "heading": "How PUDU Helps",
             "items": [
               {
                 "icon": "guidance",
-                "label": "On-campus guidance"
+                "label": "Student & Visitor Guidance"
+              },
+              {
+                "icon": "service",
+                "label": "Information Center Support"
               },
               {
                 "icon": "transport",
-                "label": "Logistics services"
-              },
-              {
-                "icon": "education",
-                "label": "Student engagement"
+                "label": "Logistics within Educational Facilities"
               },
               {
                 "icon": "events",
-                "label": "Event support"
+                "label": "Educational Event Support"
+              },
+              {
+                "icon": "cleaning",
+                "label": "Smart Cleaning"
+              },
+              {
+                "icon": "education",
+                "label": "Innovation & Learning Engagement"
               }
             ]
           },
           "results": {
-            "heading": "Results",
-            "items": []
+            "heading": "Expected Outcomes",
+            "items": [
+              {
+                "icon": "experience",
+                "label": "Improved student and visitor experience"
+              },
+              {
+                "icon": "efficiency",
+                "label": "Higher daily operational efficiency"
+              },
+              {
+                "icon": "automation",
+                "label": "Reduced repetitive operational tasks"
+              },
+              {
+                "icon": "productivity",
+                "label": "Greater team productivity"
+              },
+              {
+                "icon": "transport",
+                "label": "Improved internal logistics"
+              },
+              {
+                "icon": "safety",
+                "label": "Higher hygiene and safety standards"
+              },
+              {
+                "icon": "digitization",
+                "label": "Stronger institutional brand image"
+              },
+              {
+                "icon": "education",
+                "label": "Support for innovation culture"
+              }
+            ]
           }
         },
         "scenarios": [
           {
-            "title": "Multi-Scenario Coverage",
-            "subtitle": "Reception & Guided Tours · Food & Beverage Delivery · Floor Cleaning",
+            "title": "Ideal Applications",
+            "subtitle": "Schools · Universities · Colleges · Training Institutes · Libraries · Research Centers · Innovation Hubs · Educational Laboratories · Smart Educational Facilities",
             "imageAlt": "Isometric view of Pudu robots operating across a school campus",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_048eb90ab6.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "Education",
+            "aboutTitle": "Student or Visitor Arrival → Smart Welcome & Guidance",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "PUDUbot2",
-                "imageAlt": "PUDUbot2 — Reception & Guided Tours",
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Student or Visitor Arrival → Smart Welcome & Guidance",
                 "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Education Sector Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Managing large numbers of students and visitors"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Improving education and service experience"
+                },
+                {
+                  "icon": "building",
+                  "label": "Operating large, multi-building educational facilities"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "Raising daily service efficiency"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining facility cleanliness and safety"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "Supporting digital transformation and innovation"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
+              "heading": "How PUDU Helps",
               "items": []
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Student and visitor guidance",
+                  "Building and classroom information",
+                  "Student engagement",
+                  "Reception and information desk support"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Educational Events → Activity & Visitor Support",
+            "slideKeys": [
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "bellabot"
+            ],
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot — Educational Events → Activity & Visitor Support",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Education Sector Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Managing large numbers of students and visitors"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Improving education and service experience"
+                },
+                {
+                  "icon": "building",
+                  "label": "Operating large, multi-building educational facilities"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "Raising daily service efficiency"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining facility cleanliness and safety"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "Supporting digital transformation and innovation"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "Educational facility service support",
+                  "Educational material delivery",
+                  "Event and activity support",
+                  "Enhanced student and visitor experience"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Educational Facilities → Internal Logistics",
             "slideKeys": [
               "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Educational Facilities → Internal Logistics",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Education Sector Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Managing large numbers of students and visitors"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Improving education and service experience"
+                },
+                {
+                  "icon": "building",
+                  "label": "Operating large, multi-building educational facilities"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "Raising daily service efficiency"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining facility cleanliness and safety"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "Supporting digital transformation and innovation"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Internal logistics support",
+                  "Document and supply transport",
+                  "Operational support",
+                  "Multi-building movement"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Public Areas → Continuous Smart Cleaning",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — Public Areas → Continuous Smart Cleaning",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Education Sector Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Managing large numbers of students and visitors"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Improving education and service experience"
+                },
+                {
+                  "icon": "building",
+                  "label": "Operating large, multi-building educational facilities"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "Raising daily service efficiency"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining facility cleanliness and safety"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "Supporting digital transformation and innovation"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "Classroom and hallway cleaning",
+                  "Autonomous cleaning operations",
+                  "Facilities support",
+                  "Enhanced hygiene standards"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
       "public-service": {
-        "title": "Public Sector",
+        "title": "PUDU Robotics for the Public Sector",
         "shortTitle": "Public Sector",
-        "headline": "Public Sector",
-        "summary": "Visitor services · Smart wayfinding · Internal transport",
+        "headline": "More Efficient Government Services · Better Beneficiary Experience · Smarter Government Facilities",
+        "summary": "PUDU Robotics helps government entities, public institutions, service centers, and beneficiary service hubs improve beneficiary experiences, raise daily operational efficiency, and deliver faster, more sustainable services aligned with digital transformation goals.\n\nFrom guiding visitors and beneficiaries to internal logistics and smart cleaning, PUDU provides practical solutions that support the future of smart government services.",
         "imageAlt": "Public service building interior",
         "imageUrl": "https://cdn.savvyworld.ai/master/_fa2aeeca28.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "Challenges",
-            "items": []
-          },
-          "puduHelp": {
-            "heading": "How PUDU Robots Help",
+            "heading": "Public Sector Challenges",
             "items": [
               {
-                "icon": "service",
-                "label": "Visitor services"
+                "icon": "events",
+                "label": "Growing numbers of visitors and beneficiaries"
               },
               {
+                "icon": "experience",
+                "label": "Need to improve beneficiary experience"
+              },
+              {
+                "icon": "speed",
+                "label": "Reducing waiting times"
+              },
+              {
+                "icon": "building",
+                "label": "Managing large government facilities"
+              },
+              {
+                "icon": "efficiency",
+                "label": "Raising operational efficiency"
+              },
+              {
+                "icon": "sanitization",
+                "label": "Maintaining facility cleanliness and safety"
+              },
+              {
+                "icon": "digitization",
+                "label": "Supporting digital transformation goals"
+              }
+            ]
+          },
+          "puduHelp": {
+            "heading": "How PUDU Helps",
+            "items": [
+              {
                 "icon": "guidance",
-                "label": "Smart wayfinding"
+                "label": "Visitor & Beneficiary Guidance"
+              },
+              {
+                "icon": "service",
+                "label": "Information Center Support"
               },
               {
                 "icon": "transport",
-                "label": "Internal transport"
+                "label": "Internal Logistics Support"
               },
               {
-                "icon": "maintenance",
-                "label": "Facility maintenance"
+                "icon": "experience",
+                "label": "Reception Desk Support"
+              },
+              {
+                "icon": "cleaning",
+                "label": "Smart Cleaning"
+              },
+              {
+                "icon": "uptime",
+                "label": "Around-the-Clock Operations"
               }
             ]
           },
           "results": {
-            "heading": "Results",
-            "items": []
+            "heading": "Expected Outcomes",
+            "items": [
+              {
+                "icon": "experience",
+                "label": "Improved beneficiary experience"
+              },
+              {
+                "icon": "speed",
+                "label": "Reduced waiting times"
+              },
+              {
+                "icon": "efficiency",
+                "label": "Higher government service efficiency"
+              },
+              {
+                "icon": "automation",
+                "label": "Reduced repetitive operational tasks"
+              },
+              {
+                "icon": "productivity",
+                "label": "Increased employee productivity"
+              },
+              {
+                "icon": "transport",
+                "label": "Improved internal logistics"
+              },
+              {
+                "icon": "safety",
+                "label": "Higher hygiene and safety standards"
+              },
+              {
+                "icon": "digitization",
+                "label": "Support for digital transformation programs"
+              }
+            ]
           }
         },
         "scenarios": [
           {
-            "title": "Multi-Scenario Coverage",
-            "subtitle": "Citizen Wayfinding · Internal Document Transport · Public Area Cleaning",
+            "title": "Ideal Applications",
+            "subtitle": "Ministries · Government Authorities · Municipalities · Service Centers · Beneficiary Service Hubs · Courts · Airports & Government Ports · Administrative Centers · Government Complexes · Smart City Projects",
             "imageAlt": "Isometric view of Pudu robots operating across a public service building",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_a81a02f812.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "Public Sector",
+            "aboutTitle": "Beneficiary Arrival → Smart Reception & Guidance",
+            "slideKeys": [
+              "kettybot"
+            ],
+            "solutionKeys": [
+              "kettybot"
+            ],
             "slides": [
               {
-                "robotName": "PUDUbot2",
-                "imageAlt": "PUDUbot2 — Visitor Services",
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Beneficiary Arrival → Smart Reception & Guidance",
                 "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Public Sector Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Growing numbers of visitors and beneficiaries"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need to improve beneficiary experience"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Reducing waiting times"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large government facilities"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "Raising operational efficiency"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining facility cleanliness and safety"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "Supporting digital transformation goals"
+                }
+              ]
             },
             "whyChoose": {
-              "heading": "How PUDU Robots Help",
+              "heading": "How PUDU Helps",
               "items": []
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "KettyBot",
+                "imageAlt": "KettyBot",
+                "imageUrl": "",
+                "features": [
+                  "Visitor and beneficiary guidance",
+                  "Government service information",
+                  "Interactive displays",
+                  "Reduced information desk workload"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Government Events → Hospitality & Supporting Services",
+            "slideKeys": [
+              "bellabot"
+            ],
+            "solutionKeys": [
+              "bellabot"
+            ],
+            "slides": [
+              {
+                "robotName": "BellaBot",
+                "imageAlt": "BellaBot — Government Events → Hospitality & Supporting Services",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Public Sector Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Growing numbers of visitors and beneficiaries"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need to improve beneficiary experience"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Reducing waiting times"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large government facilities"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "Raising operational efficiency"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining facility cleanliness and safety"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "Supporting digital transformation goals"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "BellaBot",
+                "imageAlt": "BellaBot",
+                "imageUrl": "",
+                "features": [
+                  "Internal service support",
+                  "Government event assistance",
+                  "Enhanced visitor experience",
+                  "Supporting services"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/bellabot"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Internal Operations → Document & Supply Logistics",
             "slideKeys": [
               "pudubot2"
             ],
-            "solutionKeys": []
+            "solutionKeys": [
+              "pudubot2"
+            ],
+            "slides": [
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Internal Operations → Document & Supply Logistics",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Public Sector Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Growing numbers of visitors and beneficiaries"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need to improve beneficiary experience"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Reducing waiting times"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large government facilities"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "Raising operational efficiency"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining facility cleanliness and safety"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "Supporting digital transformation goals"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Internal logistics support",
+                  "Document and supply transport",
+                  "Operational support",
+                  "Cross-department movement"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Secure Operations → Sensitive Document Transport",
+            "slideKeys": [
+              "flashbot"
+            ],
+            "solutionKeys": [
+              "flashbot"
+            ],
+            "slides": [
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — Secure Operations → Sensitive Document Transport",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Public Sector Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Growing numbers of visitors and beneficiaries"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need to improve beneficiary experience"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Reducing waiting times"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large government facilities"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "Raising operational efficiency"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining facility cleanliness and safety"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "Supporting digital transformation goals"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "Secure document transport",
+                  "Multi-compartment delivery",
+                  "PIN and NFC authentication",
+                  "Elevator integration",
+                  "Multi-floor operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              }
+            ]
+          },
+          {
+            "aboutTitle": "Public Areas → Continuous Smart Cleaning",
+            "slideKeys": [
+              "cc1"
+            ],
+            "solutionKeys": [
+              "cc1"
+            ],
+            "slides": [
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — Public Areas → Continuous Smart Cleaning",
+                "imageUrl": ""
+              }
+            ],
+            "challenges": {
+              "heading": "Public Sector Challenges",
+              "items": [
+                {
+                  "icon": "events",
+                  "label": "Growing numbers of visitors and beneficiaries"
+                },
+                {
+                  "icon": "experience",
+                  "label": "Need to improve beneficiary experience"
+                },
+                {
+                  "icon": "speed",
+                  "label": "Reducing waiting times"
+                },
+                {
+                  "icon": "building",
+                  "label": "Managing large government facilities"
+                },
+                {
+                  "icon": "efficiency",
+                  "label": "Raising operational efficiency"
+                },
+                {
+                  "icon": "sanitization",
+                  "label": "Maintaining facility cleanliness and safety"
+                },
+                {
+                  "icon": "digitization",
+                  "label": "Supporting digital transformation goals"
+                }
+              ]
+            },
+            "whyChoose": {
+              "heading": "How PUDU Helps",
+              "items": []
+            },
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "Hallway and lobby cleaning",
+                  "Autonomous cleaning operations",
+                  "Facilities support",
+                  "Enhanced hygiene standards"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       }

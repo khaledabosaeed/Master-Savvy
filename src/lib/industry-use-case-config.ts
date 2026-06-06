@@ -128,52 +128,115 @@ export const INDUSTRY_USE_CASE_CONFIG: Record<IndustrySlug, IndustryUseCaseConfi
     },
     transportation: {
       titles: {
-        en: ["Passenger Guidance", "Facility Support"],
-        ar: ["إرشاد المسافرين", "دعم المرافق"],
+        en: [
+          "Passenger Arrival → Welcome & Guidance",
+          "Terminal Operations → Internal Logistics Support",
+          "VIP Areas → Secure Transport & Service Support",
+          "Public Areas → Autonomous Cleaning",
+        ],
+        ar: [
+          "وصول المسافر → الترحيب والإرشاد",
+          "عمليات المحطة → الخدمات اللوجستية الداخلية",
+          "مناطق كبار الشخصيات → النقل الآمن ودعم الخدمات",
+          "المناطق العامة → التنظيف الذاتي",
+        ],
       },
       keys: [
-        { slideKeys: ["pudubot2", "flashbot"], solutionKeys: ["pudubot2", "flashbot"] },
-        { slideKeys: ["flashbot", "t300"], solutionKeys: ["flashbot", "t300"] },
+        { slideKeys: ["kettybot"], solutionKeys: ["kettybot"] },
+        { slideKeys: ["pudubot2"], solutionKeys: ["pudubot2"] },
+        { slideKeys: ["flashbot"], solutionKeys: ["flashbot"] },
+        { slideKeys: ["cc1"], solutionKeys: ["cc1"] },
       ],
     },
     "entertainment-sports": {
       titles: {
-        en: ["Concession Delivery", "Visitor Guidance"],
-        ar: ["توصيل نقاط البيع", "إرشاد الزوار"],
+        en: [
+          "Arrival → Visitor Welcome & Guidance",
+          "Food & Beverage Areas → Service Support",
+          "Event Operations → Internal Logistics Support",
+          "Venue Hygiene → Autonomous Cleaning",
+        ],
+        ar: [
+          "وصول الزوار → الترحيب والإرشاد",
+          "مناطق الطعام والشراب → دعم الخدمة",
+          "عمليات الفعاليات → الخدمات اللوجستية الداخلية",
+          "نظافة الموقع → التنظيف الذاتي",
+        ],
       },
       keys: [
-        { slideKeys: ["holabot", "bellabot"], solutionKeys: ["holabot", "bellabot"] },
-        { slideKeys: ["kettybot", "holabot"], solutionKeys: ["kettybot", "holabot"] },
+        { slideKeys: ["kettybot"], solutionKeys: ["kettybot"] },
+        { slideKeys: ["bellabot"], solutionKeys: ["bellabot"] },
+        { slideKeys: ["pudubot2"], solutionKeys: ["pudubot2"] },
+        { slideKeys: ["cc1"], solutionKeys: ["cc1"] },
       ],
     },
     "real-estate": {
       titles: {
-        en: ["Tenant Amenity Delivery", "Property Tours"],
-        ar: ["توصيل خدمات المستأجرين", "جولات في العقار"],
+        en: [
+          "Visitor Arrival → Welcome & Guidance",
+          "Tenant Services → Parcel & Document Delivery",
+          "Office & Facility Operations → Internal Logistics",
+          "Common Areas → Autonomous Cleaning",
+        ],
+        ar: [
+          "وصول الزوار → الترحيب والإرشاد",
+          "خدمات المستأجرين → توصيل الطرود والمستندات",
+          "عمليات المكاتب والمرافق → الخدمات اللوجستية الداخلية",
+          "المناطق المشتركة → التنظيف الذاتي",
+        ],
       },
       keys: [
-        { slideKeys: ["bellabot", "kettybot"], solutionKeys: ["bellabot", "kettybot"] },
-        { slideKeys: ["kettybot", "cc1"], solutionKeys: ["kettybot", "cc1"] },
+        { slideKeys: ["kettybot"], solutionKeys: ["kettybot"] },
+        { slideKeys: ["flashbot"], solutionKeys: ["flashbot"] },
+        { slideKeys: ["pudubot2"], solutionKeys: ["pudubot2"] },
+        { slideKeys: ["cc1"], solutionKeys: ["cc1"] },
       ],
     },
     education: {
       titles: {
-        en: ["Reception & Guided Tours", "Campus Logistics"],
-        ar: ["الاستقبال والجولات", "لوجستيات الحرم"],
+        en: [
+          "Student or Visitor Arrival → Smart Welcome & Guidance",
+          "Educational Events → Activity & Visitor Support",
+          "Educational Facilities → Internal Logistics",
+          "Public Areas → Continuous Smart Cleaning",
+        ],
+        ar: [
+          "وصول الطالب أو الزائر → الإرشاد والاستقبال الذكي",
+          "المؤتمرات والمعارض التعليمية → دعم الفعاليات والزوار",
+          "المكتبات والخدمات التعليمية → نقل المواد والمستندات",
+          "المرافق العامة → التنظيف الذكي المستمر",
+        ],
       },
       keys: [
-        { slideKeys: ["pudubot2", "holabot"], solutionKeys: ["pudubot2", "holabot"] },
-        { slideKeys: ["kettybot", "pudubot2"], solutionKeys: ["kettybot", "pudubot2"] },
+        { slideKeys: ["kettybot"], solutionKeys: ["kettybot"] },
+        { slideKeys: ["bellabot"], solutionKeys: ["bellabot"] },
+        { slideKeys: ["pudubot2"], solutionKeys: ["pudubot2"] },
+        { slideKeys: ["cc1"], solutionKeys: ["cc1"] },
       ],
     },
     "public-service": {
       titles: {
-        en: ["Visitor Services", "Internal Transport"],
-        ar: ["خدمات الزوار", "النقل الداخلي"],
+        en: [
+          "Beneficiary Arrival → Smart Reception & Guidance",
+          "Government Events → Hospitality & Supporting Services",
+          "Internal Operations → Document & Supply Logistics",
+          "Secure Operations → Sensitive Document Transport",
+          "Public Areas → Continuous Smart Cleaning",
+        ],
+        ar: [
+          "وصول المستفيد → الاستقبال والإرشاد الذكي",
+          "الفعاليات والمؤتمرات الحكومية → دعم الضيافة والخدمات المساندة",
+          "العمليات الداخلية → نقل المستندات والمستلزمات",
+          "العمليات الآمنة → نقل المستندات الحساسة",
+          "المرافق العامة → التنظيف الذكي المستمر",
+        ],
       },
       keys: [
+        { slideKeys: ["kettybot"], solutionKeys: ["kettybot"] },
+        { slideKeys: ["bellabot"], solutionKeys: ["bellabot"] },
         { slideKeys: ["pudubot2"], solutionKeys: ["pudubot2"] },
-        { slideKeys: ["t300", "cc1"], solutionKeys: ["t300", "cc1"] },
+        { slideKeys: ["flashbot"], solutionKeys: ["flashbot"] },
+        { slideKeys: ["cc1"], solutionKeys: ["cc1"] },
       ],
     },
   }

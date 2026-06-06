@@ -90,7 +90,7 @@ function parseUseCase(raw: unknown): InnovationUseCaseData {
   })
 }
 
-function ChallengeItemsEditor({
+export function ChallengeItemsEditor({
   items,
   onChange,
 }: {
@@ -218,14 +218,21 @@ function RobotKeysPicker({
   label,
   value,
   onChange,
+  single = false,
 }: {
   label: string
   value: PuduRobotKey[]
   onChange: (next: PuduRobotKey[]) => void
+  single?: boolean
 }) {
   const selected = new Set(value)
 
   function toggle(key: PuduRobotKey) {
+    if (single) {
+      onChange(selected.has(key) ? [] : [key])
+      return
+    }
+
     const next = selected.has(key)
       ? value.filter((k) => k !== key)
       : [...value, key]
@@ -282,312 +289,135 @@ export default function UseCaseSectionEditor({
   onChange,
 }: UseCaseSectionEditorProps) {
   const useCase = parseUseCase(value)
+  const solution = useCase.solutions[0] ?? {
+    name: "",
+    imageAlt: "",
+    imageUrl: "",
+    features: [""],
+    learnMoreLabel: "Learn More",
+    href: "/{lang}/contact",
+  }
+  const robotKey = useCase.solutionKeys?.[0]
 
   function update(partial: Partial<InnovationUseCaseData>) {
     onChange(syncUseCaseSlides({ ...useCase, ...partial }))
   }
 
-  function updateSlideKeys(slideKeys: PuduRobotKey[]) {
-    onChange(syncUseCaseSlides({ ...useCase, slideKeys }))
+  function updateRobot(key: PuduRobotKey | undefined) {
+    if (!key) {
+      update({ solutionKeys: [], solutions: [] })
+      return
+    }
+
+    const name = ROBOT_DISPLAY_NAMES[key]
+    const existing = useCase.solutions[0]
+    update({
+      solutionKeys: [key],
+      slideKeys: [key],
+      solutions: [
+        existing ?? {
+          name,
+          imageAlt: name,
+          imageUrl: "",
+          features: [""],
+          learnMoreLabel: "Learn More",
+          href: "/{lang}/contact",
+        },
+      ],
+    })
+  }
+
+  function updateSolution(
+    partial: Partial<InnovationUseCaseData["solutions"][number]>
+  ) {
+    update({
+      solutions: [{ ...solution, ...partial }],
+    })
   }
 
   return (
-    <div className="space-y-6">
-      <div>
-        {fieldLabel("Section title (category name)")}
-        <input
-          type="text"
-          value={useCase.aboutTitle}
-          onChange={(e) => update({ aboutTitle: e.target.value })}
-          placeholder="e.g. Floor Cleaning"
-          className={textInputClass()}
-        />
-      </div>
+    <div className="space-y-4">
+      <RobotKeysPicker
+        label="Robot"
+        value={robotKey ? [robotKey] : []}
+        onChange={(keys) => updateRobot(keys[0])}
+        single
+      />
 
-      <section className="rounded-lg border border-orange-900/30 bg-zinc-900/40 p-4">
-        <h4 className="mb-1 text-sm font-semibold text-orange-200/90">
-          Challenges carousel slide
-        </h4>
-        <p className="mb-3 text-xs leading-relaxed text-zinc-500">
-          Shown as the first slide before robot images, with an icon for each
-          challenge.
-        </p>
-        <div className="mb-3">
-          {fieldLabel("Heading")}
-          <input
-            type="text"
-            value={useCase.challenges.heading}
-            onChange={(e) =>
-              update({
-                challenges: { ...useCase.challenges, heading: e.target.value },
-              })
-            }
-            placeholder="e.g. Hospitality Industry Challenges"
-            className={textInputClass()}
-          />
-        </div>
-        <ChallengeItemsEditor
-          items={normalizeUseCaseChallengeItems(useCase.challenges.items)}
-          onChange={(items) =>
-            update({ challenges: { ...useCase.challenges, items } })
-          }
-        />
-      </section>
-
-      <section className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-4">
-        <h4 className="mb-3 text-sm font-semibold text-zinc-200">
-          Robot image slider
-        </h4>
-        <RobotKeysPicker
-          label="Robots in carousel (order = slide order)"
-          value={useCase.slideKeys ?? []}
-          onChange={updateSlideKeys}
-        />
-        {(useCase.slideKeys ?? []).length > 0 && (
-          <div className="mt-4 space-y-3">
-            {(useCase.slideKeys ?? []).map((key, index) => {
-              const slide = useCase.slides[index] ?? {
-                robotName: ROBOT_DISPLAY_NAMES[key],
-                imageAlt: "",
-                imageUrl: "",
-              }
-              return (
-                <div
-                  key={`${key}-${index}`}
-                  className="rounded-md border border-zinc-800 bg-zinc-950/60 p-3"
-                >
-                  <p className="mb-2 text-xs font-medium text-zinc-400">
-                    Slide {index + 1} — {ROBOT_DISPLAY_NAMES[key]}
-                  </p>
-                  <div className="grid gap-3 sm:grid-cols-2">
-                    <div>
-                      {fieldLabel("Caption overlay")}
-                      <input
-                        type="text"
-                        value={slide.robotName}
-                        onChange={(e) => {
-                          const slides = [...useCase.slides]
-                          slides[index] = { ...slide, robotName: e.target.value }
-                          update({ slides })
-                        }}
-                        className={textInputClass()}
-                      />
-                    </div>
-                    <div>
-                      {fieldLabel("Image alt text")}
-                      <input
-                        type="text"
-                        value={slide.imageAlt}
-                        onChange={(e) => {
-                          const slides = [...useCase.slides]
-                          slides[index] = { ...slide, imageAlt: e.target.value }
-                          update({ slides })
-                        }}
-                        className={textInputClass()}
-                      />
-                    </div>
-                  </div>
-                  <div className="mt-3">
-                    {fieldLabel("Image URL (optional override)")}
-                    <input
-                      type="url"
-                      value={slide.imageUrl ?? ""}
-                      onChange={(e) => {
-                        const slides = [...useCase.slides]
-                        slides[index] = { ...slide, imageUrl: e.target.value }
-                        update({ slides })
-                      }}
-                      placeholder="Leave empty for default robot image"
-                      className={`${textInputClass()} font-mono text-xs`}
-                    />
-                    {isHttpUrl(slide.imageUrl ?? "") && (
-                      <div className="mt-2 overflow-hidden rounded-md border border-zinc-800">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={slide.imageUrl}
-                          alt=""
-                          className="max-h-28 w-full object-cover"
-                        />
-                      </div>
-                    )}
-                  </div>
-                </div>
-              )
-            })}
+      {robotKey && (
+        <div className="grid gap-3 sm:grid-cols-2">
+          <div>
+            {fieldLabel("Product name")}
+            <input
+              type="text"
+              value={solution.name}
+              onChange={(e) => updateSolution({ name: e.target.value })}
+              className={textInputClass()}
+            />
           </div>
-        )}
-      </section>
-
-      <section className="rounded-lg border border-blue-900/30 bg-zinc-900/40 p-4">
-        <h4 className="mb-3 text-sm font-semibold text-blue-200/90">
-          Why choose Pudu Robotics panel
-        </h4>
-        <div className="mb-3">
-          {fieldLabel("Heading")}
-          <input
-            type="text"
-            value={useCase.whyChoose.heading}
-            onChange={(e) =>
-              update({
-                whyChoose: { ...useCase.whyChoose, heading: e.target.value },
-              })
-            }
-            className={textInputClass()}
-          />
-        </div>
-        <StringListEditor
-          label="Bullet points"
-          items={useCase.whyChoose.items}
-          onChange={(items) =>
-            update({ whyChoose: { ...useCase.whyChoose, items } })
-          }
-          addLabel="Add benefit"
-        />
-      </section>
-
-      <section className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-4">
-        <h4 className="mb-3 text-sm font-semibold text-zinc-200">
-          Robotic solutions
-        </h4>
-        <div className="mb-4">
-          {fieldLabel("Section heading")}
-          <input
-            type="text"
-            value={useCase.solutionsTitle}
-            onChange={(e) => update({ solutionsTitle: e.target.value })}
-            className={textInputClass()}
-          />
-        </div>
-        <RobotKeysPicker
-          label="Solution robots (links cards to robot images when URL empty)"
-          value={useCase.solutionKeys ?? []}
-          onChange={(solutionKeys) => {
-            const solutions = solutionKeys.map((key, index) => {
-              const existing = useCase.solutions[index]
-              const name = ROBOT_DISPLAY_NAMES[key]
-              return (
-                existing ?? {
-                  name,
-                  imageAlt: name,
-                  imageUrl: "",
-                  features: [""],
-                  learnMoreLabel: "Learn More",
-                  href: "/{lang}/contact",
-                }
-              )
-            })
-            update({ solutionKeys, solutions })
-          }}
-        />
-
-        <div className="mt-4 space-y-4">
-          {useCase.solutions.map((solution, index) => (
-            <div
-              key={index}
-              className="rounded-md border border-zinc-800 bg-zinc-950/60 p-3"
-            >
-              <div className="mb-3 flex items-center justify-between gap-2">
-                <p className="text-sm font-medium text-zinc-300">
-                  Solution {index + 1}
-                </p>
-                <button
-                  type="button"
-                  onClick={() => {
-                    const solutionKeys = (useCase.solutionKeys ?? []).filter(
-                      (_, i) => i !== index
-                    )
-                    update({
-                      solutionKeys,
-                      solutions: useCase.solutions.filter((_, i) => i !== index),
-                    })
-                  }}
-                  className="inline-flex items-center gap-1 rounded-md border border-red-900/50 px-2 py-1 text-xs text-red-300 hover:bg-red-950/40"
-                >
-                  <Trash2 className="h-3.5 w-3.5" />
-                  Remove
-                </button>
-              </div>
-              <div className="grid gap-3 sm:grid-cols-2">
-                <div>
-                  {fieldLabel("Product name")}
-                  <input
-                    type="text"
-                    value={solution.name}
-                    onChange={(e) => {
-                      const solutions = [...useCase.solutions]
-                      solutions[index] = { ...solution, name: e.target.value }
-                      update({ solutions })
-                    }}
-                    className={textInputClass()}
-                  />
-                </div>
-                <div>
-                  {fieldLabel("Learn more link")}
-                  <input
-                    type="text"
-                    value={solution.href}
-                    onChange={(e) => {
-                      const solutions = [...useCase.solutions]
-                      solutions[index] = { ...solution, href: e.target.value }
-                      update({ solutions })
-                    }}
-                    placeholder="https://… or /{lang}/contact"
-                    className={`${textInputClass()} font-mono text-xs`}
-                  />
-                </div>
-              </div>
-              <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                <div>
-                  {fieldLabel("Image alt")}
-                  <input
-                    type="text"
-                    value={solution.imageAlt}
-                    onChange={(e) => {
-                      const solutions = [...useCase.solutions]
-                      solutions[index] = {
-                        ...solution,
-                        imageAlt: e.target.value,
-                      }
-                      update({ solutions })
-                    }}
-                    className={textInputClass()}
-                  />
-                </div>
-                <div>
-                  {fieldLabel("Image URL")}
-                  <input
-                    type="url"
-                    value={solution.imageUrl ?? ""}
-                    onChange={(e) => {
-                      const solutions = [...useCase.solutions]
-                      solutions[index] = {
-                        ...solution,
-                        imageUrl: e.target.value,
-                      }
-                      update({ solutions })
-                    }}
-                    className={`${textInputClass()} font-mono text-xs`}
-                  />
-                </div>
-              </div>
-              <div className="mt-3">
-                <StringListEditor
-                  label="Features"
-                  items={solution.features}
-                  onChange={(features) => {
-                    const solutions = [...useCase.solutions]
-                    solutions[index] = { ...solution, features }
-                    update({ solutions })
-                  }}
-                  addLabel="Add feature"
+          <div>
+            {fieldLabel("Learn more link")}
+            <input
+              type="text"
+              value={solution.href}
+              onChange={(e) => updateSolution({ href: e.target.value })}
+              placeholder="https://… or /{lang}/contact"
+              className={`${textInputClass()} font-mono text-xs`}
+            />
+          </div>
+          <div>
+            {fieldLabel("Image alt")}
+            <input
+              type="text"
+              value={solution.imageAlt}
+              onChange={(e) => updateSolution({ imageAlt: e.target.value })}
+              className={textInputClass()}
+            />
+          </div>
+          <div>
+            {fieldLabel("Image URL")}
+            <input
+              type="url"
+              value={solution.imageUrl ?? ""}
+              onChange={(e) => updateSolution({ imageUrl: e.target.value })}
+              placeholder="Leave empty for default robot image"
+              className={`${textInputClass()} font-mono text-xs`}
+            />
+            {isHttpUrl(solution.imageUrl ?? "") && (
+              <div className="mt-2 overflow-hidden rounded-md border border-zinc-800">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={solution.imageUrl}
+                  alt=""
+                  className="max-h-28 w-full object-cover"
                 />
               </div>
-            </div>
-          ))}
+            )}
+          </div>
         </div>
-      </section>
+      )}
+
+      {robotKey && (
+        <StringListEditor
+          label="Features"
+          items={solution.features}
+          onChange={(features) => updateSolution({ features })}
+          addLabel="Add feature"
+        />
+      )}
     </div>
   )
 }
 
 export { parseUseCase }
+
+export function getRobotCardTitle(entry: unknown, index: number): string {
+  const useCase = parseUseCase(entry)
+  const name = useCase.solutions[0]?.name?.trim()
+  if (name) return name
+
+  const key = useCase.solutionKeys?.[0]
+  if (key) return ROBOT_DISPLAY_NAMES[key]
+
+  return `Robot card ${index + 1}`
+}
