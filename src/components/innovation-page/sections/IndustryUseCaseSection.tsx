@@ -6,23 +6,20 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
 import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
+import type { TFunction } from "i18next"
 import FormattedText from "@/components/shared/FormattedText"
 import RemoteMediaImage from "@/components/shared/RemoteMediaImage"
-import {
-  type IndustrySlug,
-  type PuduRobotKey,
-} from "@/components/innovation-page/data/industries"
+import { type IndustrySlug } from "@/components/innovation-page/data/industries"
 import {
   isPuduRobotKey,
   normalizeUseCaseChallengeItems,
   resolveRobotKeys,
-  resolveUseCaseContent,
+  resolveUseCaseList,
+  type InnovationUseCaseData,
   type UseCaseChallengeItem,
 } from "@/lib/innovation-use-cases"
 import { getImpactStatIcon } from "@/components/innovation-page/data/impact-stat-icons"
-import {
-  resolveUseCaseSolutionMediaUrl,
-} from "@/lib/innovation-media"
+import { resolveUseCaseSolutionMediaUrl } from "@/lib/innovation-media"
 import {
   carouselSlide,
   fadeInUp,
@@ -32,15 +29,7 @@ import {
 
 interface IndustryUseCaseSectionProps {
   industrySlug: IndustrySlug
-  useCaseIndex: number
-  slideKeys: PuduRobotKey[]
-  solutionKeys: PuduRobotKey[]
   variant?: "light" | "tinted"
-}
-
-interface UseCasePanel {
-  heading: string
-  items: string[]
 }
 
 interface UseCaseSolution {
@@ -52,24 +41,26 @@ interface UseCaseSolution {
   href: string
 }
 
-function UseCaseChallengesCarouselSlide({
-  heading,
+interface AggregatedSolutionEntry {
+  solution: UseCaseSolution
+  robotKey?: string
+  imageUrl: string | null
+  href: string
+}
+
+function UseCaseChallengesGrid({
   items,
   isRTL,
 }: {
-  heading: string
   items: UseCaseChallengeItem[]
   isRTL: boolean
 }) {
   return (
     <div
-      className={`flex h-full flex-col overflow-y-auto bg-[oklch(0.995_0.004_260)] p-[clamp(1.25rem,2.5vw,1.75rem)] ${isRTL ? "text-right" : "text-left"}`}
+      className={`flex h-full flex-col overflow-y-auto border-t-[3px] border-t-[oklch(0.68_0.17_55)] bg-[oklch(0.995_0.004_260)] p-[clamp(1.25rem,2.5vw,1.75rem)] ${isRTL ? "text-right" : "text-left"}`}
     >
-      <h3 className="border-t-[3px] border-t-[oklch(0.68_0.17_55)] pt-3 text-[clamp(1rem,1.8vw,1.25rem)] font-bold leading-[1.25] text-[oklch(0.18_0.01_260)]">
-        <FormattedText text={heading} />
-      </h3>
       <ul
-        className={`mt-[clamp(1rem,2vw,1.25rem)] grid flex-1 grid-cols-1 gap-[clamp(0.625rem,1.2vw,0.875rem)] sm:grid-cols-2 ${isRTL ? "text-right" : "text-left"}`}
+        className={`grid flex-1 grid-cols-1 gap-[clamp(0.625rem,1.2vw,0.875rem)] sm:grid-cols-2 lg:grid-cols-3 ${isRTL ? "text-right" : "text-left"}`}
       >
         {items.map((item, index) => {
           const Icon = getImpactStatIcon(item.icon)
@@ -89,44 +80,6 @@ function UseCaseChallengesCarouselSlide({
         })}
       </ul>
     </div>
-  )
-}
-
-function UseCaseInfoPanel({
-  panel,
-  accent,
-  isRTL,
-}: {
-  panel: UseCasePanel
-  accent: "challenge" | "solution"
-  isRTL: boolean
-}) {
-  if (!panel.items?.length) {
-    return null
-  }
-
-  const accentClass =
-    accent === "challenge"
-      ? "border-t-[3px] border-t-[oklch(0.68_0.17_55)]"
-      : "border-t-[3px] border-t-[oklch(0.52_0.12_264)]"
-
-  return (
-    <article
-      className={`flex flex-1 flex-col rounded-[0.875rem] bg-[oklch(0.995_0.004_260)] p-[clamp(1.25rem,2.5vw,1.75rem)] shadow-[0_1px_3px_oklch(0.18_0.01_260/0.06)] ${accentClass} ${isRTL ? "text-right" : "text-left"}`}
-    >
-      <h3 className="text-[clamp(1rem,1.8vw,1.125rem)] font-bold leading-[1.25] text-[oklch(0.18_0.01_260)]">
-        <FormattedText text={panel.heading} />
-      </h3>
-      <ul
-        className={`mt-[clamp(0.75rem,1.5vw,1rem)] space-y-[0.625rem] text-[clamp(0.8125rem,1.4vw,0.9375rem)] leading-[1.6] text-[oklch(0.42_0.02_260)] ${isRTL ? "pr-4" : "pl-4"}`}
-      >
-        {panel.items.map((item, index) => (
-          <li key={index} className="list-disc">
-            <FormattedText text={item} />
-          </li>
-        ))}
-      </ul>
-    </article>
   )
 }
 
@@ -210,11 +163,58 @@ function SolutionCard({
   )
 }
 
+function aggregateSolutionEntries(
+  useCases: InnovationUseCaseData[],
+  t: TFunction,
+  lang: string
+): AggregatedSolutionEntry[] {
+  const seen = new Set<string>()
+  const entries: AggregatedSolutionEntry[] = []
+
+  useCases.forEach((useCase) => {
+    const resolvedSolutionKeys = resolveRobotKeys(
+      useCase.solutionKeys?.filter(isPuduRobotKey)
+    )
+    const solutions = Array.isArray(useCase.solutions) ? useCase.solutions : []
+    const solutionCount =
+      resolvedSolutionKeys.length > 0
+        ? Math.min(solutions.length, resolvedSolutionKeys.length)
+        : solutions.length
+
+    for (let index = 0; index < solutionCount; index += 1) {
+      const solution = solutions[index]
+      if (!solution) {
+        continue
+      }
+
+      const robotKey = resolvedSolutionKeys[index]
+      const dedupeKey =
+        robotKey ?? `${solution.name.trim().toLowerCase()}::${solution.href}`
+
+      if (seen.has(dedupeKey)) {
+        continue
+      }
+
+      seen.add(dedupeKey)
+      entries.push({
+        solution,
+        robotKey,
+        imageUrl: resolveUseCaseSolutionMediaUrl(
+          t,
+          solution,
+          index,
+          resolvedSolutionKeys
+        ),
+        href: solution.href?.replace("{lang}", lang) ?? `/${lang}/contact`,
+      })
+    }
+  })
+
+  return entries
+}
+
 export default function IndustryUseCaseSection({
   industrySlug,
-  useCaseIndex,
-  slideKeys: _slideKeysProp,
-  solutionKeys: solutionKeysProp,
   variant = "light",
 }: IndustryUseCaseSectionProps) {
   const { language } = useLanguage()
@@ -222,57 +222,78 @@ export default function IndustryUseCaseSection({
   const lang = language as "en" | "ar"
   const isRTL = lang === "ar"
   const prefersReduced = useReducedMotion()
-  const carouselId = useId()
+  const sectionId = useId()
   const [activeSolution, setActiveSolution] = useState(0)
   const [solutionDirection, setSolutionDirection] = useState(0)
 
-  const useCasesRaw = t(`innovation.industries.${industrySlug}.useCases`, {
-    returnObjects: true,
-  })
+  const useCases = useMemo(() => {
+    const raw = t(`innovation.industries.${industrySlug}.useCases`, {
+      returnObjects: true,
+    })
+    return resolveUseCaseList(raw)
+  }, [industrySlug, t])
+
   const impactChallengesRaw = t(
     `innovation.industries.${industrySlug}.impactPanels.challenges`,
     { returnObjects: true }
   )
-  const content = resolveUseCaseContent(useCasesRaw, useCaseIndex)
-
-  const resolvedSolutionKeys = resolveRobotKeys(
-    content?.solutionKeys?.filter(isPuduRobotKey),
-    solutionKeysProp
-  )
 
   const challengeItems = useMemo(() => {
-    const fromUseCase = normalizeUseCaseChallengeItems(content?.challenges?.items)
-    if (fromUseCase.length > 0) {
-      return fromUseCase
-    }
-
     const impactPanel =
       impactChallengesRaw && typeof impactChallengesRaw === "object"
         ? (impactChallengesRaw as { items?: unknown })
         : null
-    return normalizeUseCaseChallengeItems(impactPanel?.items)
-  }, [content?.challenges?.items, impactChallengesRaw])
-
-  const challengesHeading = useMemo(() => {
-    const fromUseCase = content?.challenges?.heading?.trim()
-    if (fromUseCase) {
-      return fromUseCase
+    const fromImpact = normalizeUseCaseChallengeItems(impactPanel?.items)
+    if (fromImpact.length > 0) {
+      return fromImpact
     }
 
+    for (const useCase of useCases) {
+      const fromUseCase = normalizeUseCaseChallengeItems(useCase.challenges?.items)
+      if (fromUseCase.length > 0) {
+        return fromUseCase
+      }
+    }
+
+    return []
+  }, [impactChallengesRaw, useCases])
+
+  const challengesHeading = useMemo(() => {
     const impactPanel =
       impactChallengesRaw && typeof impactChallengesRaw === "object"
         ? (impactChallengesRaw as { heading?: string })
         : null
-    return impactPanel?.heading?.trim() ?? ""
-  }, [content?.challenges?.heading, impactChallengesRaw])
+    const fromImpact = impactPanel?.heading?.trim()
+    if (fromImpact) {
+      return fromImpact
+    }
 
-  const hasChallengesPanel = challengeItems.length > 0 && Boolean(challengesHeading)
+    for (const useCase of useCases) {
+      const fromUseCase = useCase.challenges?.heading?.trim()
+      if (fromUseCase) {
+        return fromUseCase
+      }
+    }
 
-  const solutions = Array.isArray(content?.solutions) ? content.solutions : []
-  const solutionCount =
-    resolvedSolutionKeys.length > 0
-      ? Math.min(solutions.length, resolvedSolutionKeys.length)
-      : solutions.length
+    return ""
+  }, [impactChallengesRaw, useCases])
+
+  const solutionsTitle = useMemo(
+    () =>
+      useCases
+        .map((useCase) => useCase.solutionsTitle?.trim())
+        .find(Boolean) ?? "",
+    [useCases]
+  )
+
+  const solutionEntries = useMemo(
+    () => aggregateSolutionEntries(useCases, t, lang),
+    [lang, t, useCases]
+  )
+
+  const hasChallengesPanel =
+    challengeItems.length > 0 && Boolean(challengesHeading)
+  const solutionCount = solutionEntries.length
   const hasSolutions = solutionCount > 0
   const hasMultipleSolutions = solutionCount > 1
 
@@ -303,19 +324,15 @@ export default function IndustryUseCaseSection({
   useEffect(() => {
     setActiveSolution(0)
     setSolutionDirection(0)
-  }, [industrySlug, useCaseIndex, solutionCount])
+  }, [industrySlug, solutionCount])
 
-  if (!content?.aboutTitle?.trim()) {
+  if (!hasChallengesPanel && !hasSolutions) {
     return null
   }
 
-  const hasWhyChoosePanel = (content.whyChoose?.items ?? []).some((item) =>
-    typeof item === "string" ? item.trim() : false
-  )
-
-  if (!hasChallengesPanel && !hasSolutions && !hasWhyChoosePanel) {
-    return null
-  }
+  const sectionLabelId = hasChallengesPanel
+    ? `${sectionId}-challenges-heading`
+    : `${sectionId}-solutions-heading`
 
   const sectionBg =
     variant === "tinted"
@@ -325,97 +342,52 @@ export default function IndustryUseCaseSection({
   const activeSolutionIndex = hasSolutions
     ? Math.min(activeSolution, solutionCount - 1)
     : 0
-  const activeSolutionContent = hasSolutions
-    ? solutions[activeSolutionIndex]
+  const activeEntry = hasSolutions
+    ? solutionEntries[activeSolutionIndex]
     : undefined
-  const activeSolutionRobotKey = hasSolutions
-    ? resolvedSolutionKeys[activeSolutionIndex]
-    : undefined
-  const activeSolutionImage = activeSolutionContent
-    ? resolveUseCaseSolutionMediaUrl(
-        t,
-        activeSolutionContent,
-        activeSolutionIndex,
-        resolvedSolutionKeys
-      )
-    : null
-  const activeSolutionHref =
-    activeSolutionContent?.href?.replace("{lang}", lang) ?? `/${lang}/contact`
-
-  const solutionEntries = Array.from({ length: solutionCount }, (_, index) => {
-    const solution = solutions[index]
-    const robotKey = resolvedSolutionKeys[index]
-    return {
-      solution,
-      robotKey,
-      imageUrl: resolveUseCaseSolutionMediaUrl(
-        t,
-        solution,
-        index,
-        resolvedSolutionKeys
-      ),
-      href: solution?.href?.replace("{lang}", lang) ?? `/${lang}/contact`,
-    }
-  }).filter((entry) => entry.solution)
 
   return (
     <section
       className={`${sectionBg} py-[clamp(4rem,8vw,6.5rem)]`}
-      id={`use-case-${useCaseIndex}`}
-      aria-labelledby={`${carouselId}-heading`}
+      id="use-cases"
+      aria-labelledby={sectionLabelId}
     >
       <div className="mx-auto w-full max-w-[80rem] px-[clamp(1rem,3vw,2.5rem)]">
-        <motion.header
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportConfig}
-          variants={sectionSlideUp}
-          className={`mb-[clamp(2rem,4vw,3rem)] ${isRTL ? "text-right" : "text-left"}`}
-        >
-          <h2
-            id={`${carouselId}-heading`}
-            className="text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold leading-[1.15] tracking-[-0.02em] text-[oklch(0.18_0.01_260)]"
-          >
-            <FormattedText text={content.aboutTitle} />
-          </h2>
-        </motion.header>
+        {hasChallengesPanel && (
+          <>
+            <motion.header
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportConfig}
+              variants={sectionSlideUp}
+              className={`mb-[clamp(2rem,4vw,3rem)] ${isRTL ? "text-right" : "text-left"}`}
+            >
+              <h2
+                id={`${sectionId}-challenges-heading`}
+                className="text-[clamp(1.75rem,3.5vw,2.5rem)] font-bold leading-[1.15] tracking-[-0.02em] text-[oklch(0.18_0.01_260)]"
+              >
+                <FormattedText text={challengesHeading} />
+              </h2>
+            </motion.header>
 
-        {(hasChallengesPanel || hasWhyChoosePanel) && (
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportConfig}
-          variants={fadeInUp}
-          className={`grid grid-cols-1 items-stretch gap-[clamp(1.25rem,2.5vw,1.75rem)] ${
-            hasChallengesPanel && hasWhyChoosePanel
-              ? "lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]"
-              : ""
-          }`}
-        >
-          {hasChallengesPanel && (
-          <div className="min-h-[clamp(16rem,40vw,22rem)] overflow-hidden rounded-[0.875rem] bg-[oklch(0.94_0.005_260)]">
-            <UseCaseChallengesCarouselSlide
-              heading={challengesHeading}
-              items={challengeItems}
-              isRTL={isRTL}
-            />
-          </div>
-          )}
-
-          {hasWhyChoosePanel && (
-          <div className="flex min-h-0 flex-col gap-[clamp(1rem,2vw,1.25rem)]">
-            <UseCaseInfoPanel
-              panel={content.whyChoose}
-              accent="solution"
-              isRTL={isRTL}
-            />
-          </div>
-          )}
-        </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportConfig}
+              variants={fadeInUp}
+              className="overflow-hidden rounded-[0.875rem] bg-[oklch(0.94_0.005_260)] shadow-[0_1px_3px_oklch(0.18_0.01_260/0.06)]"
+            >
+              <UseCaseChallengesGrid items={challengeItems} isRTL={isRTL} />
+            </motion.div>
+          </>
         )}
 
         {hasSolutions && (
-          <div className="mt-[clamp(3rem,6vw,4.5rem)]">
+          <div
+            className={
+              hasChallengesPanel ? "mt-[clamp(3rem,6vw,4.5rem)]" : undefined
+            }
+          >
             <motion.header
               initial="hidden"
               whileInView="visible"
@@ -423,12 +395,14 @@ export default function IndustryUseCaseSection({
               variants={sectionSlideUp}
               className={`mb-[clamp(1.5rem,3vw,2.25rem)] ${isRTL ? "text-right" : "text-left"}`}
             >
-              <h3 className="text-[clamp(1.375rem,2.5vw,1.75rem)] font-bold leading-[1.2] tracking-[-0.015em] text-[oklch(0.18_0.01_260)]">
-                <FormattedText text={content.solutionsTitle} />
+              <h3
+                id={`${sectionId}-solutions-heading`}
+                className="text-[clamp(1.375rem,2.5vw,1.75rem)] font-bold leading-[1.2] tracking-[-0.015em] text-[oklch(0.18_0.01_260)]"
+              >
+                <FormattedText text={solutionsTitle} />
               </h3>
             </motion.header>
 
-            {/* Desktop: all solutions in a 2-column grid */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -438,18 +412,17 @@ export default function IndustryUseCaseSection({
             >
               {solutionEntries.map((entry, index) => (
                 <SolutionCard
-                  key={`${entry.robotKey}-${index}`}
+                  key={`${entry.robotKey ?? entry.solution.name}-${index}`}
                   solution={entry.solution}
                   imageUrl={entry.imageUrl}
                   href={entry.href}
                   isRTL={isRTL}
                   learnMoreFallback={t("common.learnMore")}
-                  imagePriority={useCaseIndex === 0 && index === 0}
+                  imagePriority={index === 0}
                 />
               ))}
             </motion.div>
 
-            {/* Mobile: carousel */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -458,12 +431,12 @@ export default function IndustryUseCaseSection({
               className="overflow-hidden rounded-[0.875rem] bg-[oklch(0.995_0.004_260)] shadow-[0_1px_3px_oklch(0.18_0.01_260/0.06)] lg:hidden"
               role={hasMultipleSolutions ? "group" : undefined}
               aria-roledescription={hasMultipleSolutions ? "carousel" : undefined}
-              aria-label={content.solutionsTitle}
+              aria-label={solutionsTitle}
             >
               <AnimatePresence initial={false} custom={solutionDirection} mode="wait">
-                {activeSolutionContent && activeSolutionRobotKey && (
+                {activeEntry && (
                   <motion.div
-                    key={`${activeSolutionRobotKey}-${activeSolutionIndex}`}
+                    key={`${activeEntry.robotKey ?? activeEntry.solution.name}-${activeSolutionIndex}`}
                     custom={solutionDirection}
                     variants={
                       prefersReduced
@@ -475,9 +448,9 @@ export default function IndustryUseCaseSection({
                     exit={prefersReduced ? undefined : "exit"}
                   >
                     <SolutionCard
-                      solution={activeSolutionContent}
-                      imageUrl={activeSolutionImage}
-                      href={activeSolutionHref}
+                      solution={activeEntry.solution}
+                      imageUrl={activeEntry.imageUrl}
+                      href={activeEntry.href}
                       isRTL={isRTL}
                       learnMoreFallback={t("common.learnMore")}
                     />
@@ -492,7 +465,7 @@ export default function IndustryUseCaseSection({
                   <div
                     className={`flex items-center gap-2 ${isRTL ? "flex-row-reverse" : ""}`}
                     role="tablist"
-                    aria-label={content.solutionsTitle}
+                    aria-label={solutionsTitle}
                   >
                     {Array.from({ length: solutionCount }).map((_, index) => (
                       <button

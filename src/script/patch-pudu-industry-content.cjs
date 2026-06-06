@@ -182,12 +182,13 @@ const SOLUTION_FEATURES = {
   },
 }
 
-function solution(key, locale, featureKey = key) {
+function solution(key, locale, featureKey = key, displayName) {
   const names = ROBOT_NAMES[locale]
   const features = SOLUTION_FEATURES[locale][featureKey] ?? SOLUTION_FEATURES[locale][key]
+  const name = displayName ?? names[key]
   return {
-    name: names[key],
-    imageAlt: names[key],
+    name,
+    imageAlt: name,
     imageUrl: "",
     features,
     learnMoreLabel: locale === "ar" ? "اعرف المزيد" : "Learn More",
@@ -197,18 +198,21 @@ function solution(key, locale, featureKey = key) {
 
 function buildUseCase(locale, config) {
   const names = ROBOT_NAMES[locale]
-  const primaryKey = config.slideKeys[0]
+  const displayNames = config.robotNames ?? {}
+  const slides = config.slideKeys.map((key) => {
+    const robotName = displayNames[key] ?? names[key]
+    return {
+      robotName,
+      imageAlt: `${robotName} — ${config.aboutTitle}`,
+      imageUrl: "",
+    }
+  })
+
   return {
     aboutTitle: config.aboutTitle,
     slideKeys: config.slideKeys,
     solutionKeys: config.solutionKeys,
-    slides: [
-      {
-        robotName: names[primaryKey],
-        imageAlt: `${names[primaryKey]} — ${config.aboutTitle}`,
-        imageUrl: "",
-      },
-    ],
+    slides,
     challenges: config.challenges,
     whyChoose: {
       heading: locale === "ar" ? "كيف تساعد روبوتات PUDU" : "How PUDU Helps",
@@ -216,7 +220,12 @@ function buildUseCase(locale, config) {
     },
     solutionsTitle: locale === "ar" ? "الحلول الموصى بها" : "Recommended Solutions",
     solutions: config.solutionKeys.map((key) =>
-      solution(key, locale, config.featureKeys?.[key] ?? key)
+      solution(
+        key,
+        locale,
+        config.featureKeys?.[key] ?? key,
+        config.robotNames?.[key]
+      )
     ),
   }
 }
@@ -224,9 +233,11 @@ function buildUseCase(locale, config) {
 const CONTENT = {
   en: {
     hospitality: {
-      headline: "PUDU Robotics for Hospitality",
+      title: "PUDU Robotics for Hospitality",
+      shortTitle: "Hospitality",
+      headline: "Smarter Hospitality · Faster Service · Happier Guests",
       summary:
-        "Smarter Hospitality · Faster Service · Happier Guests — PUDU Robotics helps hotels, resorts, and hospitality destinations deliver a more efficient and consistent guest experience.",
+        "PUDU Robotics helps hotels, resorts, serviced apartments, convention centers, and hospitality destinations deliver a more efficient and consistent guest experience while allowing staff to focus on what matters most: hospitality.\n\nFrom room service and guest guidance to logistics support and autonomous cleaning, PUDU provides practical solutions that improve service quality and operational efficiency.",
       impactPanels: {
         challenges: {
           heading: "Hospitality Industry Challenges",
@@ -263,8 +274,9 @@ const CONTENT = {
           ],
         },
       },
+      scenarioTitle: "Ideal Applications",
       scenarioSubtitle:
-        "Guest Arrival · Room Service · Dining · Events · Autonomous Cleaning",
+        "Hotels · Resorts · Serviced Apartments · Tourism Destinations · Convention Centers · Event Venues · VIP Lounges · Hospitality Complexes · Entertainment Resorts · Smart Hospitality Projects",
       useCases: [
         {
           aboutTitle: "Guest Arrival → Welcome & Guidance",
@@ -280,6 +292,7 @@ const CONTENT = {
           slideKeys: ["flashbot"],
           solutionKeys: ["flashbot"],
           featureKeys: { flashbot: "flashbotHospitality" },
+          robotNames: { flashbot: "FlashBot" },
           whyChooseItems: [
             "Smart Room Service — Deliver food, beverages, amenities, and guest requests safely and efficiently.",
           ],
@@ -289,7 +302,7 @@ const CONTENT = {
           slideKeys: ["bellabot"],
           solutionKeys: ["bellabot"],
           whyChooseItems: [
-            "Food and beverage delivery with interactive guest-facing service support in restaurants and lounges.",
+            "Interactive hospitality experience — Food and beverage delivery with guest-facing service support in restaurants and lounges.",
           ],
         },
         {
@@ -530,9 +543,11 @@ const CONTENT = {
   },
   ar: {
     hospitality: {
-      headline: "روبوتات PUDU للضيافة",
+      title: "روبوتات PUDU لقطاع الضيافة",
+      shortTitle: "الضيافة",
+      headline: "تجربة ضيافة أذكى · خدمة أسرع · ضيوف أكثر رضا",
       summary:
-        "ضيافة أذكى · خدمة أسرع · ضيوف أسعد — تساعد روبوتات PUDU الفنادق والمنتجعات على تقديم تجربة ضيوف أكثر كفاءة واستمرارية.",
+        "تساعد روبوتات PUDU الفنادق والمنتجعات والشقق الفندقية ومراكز المؤتمرات على تقديم تجربة ضيافة أكثر كفاءة واستمرارية، مع تمكين فرق العمل من التركيز على الضيوف بدلاً من المهام المتكررة.\n\nمن خدمة الغرف والإرشاد داخل المنشأة إلى الدعم اللوجستي والتنظيف الذكي، توفر روبوتات PUDU حلولاً عملية ترفع جودة الخدمة وتحسن الكفاءة التشغيلية.",
       impactPanels: {
         challenges: {
           heading: "تحديات قطاع الضيافة",
@@ -569,8 +584,9 @@ const CONTENT = {
           ],
         },
       },
+      scenarioTitle: "أين يمكن استخدام روبوتات PUDU",
       scenarioSubtitle:
-        "وصول الضيوف · خدمة الغرف · الطعام · الفعاليات · التنظيف الذاتي",
+        "الفنادق · المنتجعات · الشقق الفندقية · المنتجعات السياحية · مراكز المؤتمرات · قاعات المناسبات · صالات كبار الزوار · المجمعات السياحية · المرافق الترفيهية · مشاريع الضيافة الذكية",
       useCases: [
         {
           aboutTitle: "وصول الضيوف → الترحيب والإرشاد",
@@ -585,6 +601,7 @@ const CONTENT = {
           slideKeys: ["flashbot"],
           solutionKeys: ["flashbot"],
           featureKeys: { flashbot: "flashbotHospitality" },
+          robotNames: { flashbot: "FlashBot" },
           whyChooseItems: [
             "خدمة الغرف الذكية — توصيل الطعام والمشروبات والمستلزمات إلى الغرف بشكل آمن وفعال.",
           ],
@@ -594,7 +611,7 @@ const CONTENT = {
           slideKeys: ["bellabot"],
           solutionKeys: ["bellabot"],
           whyChooseItems: [
-            "توصيل الطعام والمشروبات مع دعم تفاعلي للضيوف داخل المطاعم والصالات.",
+            "تجربة ضيافة تفاعلية — توصيل الطعام والمشروبات ودعم خدمة الضيوف داخل المطاعم والصالات.",
           ],
         },
         {
@@ -850,9 +867,12 @@ function patchLocale(filePath, locale) {
 
     industry.headline = patch.headline
     industry.summary = patch.summary
+    if (patch.title) industry.title = patch.title
+    if (patch.shortTitle) industry.shortTitle = patch.shortTitle
     industry.impactPanels = patch.impactPanels
 
     if (Array.isArray(industry.scenarios) && industry.scenarios[0]) {
+      if (patch.scenarioTitle) industry.scenarios[0].title = patch.scenarioTitle
       industry.scenarios[0].subtitle = patch.scenarioSubtitle
     }
 

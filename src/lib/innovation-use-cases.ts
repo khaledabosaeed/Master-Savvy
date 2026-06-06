@@ -166,18 +166,29 @@ function isUseCaseContent(value: unknown): value is InnovationUseCaseData {
   )
 }
 
+function parseUseCaseList(rawUseCases: unknown): unknown[] {
+  if (Array.isArray(rawUseCases)) {
+    return rawUseCases
+  }
+
+  if (rawUseCases && typeof rawUseCases === "object") {
+    return Object.values(rawUseCases as Record<string, unknown>)
+  }
+
+  return []
+}
+
+/** Read all use cases from the industries useCases array (i18next-safe). */
+export function resolveUseCaseList(rawUseCases: unknown): InnovationUseCaseData[] {
+  return parseUseCaseList(rawUseCases).filter(isUseCaseContent)
+}
+
 /** Read one use case from the industries useCases array (i18next-safe). */
 export function resolveUseCaseContent(
   rawUseCases: unknown,
   index: number
 ): InnovationUseCaseData | null {
-  const list = Array.isArray(rawUseCases)
-    ? rawUseCases
-    : rawUseCases && typeof rawUseCases === "object"
-      ? Object.values(rawUseCases as Record<string, unknown>)
-      : []
-
-  const entry = list[index]
+  const entry = parseUseCaseList(rawUseCases)[index]
   return isUseCaseContent(entry) ? entry : null
 }
 

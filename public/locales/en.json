@@ -274,15 +274,7 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Table Service & Delivery",
-            "slideKeys": [
-              "holabot",
-              "bellabot"
-            ],
-            "solutionKeys": [
-              "holabot",
-              "bellabot"
-            ],
+            "aboutTitle": "Food & Beverage",
             "slides": [
               {
                 "robotName": "HolaBot",
@@ -291,135 +283,19 @@
               }
             ],
             "challenges": {
-              "heading": "Food & Beverage Industry Challenges",
-              "items": [
-                {
-                  "icon": "cost",
-                  "label": "High operating costs"
-                },
-                {
-                  "icon": "workforce",
-                  "label": "Labor shortages"
-                },
-                {
-                  "icon": "speed",
-                  "label": "Service speed"
-                },
-                {
-                  "icon": "experience",
-                  "label": "Customer satisfaction"
-                }
-              ]
+              "heading": "Challenges",
+              "items": []
             },
             "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Food and beverage delivery",
-                "Customer reception",
-                "Self-cleaning"
-              ]
+              "heading": "How PUDU Robots Help",
+              "items": []
             },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "HolaBot",
-                "imageAlt": "HolaBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/holabot"
-              },
-              {
-                "name": "BellaBot",
-                "imageAlt": "BellaBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/bellabot"
-              }
-            ]
-          },
-          {
-            "aboutTitle": "Floor Cleaning",
+            "solutionsTitle": "How PUDU Robots Help",
+            "solutions": [],
             "slideKeys": [
-              "holabot",
-              "kettybot"
+              "holabot"
             ],
-            "solutionKeys": [
-              "holabot",
-              "kettybot"
-            ],
-            "slides": [
-              {
-                "robotName": "HolaBot",
-                "imageAlt": "HolaBot — Floor Cleaning",
-                "imageUrl": ""
-              }
-            ],
-            "challenges": {
-              "heading": "Food & Beverage Industry Challenges",
-              "items": [
-                {
-                  "icon": "cost",
-                  "label": "High operating costs"
-                },
-                {
-                  "icon": "workforce",
-                  "label": "Labor shortages"
-                },
-                {
-                  "icon": "speed",
-                  "label": "Service speed"
-                },
-                {
-                  "icon": "experience",
-                  "label": "Customer satisfaction"
-                }
-              ]
-            },
-            "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Food and beverage delivery",
-                "Customer reception",
-                "Self-cleaning"
-              ]
-            },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "HolaBot",
-                "imageAlt": "HolaBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/holabot"
-              },
-              {
-                "name": "KettyBot",
-                "imageAlt": "KettyBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
-              }
-            ]
+            "solutionKeys": []
           }
         ]
       },
@@ -501,15 +377,7 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "In-Store Delivery",
-            "slideKeys": [
-              "bellabot",
-              "flashbot"
-            ],
-            "solutionKeys": [
-              "bellabot",
-              "flashbot"
-            ],
+            "aboutTitle": "Retail",
             "slides": [
               {
                 "robotName": "BellaBot",
@@ -518,145 +386,27 @@
               }
             ],
             "challenges": {
-              "heading": "Retail Industry Challenges",
-              "items": [
-                {
-                  "icon": "speed",
-                  "label": "Managing peak hours"
-                },
-                {
-                  "icon": "experience",
-                  "label": "Customer service"
-                },
-                {
-                  "icon": "guidance",
-                  "label": "Visitor guidance"
-                },
-                {
-                  "icon": "workforce",
-                  "label": "Staff shortages"
-                }
-              ]
+              "heading": "Challenges",
+              "items": []
             },
             "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Shopper guidance",
-                "Product delivery",
-                "Point-of-sale support",
-                "Store cleaning"
-              ]
+              "heading": "How PUDU Robots Help",
+              "items": []
             },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "BellaBot",
-                "imageAlt": "BellaBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/bellabot"
-              },
-              {
-                "name": "FlashBot",
-                "imageAlt": "FlashBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/flashbot-new"
-              }
-            ]
-          },
-          {
-            "aboutTitle": "Shopper Guidance",
+            "solutionsTitle": "How PUDU Robots Help",
+            "solutions": [],
             "slideKeys": [
-              "kettybot",
               "bellabot"
             ],
-            "solutionKeys": [
-              "kettybot",
-              "bellabot"
-            ],
-            "slides": [
-              {
-                "robotName": "KettyBot",
-                "imageAlt": "KettyBot — Shopper Guidance",
-                "imageUrl": ""
-              }
-            ],
-            "challenges": {
-              "heading": "Retail Industry Challenges",
-              "items": [
-                {
-                  "icon": "speed",
-                  "label": "Managing peak hours"
-                },
-                {
-                  "icon": "experience",
-                  "label": "Customer service"
-                },
-                {
-                  "icon": "guidance",
-                  "label": "Visitor guidance"
-                },
-                {
-                  "icon": "workforce",
-                  "label": "Staff shortages"
-                }
-              ]
-            },
-            "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Shopper guidance",
-                "Product delivery",
-                "Point-of-sale support",
-                "Store cleaning"
-              ]
-            },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "KettyBot",
-                "imageAlt": "KettyBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
-              },
-              {
-                "name": "BellaBot",
-                "imageAlt": "BellaBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/bellabot"
-              }
-            ]
+            "solutionKeys": []
           }
         ]
       },
       "hospitality": {
-        "title": "Hospitality",
+        "title": "PUDU Robotics for Hospitality",
         "shortTitle": "Hospitality",
-        "headline": "PUDU Robotics for Hospitality",
-        "summary": "Smarter Hospitality · Faster Service · Happier Guests — PUDU Robotics helps hotels, resorts, and hospitality destinations deliver a more efficient and consistent guest experience.",
+        "headline": "Smarter Hospitality · Faster Service · Happier Guests",
+        "summary": "PUDU Robotics helps hotels, resorts, serviced apartments, convention centers, and hospitality destinations deliver a more efficient and consistent guest experience while allowing staff to focus on what matters most: hospitality.\n\nFrom room service and guest guidance to logistics support and autonomous cleaning, PUDU provides practical solutions that improve service quality and operational efficiency.",
         "imageAlt": "Luxury hotel lobby with guests",
         "imageUrl": "https://cdn.savvyworld.ai/master/Hospitality_e4c88c98ae.webp",
         "impactPanels": {
@@ -754,8 +504,8 @@
         },
         "scenarios": [
           {
-            "title": "Multi-Scenario Coverage",
-            "subtitle": "Guest Arrival · Room Service · Dining · Events · Autonomous Cleaning",
+            "title": "Ideal Applications",
+            "subtitle": "Hotels · Resorts · Serviced Apartments · Tourism Destinations · Convention Centers · Event Venues · VIP Lounges · Hospitality Complexes · Entertainment Resorts · Smart Hospitality Projects",
             "imageAlt": "Isometric view of Pudu robots serving across a hotel",
             "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_aaa66f1fc9.webp"
           }
@@ -838,8 +588,8 @@
             ],
             "slides": [
               {
-                "robotName": "FlashBot Max",
-                "imageAlt": "FlashBot Max — Guest Stay → Room Service & Amenities",
+                "robotName": "FlashBot",
+                "imageAlt": "FlashBot — Guest Stay → Room Service & Amenities",
                 "imageUrl": ""
               }
             ],
@@ -881,8 +631,8 @@
             "solutionsTitle": "Recommended Solutions",
             "solutions": [
               {
-                "name": "FlashBot Max",
-                "imageAlt": "FlashBot Max",
+                "name": "FlashBot",
+                "imageAlt": "FlashBot",
                 "imageUrl": "",
                 "features": [
                   "Room service delivery",
@@ -942,7 +692,7 @@
             "whyChoose": {
               "heading": "How PUDU Helps",
               "items": [
-                "Food and beverage delivery with interactive guest-facing service support in restaurants and lounges."
+                "Interactive hospitality experience — Food and beverage delivery with guest-facing service support in restaurants and lounges."
               ]
             },
             "solutionsTitle": "Recommended Solutions",
@@ -976,6 +726,11 @@
               {
                 "robotName": "BellaBot",
                 "imageAlt": "BellaBot — Events & Meetings → Logistics & Guest Assistance",
+                "imageUrl": ""
+              },
+              {
+                "robotName": "KettyBot",
+                "imageAlt": "KettyBot — Events & Meetings → Logistics & Guest Assistance",
                 "imageUrl": ""
               }
             ],
@@ -1574,6 +1329,11 @@
                 "robotName": "PUDU T300",
                 "imageAlt": "PUDU T300 — Shipping → Outbound Logistics & Dispatch Support",
                 "imageUrl": ""
+              },
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Shipping → Outbound Logistics & Dispatch Support",
+                "imageUrl": ""
               }
             ],
             "challenges": {
@@ -1658,6 +1418,16 @@
               {
                 "robotName": "PUDU T300",
                 "imageAlt": "PUDU T300 — 24/7 Operations → Continuous Autonomous Material Flow",
+                "imageUrl": ""
+              },
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — 24/7 Operations → Continuous Autonomous Material Flow",
+                "imageUrl": ""
+              },
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — 24/7 Operations → Continuous Autonomous Material Flow",
                 "imageUrl": ""
               }
             ],
@@ -2273,6 +2043,16 @@
                 "robotName": "PuduBot 2",
                 "imageAlt": "PuduBot 2 — 24/7 Hospital Operations → Continuous Logistics & Service Support",
                 "imageUrl": ""
+              },
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — 24/7 Hospital Operations → Continuous Logistics & Service Support",
+                "imageUrl": ""
+              },
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — 24/7 Hospital Operations → Continuous Logistics & Service Support",
+                "imageUrl": ""
               }
             ],
             "challenges": {
@@ -2404,15 +2184,7 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Passenger Guidance",
-            "slideKeys": [
-              "pudubot2",
-              "flashbot"
-            ],
-            "solutionKeys": [
-              "pudubot2",
-              "flashbot"
-            ],
+            "aboutTitle": "Transportation",
             "slides": [
               {
                 "robotName": "PUDUbot2",
@@ -2421,107 +2193,19 @@
               }
             ],
             "challenges": {
-              "heading": "Transportation Industry Challenges",
-              "items": [
-                ""
-              ]
+              "heading": "Challenges",
+              "items": []
             },
             "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Smart guidance",
-                "Order delivery",
-                "Passenger services",
-                "Facility cleaning"
-              ]
+              "heading": "How PUDU Robots Help",
+              "items": []
             },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "PUDUbot2",
-                "imageAlt": "PUDUbot2",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/pudubot2"
-              },
-              {
-                "name": "FlashBot",
-                "imageAlt": "FlashBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/flashbot-new"
-              }
-            ]
-          },
-          {
-            "aboutTitle": "Facility Support",
+            "solutionsTitle": "How PUDU Robots Help",
+            "solutions": [],
             "slideKeys": [
-              "flashbot",
-              "t300"
+              "pudubot2"
             ],
-            "solutionKeys": [
-              "flashbot",
-              "t300"
-            ],
-            "slides": [
-              {
-                "robotName": "FlashBot",
-                "imageAlt": "FlashBot — Facility Support",
-                "imageUrl": ""
-              }
-            ],
-            "challenges": {
-              "heading": "Transportation Industry Challenges",
-              "items": [
-                ""
-              ]
-            },
-            "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Smart guidance",
-                "Order delivery",
-                "Passenger services",
-                "Facility cleaning"
-              ]
-            },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "FlashBot",
-                "imageAlt": "FlashBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/flashbot-new"
-              },
-              {
-                "name": "T300",
-                "imageAlt": "T300",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/pudut300"
-              }
-            ]
+            "solutionKeys": []
           }
         ]
       },
@@ -2573,15 +2257,7 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Concession Delivery",
-            "slideKeys": [
-              "holabot",
-              "bellabot"
-            ],
-            "solutionKeys": [
-              "holabot",
-              "bellabot"
-            ],
+            "aboutTitle": "Entertainment & Sports",
             "slides": [
               {
                 "robotName": "HolaBot",
@@ -2590,107 +2266,19 @@
               }
             ],
             "challenges": {
-              "heading": "Entertainment & Sports Industry Challenges",
-              "items": [
-                ""
-              ]
+              "heading": "Challenges",
+              "items": []
             },
             "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Visitor services",
-                "Guidance",
-                "Event support",
-                "Logistics services"
-              ]
+              "heading": "How PUDU Robots Help",
+              "items": []
             },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "HolaBot",
-                "imageAlt": "HolaBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/holabot"
-              },
-              {
-                "name": "BellaBot",
-                "imageAlt": "BellaBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/bellabot"
-              }
-            ]
-          },
-          {
-            "aboutTitle": "Visitor Guidance",
+            "solutionsTitle": "How PUDU Robots Help",
+            "solutions": [],
             "slideKeys": [
-              "kettybot",
               "holabot"
             ],
-            "solutionKeys": [
-              "kettybot",
-              "holabot"
-            ],
-            "slides": [
-              {
-                "robotName": "KettyBot",
-                "imageAlt": "KettyBot — Visitor Guidance",
-                "imageUrl": ""
-              }
-            ],
-            "challenges": {
-              "heading": "Entertainment & Sports Industry Challenges",
-              "items": [
-                ""
-              ]
-            },
-            "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Visitor services",
-                "Guidance",
-                "Event support",
-                "Logistics services"
-              ]
-            },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "KettyBot",
-                "imageAlt": "KettyBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
-              },
-              {
-                "name": "HolaBot",
-                "imageAlt": "HolaBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/holabot"
-              }
-            ]
+            "solutionKeys": []
           }
         ]
       },
@@ -2742,15 +2330,7 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Tenant Amenity Delivery",
-            "slideKeys": [
-              "bellabot",
-              "kettybot"
-            ],
-            "solutionKeys": [
-              "bellabot",
-              "kettybot"
-            ],
+            "aboutTitle": "Real Estate",
             "slides": [
               {
                 "robotName": "BellaBot",
@@ -2759,107 +2339,19 @@
               }
             ],
             "challenges": {
-              "heading": "Real Estate Industry Challenges",
-              "items": [
-                ""
-              ]
+              "heading": "Challenges",
+              "items": []
             },
             "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Tenant services",
-                "Facility tours",
-                "Smart cleaning",
-                "Internal delivery"
-              ]
+              "heading": "How PUDU Robots Help",
+              "items": []
             },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "BellaBot",
-                "imageAlt": "BellaBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/bellabot"
-              },
-              {
-                "name": "KettyBot",
-                "imageAlt": "KettyBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
-              }
-            ]
-          },
-          {
-            "aboutTitle": "Property Tours",
+            "solutionsTitle": "How PUDU Robots Help",
+            "solutions": [],
             "slideKeys": [
-              "kettybot",
-              "cc1"
+              "bellabot"
             ],
-            "solutionKeys": [
-              "kettybot",
-              "cc1"
-            ],
-            "slides": [
-              {
-                "robotName": "KettyBot",
-                "imageAlt": "KettyBot — Property Tours",
-                "imageUrl": ""
-              }
-            ],
-            "challenges": {
-              "heading": "Real Estate Industry Challenges",
-              "items": [
-                ""
-              ]
-            },
-            "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Tenant services",
-                "Facility tours",
-                "Smart cleaning",
-                "Internal delivery"
-              ]
-            },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "KettyBot",
-                "imageAlt": "KettyBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
-              },
-              {
-                "name": "CC1",
-                "imageAlt": "CC1",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
-              }
-            ]
+            "solutionKeys": []
           }
         ]
       },
@@ -2911,15 +2403,7 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Reception & Guided Tours",
-            "slideKeys": [
-              "pudubot2",
-              "holabot"
-            ],
-            "solutionKeys": [
-              "pudubot2",
-              "holabot"
-            ],
+            "aboutTitle": "Education",
             "slides": [
               {
                 "robotName": "PUDUbot2",
@@ -2928,107 +2412,19 @@
               }
             ],
             "challenges": {
-              "heading": "Education Industry Challenges",
-              "items": [
-                ""
-              ]
+              "heading": "Challenges",
+              "items": []
             },
             "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "On-campus guidance",
-                "Logistics services",
-                "Student engagement",
-                "Event support"
-              ]
+              "heading": "How PUDU Robots Help",
+              "items": []
             },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "PUDUbot2",
-                "imageAlt": "PUDUbot2",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/pudubot2"
-              },
-              {
-                "name": "HolaBot",
-                "imageAlt": "HolaBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/holabot"
-              }
-            ]
-          },
-          {
-            "aboutTitle": "Campus Logistics",
+            "solutionsTitle": "How PUDU Robots Help",
+            "solutions": [],
             "slideKeys": [
-              "kettybot",
               "pudubot2"
             ],
-            "solutionKeys": [
-              "kettybot",
-              "pudubot2"
-            ],
-            "slides": [
-              {
-                "robotName": "KettyBot",
-                "imageAlt": "KettyBot — Campus Logistics",
-                "imageUrl": ""
-              }
-            ],
-            "challenges": {
-              "heading": "Education Industry Challenges",
-              "items": [
-                ""
-              ]
-            },
-            "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "On-campus guidance",
-                "Logistics services",
-                "Student engagement",
-                "Event support"
-              ]
-            },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "KettyBot",
-                "imageAlt": "KettyBot",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/kettybot_pro"
-              },
-              {
-                "name": "PUDUbot2",
-                "imageAlt": "PUDUbot2",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/pudubot2"
-              }
-            ]
+            "solutionKeys": []
           }
         ]
       },
@@ -3080,13 +2476,7 @@
         ],
         "useCases": [
           {
-            "aboutTitle": "Visitor Services",
-            "slideKeys": [
-              "pudubot2"
-            ],
-            "solutionKeys": [
-              "pudubot2"
-            ],
+            "aboutTitle": "Public Sector",
             "slides": [
               {
                 "robotName": "PUDUbot2",
@@ -3095,95 +2485,19 @@
               }
             ],
             "challenges": {
-              "heading": "Public Sector Industry Challenges",
-              "items": [
-                ""
-              ]
+              "heading": "Challenges",
+              "items": []
             },
             "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Visitor services",
-                "Smart wayfinding",
-                "Internal transport",
-                "Facility maintenance"
-              ]
+              "heading": "How PUDU Robots Help",
+              "items": []
             },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "PUDUbot2",
-                "imageAlt": "PUDUbot2",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/pudubot2"
-              }
-            ]
-          },
-          {
-            "aboutTitle": "Internal Transport",
+            "solutionsTitle": "How PUDU Robots Help",
+            "solutions": [],
             "slideKeys": [
-              "t300",
-              "cc1"
+              "pudubot2"
             ],
-            "solutionKeys": [
-              "t300",
-              "cc1"
-            ],
-            "slides": [
-              {
-                "robotName": "T300",
-                "imageAlt": "T300 — Internal Transport",
-                "imageUrl": ""
-              }
-            ],
-            "challenges": {
-              "heading": "Public Sector Industry Challenges",
-              "items": [
-                ""
-              ]
-            },
-            "whyChoose": {
-              "heading": "Why choose Pudu Robotics?",
-              "items": [
-                "Visitor services",
-                "Smart wayfinding",
-                "Internal transport",
-                "Facility maintenance"
-              ]
-            },
-            "solutionsTitle": "Robotic Solutions",
-            "solutions": [
-              {
-                "name": "T300",
-                "imageAlt": "T300",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/products/pudut300"
-              },
-              {
-                "name": "CC1",
-                "imageAlt": "CC1",
-                "imageUrl": "",
-                "features": [
-                  "Autonomous navigation and reliable operation",
-                  "Designed for high-traffic commercial environments",
-                  "Integrates with existing service workflows"
-                ],
-                "learnMoreLabel": "Learn More",
-                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
-              }
-            ]
+            "solutionKeys": []
           }
         ]
       }
