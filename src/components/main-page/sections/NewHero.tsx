@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import { motion } from "framer-motion"
@@ -9,6 +8,8 @@ import { useLanguage } from "@/contexts/LanguageContext"
 import { useIsMobile } from "@/hooks/useIsMobile"
 import { useTranslation } from "react-i18next"
 import FormattedText from "@/components/shared/FormattedText"
+
+const heroEase: [number, number, number, number] = [0.16, 1, 0.3, 1]
 
 export default function NewHero() {
   const [animate, setAnimate] = useState(false)
@@ -61,7 +62,7 @@ export default function NewHero() {
       transition: {
         duration: isMobile ? 0.6 : 1.2,
         delay: isMobile ? 0.1 : 0.3,
-        ease: [0.22, 0.61, 0.36, 1] as any,
+        ease: heroEase,
       },
     },
   }
@@ -76,7 +77,7 @@ export default function NewHero() {
       transition: {
         duration: isMobile ? 0.4 : 0.8,
         delay: 0,
-        ease: [0.22, 0.61, 0.36, 1] as any,
+        ease: heroEase,
       },
     },
   }
@@ -89,13 +90,13 @@ export default function NewHero() {
       transition: {
         duration: isMobile ? 0.4 : 0.7,
         delay: isMobile ? 0.1 : 0.15,
-        ease: [0.22, 0.61, 0.36, 1] as any,
+        ease: heroEase,
       },
     },
   }
 
   return (
-    <section className="relative flex min-h-screen flex-col overflow-hidden pt-[100px] md:pt-[120px]">
+    <section id="whoWeAre" className="relative flex min-h-screen flex-col overflow-hidden pt-[96px] md:pt-[120px]">
       <Image
         src="/hero.jpg"
         alt=""
@@ -105,35 +106,32 @@ export default function NewHero() {
         className="absolute inset-0 object-cover object-center"
         quality={90}
       />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,13,24,0.86)_0%,rgba(4,13,24,0.62)_42%,rgba(4,13,24,0.24)_100%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_22%,rgba(57,96,249,0.28),transparent_36%),linear-gradient(180deg,rgba(4,13,24,0.18)_0%,rgba(4,13,24,0.76)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,13,24,0.88)_0%,rgba(4,13,24,0.66)_46%,rgba(4,13,24,0.3)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_20%,rgba(57,96,249,0.22),transparent_34%),linear-gradient(180deg,rgba(4,13,24,0.12)_0%,rgba(4,13,24,0.78)_100%)]" />
 
-      {/* Content */}
-      <div className="container relative z-10 flex flex-1 flex-col justify-center py-8 md:py-16 lg:py-20" suppressHydrationWarning>
+      <div className="container relative z-10 flex flex-1 flex-col justify-center py-10 md:py-16 lg:py-20" suppressHydrationWarning>
         <div
-          className="mx-auto flex w-full max-w-6xl flex-col items-center gap-8 text-center"
+          className="mx-auto flex w-full max-w-6xl flex-col items-center gap-7 text-center md:gap-9"
           dir={isRTL ? "rtl" : "ltr"}
         >
           <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-            {/* Main Heading - Responsive sizing */}
             <motion.h1
               variants={titleVariants}
               initial="hidden"
               animate={animate ? "visible" : "hidden"}
-              className="mb-4 px-2 text-3xl font-bold leading-tight text-[#f4f8fc] drop-shadow-[0_3px_16px_rgba(0,0,0,0.36)] md:mb-6 md:text-5xl lg:text-6xl"
+              className="mb-4 max-w-[14ch] text-balance px-2 text-3xl font-extrabold leading-[1.08] tracking-normal text-[#f4f8fc] drop-shadow-[0_3px_16px_rgba(0,0,0,0.36)] sm:max-w-3xl md:mb-6 md:text-5xl lg:text-6xl"
             >
               <FormattedText text={t("hero.welcomeText")} />{" "}
-              <span className="text-[#75b8ff]">
+              <span className="text-[#8bc4ff]">
                 <FormattedText text={t("hero.savvyWorld")} />
               </span>
             </motion.h1>
 
-            {/* Description - Responsive typography for longer text */}
             <motion.p
               variants={descriptionVariants}
               initial="hidden"
               animate={animate ? "visible" : "hidden"}
-              className="mb-5 max-w-3xl px-4 text-xs leading-relaxed text-[#d9e5f3] sm:text-sm md:mb-6 md:text-base lg:text-lg"
+              className="mb-4 max-w-3xl text-pretty px-2 text-sm leading-7 text-[#dce8f5] sm:text-base md:mb-5 md:text-lg md:leading-8"
             >
               <FormattedText text={t("hero.description")} />
             </motion.p>
@@ -143,20 +141,20 @@ export default function NewHero() {
             variants={imageVariants}
             initial="hidden"
             animate={animate ? "visible" : "hidden"}
-            className="w-full rounded-[18px] border border-[rgba(122,157,196,0.42)] bg-[rgba(6,17,29,0.8)] p-4 shadow-[0_24px_70px_rgba(0,0,0,0.34)] md:p-5"
+            className="w-full rounded-2xl border border-[rgba(139,196,255,0.34)] bg-[rgba(6,17,29,0.82)] p-3 shadow-[0_24px_70px_rgba(0,0,0,0.34)] md:p-5"
             aria-label={t("hero.impactStats.ariaLabel")}
           >
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {impactStats.map(({ value, label, Icon }) => (
                 <div
                   key={value}
-                  className="flex min-h-[104px] items-center justify-center gap-4 rounded-xl border border-[rgba(122,157,196,0.18)] bg-[rgba(9,39,72,0.22)] px-4 py-4"
+                  className="flex min-h-[104px] items-center gap-4 rounded-xl border border-[rgba(139,196,255,0.14)] bg-[rgba(9,39,72,0.24)] px-4 py-4 text-start"
                 >
-                  <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[#3a8cff] bg-[rgba(9,39,72,0.54)] text-[#d6ecff] shadow-[0_0_24px_rgba(57,96,249,0.22)]">
+                  <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[#529fff] bg-[rgba(9,39,72,0.54)] text-[#d6ecff] shadow-[0_0_24px_rgba(57,96,249,0.22)]">
                     <Icon className="size-6" strokeWidth={1.6} aria-hidden="true" />
                   </span>
                   <span className="min-w-0 text-start">
-                    <span className="block text-3xl font-extrabold leading-none tracking-normal text-[#eef7ff]">
+                    <span className="block text-2xl font-extrabold leading-none tracking-normal text-[#eef7ff] md:text-3xl">
                       {value}
                     </span>
                     <span className="mt-1 block text-sm font-semibold leading-snug text-[#d6deea]">

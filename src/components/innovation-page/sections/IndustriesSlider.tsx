@@ -84,7 +84,7 @@ export default function IndustriesSlider({ currentSlug }: IndustriesSliderProps)
 
   return (
     <section
-      className="overflow-hidden bg-gray-50 py-[clamp(4rem,8vw,6.5rem)]"
+      className="overflow-hidden bg-[oklch(0.985_0.003_260)] py-[clamp(4rem,8vw,6.5rem)]"
       id="other-industries"
     >
       <div className="mx-auto w-full max-w-[100rem] px-[clamp(1rem,3vw,2.5rem)]">
@@ -107,7 +107,7 @@ export default function IndustriesSlider({ currentSlug }: IndustriesSliderProps)
                 type="button"
                 onClick={goPrev}
                 disabled={!canGoPrev}
-                className="absolute left-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-[oklch(0.97_0.005_260/0.92)] text-[oklch(0.28_0.02_260)] shadow-md transition-[transform,background-color,opacity] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105 hover:bg-[oklch(0.99_0.003_260)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[oklch(0.52_0.12_264)] disabled:pointer-events-none disabled:opacity-40 md:left-4"
+                className="absolute left-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-[oklch(0.97_0.005_260/0.94)] text-[oklch(0.28_0.02_260)] shadow-[0_16px_32px_-22px_oklch(0.18_0.02_260/0.5)] transition-[transform,background-color,opacity] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105 hover:bg-[oklch(0.99_0.003_260)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[oklch(0.52_0.12_264)] disabled:pointer-events-none disabled:opacity-40 md:left-4"
                 aria-label={t("common.previousImage")}
               >
                 <ChevronLeft className="h-5 w-5" />
@@ -116,7 +116,7 @@ export default function IndustriesSlider({ currentSlug }: IndustriesSliderProps)
                 type="button"
                 onClick={goNext}
                 disabled={!canGoNext}
-                className="absolute right-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-[oklch(0.97_0.005_260/0.92)] text-[oklch(0.28_0.02_260)] shadow-md transition-[transform,background-color,opacity] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105 hover:bg-[oklch(0.99_0.003_260)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[oklch(0.52_0.12_264)] disabled:pointer-events-none disabled:opacity-40 md:right-4"
+                className="absolute right-2 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-[oklch(0.97_0.005_260/0.94)] text-[oklch(0.28_0.02_260)] shadow-[0_16px_32px_-22px_oklch(0.18_0.02_260/0.5)] transition-[transform,background-color,opacity] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-105 hover:bg-[oklch(0.99_0.003_260)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[oklch(0.52_0.12_264)] disabled:pointer-events-none disabled:opacity-40 md:right-4"
                 aria-label={t("common.nextImage")}
               >
                 <ChevronRight className="h-5 w-5" />
@@ -152,7 +152,7 @@ export default function IndustriesSlider({ currentSlug }: IndustriesSliderProps)
                   <Link
                     key={industry.slug}
                     href={`/${lang}/innovation/${industry.slug}`}
-                    className="group relative h-52 w-72 shrink-0 overflow-hidden rounded-2xl shadow-md transition-shadow hover:shadow-xl"
+                    className="group relative h-52 w-72 shrink-0 overflow-hidden rounded-[0.75rem] shadow-[0_16px_36px_-28px_oklch(0.18_0.02_260/0.5)] transition-[transform,box-shadow] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 hover:shadow-[0_24px_48px_-30px_oklch(0.18_0.02_260/0.58)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[oklch(0.52_0.12_264)]"
                   >
                     <RemoteMediaImage
                       src={imageUrl}
@@ -161,12 +161,12 @@ export default function IndustriesSlider({ currentSlug }: IndustriesSliderProps)
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="288px"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-gray-950/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.13_0.012_260/0.82)] via-[oklch(0.13_0.012_260/0.24)] to-transparent" />
                     <div className="absolute inset-x-0 bottom-0 p-5">
-                      <p className="text-xs font-semibold uppercase tracking-wider text-blue-300">
+                      <p className="text-xs font-semibold text-[oklch(0.76_0.12_264)]">
                         <FormattedText text={t(`${baseKey}.shortTitle`)} />
                       </p>
-                      <p className="mt-1 text-lg font-bold text-gray-50">
+                      <p className="mt-1 text-lg font-bold leading-tight text-[oklch(0.98_0.004_260)]">
                         <FormattedText text={t(`${baseKey}.title`)} />
                       </p>
                     </div>
@@ -177,10 +177,10 @@ export default function IndustriesSlider({ currentSlug }: IndustriesSliderProps)
           </div>
 
           {canGoPrev && (
-            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-16 bg-gradient-to-r from-gray-50 to-transparent md:w-24" />
+            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-16 bg-gradient-to-r from-[oklch(0.985_0.003_260)] to-transparent md:w-24" />
           )}
           {canGoNext && (
-            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-16 bg-gradient-to-l from-gray-50 to-transparent md:w-24" />
+            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-16 bg-gradient-to-l from-[oklch(0.985_0.003_260)] to-transparent md:w-24" />
           )}
         </div>
       </div>

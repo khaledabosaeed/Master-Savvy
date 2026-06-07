@@ -57,7 +57,7 @@ function UseCaseChallengesGrid({
 }) {
   return (
     <div
-      className={`flex h-full flex-col overflow-y-auto border-t-[3px] border-t-[oklch(0.68_0.17_55)] bg-[oklch(0.995_0.004_260)] p-[clamp(1.25rem,2.5vw,1.75rem)] ${isRTL ? "text-right" : "text-left"}`}
+      className={`flex h-full flex-col overflow-y-auto bg-[oklch(0.985_0.006_260)] p-[clamp(1.25rem,2.5vw,1.75rem)] ${isRTL ? "text-right" : "text-left"}`}
     >
       <ul
         className={`grid flex-1 grid-cols-1 gap-[clamp(0.625rem,1.2vw,0.875rem)] sm:grid-cols-2 lg:grid-cols-3 ${isRTL ? "text-right" : "text-left"}`}
@@ -67,7 +67,7 @@ function UseCaseChallengesGrid({
           return (
             <li
               key={index}
-              className={`flex items-start gap-3 rounded-[0.625rem] border border-[oklch(0.92_0.005_260)] bg-white p-[clamp(0.75rem,1.5vw,1rem)] shadow-[0_1px_3px_oklch(0.18_0.01_260/0.05)] ${isRTL ? "flex-row-reverse" : ""}`}
+              className={`flex items-start gap-3 rounded-[0.625rem] border border-[oklch(0.91_0.007_260)] bg-[oklch(0.998_0.003_260)] p-[clamp(0.75rem,1.5vw,1rem)] shadow-[0_10px_30px_-26px_oklch(0.18_0.02_260/0.28)] ${isRTL ? "flex-row-reverse" : ""}`}
             >
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[oklch(0.96_0.02_55)] text-[oklch(0.55_0.14_55)]">
                 <Icon className="h-5 w-5" strokeWidth={1.75} aria-hidden />
@@ -99,7 +99,7 @@ function SolutionCard({
   imagePriority?: boolean
 }) {
   return (
-    <article className="grid min-h-[clamp(18rem,36vw,26rem)] grid-cols-1 overflow-hidden rounded-[0.875rem] bg-[oklch(0.995_0.004_260)] shadow-[0_1px_3px_oklch(0.18_0.01_260/0.06)] sm:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
+    <article className="grid min-h-[clamp(18rem,36vw,26rem)] grid-cols-1 overflow-hidden rounded-[0.75rem] border border-[oklch(0.91_0.007_260)] bg-[oklch(0.998_0.003_260)] shadow-[0_18px_48px_-34px_oklch(0.18_0.02_260/0.34)] sm:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
       <div className="relative min-h-[clamp(15rem,42vw,26rem)] bg-[oklch(0.94_0.005_260)]">
         {imageUrl ? (
           <RemoteMediaImage
@@ -375,7 +375,7 @@ export default function IndustryUseCaseSection({
               whileInView="visible"
               viewport={viewportConfig}
               variants={fadeInUp}
-              className="overflow-hidden rounded-[0.875rem] bg-[oklch(0.94_0.005_260)] shadow-[0_1px_3px_oklch(0.18_0.01_260/0.06)]"
+              className="overflow-hidden rounded-[0.75rem] border border-[oklch(0.91_0.007_260)] bg-[oklch(0.985_0.006_260)] shadow-[0_18px_48px_-34px_oklch(0.18_0.02_260/0.34)]"
             >
               <UseCaseChallengesGrid items={challengeItems} isRTL={isRTL} />
             </motion.div>
@@ -428,7 +428,7 @@ export default function IndustryUseCaseSection({
               whileInView="visible"
               viewport={viewportConfig}
               variants={fadeInUp}
-              className="overflow-hidden rounded-[0.875rem] bg-[oklch(0.995_0.004_260)] shadow-[0_1px_3px_oklch(0.18_0.01_260/0.06)] lg:hidden"
+              className="overflow-hidden rounded-[0.75rem] border border-[oklch(0.91_0.007_260)] bg-[oklch(0.998_0.003_260)] shadow-[0_18px_48px_-34px_oklch(0.18_0.02_260/0.34)] lg:hidden"
               role={hasMultipleSolutions ? "group" : undefined}
               aria-roledescription={hasMultipleSolutions ? "carousel" : undefined}
               aria-label={solutionsTitle}
@@ -475,12 +475,17 @@ export default function IndustryUseCaseSection({
                         aria-selected={index === activeSolutionIndex}
                         aria-label={`Solution ${index + 1}`}
                         onClick={() => goToSolution(index)}
-                        className={`h-2.5 rounded-full transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-                          index === activeSolutionIndex
-                            ? "w-8 bg-[oklch(0.52_0.12_264)]"
-                            : "w-2.5 bg-[oklch(0.8_0.02_260)] hover:bg-[oklch(0.62_0.08_264)]"
-                        }`}
-                      />
+                        className="group flex h-11 w-11 items-center justify-center rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[oklch(0.52_0.12_264)]"
+                      >
+                        <span
+                          className={`h-2.5 rounded-full transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                            index === activeSolutionIndex
+                              ? "w-8 bg-[oklch(0.52_0.12_264)]"
+                              : "w-2.5 bg-[oklch(0.8_0.02_260)] group-hover:bg-[oklch(0.62_0.08_264)]"
+                          }`}
+                          aria-hidden
+                        />
+                      </button>
                     ))}
                   </div>
 
@@ -488,7 +493,7 @@ export default function IndustryUseCaseSection({
                     <button
                       type="button"
                       onClick={isRTL ? goNextSolution : goPrevSolution}
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-[oklch(0.86_0.01_260)] text-[oklch(0.28_0.02_260)] transition-[transform,border-color,background-color] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:border-[oklch(0.52_0.12_264)] hover:bg-[oklch(0.96_0.01_264)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[oklch(0.52_0.12_264)]"
+                      className="flex h-11 w-11 items-center justify-center rounded-full border border-[oklch(0.86_0.01_260)] text-[oklch(0.28_0.02_260)] transition-[transform,border-color,background-color] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:border-[oklch(0.52_0.12_264)] hover:bg-[oklch(0.96_0.01_264)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[oklch(0.52_0.12_264)]"
                       aria-label={t("common.previousImage")}
                     >
                       <ChevronLeft className={`h-5 w-5 ${isRTL ? "rotate-180" : ""}`} />
@@ -496,7 +501,7 @@ export default function IndustryUseCaseSection({
                     <button
                       type="button"
                       onClick={isRTL ? goPrevSolution : goNextSolution}
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-[oklch(0.86_0.01_260)] text-[oklch(0.28_0.02_260)] transition-[transform,border-color,background-color] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:border-[oklch(0.52_0.12_264)] hover:bg-[oklch(0.96_0.01_264)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[oklch(0.52_0.12_264)]"
+                      className="flex h-11 w-11 items-center justify-center rounded-full border border-[oklch(0.86_0.01_260)] text-[oklch(0.28_0.02_260)] transition-[transform,border-color,background-color] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:border-[oklch(0.52_0.12_264)] hover:bg-[oklch(0.96_0.01_264)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[oklch(0.52_0.12_264)]"
                       aria-label={t("common.nextImage")}
                     >
                       <ChevronRight className={`h-5 w-5 ${isRTL ? "rotate-180" : ""}`} />

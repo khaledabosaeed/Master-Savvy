@@ -38,20 +38,21 @@ export default function ImageHeaderFeature({
       </motion.header>
 
       <motion.div
-  initial="hidden"
-  whileInView="visible"
-  viewport={viewportConfig}
-  variants={fadeInUp}
-  className="relative w-screen"
->
-  <Image
-    src={imageUrl}
-    alt={imageAlt}
-    width={2000}
-    height={720}
-    className="w-full h-auto object-cover"
-  />
-</motion.div>
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportConfig}
+        variants={fadeInUp}
+        className="relative w-screen overflow-hidden bg-[oklch(0.93_0.006_260)]"
+      >
+        <Image
+          src={imageUrl}
+          alt={imageAlt}
+          width={2000}
+          height={720}
+          className="aspect-[16/7] w-full object-cover"
+          sizes="100vw"
+        />
+      </motion.div>
     </article>
   )
 }
