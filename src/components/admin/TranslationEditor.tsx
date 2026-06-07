@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
 import { Search } from "lucide-react"
 import InnovationUseCasesEditor from "@/components/admin/InnovationUseCasesEditor"
+import SavvySectionsEditor from "@/components/admin/SavvySectionsEditor"
 import ValueField from "@/components/admin/ValueField"
 import {
   INDUSTRY_SLUGS,
@@ -1537,6 +1538,15 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                       />
                     )}
                   </>
+                ) : activeSection === "savvySections" ? (
+                  <SavvySectionsEditor
+                    value={content.savvySections}
+                    onChange={(next) => {
+                      setContent((prev) =>
+                        prev ? { ...prev, savvySections: next } : prev
+                      )
+                    }}
+                  />
                 ) : (
                   <ValueField
                     path={activeSection}

@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useIsMobile } from "@/hooks/useIsMobile"
 import FormattedText from "@/components/shared/FormattedText"
@@ -29,81 +30,68 @@ export default function SavvySectionCard({
     const { language } = useLanguage()
     const isMobile = useIsMobile()
     const isRTL = language === "ar"
+    const direction = isRTL ? "rtl" : "ltr"
 
     return (
-        <Link 
-            href={`/${language}${link}`} 
-            className="relative rounded-xl md:rounded-2xl overflow-hidden p-6 md:p-8 lg:p-12 block hover:shadow-lg transition-shadow duration-300" 
-            style={{ backgroundColor: '#F6F6F6' }}
+        <Link
+            href={`/${language}${link}`}
+            aria-label={`${buttonText}: ${title}`}
+            className="group relative block overflow-hidden rounded-2xl bg-[oklch(0.972_0.006_255)] p-5 shadow-[0_1px_0_rgba(6,11,19,0.08)] outline-none transition-[box-shadow,transform,background-color] duration-300 ease-out hover:-translate-y-0.5 hover:bg-[oklch(0.982_0.008_255)] hover:shadow-[0_22px_54px_rgba(6,11,19,0.12)] focus-visible:ring-2 focus-visible:ring-[#3960F9] focus-visible:ring-offset-4 focus-visible:ring-offset-[oklch(0.99_0.004_255)] md:p-8 lg:p-10"
+            dir={direction}
         >
-
-            {/* Top Section: Icon + Title + Description - Better mobile spacing */}
-            <div className={`flex items-start gap-4 md:gap-6 mb-6 md:mb-8`}>
-                {/* Icon - Smaller on mobile */}
-                <div
-                    className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-lg md:rounded-xl flex items-center justify-center p-2.5 md:p-3 lg:p-4 shrink-0"
-                    style={{ backgroundColor: '#1649F0' }}
-                >
+            <div className="mb-6 flex items-start gap-4 md:mb-8 md:gap-6">
+                <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-[#1649F0] p-2.5 shadow-[0_18px_36px_rgba(22,73,240,0.22)] md:size-16 md:p-3 lg:size-20 lg:p-4">
                     <Image
                         src={icon}
-                        alt={`${title} icon`}
+                        alt=""
                         width={isMobile ? 32 : 48}
                         height={isMobile ? 32 : 48}
-                        className="w-full h-full object-contain brightness-0 invert"
+                        className="h-full w-full object-contain brightness-0 invert"
                         loading="lazy"
                     />
                 </div>
 
-                {/* Title and Description - Better mobile typography */}
-                <div className="flex-1">
-                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-1.5 md:mb-2">
+                <div className="min-w-0 flex-1">
+                    <h3 className="mb-2 text-xl font-extrabold leading-tight text-gray-950 md:text-2xl lg:text-3xl">
                         <FormattedText text={title} />
                     </h3>
-                    <div className="w-full h-px bg-gray-300 mb-2 md:mb-3" />
-                    <p className="text-gray-600 leading-relaxed text-xs md:text-sm lg:text-base">
+                    <div className="mb-3 h-px w-full bg-[rgba(6,11,19,0.16)]" />
+                    <p className="max-w-3xl text-sm leading-6 text-gray-700 md:text-base md:leading-7">
                         <FormattedText text={description} />
                     </p>
                 </div>
             </div>
 
-            {/* Bottom Section: Image + Features List - Better mobile layout */}
-            <div className={`grid md:grid-cols-2 gap-6 md:gap-8 ${isRTL ? 'rtl' : 'ltr'}`}>
-                {/* Features List - Tighter spacing on mobile */}
-                <div className={`flex flex-col justify-between ${isRTL ? 'md:order-2' : ''}`}>
-                    <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
+            <div className="grid gap-6 md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] md:gap-8">
+                <div className={`flex min-w-0 flex-col justify-between ${isRTL ? 'md:order-2' : ''}`}>
+                    <ul className="mb-6 space-y-2 md:mb-8 md:space-y-3">
                         {features.map((feature, idx) => (
-                            <li key={idx} className={`flex items-start gap-2 md:gap-3 border-b border-[rgba(0,0,0,0.2)]`}>
-                                <span className="text-gray-900 font-bold  text-xs md:text-sm pb-1.5 md:pb-2">
+                            <li key={`${feature}-${idx}`} className="flex items-start gap-3 border-b border-[rgba(6,11,19,0.16)] pb-2">
+                                <span className="shrink-0 text-xs font-extrabold leading-6 text-[#1649F0] md:text-sm">
                                     {String(idx + 1).padStart(2, '0')}
                                 </span>
-                                <FormattedText text={feature} className="text-gray-900 font-bold text-xs md:text-sm" />
+                                <FormattedText text={feature.trim()} className="text-sm font-bold leading-6 text-gray-950" />
                             </li>
                         ))}
                     </ul>
 
-                    {/* Learn More Button - span only; parent Link handles navigation */}
                     <span
-                        className={`inline-flex items-center gap-2 text-gray-900 text-sm md:text-base font-medium hover:text-blue-600 transition-colors group ${isRTL ? 'flex-row-reverse' : ''}`}
+                        className={`inline-flex min-h-11 w-fit items-center gap-2 rounded-full bg-gray-950 px-5 py-2.5 text-sm font-bold text-[oklch(0.985_0.006_255)] transition-[background-color,color,transform] duration-300 ease-out group-hover:bg-[#1649F0] group-hover:text-white ${isRTL ? 'flex-row-reverse self-start' : ''}`}
                     >
                         <FormattedText text={buttonText} />
-                        <svg
-                            className={`w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-1 ${isRTL ? 'rotate-180' : ''}`}
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                        >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                        <ArrowRight
+                            className={`size-4 transition-transform duration-300 ease-out ${isRTL ? 'rotate-180 group-hover:-translate-x-0.5' : 'group-hover:translate-x-0.5'}`}
+                            aria-hidden="true"
+                        />
                     </span>
                 </div>
 
-                {/* Image - Smaller height on mobile */}
-                <div className={`relative h-[200px] md:h-[300px] lg:h-[350px] ${isRTL ? 'md:order-1' : ''}`}>
+                <div className={`relative min-h-[220px] overflow-hidden rounded-xl md:min-h-[300px] lg:min-h-[350px] ${isRTL ? 'md:order-1' : ''}`}>
                     <Image
                         src={image}
                         alt={title}
                         fill
-                        className="object-cover rounded-lg md:rounded-xl"
+                        className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.025]"
                         sizes="(max-width: 768px) 100vw, 50vw"
                         quality={isMobile ? 85 : 90}
                         loading="lazy"
@@ -111,16 +99,14 @@ export default function SavvySectionCard({
                 </div>
             </div>
 
-            {/* Decorative Pattern at Bottom */}
             <Image
                 src="/home-page/services/footer.svg"
-                alt="Decorative Pattern"
+                alt=""
                 width={isMobile ? 500 : 800}
                 height={20}
-                className="absolute bottom-0 left-0 right-0 w-full h-4 md:h-5 object-cover"
+                className="pointer-events-none absolute inset-x-0 bottom-0 h-4 w-full object-cover md:h-5"
                 loading="lazy"
             />
-         
         </Link>
     )
 }

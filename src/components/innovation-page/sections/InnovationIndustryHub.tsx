@@ -41,13 +41,11 @@ function IndustryPillNav({
   return (
     <div
       ref={scrollRef}
-      className="overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      className="overflow-x-auto px-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:px-0"
       dir={isRTL ? "rtl" : "ltr"}
     >
       <div
-        className={`flex w-max min-w-full flex-nowrap gap-2 md:w-full md:flex-wrap md:justify-center ${
-          "py-0.5"
-        }`}
+        className="flex w-max min-w-full flex-nowrap gap-2 py-0.5 md:w-full md:flex-wrap md:justify-center"
         role="tablist"
         aria-label={t("innovation.industriesNavLabel")}
       >
@@ -63,12 +61,12 @@ function IndustryPillNav({
               role="tab"
               aria-selected={isActive}
               onClick={() => onSelect(industry.slug)}
-              className={`relative shrink-0 rounded-full font-medium whitespace-nowrap transition-colors duration-200 ${
-                "px-4 py-2 text-[0.8125rem]"
+              className={`relative min-h-11 shrink-0 whitespace-nowrap rounded-full font-semibold transition-[background-color,color,box-shadow,transform] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[oklch(0.52_0.12_264)] ${
+                compact ? "px-3.5 py-2 text-[0.8125rem]" : "px-4 py-2 text-[0.875rem]"
               } ${
                 isActive
-                  ? "bg-[oklch(0.38_0.16_264)] text-[oklch(0.99_0.003_260)] shadow-[0_2px_12px_oklch(0.38_0.16_264/0.28)]"
-                  : "text-[oklch(0.48_0.014_260)] hover:bg-[oklch(0.94_0.006_260)] hover:text-[oklch(0.28_0.012_260)]"
+                  ? "bg-[oklch(0.38_0.16_264)] text-[oklch(0.99_0.003_260)] shadow-[0_8px_24px_-14px_oklch(0.38_0.16_264/0.72)]"
+                  : "text-[oklch(0.46_0.016_260)] hover:-translate-y-px hover:bg-[oklch(0.955_0.008_260)] hover:text-[oklch(0.22_0.014_260)]"
               }`}
             >
               <FormattedText text={t(`innovation.industries.${industry.slug}.shortTitle`)} />
@@ -236,22 +234,20 @@ export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIn
           ref={navRef}
           className={`sticky top-0 z-50 ${
             tabsCompact
-              ? "bg-[oklch(0.99_0.002_260)] shadow-[0_1px_0_oklch(0.9_0.006_260)]"
+              ? "bg-[oklch(0.99_0.002_260/0.96)] shadow-[0_1px_0_oklch(0.9_0.006_260)]"
               : "bg-[oklch(0.985_0.003_260)]"
           }`}
         >
           <div className="px-[clamp(1.25rem,4vw,3rem)]">
             <div className="mx-auto max-w-[82rem]">
               <div
-                className={
-         "py-3 md:py-3.5"
-                }
+                className="py-3 md:py-3.5"
               >
                 <div
-                  className={`rounded-2xl border border-[oklch(0.92_0.005_260)] bg-white ${
+                  className={`rounded-lg border border-[oklch(0.91_0.006_260)] bg-[oklch(0.998_0.003_260)] transition-[padding,box-shadow] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
                     tabsCompact
-                      ? "p-1.5 shadow-[0_1px_6px_-2px_oklch(0.2_0.02_260/0.08)]"
-                      : "p-[clamp(0.75rem,2vw,1rem)] shadow-[0_4px_24px_-8px_oklch(0.2_0.02_260/0.08)]"
+                      ? "p-1.5 shadow-[0_10px_30px_-26px_oklch(0.2_0.02_260/0.3)]"
+                      : "p-[clamp(0.625rem,1.5vw,0.875rem)] shadow-[0_18px_48px_-36px_oklch(0.2_0.02_260/0.28)]"
                   }`}
                 >
                   <IndustryPillNav
@@ -270,7 +266,7 @@ export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIn
 
         <div ref={navCompactSentinelRef} className="h-0" aria-hidden />
 
-        <div className="flex flex-col gap-[clamp(5rem,10vw,7.5rem)] px-[clamp(0.5rem,2vw,1rem)] pt-[clamp(0.75rem,2vw,1.25rem)] pb-[clamp(5rem,10vw,8rem)]">
+        <div className="flex flex-col gap-[clamp(4rem,9vw,7rem)] px-[clamp(0.25rem,1.5vw,1rem)] pt-[clamp(0.75rem,2vw,1.25rem)] pb-[clamp(5rem,10vw,8rem)]">
           {INDUSTRIES.map((industry, index) => (
             <motion.div
               key={industry.slug}

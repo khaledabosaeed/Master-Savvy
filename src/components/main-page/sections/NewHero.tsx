@@ -1,15 +1,15 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { Building2, Eye, MapPinned, Users } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useIsMobile } from "@/hooks/useIsMobile"
 import { useTranslation } from "react-i18next"
-import { FaInstagram, FaSnapchatGhost, FaTiktok } from "react-icons/fa"
-import { FaLinkedinIn } from "react-icons/fa6"
 import FormattedText from "@/components/shared/FormattedText"
+
+const heroEase: [number, number, number, number] = [0.16, 1, 0.3, 1]
 
 export default function NewHero() {
   const [animate, setAnimate] = useState(false)
@@ -19,17 +19,37 @@ export default function NewHero() {
   const lang = language as "en" | "ar"
   const isRTL = lang === "ar"
 
+  const impactStats = [
+    {
+      value: t("hero.impactStats.views.value"),
+      label: t("hero.impactStats.views.label"),
+      Icon: Eye,
+    },
+    {
+      value: t("hero.impactStats.reach.value"),
+      label: t("hero.impactStats.reach.label"),
+      Icon: Users,
+    },
+    {
+      value: t("hero.impactStats.experience.value"),
+      label: t("hero.impactStats.experience.label"),
+      Icon: MapPinned,
+    },
+    {
+      value: t("hero.impactStats.enterprise.value"),
+      label: t("hero.impactStats.enterprise.label"),
+      Icon: Building2,
+    },
+  ]
+
 
   useEffect(() => {
     setAnimate(true)
   }, [])
 
-  // Enhanced animation variants with beautiful entrance effect
-  // Simplified animations on mobile for better performance
   const imageVariants = {
     hidden: {
-  // Enhanced animation variants with beautiful entrance effect
-  // Simplified animations on mobile for better performance      opacity: 0,
+      opacity: 0,
       scale: isMobile ? 0.95 : 0.85,
       y: isMobile ? 30 : 60,
       rotateX: isMobile ? 0 : 15,
@@ -42,7 +62,7 @@ export default function NewHero() {
       transition: {
         duration: isMobile ? 0.6 : 1.2,
         delay: isMobile ? 0.1 : 0.3,
-        ease: [0.22, 0.61, 0.36, 1] as any,
+        ease: heroEase,
       },
     },
   }
@@ -57,7 +77,7 @@ export default function NewHero() {
       transition: {
         duration: isMobile ? 0.4 : 0.8,
         delay: 0,
-        ease: [0.22, 0.61, 0.36, 1] as any,
+        ease: heroEase,
       },
     },
   }
@@ -70,192 +90,84 @@ export default function NewHero() {
       transition: {
         duration: isMobile ? 0.4 : 0.7,
         delay: isMobile ? 0.1 : 0.15,
-        ease: [0.22, 0.61, 0.36, 1] as any,
+        ease: heroEase,
       },
     },
   }
 
-  const socialContainerVariants = {
-    hidden: { opacity: 0, y: 30, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.8,
-        ease: [0.22, 0.61, 0.36, 1] as any,
-        delay: 0.5,
-        delayChildren: 0.2,
-        staggerChildren: 0.08
-      }
-    }
-  }
-
-  const socialIconVariants = {
-    hidden: { opacity: 0, scale: 0, y: 10 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        stiffness: 400,
-        damping: 15
-      } as any
-    }
-  }
-
-
   return (
-    <section className="relative  flex flex-col pt-[100px] md:pt-[120px] overflow-visible md:overflow-hidden">
+    <section id="whoWeAre" className="relative flex min-h-screen flex-col overflow-hidden pt-[96px] md:pt-[120px]">
+      <Image
+        src="/hero.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="absolute inset-0 object-cover object-center"
+        quality={90}
+      />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,13,24,0.88)_0%,rgba(4,13,24,0.66)_46%,rgba(4,13,24,0.3)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_20%,rgba(57,96,249,0.22),transparent_34%),linear-gradient(180deg,rgba(4,13,24,0.12)_0%,rgba(4,13,24,0.78)_100%)]" />
 
-      {/* Enhanced gradient background */}
-      <div className="absolute inset-0  bg-white" />
-
-      {/* Large radial glow behind image area - Hidden on mobile for performance */}
-      {!isMobile && (
+      <div className="container relative z-10 flex flex-1 flex-col justify-center py-10 md:py-16 lg:py-20" suppressHydrationWarning>
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[60px] opacity-40"
-          style={{
-            background: 'radial-gradient(circle, rgba(147, 197, 253, 0.3) 0%, rgba(196, 181, 253, 0.2) 50%, transparent 70%)',
-            filter: 'blur(60px)'
-          }}
-        />
-      )}
-
-      {/* Content */}
-      <div className="container relative z-10 py-8 md:py-16 lg:py-24 flex-1 flex flex-col justify-center" suppressHydrationWarning>
-        <div
-          className="max-w-5xl mx-auto text-center flex flex-col items-center"
+          className="mx-auto flex w-full max-w-6xl flex-col items-center gap-7 text-center md:gap-9"
           dir={isRTL ? "rtl" : "ltr"}
         >
-          {/* Main Heading - Responsive sizing */}
-          <motion.h1
-            variants={titleVariants}
-            initial="hidden"
-            animate={animate ? "visible" : "hidden"}
-            className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight px-2"
-          >
-            <FormattedText text={t("hero.welcomeText")} />{" "}
-            <span className="text-primary">
-              <FormattedText text={t("hero.savvyWorld")} />
-            </span>
-          </motion.h1>
-
-          {/* Description - Responsive typography for longer text */}
-          <motion.p
-            variants={descriptionVariants}
-            initial="hidden"
-            animate={animate ? "visible" : "hidden"}
-            className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mb-3 md:mb-4 max-w-4xl mx-auto px-4 leading-relaxed"
-          >
-            <FormattedText text={t("hero.description")} />
-          </motion.p>
-
-   
-
-          {/* Robot Image with enhanced blending - Optimized for mobile */}
-          <motion.div
-          variants={imageVariants}
-          initial="hidden"
-          animate={animate ? "visible" : "hidden"}
-          whileHover={!isMobile ? {
-            scale: 1.03,
-              transition: { duration: 0.4, ease: [0.22, 0.61, 0.36, 1] as any }
-            } : undefined}
-            className="relative w-full max-w-5xl mx-auto mb-2 md:mb-4 flex items-center justify-center"
-            style={{ perspective: isMobile ? 'none' : '1000px' }}
-          >
-  <div className="relative w-full flex items-center justify-center min-h-[320px] md:min-h-[420px] lg:min-h-[520px]">
-    <div className="relative z-10 w-full flex items-center justify-center">
-      <Image
-        src="/home-page/hero/new.png"
-        alt="Robot hand with coffee"
-        width={isMobile ? 800 : 1200}
-        height={isMobile ? 800 : 1200}
-        className="object-contain h-auto max-w-full"
-        priority
-        sizes="(max-width: 768px) 100vw, 1200px"
-        quality={isMobile ? 85 : 90}
-        style={{
-          filter: isMobile ? "brightness(1.02) contrast(1.01)" : "brightness(1.05) contrast(1.02) saturate(0.95)",
-          WebkitMaskImage:
-            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 5%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0.7) 95%, rgba(0,0,0,0) 100%)",
-          maskImage:
-            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 5%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0.7) 95%, rgba(0,0,0,0) 100%)",
-        }}
-      />
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2, delay: 0.8 }}
-        className="absolute inset-0 z-20 pointer-events-none"
-      >
-        <Image
-          src="/home-page/hero/ghyom.png"
-          alt="Cloud effect"
-          width={isMobile ? 800 : 1200}
-          height={isMobile ? 800 : 1200}
-          className="object-contain w-full h-auto"
-        />
-      </motion.div>
-    </div>
-  </div>
-</motion.div>
-
-                 {/* Social Media Icons - Separate links for each platform */}
-                 <div className="relative z-20  pb-4 md:pb-6 flex justify-center">
-            <motion.div
-              variants={socialContainerVariants}
+          <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
+            <motion.h1
+              variants={titleVariants}
               initial="hidden"
               animate={animate ? "visible" : "hidden"}
-              className="flex items-center gap-3  md:gap-4"
+              className="mb-4 max-w-[14ch] text-balance px-2 text-3xl font-extrabold leading-[1.08] tracking-normal text-[#f4f8fc] drop-shadow-[0_3px_16px_rgba(0,0,0,0.36)] sm:max-w-3xl md:mb-6 md:text-5xl lg:text-6xl"
             >
-     {[
-  { 
-    Icon: FaTiktok, 
-    color: "text-black",
-    url: "https://www.tiktok.com/@mr.savvy_saudi",
-    ariaLabel: t("hero.socialTiktok")
-  },
-  { 
-    Icon: FaLinkedinIn, 
-    color: "text-[#0077B5]",
-    url: "https://www.linkedin.com/company/savvy-world/",
-    ariaLabel: t("hero.socialLinkedin")
-  },
-  { 
-    Icon: FaInstagram, 
-    color: "text-[#E1306C]",
-    url: "https://www.instagram.com/mr.savvy_saudi",
-    ariaLabel: t("hero.socialInstagram")
-  },
-  { 
-    Icon: FaSnapchatGhost, 
-    color: "text-[#FFFC00] drop-shadow-[0_1px_1px_rgba(0,0,0,0.5)]",
-    url: "https://www.snapchat.com/@mr.savvysaudi",
-    ariaLabel: t("hero.socialSnapchat")
-  }
-].map(({ Icon, color, url, ariaLabel }, index) => (
-  <motion.a
-    key={index}
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    variants={socialIconVariants}
-    whileHover={{ scale: 1.15, y: -3 }}
-    whileTap={{ scale: 0.95 }}
-    className={`${color} text-4xl md:text-3xl lg:text-4xl xl:text-5xl transform transition-transform duration-300 hover:scale-110 rounded-full p-2 hover:bg-gray-100 transition-colors`}
-    aria-label={ariaLabel}
-  >
-    <Icon />
-  </motion.a>
-))}
-            </motion.div>
+              <FormattedText text={t("hero.welcomeText")} />{" "}
+              <span className="text-[#8bc4ff]">
+                <FormattedText text={t("hero.savvyWorld")} />
+              </span>
+            </motion.h1>
+
+            <motion.p
+              variants={descriptionVariants}
+              initial="hidden"
+              animate={animate ? "visible" : "hidden"}
+              className="mb-4 max-w-3xl text-pretty px-2 text-sm leading-7 text-[#dce8f5] sm:text-base md:mb-5 md:text-lg md:leading-8"
+            >
+              <FormattedText text={t("hero.description")} />
+            </motion.p>
           </div>
 
-
+          <motion.aside
+            variants={imageVariants}
+            initial="hidden"
+            animate={animate ? "visible" : "hidden"}
+            className="w-full rounded-2xl border border-[rgba(139,196,255,0.34)] bg-[rgba(6,17,29,0.82)] p-3 shadow-[0_24px_70px_rgba(0,0,0,0.34)] md:p-5"
+            aria-label={t("hero.impactStats.ariaLabel")}
+          >
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {impactStats.map(({ value, label, Icon }) => (
+                <div
+                  key={value}
+                  className="flex min-h-[104px] items-center gap-4 rounded-xl border border-[rgba(139,196,255,0.14)] bg-[rgba(9,39,72,0.24)] px-4 py-4 text-start"
+                >
+                  <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[#529fff] bg-[rgba(9,39,72,0.54)] text-[#d6ecff] shadow-[0_0_24px_rgba(57,96,249,0.22)]">
+                    <Icon className="size-6" strokeWidth={1.6} aria-hidden="true" />
+                  </span>
+                  <span className="min-w-0 text-start">
+                    <span className="block text-2xl font-extrabold leading-none tracking-normal text-[#eef7ff] md:text-3xl">
+                      {value}
+                    </span>
+                    <span className="mt-1 block text-sm font-semibold leading-snug text-[#d6deea]">
+                      {label}
+                    </span>
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-5 text-center text-xs font-extrabold uppercase leading-relaxed tracking-[0.22em] text-[#399cff]">
+              <FormattedText text={t("hero.impactStats.footer")} />
+            </p>
+          </motion.aside>
         </div>
       </div>
     </section>

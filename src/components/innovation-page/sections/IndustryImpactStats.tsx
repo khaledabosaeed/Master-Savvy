@@ -69,7 +69,7 @@ export default function IndustryImpactStats({ slug }: IndustryImpactStatsProps) 
               <motion.article
                 key={index}
                 variants={staggerItem}
-                className="flex min-h-[clamp(10rem,22vw,13rem)] flex-col items-center justify-center gap-[clamp(0.75rem,1.5vw,1rem)] rounded-[0.875rem] border border-[oklch(0.92_0.005_260)] bg-white px-[clamp(1rem,2vw,1.5rem)] py-[clamp(1.25rem,2.5vw,1.75rem)] text-center shadow-[0_4px_24px_-8px_oklch(0.2_0.02_260/0.08)]"
+                className="flex min-h-[clamp(10rem,22vw,13rem)] flex-col items-center justify-center gap-[clamp(0.75rem,1.5vw,1rem)] rounded-[0.75rem] border border-[oklch(0.91_0.007_260)] bg-[oklch(0.998_0.003_260)] px-[clamp(1rem,2vw,1.5rem)] py-[clamp(1.25rem,2.5vw,1.75rem)] text-center shadow-[0_14px_40px_-30px_oklch(0.18_0.02_260/0.32)] transition-[transform,box-shadow,border-color] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 hover:border-[oklch(0.82_0.035_264)] hover:shadow-[0_24px_52px_-34px_oklch(0.18_0.02_260/0.42)]"
               >
                 <Icon
                   className="h-[clamp(2rem,4vw,2.5rem)] w-[clamp(2rem,4vw,2.5rem)] shrink-0 text-[oklch(0.18_0.01_260)]"

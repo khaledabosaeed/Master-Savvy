@@ -26,7 +26,7 @@ export default function IndustryScenarioCoverage({ slug }: IndustryScenarioCover
   }
 
   return (
-    <section className="bg-white py-[clamp(4rem,8vw,6.5rem)]" id="scenarios">
+    <section className="bg-[oklch(0.998_0.003_260)] py-[clamp(4rem,8vw,6.5rem)]" id="scenarios">
       <div className="mx-auto flex w-full max-w-[80rem] flex-col gap-[clamp(4rem,8vw,6.5rem)] px-[clamp(1rem,3vw,2.5rem)]">
         {scenarioContent.map((content, index) => {
           if (!content?.title) {

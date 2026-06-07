@@ -45,9 +45,11 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
         transparentHeader
       />
 
-      <PageTransition>
-        <IndustryDetailPage industry={industry} />
-      </PageTransition>
+      <main id="industry-detail">
+        <PageTransition>
+          <IndustryDetailPage industry={industry} />
+        </PageTransition>
+      </main>
     </>
   )
 }
