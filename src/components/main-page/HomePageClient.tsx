@@ -6,7 +6,7 @@ import SavvySections from "@/components/main-page/sections/SavvySections"
 import UnifiedHeader from "@/components/shared/UnifiedHeader"
 import TopBanner from "@/components/shared/TopBanner"
 import PartnersSlider from "@/components/shared/PartnersSlider/PartnersSlider"
-import LatestProjects from "@/components/shared/LatestProjects/LatestProjects"
+// import LatestProjects from "@/components/shared/LatestProjects/LatestProjects"
 // import ImageSlider, { ImageItem } from "@/components/media-page/sections/PartnersSlider"
 import type { HomePageHeaderTexts } from "@/i18n/home-page-texts"
 
@@ -54,12 +54,13 @@ export default function HomePageClient({ texts }: HomePageClientProps) {
 
   return (
     <>
-      <TopBanner />
+      {/* <TopBanner /> */}
 
       <UnifiedHeader
         texts={texts}
         showBadge={showBadge}
-        hasBanner={true}
+        hasBanner={false}
+        transparentHeader={true}
         logoSrc="/Savvy 2 1.svg"
         logoAlt="Savvy"
       />
@@ -78,9 +79,6 @@ export default function HomePageClient({ texts }: HomePageClientProps) {
         <ImageSlider images={images} heading={galleryHeading} />
       </section> */}
 
-      <section id="projects">
-        <LatestProjects />
-      </section>
     </>
   )
 }

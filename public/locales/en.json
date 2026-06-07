@@ -61,6 +61,26 @@
     },
     "ctaButton": "Contact Us",
     "partners": "Partners who trusted us to create different experiences… you're next",
+    "impactStats": {
+      "ariaLabel": "Savvy impact statistics",
+      "views": {
+        "value": "+240M",
+        "label": "Views Generated"
+      },
+      "reach": {
+        "value": "+7M",
+        "label": "People Reached"
+      },
+      "experience": {
+        "value": "+22",
+        "label": "Years Regional Experience"
+      },
+      "enterprise": {
+        "value": "+100",
+        "label": "Enterprise Engagements"
+      },
+      "footer": "Multiple Sectors Nationwide Impact"
+    },
     "socialTiktok": "Follow us on TikTok",
     "socialLinkedin": "Follow us on LinkedIn",
     "socialInstagram": "Follow us on Instagram",

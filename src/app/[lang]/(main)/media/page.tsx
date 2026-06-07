@@ -8,7 +8,7 @@ import { getDictionary } from "@/i18n/getDictionary"
 import { mediaPageHeaderTexts } from "@/i18n/page-header-texts"
 import { isAppLanguage } from "@/i18n/settings"
 import { notFound } from "next/navigation"
-
+import LatestProjects from "@/components/shared/LatestProjects/LatestProjects"
 interface MediaPageProps {
   params: Promise<{ lang: string }>
 }
@@ -37,6 +37,11 @@ export default async function MediaPage({ params }: MediaPageProps) {
         <section id="why-savvy">
           <WhySavvy />
         </section>
+
+
+      <section id="projects">
+        <LatestProjects />
+      </section>
       </PageTransition>
     </>
   )
