@@ -1,20 +1,17 @@
 "use client"
 
-import { useState, memo, useCallback, useRef, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { memo, useCallback, useEffect, useRef, useState } from "react"
+import { AnimatePresence, motion } from "framer-motion"
+import { ChevronLeft, ChevronRight, MonitorPlay } from "lucide-react"
 import Image from "next/image"
-import { useLanguage } from "@/contexts/LanguageContext"
 import { useTranslation } from "react-i18next"
+import { useLanguage } from "@/contexts/LanguageContext"
+import FormattedText from "@/components/shared/FormattedText"
+import { fadeInUp, sectionSlideUp, viewportConfig } from "@/lib/animations"
 import type { Language } from "./content"
 import { getProjects } from "./content"
-import {
-  fadeInUp,
-  viewportConfig,
-  // crossfade,
-  sectionSlideUp,
-} from "@/lib/animations"
-import FormattedText from "@/components/shared/FormattedText"
+
+const screenEase: [number, number, number, number] = [0.16, 1, 0.3, 1]
 
 function MadiaProjects() {
   const { language } = useLanguage()
@@ -29,279 +26,194 @@ function MadiaProjects() {
   const projects = getProjects(lang)
   const title = t("media.content.topTitle")
   const subtitle = t("media.content.topDescription")
-
   const currentProject = projects[activeProject]
 
-  const handleTabClick = useCallback((index: number) => {
-    setActiveProject(index)
-  }, [])
+  const scrollTabs = useCallback(
+    (direction: "left" | "right") => {
+      const container = tabsContainerRef.current
+      if (!container) return
 
+      const scrollAmount = 260
+      const scrollDirection = direction === "left" ? -scrollAmount : scrollAmount
+      container.scrollBy({
+        left: isRTL ? -scrollDirection : scrollDirection,
+        behavior: "smooth",
+      })
+    },
+    [isRTL],
+  )
 
-  // Check if tabs overflow and show/hide arrows
   useEffect(() => {
     const checkOverflow = () => {
       const container = tabsContainerRef.current
       if (!container) return
 
       const hasOverflow = container.scrollWidth > container.clientWidth
-      const scrollLeft = container.scrollLeft
+      const scrollLeft = Math.abs(container.scrollLeft)
       const maxScroll = container.scrollWidth - container.clientWidth
 
       setShowArrows({
-        left: hasOverflow && scrollLeft > 0,
-        right: hasOverflow && scrollLeft < maxScroll - 1, // -1 for floating point precision
+        left: hasOverflow && scrollLeft > 1,
+        right: hasOverflow && scrollLeft < maxScroll - 1,
       })
     }
 
-    // Check overflow after a short delay to ensure DOM is ready
-    const timeoutId = setTimeout(checkOverflow, 100)
-    window.addEventListener('resize', checkOverflow)
+    const timeoutId = window.setTimeout(checkOverflow, 100)
+    window.addEventListener("resize", checkOverflow)
     const container = tabsContainerRef.current
-    container?.addEventListener('scroll', checkOverflow)
+    container?.addEventListener("scroll", checkOverflow)
 
     return () => {
-      clearTimeout(timeoutId)
-      window.removeEventListener('resize', checkOverflow)
-      container?.removeEventListener('scroll', checkOverflow)
+      window.clearTimeout(timeoutId)
+      window.removeEventListener("resize", checkOverflow)
+      container?.removeEventListener("scroll", checkOverflow)
     }
-  }, [projects, activeProject])
+  }, [projects])
 
-  // Scroll active tab into view when it changes
   useEffect(() => {
     const container = tabsContainerRef.current
     if (!container) return
 
     const activeButton = container.querySelector(`[data-tab-index="${activeProject}"]`) as HTMLElement
-    if (activeButton) {
-      activeButton.scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest',
-        inline: 'center',
-      })
-    }
+    activeButton?.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    })
   }, [activeProject])
 
-  // Scroll tabs handlers
-  const scrollTabs = useCallback((direction: 'left' | 'right') => {
-    const container = tabsContainerRef.current
-    if (!container) return
-
-    const scrollAmount = 200 // pixels to scroll
-    const scrollDirection = direction === 'left' ? -scrollAmount : scrollAmount
-    const isRTLScroll = isRTL ? -scrollDirection : scrollDirection
-
-    container.scrollBy({
-      left: isRTLScroll,
-      behavior: 'smooth',
-    })
-  }, [isRTL])  
-
-
-  
-
-  // Safety check after hooks
   if (!currentProject) {
     return null
   }
 
   return (
-    <section className="py-20 md:py-32 bg-white relative overflow-hidden">
+    <section className="relative overflow-hidden border-y border-[oklch(0.88_0.035_245/0.11)] bg-[oklch(0.105_0.018_250)] py-16 text-[oklch(0.965_0.008_245)] md:py-24">
+      <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,oklch(0.501_0.253_264.6/0.45),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_0%,oklch(0.501_0.253_264.6/0.16),transparent_30%),radial-gradient(circle_at_88%_18%,oklch(0.501_0.253_264.6/0.14),transparent_28%)]" />
+
       <div className="container relative z-10">
-        {/* Title and Subtitle */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={viewportConfig}
           variants={sectionSlideUp}
-          className={`text-center mb-6 ${isRTL ? 'rtl' : 'ltr'}`}
+          className={`mb-8 grid gap-6 lg:grid-cols-[0.55fr_0.45fr] lg:items-end ${
+            isRTL ? "text-right" : "text-left"
+          }`}
         >
-          <h2 className="text-3xl md:text-4xl  nolg:text-5xl font-bold text-gray-900 mb-3">
-            <FormattedText text={title} />
-          </h2>
-          <p className="text-gray-500 text-sm md:text-base">
+          <div>
+            <p className="mb-4 inline-flex rounded-full border border-[oklch(0.501_0.253_264.6/0.36)] px-4 py-2 text-xs font-black uppercase tracking-normal text-[oklch(0.501_0.253_264.6)]">
+              {t("media.content.button")}
+            </p>
+            <h2 className="max-w-[13ch] text-3xl font-black leading-[1.05] tracking-normal sm:text-4xl lg:text-6xl">
+              <FormattedText text={title} />
+            </h2>
+          </div>
+          <p className="max-w-[66ch] text-sm leading-7 text-[oklch(0.76_0.025_250)] sm:text-base md:text-[17px] md:leading-8">
             <FormattedText text={subtitle} />
           </p>
         </motion.div>
 
-        {/* Navigation Tabs */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={viewportConfig}
           variants={fadeInUp}
-          transition={{ delay: 0.2 }}
-          className="relative mb-12 border-b border-gray-200 pb-4"
+          className="relative mb-8"
         >
-          {/* Left Arrow */}
           {showArrows.left && (
             <button
-              onClick={() => scrollTabs('left')}
-              className={`absolute ${isRTL ? 'right-0' : 'left-0'} top-0 h-full px-2 md:px-4 flex items-center justify-center bg-white/80 hover:bg-white z-20 transition-colors border-r ${isRTL ? 'border-l border-r-0' : 'border-r'} border-gray-200`}
+              onClick={() => scrollTabs("left")}
+              className={`absolute ${isRTL ? "right-0" : "left-0"} top-0 z-20 flex h-full w-12 items-center justify-center bg-[oklch(0.105_0.018_250/0.88)] text-[oklch(0.501_0.253_264.6)] transition hover:text-[oklch(0.62_0.2_264.6)]`}
               aria-label="Scroll tabs left"
             >
-              <ChevronLeft className={`w-5 h-5 text-gray-600 ${isRTL ? 'rotate-180' : ''}`} />
+              <ChevronLeft className={`size-5 ${isRTL ? "rotate-180" : ""}`} aria-hidden="true" />
             </button>
           )}
 
-          {/* Scrollable Tabs Container */}
           <div
             ref={tabsContainerRef}
-            className={`flex gap-8 overflow-x-auto scrollbar-hide ${showArrows.left ? (isRTL ? 'pr-12' : 'pl-12') : ''} ${showArrows.right ? (isRTL ? 'pl-12' : 'pr-12') : ''}`}
-            style={{
-              scrollbarWidth: 'none',
-              msOverflowStyle: 'none',
-            }}
+            className={`scrollbar-hide overflow-x-auto border-y border-[oklch(0.88_0.035_245/0.12)] py-3 ${
+              showArrows.left ? (isRTL ? "pr-12" : "pl-12") : ""
+            } ${showArrows.right ? (isRTL ? "pl-12" : "pr-12") : ""}`}
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
-            <div className="flex gap-8 justify-center min-w-max">
+            <div className="flex min-w-max gap-2">
               {projects.map((project, index) => (
                 <motion.button
-                  key={index}
+                  key={project.title}
                   data-tab-index={index}
-                  onClick={() => handleTabClick(index)}
-                  className={`relative px-5 py-2 text-xs md:text-sm font-medium transition-colors whitespace-nowrap ${activeProject === index
-                      ? "text-gray-900"
-                      : "text-gray-400 hover:text-gray-600"
-                    }`}
+                  onClick={() => setActiveProject(index)}
+                  className={`relative min-h-11 rounded-md px-4 text-xs font-black transition md:text-sm ${
+                    activeProject === index
+                      ? "bg-[oklch(0.501_0.253_264.6)] text-[oklch(0.965_0.008_245)]"
+                      : "border border-[oklch(0.88_0.035_245/0.12)] text-[oklch(0.76_0.025_250)] hover:border-[oklch(0.501_0.253_264.6/0.36)] hover:text-[oklch(0.95_0.01_245)]"
+                  }`}
                   whileHover={{ y: -2 }}
-                  whileTap={{ scale: 0.95 }}
+                  whileTap={{ scale: 0.98 }}
                 >
                   <FormattedText text={project.title} />
-                  {activeProject === index && (
-                    <motion.div
-                      layoutId="activeTab"
-                      className="absolute bottom-0 left-2 right-2 h-0.5 bg-gray-900"
-                      initial={false}
-                      transition={{ type: "spring", stiffness: 400, damping: 35 }}
-                    />
-                  )}
                 </motion.button>
               ))}
             </div>
           </div>
 
-          {/* Right Arrow */}
           {showArrows.right && (
             <button
-              onClick={() => scrollTabs('right')}
-              className={`absolute ${isRTL ? 'left-0' : 'right-0'} top-0 h-full px-2 md:px-4 flex items-center justify-center bg-white/80 hover:bg-white z-20 transition-colors border-l ${isRTL ? 'border-r border-l-0' : 'border-l'} border-gray-200`}
+              onClick={() => scrollTabs("right")}
+              className={`absolute ${isRTL ? "left-0" : "right-0"} top-0 z-20 flex h-full w-12 items-center justify-center bg-[oklch(0.105_0.018_250/0.88)] text-[oklch(0.501_0.253_264.6)] transition hover:text-[oklch(0.62_0.2_264.6)]`}
               aria-label="Scroll tabs right"
             >
-              <ChevronRight className={`w-5 h-5 text-gray-600 ${isRTL ? 'rotate-180' : ''}`} />
+              <ChevronRight className={`size-5 ${isRTL ? "rotate-180" : ""}`} aria-hidden="true" />
             </button>
           )}
         </motion.div>
 
-        {/* Main Content - Image and Text Side by Side */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeProject}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5 }}
-            className={`grid md:grid-cols-2 gap-8 md:gap-12 items-center ${isRTL ? 'md:flex-row-reverse' : ''}`}
+            exit={{ opacity: 0, y: -18 }}
+            transition={{ duration: 0.5, ease: screenEase }}
+            className="grid gap-6 lg:grid-cols-[minmax(0,0.75fr)_minmax(320px,0.34fr)] lg:items-stretch"
           >
-            {/* Media Section - 1 Video + Photo Gallery with Arrows */}
-            <div className={`space-y-4 ${isRTL ? 'md:order-2 rtl' : 'md:order-1'}`}>
-              {/* Video Row */}
+            <div className={`relative min-h-[320px] overflow-hidden rounded-2xl border border-[oklch(0.88_0.035_245/0.14)] bg-[oklch(0.14_0.02_250)] shadow-[0_30px_100px_oklch(0.03_0.02_250/0.52)] md:min-h-[520px] ${isRTL ? "lg:order-2" : ""}`}>
               {currentProject.video ? (
-                <div className="relative w-full h-[200px] md:h-[300px] rounded-xl overflow-hidden shadow-xl">
-    <video
-      src={currentProject.video}
-      className="w-full h-full object-cover"
-      // controls
-      autoPlay
-      muted
-      loop
-      playsInline
-    />
-                </div>
-              ) : (
-                <div className="relative w-full h-[200px] md:h-[300px] rounded-xl overflow-hidden shadow-xl">
-                  <Image
-                    src={currentProject.images[0]}
-                    alt={`${currentProject.title} - Photo ${1}`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              )}
-
-         
+                <video
+                  src={currentProject.video}
+                  className="h-full w-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              ) : currentProject.images?.[0] ? (
+                <Image
+                  src={currentProject.images[0]}
+                  alt={currentProject.title}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 66vw"
+                  className="object-cover"
+                />
+              ) : null}
+              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,oklch(0.105_0.018_250/0.82)_100%)]" />
             </div>
 
-            {/* Content Section */}
-            <div className={`${isRTL ? 'md:order-1 text-right' : 'md:order-2 text-left'} space-y-6`}>
-              <motion.h3
-                initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 }}
-                className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                <FormattedText text={currentProject.title} />
-              </motion.h3>
+            <div className={`flex flex-col justify-between rounded-2xl border border-[oklch(0.88_0.035_245/0.14)] bg-[oklch(0.13_0.02_250)] p-6 md:p-8 ${isRTL ? "text-right lg:order-1" : "text-left"}`}>
+              <div>
+                <div className="mb-6 flex items-center gap-3 text-[oklch(0.501_0.253_264.6)]">
+                  <MonitorPlay className="size-6" strokeWidth={1.6} aria-hidden="true" />
 
-              <motion.p
-                initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 }}
-                className="text-base md:text-lg text-gray-600 leading-relaxed"
-              >
-                <FormattedText text={currentProject.description} />
-              </motion.p>
+                </div>
+                <h3 className="text-3xl font-black leading-[1.05] tracking-normal md:text-5xl">
+                  <FormattedText text={currentProject.title} />
+                </h3>
+                <p className="mt-5 text-sm leading-7 text-[oklch(0.76_0.025_250)] md:text-base md:leading-8">
+                  <FormattedText text={currentProject.description} />
+                </p>
+              </div>
 
-              {/* CTA Button */}
-              {/* <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
-              >
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-[#3960F9] text-white rounded-lg font-medium text-sm md:text-base shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  {currentProject.ctaButton}
-                </motion.button>
-              </motion.div> */}
-
-              {/* Statistics - Horizontal Layout */}
-              {/* <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-                className="grid grid-cols-3 gap-6 pt-8"
-              >
-                {currentProject.statistics.map((stat, index) => (
-                  <div key={index} className={`${isRTL ? 'text-right' : 'text-left'}`}>
-                    <div className="flex items-baseline gap-1 mb-1">
-                      {stat.value ? (
-                        <Counter
-                          to={stat.value}
-                          className="text-3xl md:text-4xl font-bold text-gray-900"
-                          formatter={(n) => `${Math.floor(n)}`}
-                        />
-                      ) : (
-                        <span className="text-1xl md:text-4xl font-bold text-gray-900">
-                          {stat.value}
-                        </span>
-                      )}
-                      {stat.label && (
-                        <span className="text-xs md:text-2xl font-bold text-gray-900">
-                          {stat.label}
-                        </span>
-                      )}
-                      {stat.formatter && (
-                        <span className="text-xs md:text-2xl font-bold text-gray-900">
-                          {stat.formatter}
-                        </span>
-                      )}
-                    </div>
-                    <p className="text-xs md:text-sm text-gray-600">
-                      {stat.description}
-                    </p>
-                  </div>
-                ))}
-              </motion.div> */}
             </div>
           </motion.div>
         </AnimatePresence>
@@ -309,5 +221,5 @@ function MadiaProjects() {
     </section>
   )
 }
-// Memoize component to prevent unnecessary re-renders
+
 export default memo(MadiaProjects)

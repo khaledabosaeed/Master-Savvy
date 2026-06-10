@@ -11,7 +11,35 @@ import FormattedText from "@/components/shared/FormattedText"
 
 const heroEase: [number, number, number, number] = [0.16, 1, 0.3, 1]
 
-export default function NewHero() {
+type HeroAction = {
+  href: string
+  labelKey: string
+  variant?: "primary" | "secondary"
+}
+
+type NewHeroProps = {
+  sectionId?: string
+  imageSrc?: string
+  imageAlt?: string
+  eyebrowKey?: string
+  titleKey?: string
+  titleAccentKey?: string
+  descriptionKey?: string
+  showImpactStats?: boolean
+  actions?: HeroAction[]
+}
+
+export default function NewHero({
+  sectionId = "whoWeAre",
+  imageSrc = "/hero.jpg",
+  imageAlt = "",
+  eyebrowKey,
+  titleKey = "hero.welcomeText",
+  titleAccentKey = "hero.savvyWorld",
+  descriptionKey = "hero.description",
+  showImpactStats = true,
+  actions = [],
+}: NewHeroProps) {
   const [animate, setAnimate] = useState(false)
   const { language } = useLanguage()
   const { t } = useTranslation()
@@ -96,10 +124,10 @@ export default function NewHero() {
   }
 
   return (
-    <section id="whoWeAre" className="relative flex min-h-screen flex-col overflow-hidden pt-[96px] md:pt-[120px]">
+    <section id={sectionId} className="relative flex min-h-screen flex-col overflow-hidden pt-[96px] md:pt-[120px]">
       <Image
-        src="/hero.jpg"
-        alt=""
+        src={imageSrc}
+        alt={imageAlt}
         fill
         priority
         sizes="100vw"
@@ -115,16 +143,32 @@ export default function NewHero() {
           dir={isRTL ? "rtl" : "ltr"}
         >
           <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
+            {eyebrowKey ? (
+              <motion.div
+                variants={descriptionVariants}
+                initial="hidden"
+                animate={animate ? "visible" : "hidden"}
+                className="mb-4 rounded-full border border-[rgba(139,196,255,0.34)] bg-[rgba(6,17,29,0.72)] px-5 py-2 text-sm font-extrabold uppercase tracking-[0.18em] text-[#8bc4ff]"
+              >
+                <FormattedText text={t(eyebrowKey)} />
+              </motion.div>
+            ) : null}
+
             <motion.h1
               variants={titleVariants}
               initial="hidden"
               animate={animate ? "visible" : "hidden"}
               className="mb-4 max-w-[14ch] text-balance px-2 text-3xl font-extrabold leading-[1.08] tracking-normal text-[#f4f8fc] drop-shadow-[0_3px_16px_rgba(0,0,0,0.36)] sm:max-w-3xl md:mb-6 md:text-5xl lg:text-6xl"
             >
-              <FormattedText text={t("hero.welcomeText")} />{" "}
-              <span className="text-[#8bc4ff]">
-                <FormattedText text={t("hero.savvyWorld")} />
-              </span>
+              <FormattedText text={t(titleKey)} />
+              {titleAccentKey ? (
+                <>
+                  {" "}
+                  <span className="text-[#8bc4ff]">
+                    <FormattedText text={t(titleAccentKey)} />
+                  </span>
+                </>
+              ) : null}
             </motion.h1>
 
             <motion.p
@@ -133,41 +177,68 @@ export default function NewHero() {
               animate={animate ? "visible" : "hidden"}
               className="mb-4 max-w-3xl text-pretty px-2 text-sm leading-7 text-[#dce8f5] sm:text-base md:mb-5 md:text-lg md:leading-8"
             >
-              <FormattedText text={t("hero.description")} />
+              <FormattedText text={t(descriptionKey)} />
             </motion.p>
+
+            {actions.length > 0 ? (
+              <motion.div
+                variants={descriptionVariants}
+                initial="hidden"
+                animate={animate ? "visible" : "hidden"}
+                className="mt-2 flex flex-col items-center justify-center gap-3 sm:flex-row"
+              >
+                {actions.map(({ href, labelKey, variant = "primary" }) => (
+                  <motion.a
+                    key={`${href}-${labelKey}`}
+                    href={href}
+                    className={
+                      variant === "primary"
+                        ? "inline-flex min-h-12 items-center justify-center rounded-xl bg-[#399cff] px-7 text-sm font-extrabold text-white shadow-[0_14px_34px_rgba(57,156,255,0.28)] transition hover:bg-[#1e82e6] sm:text-base"
+                        : "inline-flex min-h-12 items-center justify-center rounded-xl border border-[rgba(220,232,245,0.34)] bg-[rgba(255,255,255,0.08)] px-7 text-sm font-extrabold text-[#eef7ff] transition hover:bg-[rgba(255,255,255,0.14)] sm:text-base"
+                    }
+                    whileHover={{ scale: 1.03, y: -2 }}
+                    whileTap={{ scale: 0.97 }}
+                  >
+                    <FormattedText text={t(labelKey)} />
+                  </motion.a>
+                ))}
+              </motion.div>
+            ) : null}
           </div>
 
-          <motion.aside
-            variants={imageVariants}
-            initial="hidden"
-            animate={animate ? "visible" : "hidden"}
-            className="w-full rounded-2xl border border-[rgba(139,196,255,0.34)] bg-[rgba(6,17,29,0.82)] p-3 shadow-[0_24px_70px_rgba(0,0,0,0.34)] md:p-5"
-            aria-label={t("hero.impactStats.ariaLabel")}
-          >
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              {impactStats.map(({ value, label, Icon }) => (
-                <div
-                  key={value}
-                  className="flex min-h-[104px] items-center gap-4 rounded-xl border border-[rgba(139,196,255,0.14)] bg-[rgba(9,39,72,0.24)] px-4 py-4 text-start"
-                >
-                  <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[#529fff] bg-[rgba(9,39,72,0.54)] text-[#d6ecff] shadow-[0_0_24px_rgba(57,96,249,0.22)]">
-                    <Icon className="size-6" strokeWidth={1.6} aria-hidden="true" />
-                  </span>
-                  <span className="min-w-0 text-start">
-                    <span className="block text-2xl font-extrabold leading-none tracking-normal text-[#eef7ff] md:text-3xl">
-                      {value}
+          {showImpactStats ? (
+            <motion.aside
+              variants={imageVariants}
+              initial="hidden"
+              animate={animate ? "visible" : "hidden"}
+              className="w-full rounded-2xl border border-[rgba(139,196,255,0.34)] bg-[rgba(6,17,29,0.82)] p-3 shadow-[0_24px_70px_rgba(0,0,0,0.34)] md:p-5"
+              aria-label={t("hero.impactStats.ariaLabel")}
+            >
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                {impactStats.map(({ value, label, Icon }) => (
+                  <div
+                    key={value}
+                    className="flex min-h-[104px] items-center gap-4 rounded-xl border border-[rgba(139,196,255,0.14)] bg-[rgba(9,39,72,0.24)] px-4 py-4 text-start"
+                  >
+                    <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[#529fff] bg-[rgba(9,39,72,0.54)] text-[#d6ecff] shadow-[0_0_24px_rgba(57,96,249,0.22)]">
+                      <Icon className="size-6" strokeWidth={1.6} aria-hidden="true" />
                     </span>
-                    <span className="mt-1 block text-sm font-semibold leading-snug text-[#d6deea]">
-                      {label}
+                    <span className="min-w-0 text-start">
+                      <span className="block text-2xl font-extrabold leading-none tracking-normal text-[#eef7ff] md:text-3xl">
+                        {value}
+                      </span>
+                      <span className="mt-1 block text-sm font-semibold leading-snug text-[#d6deea]">
+                        {label}
+                      </span>
                     </span>
-                  </span>
-                </div>
-              ))}
-            </div>
-            <p className="mt-5 text-center text-xs font-extrabold uppercase leading-relaxed tracking-[0.22em] text-[#399cff]">
-              <FormattedText text={t("hero.impactStats.footer")} />
-            </p>
-          </motion.aside>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-5 text-center text-xs font-extrabold uppercase leading-relaxed tracking-[0.22em] text-[#399cff]">
+                <FormattedText text={t("hero.impactStats.footer")} />
+              </p>
+            </motion.aside>
+          ) : null}
         </div>
       </div>
     </section>
