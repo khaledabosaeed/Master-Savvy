@@ -24,217 +24,217 @@ en: {
       {
         title: "Hyper Realistic Content",
         description:
-          "Delivers hyper-realistic content that creates immersive audience experiences and enhances engagement in product showcases, brand activations, and storytelling. We use advanced CGI, 3D modeling, and real-time ray tracing to achieve stunning detail and high realism. Ideal for luxury brands, exhibitions, retail spaces, and interactive events, captivating audiences and elevating brand narratives.",
+          "Ultra-real visuals for immersive brand storytelling.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Hyper%20Realistic%20Content.mp4",
       },
       {
         title: "Anamorphic Content",
         description:
-          "Anamorphic projections create illusions of depth and transformation, visible only from a specific angle. We use 3D modeling, animation, and high-resolution projection to craft custom content. Perfect for events, exhibitions, and flagship retail spaces, offering innovative ways to captivate audiences and strengthen brand presence.",
+          "Depth illusions that captivate from one angle.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Anamorphic%20Content.mp4",
         },
       {
         title: "Triple Helix Flat",
         description:
-          "A versatile display that transforms any space into a dynamic digital experience. It captivates visitors with high-resolution visuals and seamless storytelling, enabling interaction through touch, motion sensors, or transparent OLED screens. The technology adapts to any environment, delivering an immersive experience that blends real-time data with promotional content.",
+          "Dynamic digital display for interactive storytelling.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Tech%20_%20Helix%20Flat.mp4",
       },
       {
         title: "Triple Helix Cylinder",
         description:
-          "Visitors embark on an interactive journey within a kinetic structure that responds to motion and touch, symbolizing technological evolution and innovation. These installations highlight key achievements, guide visitors, and enhance brand and product awareness. The synchronized motion creates a fully immersive and engaging experience.",
+          "Kinetic cylinder for immersive visitor journeys.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ%20_%20Helix%20Cylinder.mp4",
       },
       {
         title: "Sliding Rotating Dynamic Wall",
         description:
-          "A dynamic kinetic display featuring moving panels, mirrored ceilings, and LED screens. Panels can move independently or in sync, delivering an evolving visual experience. It offers a comprehensive and interactive brand and service presentation that is easy for visitors to understand.",
+          "Moving panels for evolving brand presentations.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Dynamic%20rotating%20wall%20final.mp4",
       },
       {
         title: "Sliding Lens",
         description:
-          "Visitors are drawn to an elegant platform featuring a glowing, curved sliding lens. Through a touch interface, they explore inspiring topics in engineering and defense. The lens displays interactive content illustrating the impact of defense systems, offering deeper insight into the industry, products, and services.",
+          "Curved lens for interactive content exploration.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ%20_%20Sliding%20Lens.mp4",
       },
       {
         title: "Augmented Reality Sliding Screen",
         description:
-          "An interactive LED wall with a sliding screen attracts visitors by displaying dynamic brand and product information. The background LED provides real-time data, while sliding the screen reveals deeper details. This rich and informative interaction inspires visitors through the brand’s commitment to technological innovation.",
+          "Sliding AR screen revealing deeper product details.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Augmented%20Reality%20Sliding%20Screen%20redo%202.mp4",
       },
       {
         title: "Analog Augmented Reality Sliding Screen",
         description:
-          "Visitors interact with an intuitive wayfinding system and rotating vehicle models for a hands-on experience. Controlled via a tablet within an augmented environment, this solution delivers an immersive and innovative experience ideal for exhibitions, product showcases, and enhanced customer engagement.",
+          "Hands-on AR experience with guided interaction.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Analog%20Augmented%20Reality%20Sliding%20Screen%20redo.mp4",
       },
       {
         title: "Sliding Face",
         description:
-          "Designed as an innovative storytelling tool that delivers immersive information and narratives in a dynamic and visually engaging way. A 3D AI-powered face acts as a compelling narrator, guiding audiences through personalized and realistic interactive content. Combined with sliding screens, it creates a futuristic and unforgettable experience for brands, exhibitions, and educational centers.",
+          "AI face narrator for futuristic storytelling.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Sliding%20Face.mp4",
       },
       {
         title: "Tangible Table + Curved Screen",
         description:
-          "Lenticular LED screens captivate visitors by changing designs in real time, enhancing interaction and engagement. Dynamic visuals adapt to event themes and architectural needs, transforming kinetic engineering into living art with limitless animation and video possibilities that leave a lasting impression.",
+          "Interactive table with curved visual storytelling.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Tangible%20table%20redo.mp4",
       },
       {
         title: "Sustainability Table",
         description:
-          "The Sustainability Table offers an immersive experience to explore 3D models in virtual reality and interact with data via a transparent touch screen. Visitors control content dynamically using a navigation dial, making it ideal for exhibitions, events, and conferences as an educational and interactive sustainability showcase.",
+          "Interactive sustainability showcase with 3D exploration.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Sustainability%20Table_V3.mp4",
       },
       {
         title: "Conveyor Belt",
         description:
-          "Visitors encounter an interactive conveyor belt showcasing products alongside an OLED screen. Each item pauses to present detailed information before moving seamlessly to the next. This immersive experience simplifies brand and service storytelling while delivering deeper understanding.",
+          "Product storytelling through an interactive conveyor display.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ%20_%20Conveyer%20Belt.mp4",
         },
       {
         title: "The Hive",
         description:
-          "More than a sculpture, this installation integrates volumetric holographic screens to deliver live, engaging content. Standing 4.2 meters tall, it features a structural frame with LEDs and 33 Ultra HD screens in an ascending spiral. It can present immersive visuals, interactive displays, or live AI-driven dialogue, elevating brand storytelling to new heights.",
+          "Spiral holographic sculpture for immersive storytelling.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_The%20Hive.mp4",
         },
         {
         title: "Paradigm Tunnel",
         description:
-          "As visitors walk through, walls transform into ceilings and back again, surrounding them in a story that unfolds around them. Accompanied by narrative audio, the tunnel features 85-inch Ultra HD screens that move seamlessly, creating a powerful and memorable immersive experience.",
+          "Transforming tunnel with surrounding visual narratives.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Paradigm%20Tunnel.mp4",
       },
       {
         title: "The Gyroscope",
         description:
-          "Visitors engage with a kinetic quantum drum installation that captivates emotions and creates unforgettable moments. Featuring four LED-lined chrome rings rotating gracefully with a 4.2-meter diameter, it transforms storytelling into an interactive and immersive experience adaptable to any space.",
+          "Rotating LED rings for immersive experiences.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ%20_%20Gyroscope%20redo.mp4",
       },
       {
         title: "The Warp",
         description:
-          "A fusion of art and technology through a kinetic light display within an octagonal frame. Featuring high-resolution visuals and customizable motion, it adapts to any space and enhances brand storytelling, live performances, and event atmospheres with unforgettable impact.",
+          "Kinetic light frame for impactful storytelling.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_The%20Warp.mp4",
       },
       {
         title: "Tesseract",
         description:
-          "The Tesseract hologram instantly captivates visitors with transparent multi-screen displays creating a stunning 3D effect. As they approach, the structure comes alive with dynamic holographic content representing brand identity, products, and innovation in an inspiring showcase.",
+          "Transparent holographic displays for 3D impact.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Tesseract%20redo.mp4",
       },
       {
         title: "Metamorphosis",
         description:
-          "A shape-shifting kinetic sphere within a transparent 6×6m mesh cage reflects dazzling digital content. Dynamic animations showcase innovation and defense advancements, symbolizing continuous evolution, growth, and limitless potential.",
+          "Shape-shifting sphere symbolizing innovation and evolution.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Metamorphosis.mp4",
       },
       {
         title: "Celestial Spiral",
         description:
-          "Visitors journey through an architectural masterpiece featuring volumetric mirrored screens delivering breathtaking visuals. With 33 Ultra HD screens, a 4.2-meter spiral, and real-time AI interactions, it offers advanced storytelling with unlimited interactive possibilities.",
+          "Mirrored spiral screens with AI interaction.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Celestial%20Spiral_v2.mp4",
       },
       {
         title: "The Twist",
         description:
-          "A 4.2-meter immersive structure with a mirrored base, synchronized Neopixel DMX lighting, Ultra HD screens, and holographic effects. Crafted from sustainable recycled materials, it delivers a powerful, eco-conscious brand narrative for exhibitions and events.",
+          "Sustainable immersive structure with holographic effects.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_The%20Twist.mp4",
       },
       {
         title: "Mannequin with LED Head",
         description:
-          "An interactive mannequin displaying customized content from multiple angles, serving as a 360-degree information hub. Enhanced with AI-driven cameras and tracking, it delivers personalized interactions that leave a strong impression.",
+          "Interactive mannequin for 360-degree information.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Mannequin.mp4",
       },
       {
         title: "The Patola",
         description:
-          "A kinetic art piece blending motion and technology, with illuminated rotating rings symbolizing energy, sustainability, and renewal. Synchronized sound and light effects create a sensory experience that sparks conversations around innovation and the future of energy.",
+          "Kinetic rings celebrating energy and sustainability.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_The%20Patola%20redo.mp4",
       },
       {
         title: "The Peekaboo",
         description:
-          "A rotating LED installation with multi-sensory interaction, featuring a 6-meter platform, high-resolution LED screens, interactive sensors, and directional sound. Perfect for product launches and large-scale events, delivering bold and memorable impact.",
+          "Rotating LED platform for memorable activations.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_The%20Peekaboo%20redo.mp4",
       },
       {
         title: "Tunnel of Fame",
         description:
-          "Visitors enter a custom tunnel and immediately engage with interactive holo-boxes showcasing expert content. Multiple touchpoints allow exploration of brand, products, and industry insights, ending with a dynamic exit experience.",
+          "Interactive tunnel with expert holo-box content.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Tunnel%20of%20Fame.mp4",
       },
       {
         title: "Static Lenticular Facade",
         description:
-          "A visually striking facade that enhances engagement through captivating lenticular designs. Featuring a 4.2-meter kinetic quantum disc with LED detailing and chrome finishes, it transforms storytelling into a powerful kinetic experience.",
+          "Striking lenticular facade for visual engagement.",
 video: "https://cdn.savvyworld.ai/media/videos/Activ_Lenticular%20Facade_Static%20redo.mp4",
       },
       {
         title: "Kinetic Lenticular Facade",
         description:
-          "Dynamic lenticular LED screens change designs in real time, adapting animations and video to event themes and architectural needs. This revolutionary facade transforms kinetic engineering into living art.",
+          "Dynamic lenticular screens that change in real time.",
          video: "https://cdn.savvyworld.ai/media/videos/SE_TECH_Lenticular%20Facade_kinetic.mp4",
       },
       {
         title: "Kinect Sensor Motion Activated LED Wall",
         description:
-          "A motion-responsive LED wall that reacts to visitor movement, displaying brand logos or interactive content. Customizable in size or as a permanent installation, it creates a captivating and immersive focal point.",
+          "Motion-reactive LED wall for visitor engagement.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinect%20Sensor%20Motion%20Activated%20LED%20Wall%20redo.mp4",
       },
       {
         title: "Kinetic Wall",
         description:
-          "A visually striking kinetic wall that enhances exhibition spaces through dynamic motion. Its interactivity sparks curiosity and leaves a memorable experience, adaptable as a temporary or permanent installation.",
+          "Dynamic moving wall for memorable exhibition spaces.",
               video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinetic%20Wall.mp4",
       },
       {
         title: "Kinetic Ceiling",
         description:
-          "A kinetic ceiling animates the space with smooth, synchronized motion, lighting, and customizable effects. It creates a powerful emotional and visual impact, adaptable to any venue.",
+          "Animated ceiling with synchronized motion and light.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinetic%20Ceiling.mp4",
       },
       {
         title: "Holocube + OLED",
         description:
-          "A transparent OLED screen merges the digital and physical worlds, enabling touch interaction while preserving visibility of the real environment. 3D holograms highlight products, creating a futuristic healthcare experience.",
+          "Transparent OLED with interactive holographic product display.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Holocube%20+%20OLED.mp4",
       },
       {
         title: "Kinetic Globe Immersive",
         description:
-          "A kinetic globe dynamically displays key information, splitting into four sections to highlight initiatives before reforming into a complete visual narrative that inspires innovation and workforce development.",
+          "Moving globe presenting initiatives dynamically.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinetic%20Globe%20Immersive.mp4",
       },
       {
         title: "Immersive Room",
         description:
-          "A fully customizable immersive room designed to align with brand vision. Featuring LED displays and interactive controls, it delivers realistic, engaging scenarios through seamless interaction.",
+          "Custom LED room for realistic brand experiences.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Immersive%20Room.mp4",
       },
       {
         title: "Kinetic Discovery",
         description:
-          "Visitors are welcomed by a kinetic table and vibrant LED wall, interacting with a transparent OLED screen to explore products and brand stories in an immersive environment.",
+          "Kinetic table and LED wall for exploration.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinetic%20Discovery.mp4",
       },
       {
         title: "Kinetic Hoist Platform",
         description:
-          "Visitors step onto a floating racing platform and secure themselves for an adrenaline-filled VR racing experience paired with a massive LED screen—ideal for events and brand activations.",
+          "Floating VR racing platform for activations.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinetic%20Hoist%20Platform.mp4",
       },
       {
         title: "Isolation Pod",
         description:
-          "An isolation pod offers a personal, immersive brand experience featuring a transparent touch screen to explore products and services interactively, boosting brand awareness and understanding.",
+          "Personal immersive pod for brand exploration.",
           video: "https://cdn.savvyworld.ai/media/videos/Activ_Isolation%20Pod.mp4",
       },
       {
         title: "Quantum LED Sculpture",
         description:
-          "A fully customized Quantum LED sculpture designed to captivate audiences with dynamic LED visuals. Perfect for exhibitions, events, and brand activations, it creates immersive experiences with lasting impact.",
+          "Custom LED sculpture for immersive brand impact.",
               video: "https://cdn.savvyworld.ai/media/videos/Activ_Quantum%20LED%20Sculpture.mp4",
       }]as ProjectData[]
   },
@@ -246,215 +246,215 @@ video: "https://cdn.savvyworld.ai/media/videos/Activ_Lenticular%20Facade_Static%
     projects: [
       {
         title: 'Hyper Realistic Content',
-        description: "يقدم محتوى فائق الواقعية تجارب غامرة للجمهور، ويعزز التفاعل في عروض المنتجات وتنشيط العلامات التجارية والسرد القصصي.نستخدم CGI متقدم، ونمذجة ثلاثية الأبعاد، وتتبع الأشعة في الوقت الفعلي لتفاصيل مذهلة وواقعية عالية.مثالي للعلامات الفاخرة والمعارض والمتاجر والفعاليات التفاعلية، حيث يجذب الجمهور ويرتقي بسرد العلامة التجارية.",
+        description: "محتوى واقعي غامر يعزز سرد العلامة.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Hyper%20Realistic%20Content.mp4",
    
 
       },{
         title: 'Anamorphic Content',
-        description: "تخلق الإسقاطات التشوهية وهم العمق والتحول لتجربة بصرية غامرة تظهر من زاوية معينة فقط. نستخدم النمذجة ثلاثية الأبعاد والرسوم المتحركة والإسقاطات عالية الدقة لصنع محتوى مخصص. مثالية للفعاليات والمعارض والمتاجر الكبرى، وتوفر طرقًا مبتكرة لجذب الجمهور وتعزيز العلامة التجارية.",
+        description: "خدع بصرية عميقة تجذب الجمهور من زاوية محددة.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Anamorphic%20Content.mp4",
 
 },
       {
         title: "Triple Helix Flat",
-        description: "شاشة متعددة الاستخدامات تحول أي مساحة إلى عرض رقمي ديناميكي. تجذب  الزوار بصور عالية الدقة وسرد سلس، وتتيح التفاعل عبر اللمس أو مستشعرات الحركة أو شاشات OLED شفافة. تتكيف التقنية مع أي بيئة، مقدمة تجربة غامرة تجمع بين البيانات الفورية والمحتوى الدعائي.",
+        description: "شاشة ديناميكية لسرد تفاعلي داخل أي مساحة.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Tech%20_%20Helix%20Flat.mp4",
     
       },
       {
         title: "Triple Helix Cylinder",
-        description: "يخوض الزوار رحلة تفاعلية داخل المكان عبر هيكل حركي يستجيب للحركة واللمس، رمزًا لتطور التكنولوجيا والابتكار.تسلط هذه التركيبات الضوء على الإنجازات الرئيسية وتوجه الزوار وتعزز الوعي بالعلامة التجارية والمنتجات.تتحرك التركيبات بتناغم كامل عند تنشيطها بالحركة، مما يخلق تجربة غامرة ومشوقة.",
+        description: "هيكل حركي لتجربة زوار غامرة وتفاعلية.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ%20_%20Helix%20Cylinder.mp4",
   
    
       },
       {
         title: "Sliding Rotating Dynamic Wall",
-        description: "هو عرض حركي ديناميكي بلوحات محركة وأسقف عاكسة وشاشات LED.تتحرك اللوحات بشكل مستقل أو متزامن لتقديم تجربة بصرية متغيرة ومتطورة.يوفر هذا العرض عرضًا شاملًا للعلامة التجارية والخدمات بطريقة تفاعلية وسهلة الفهم للزوار.",
+        description: "جدار متحرك لعرض العلامة بطريقة متجددة.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Dynamic%20rotating%20wall%20final.mp4",
 
       }
       ,{
         title: "Sliding Lens",
-        description: "الزوار ينجذبون إلى منصة أنيقة بعدسة منزلقة منحنية ومتوهجة.يتفاعلون مع واجهة لمس لاختيار مواضيع ملهمة في الهندسة والدفاع.تعرض العدسة محتوى تفاعلي يوضح أثر أنظمة الدفاع، مما يمنح الزوار فهمًا أعمق للصناعة والمنتجات والخدمات.",
+        description: "عدسة منزلقة لاستكشاف المحتوى بطريقة تفاعلية.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ%20_%20Sliding%20Lens.mp4",
       },
       {
         title: "Augmented Reality Sliding Screen",
-        description: "يجذب الزوار جدار LED تفاعلي مزود بشاشة منزلقة تعرض معلومات ديناميكية عن العلامة التجارية ومنتجاتها. يوفر LED الخلفي معلومات آنية، ويتيح للزوار استكشاف تفاصيل أكثر عن طريق تحريك الشاشة. تقدم هذه التجربة تفاعلًا غنيًا ومعلوماتية، مما يلهم الزوار بإلتزام العلامة التجارية بالابتكار التكنولوجي.",
+        description: "شاشة AR منزلقة تكشف تفاصيل أعمق.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Analog%20Augmented%20Reality%20Sliding%20Screen%20redo.mp4",
       },
       ,
       {
         title: "Analog Augmented Reality Sliding Screen",
-        description: "يتفاعل الزوار مع نظام توجيه تفاعلي ونماذج سيارات دوارة لتجربة عملية مباشرة.يمكن التحكم بالتجربة عبر جهاز لوحي ضمن بيئة ديناميكية مدعومة بالواقع المعزز.توفر التقنية تجربة غامرة ومبتكرة مثالية للمعارض وعروض المنتجات وزيادة تفاعل العملاء.",
+        description: "تجربة AR عملية بتفاعل مباشر وسلس.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Analog%20Augmented%20Reality%20Sliding%20Screen%20redo.mp4",
       }
       , 
       {
         title: "Sliding Face",
-        description: "تم تصميم هذه التقنية كأداة سردية مبتكرة تقدم معلومات وقصص غامرة بطريقة ديناميكية وجذابة بصريًا.يعمل الوجه الثلاثي الأبعاد بالذكاء الاصطناعي كراوي قوي يوجه الجمهور عبر محتوى مخصص وتفاعلية واقعية.تجمع التقنية بين شاشات منزلقة ووجه AI تفاعلي، لتقدم تجربة مستقبلية لا تُنسى للعلامات التجارية والمعارض والمراكز التعليمية.",
+        description: "وجه ذكاء اصطناعي لسرد قصصي مستقبلي.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Sliding%20Face.mp4",
       }
       ,
       {
         title: "Tangible Table + Curved Screen",
-        description: "تجذب الشاشات LED العدسية الزوار بقدرتها على تغيير التصاميم في الوقت الحقيقي، مما يعزز التفاعل والمشاركة.توفر تصاميم ديناميكية ومتنوعة تتكيف مع موضوعات الفعاليات واحتياجات المباني، لخلق تجارب بصرية جذابة.تحول الواجهة الثورية الهندسة الحركية إلى فن حي، مع إمكانيات غير محدودة للرسوم المتحركة والفيديو، تاركة انطباعًا دائمًا للزوار.",
+        description: "طاولة تفاعلية مع شاشة منحنية للسرد البصري.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Tangible%20table%20redo.mp4",
       }
       ,
       {
         title: "Sustainability Table",
-        description: "توفر طاولة الاستدامة تجربة غامرة لاستكشاف نماذج ثلاثية الأبعاد في الواقع الافتراضي والتفاعل مع البيانات عبر شاشة لمس شفافة.يمكن للزوار التحكم بالمحتوى ديناميكيًا باستخدام قرص تحكم للتنقل والتفاعل بطريقة بديهية.تعد هذه التجربة مثالية للمعارض والفعاليات والمؤتمرات، حيث تقدم طريقة تعليمية وتفاعلية لاستكشاف موضوعات الاستدامة الرئيسية.",
+        description: "عرض استدامة تفاعلي بنماذج ثلاثية الأبعاد.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Sustainability%20Table_V3.mp4",
       }
       ,
       {
         title: "Conveyor Belt",
-        description: "يواجه الزوار حزام ناقل تفاعلي يعرض المنتجات مع شاشة OLED لتعزيز التفاعل.تتوقف كل قطعة عند الشاشة لتقديم معلومات مفصلة عن الميزات والخدمات قبل الانتقال بسلاسة إلى المنتج التالي.توفر هذه التجربة عرضًا شاملًا للعلامة التجارية والخدمات بطريقة غامرة ومبسطة، مما يمنح الزوار فهمًا أعمق.",
+        description: "حزام تفاعلي لعرض المنتجات بسلاسة.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ%20_%20Conveyer%20Belt.mp4",
       }
       ,
       {
         title: "The Hive",
-        description: "لا يقتصر الأمر على التمتع بالتمثال فقط، بل يدمج التكنولوجيا شاشات هولوغرافية volumetric لتقديم محتوى جذاب حي.يبلغ ارتفاع التحفة 4.2 متر، وتحتوي على إطار هيكلي مزين بـ LEDs و33 شاشة Ultra HD على لولب تصاعدي.يمكن استخدام التقنية بشكل فردي أو متكامل لتقديم رسومات غامرة، عروض تفاعلية، أو حوار مباشر مع ذكاء اصطناعي يرفع سرد العلامة التجارية إلى مستويات جديدة.",
+        description: "منحوتة هولوغرافية حلزونية لسرد غامر.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_The%20Hive.mp4",
       }
       ,
       {
         title: "Paradigm Tunnel",
-        description: "عند مرور الزوار، تتحول الجدران إلى سقف ثم تعود لتغلفهم في قصة تتكشف حولهم.يرافقهم سرد صوتي يأخذهم في مغامرة ملحمية بين الإنجازات الماضية والحاضر المميز وانطلاقة نحو المستقبل.يعرض الممر شاشات Ultra HD بحجم 85 بوصة تتحرك وتتغير بسلاسة، ليخلق تجربة غامرة تترك انطباعًا دائمًا.",
+        description: "نفق متحول بقصة بصرية محيطة.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Paradigm%20Tunnel.mp4",
       }
       ,
       {
         title: "The Gyroscope",
-        description: "يتفاعل الزوار مع تركيب كوانتم درام الحركي الذي يجذب الانتباه ويثير المشاعر ويخلق لحظات لا تُنسى.يتألف من أربع حلقات مزينة بـ LEDs دقيقة وكروم أنيق تدور بشكل رائع لتعرض محتوى مذهل، ويصل قطره إلى 4.2 متر.يقدم هذا التركيب حلاً ثوريًا لتحويل سرد القصص إلى تجربة تفاعلية وغامرة، مع إمكانية تخصيص الحجم وفقًا للمساحة أو متطلبات العميل.",
+        description: "حلقات LED دوارة لتجربة غامرة.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ%20_%20Gyroscope%20redo.mp4",
       }
       ,
       {
         title: "The Warp",
-        description: "يختبر الزوار The Warp تلاقي الفن والتقنية من خلال عرض ضوئي وحركي ضمن إطار مثمن.يتميز بصور عالية الدقة وحركة مخصصة، مع حجم قابل للتكييف ليناسب أي مساحة ويعزز سرد العلامة التجارية والأداءات الحية وأجواء الفعاليات.يقدم تركيبًا حركيًا غامرًا يتيح للعلامات التجارية ومنظمي الفعاليات منصة مبتكرة للمعارض وإطلاق المنتجات والعروض الحية، مع تأثير لا يُنسى.",
+        description: "إطار ضوئي حركي لسرد مؤثر.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_The%20Warp.mp4",
       }
       ,
       {
         title: "Tesseract",
-        description: "يجذب الهولوغرافيك تيسراكت الزوار فورًا بشاشاته الشفافة المتعددة التي تخلق تأثيرًا ثلاثي الأبعاد مذهلًا.عند اقترابهم، تنبض المجسّم بالحياة ليعرض محتوى هولوغرافيًا نابضًا يمثل شعار العلامة التجارية ومنتجاتها وابتكاراتها عبر تحركات ديناميكية غامرة.توفر هذه التجربة عرضًا مبهرًا يلهم الزوار ويعكس رؤية العلامة والتزامها بأحدث الحلول التقنية.",
+        description: "شاشات شفافة بتأثير هولوغرافي ثلاثي الأبعاد.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Tesseract%20redo.mp4",
       }
       ,
       {
         title: " Metamorphosis",
-        description: "يجذب الزوار فورًا تمثال الكرة الحركية المتغيرة الشكل داخل قفص شبكي شفاف بمساحة 6x6 متر، حيث تتلألأ أسطحه وتعكس محتوى رقميًا مذهلًا.تعرض الرسوم المتحركة الديناميكية ابتكارات وتقدمات رئيسية في القدرات الدفاعية، مما يخلق جوًا غامرًا وغنيًا.ترمز قدرة الكرة على التغير إلى التطور المستمر والتقدم الناتج عن جهود البحث والتطوير، ملهمة الزوار بقصة بصرية للنمو والتكيف والإمكانات اللامحدودة.",
+        description: "كرة متحولة ترمز للابتكار والتطور.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Metamorphosis.mp4",
         }
       ,
       {
         title: "Celestial Spiral",
-        description: "يخوض الزوار رحلة داخل تحفة معمارية مزودة بشاشات عاكسة volumetric تمنح تجربة بصرية مذهلة.تتميز Celestial Spiral بقدرات سرد قصصي متقدمة تضم 33 شاشة فائقة الدقة وحلزونًا بارتفاع 4.2 متر وتفاعلات لحظية عبر الذكاء الاصطناعي.تتيح التقنية عرض قصة العلامة التجارية بطريقة غامرة ولا تُنسى، مع إمكانيات لا محدودة للرسوم التفاعلية والتجارب البصرية الجاذبة.",
+        description: "شاشات حلزونية عاكسة بتفاعل ذكاء اصطناعي.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Celestial%20Spiral_v2.mp4",
       }
       ,
       {
         title: "The Twist",
-        description: "يخوض الزوار رحلة عبر هيكل بطول 4.2 متر بقاعدة عاكسة تغمرهم في احتفال بصري يجسّد طموح المدينة في إعادة تعريف المستقبل الرقمي.تحيطهم إضاءة Neopixel DMX المتزامنة وشاشات فائقة الدقة ومؤثرات هولوغرافية تروي قصة رقمية جذابة ضمن تصميم أنيق ومستدام مصنوع من مواد معاد تدويرها.يعد هذا التركيب مثاليًا للمعارض والفعاليات وتفعيل العلامات التجارية، حيث يبرز رؤية العلامة بطريقة مبتكرة وواعية بيئيًا.",
+        description: "هيكل غامر مستدام بمؤثرات هولوغرافية.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_The%20Twist.mp4",
       }
       ,
       {
         title: "Mannequin with LED Head",
-        description: "يتفاعل الزوار مع المانيكان التفاعلي الذي يعرض محتوى مخصصًا من زوايا متعددة ويعمل كنقطة استعلام تقنية في جميع الاتجاهات.يمكن استخدامه كمنصة معلومات تفاعلية تقدم تجربة جذابة وشاملة للزوار.يمكن تطويره ليشمل كاميرات وتتبعًا دقيقًا للمستخدم باستخدام الذكاء الاصطناعي لتقديم تفاعلات مخصّصة تترك انطباعًا قويًا.",
+        description: "مانيكان تفاعلي كمركز معلومات بزاوية 360.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Mannequin.mp4",
       }
 
       ,
       {
         title: "The Patola",
-        description: "جذب Patola الزوار كقطعة حركية تمزج بين الفن والتقنية، حيث تدور حلقاته المضيئة لتجسّد الطاقة والقوة وتقدّم عرضًا لا يُنسى.ترمز الحلقات الدوارة إلى الاستدامة والحركة والتجدد، مع مؤثرات صوتية وضوئية متزامنة تعكس دورة الطبيعة والابتكار.يُعد Patola عنصرًا بصريًا محوريًا في المعارض والفعاليات، يخلق تجربة حسية ملهمة ويثير نقاشات حول مستقبل الطاقة والاستدامة.",
+        description: "حلقات حركية تعكس الطاقة والاستدامة.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_The%20Patola%20redo.mp4",
       }
 
       ,
       {
         title: "The Peekaboo",
-        description: "تأسر رحلة Peekaboo الجمهور بعرض LED دوار وتفاعل متعدد الحواس يترك انطباعًا دائمًا.تحتوي على منصة دوارة بقطر 6 أمتار وشاشات LED عالية الدقة مع تحكم دقيق وحساسات تفاعلية وصوت اتجاهي لتعزيز الانغماس.توفر تجربة قوية وملفتة للانتباه في إطلاق المنتجات والمعارض والفعاليات الكبرى، مما يجعل العلامة التجارية بارزة ولا تُنسى.",
+        description: "منصة LED دوارة لتفعيل لا يُنسى.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_The%20Peekaboo%20redo.mp4",
       }
 
       ,
       {
         title: "Tunnel of Fame",
-        description: "يدخل الزوار النفق المخصص وينغمسون فورًا في هولوبوكس تفاعلية تعرض محتوى خبير ومعلومات جذابة.يمكنهم استكشاف نقاط تفاعلية متعددة للتعرف أكثر على العلامة التجارية والمنتجات والصناعة.يختتم النفق بتجربة خروج ديناميكية، مما يترك الزوار مطلعين ومتواصلين مع العلامة التجارية.",
+        description: "نفق تفاعلي بمحتوى هولوغرافي خبير.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Tunnel%20of%20Fame.mp4",
       }
 
       ,
       {
         title: "Static Lenticular Facade",
-        description: "يجذب الزوار بتصاميمه المبهرة، مما يعزز التفاعل والمشاركة مع المحتوى.يتميز بقرص كوانتم حركي بقطر 4.2 متر مزين بـ LEDs دقيقة وكروم أنيق، يعرض محتوى مذهل أثناء دوران حلقاته.يقدم تجربة ثورية للعلامات التجارية والعروض الحية، ليكون بوابة تفاعلية لتحويل سرد القصص إلى تجربة حركية جذابة.",
+        description: "واجهة عدسية جذابة لتعزيز التفاعل البصري.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Lenticular%20Facade_Static%20redo.mp4",
       }
 
       ,
       {
         title: "Kinetic Lenticular Facade",
-        description: "تجذب الشاشات العدسية LED الزوار بتغيير تصاميمها في الوقت الحقيقي، مما يعزز التفاعل والمشاركة.توفر الشاشات قدرات ديناميكية لعرض الرسوم المتحركة والفيديوهات، وتتكيف مع موضوعات الفعاليات واحتياجات المباني.تحوّل الواجهة الثورية الهندسة الحركية إلى فن حي، لتخلق تجربة بصرية جذابة وتترك انطباعًا لا يُنسى للزوار.",
+        description: "شاشات عدسية متحركة تتغير لحظيًا.",
         video: "https://cdn.savvyworld.ai/media/videos/SE_TECH_Lenticular%20Facade_kinetic.mp4",
       }
 
       ,
       {
         title: "Kinect Sensor Motion Activated LED Wall",
-        description: "تتفاعل الجدار الحركي مع حركة الزوار والمدخلات الحسية ليخلق عرضًا ديناميكيًا وجذابًا يعزز أجواء الجناح.يمكن للجدار عرض شعار العلامة التجارية أو محتوى تفاعلي.يمكن تخصيص الجدار حسب حجم الجناح أو استخدامه كتركيب دائم، ليكون مركزًا بارزًا يخلق تجربة غامرة ولا تُنسى للزوار.",
+        description: "جدار LED يستجيب لحركة الزوار.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinect%20Sensor%20Motion%20Activated%20LED%20Wall%20redo.mp4",
       }
       ,
       {
         title: "Kinetic Wall",
-        description: "تجذب الجدار الحركي الزوار بحركته الديناميكية المذهلة التي تعزز مساحة المعرض.الحركة التفاعلية تثير الفضول وتزيد من التفاعل، مما يترك تجربة لا تُنسى للزوار.يمكن تخصيص الجدار حسب حجم الجناح أو استخدامه كتركيب دائم، ليكون مركزًا بارزًا يعكس حيوية وجوهر العلامة التجارية.",
+        description: "جدار حركي يضيف تجربة معرض مميزة.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinetic%20Wall.mp4",
       }  ,
       {
         title: "Kinetic Ceiling",
-        description: "يقوم السقف الحركي بتحريك المكان بحركة ديناميكية وسلسة، مما يجذب انتباه الزوار ويعزز الأجواء.يعرض السقف حركة متزامنة وإضاءة وتأثيرات قابلة للتخصيص، لخلق تجربة لا تُنسى وتأثير بصري وعاطفي قوي.يمكن تكييفه ليناسب أي مكان أو جناح، سواء كتركيب مؤقت أو دائم لإضافة لمسة فنية وتقنية مبتكرة.",
+        description: "سقف حركي بإضاءة وحركة متزامنة.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinetic%20Ceiling.mp4",
       }  ,
       {
         title: "Holocube + OLED",
-        description: "تجمع شاشة OLED الشفافة بين العالمين الرقمي والواقعي لتقديم تجربة تفاعلية حساسة للمس.تعرض المعلومات مع الحفاظ على الشفافية، مما يتيح للزوار رؤية البيئة الواقعية، مع إبراز المنتجات عبر هولوجرام ثلاثي الأبعاد.تخلق هذه التجربة الغامرة أجواء مستقبلية تجمع بين الابتكار والتكنولوجيا وسياق العالم الحقيقي في قطاع الرعاية الصحية.",
+        description: "شاشة OLED شفافة لعرض هولوغرافي تفاعلي.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Holocube%20+%20OLED.mp4",
       }  ,
       {
         title: "Kinetic Globe Immersive",
-        description: "يجذب الزوار الكرة الأرضية الحركية التي تعرض بشكل ديناميكي أهم المعلومات. تنقسم الكرة إلى أربعة أقسام لتسليط الضوء على مبادرات مختلفة ثم تعود لتشكل عرضًا متكاملًا. توفر هذه التجربة تفاعلية ومعلوماتية تلهم الزوار بالتقدم في الابتكار التكنولوجي وتطوير القوى العاملة.",
+        description: "كرة حركية تعرض المبادرات بشكل ديناميكي.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinetic%20Globe%20Immersive.mp4",
       }  ,
       {
         title: "Immersive Room",
-        description: "تم تصميم النموذج لتقديم تجربة تفاعلية غامرة وواقعية تتماشى مع رؤية العلامة التجارية.يتيح عرض سيناريوهات متعددة أو مفهوم واحد باستخدام نموذج ثلاثي الأبعاد محاط بالزجاج مع إمكانية التخصيص الكامل.تعرض شاشات LED المحتوى الديناميكي، مع تحكم سلس بالتفاعل عبر جهاز تحكم أو iPad لتقديم تجربة جذابة ومتكاملة.",
+        description: "غرفة LED مخصصة لتجارب علامة واقعية.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Immersive%20Room.mp4",
       }  ,
       {
         title: "Kinetic Discovery",
-        description: "يرحب الزوار بطاولة حركية جذابة وجدار LED نابض بالحياة لتقديم تجربة تفاعلية.يمكن للزوار التفاعل مع شاشة OLED الشفافة لاستكشاف المنتجات أو العلامة التجارية بشكل مباشر.تخلق هذه التجربة بيئة غامرة وتفاعلية، مما يمنح الزوار معلومات ورؤية واضحة عن الخدمات وتأثيرها.",
+        description: "طاولة حركية وجدار LED للاستكشاف التفاعلي.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinetic%20Discovery.mp4",
       }  ,
       {
         title: "Kinetic Hoist Platform",
-        description: "يخطو الزوار إلى منطقة Race Elevate ويثبتون بأمان على منصة السباق الطافية لتجربة مثيرة.يمكنهم استخدام نظارات الواقع الافتراضي للانغماس الكامل في سباق عالي السرعة مع شاشة LED ضخمة.توفر التقنية تجربة سباق غامرة وممتعة، مناسبة للفعاليات والمعارض وحملات العلامات التجارية لإشراك الجمهور.",
+        description: "منصة سباق VR عائمة للفعاليات.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Kinetic%20Hoist%20Platform.mp4",
       }  ,
       {
         title: "Isolation Pod",
-        description: "وفر الكبسولة العازلة للزوار تجربة شخصية وغامرة مع العلامة التجارية.تحتوي داخليًا على شاشة شفافة وتحكم باللمس لاستكشاف المنتجات والخدمات بشكل تفاعلي.تقدم طريقة جذابة مدفوعة بالتقنية لزيادة الوعي وفهم العلامة التجارية.",
+        description: "كبسولة شخصية لاستكشاف العلامة بعمق.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Isolation%20Pod.mp4",
       }  ,
       {
         title: "Quantum LED Sculpture",
-        description: "تم تصميم تمثال كونتم LED لجذب الانتباه وتعزيز تجربة العلامة التجارية من خلال تصاميم LED ديناميكية قابلة للتخصيص يتيح دمج الشعارات والرسائل والعناصر الإبداعية، مما يجعله مثالياً للفعاليات والمعارض وتفعيل العلامات التجارية.مُصمم بالكامل وفق احتياجات العميل ليخلق تجارب غامرة ويترك انطباعاً دائماً.",
+        description: "منحوتة LED مخصصة لتأثير بصري غامر.",
         video: "https://cdn.savvyworld.ai/media/videos/Activ_Quantum%20LED%20Sculpture.mp4",
       }
 

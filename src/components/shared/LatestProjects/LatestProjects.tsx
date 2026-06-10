@@ -151,12 +151,12 @@ function LatestProjects() {
           whileInView="visible"
           viewport={viewportConfig}
           variants={sectionSlideUp}
-          className={`text-center mb-6 ${isRTL ? 'rtl' : 'ltr'}`}
+          className={`mx-auto mb-8 max-w-3xl text-center ${isRTL ? 'rtl' : 'ltr'}`}
         >
-          <h2 className="text-3xl md:text-4xl  nolg:text-5xl font-bold text-gray-900 mb-3">
+          <h2 className="mb-3 text-3xl font-extrabold leading-[1.1] tracking-normal text-[#07111f] sm:text-4xl lg:text-5xl">
             {title}
           </h2>
-          <p className="text-gray-500 text-sm md:text-base">
+          <p className="mx-auto max-w-[62ch] text-sm leading-7 text-[#5a697c] sm:text-base md:text-[17px] md:leading-8">
             {subtitle}
           </p>
         </motion.div>

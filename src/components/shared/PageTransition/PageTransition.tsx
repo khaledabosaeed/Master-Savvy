@@ -1,61 +1,27 @@
-'use client';
+"use client"
 
-import { motion, AnimatePresence } from 'framer-motion';
-import { ReactNode, useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
-// import { prefersReducedMotion } from '@/lib/animations';
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
+import type { ReactNode } from "react"
+import { useEffect, useState } from "react"
+import { usePathname } from "next/navigation"
+import { pageTransition } from "@/lib/animations"
 
 interface PageTransitionProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export default function PageTransition({ children }: PageTransitionProps) {
-  const pathname = usePathname();
-  const [isClient, setIsClient] = useState(false);
-  // const reducedMotion = prefersReducedMotion();
+  const pathname = usePathname()
+  const shouldReduceMotion = useReducedMotion()
+  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
-    setIsClient(true);
-    // Instant scroll to top
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }, [pathname]);
-
-  // انتقالات محسّنة وأكثر سلاسة
-  // const smoothTransition = {
-  //   initial: { 
-  //     opacity: 0,
-  //     y: 20,
-  //   },
-  //   animate: { 
-  //     opacity: 1,
-  //     y: 0,
-  //     transition: {
-  //       duration: 0.5,
-  //       ease: [0.16, 1, 0.3, 1], // easeOutExpo
-  //     }
-  //   },
-  //   exit: { 
-  //     opacity: 0,
-  //     y: -20,
-  //     transition: {
-  //       duration: 0.3,
-  //       ease: [0.16, 1, 0.3, 1],
-  //     }
-  //   },
-  // };
-
-  // Simplified animation for reduced motion preference
-  // const animation = reducedMotion
-  //   ? {
-  //       initial: { opacity: 0 },
-  //       animate: { opacity: 1 },
-  //       exit: { opacity: 0 },
-  //       transition: { duration: 0.2 },
-  //     }
-  //   : smoothTransition;
+    setIsClient(true)
+    window.scrollTo({ top: 0, behavior: "auto" })
+  }, [pathname])
 
   if (!isClient) {
-    return <>{children}</>;
+    return <>{children}</>
   }
 
   return (
@@ -65,13 +31,21 @@ export default function PageTransition({ children }: PageTransitionProps) {
         initial="initial"
         animate="animate"
         exit="exit"
-        // variants={animation}
+        variants={
+          shouldReduceMotion
+            ? {
+                initial: { opacity: 0 },
+                animate: { opacity: 1, transition: { duration: 0.2 } },
+                exit: { opacity: 0, transition: { duration: 0.15 } },
+              }
+            : pageTransition
+        }
         style={{
-          willChange: 'transform, opacity',
+          willChange: shouldReduceMotion ? "opacity" : "transform, opacity",
         }}
       >
         {children}
       </motion.div>
     </AnimatePresence>
-  );
+  )
 }
