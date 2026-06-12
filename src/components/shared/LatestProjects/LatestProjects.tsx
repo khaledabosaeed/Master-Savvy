@@ -15,7 +15,11 @@ import {
   sectionSlideUp,
 } from "@/lib/animations"
 
-function LatestProjects() {
+type LatestProjectsProps = {
+  blendWithParent?: boolean
+}
+
+function LatestProjects({ blendWithParent = false }: LatestProjectsProps) {
   const { language } = useLanguage()
   const lang = language as Language
   const isRTL = lang === "ar"
@@ -143,7 +147,16 @@ function LatestProjects() {
   }
 
   return (
-    <section className="py-20 md:py-32 bg-white relative overflow-hidden">
+    <section
+      className="relative overflow-hidden py-20 md:py-32"
+      style={
+        blendWithParent
+          ? undefined
+          : {
+              background: 'linear-gradient(180deg, #FBFCFD 0%, #F5F7FA 50%, #EEF2F6 100%)',
+            }
+      }
+    >
       <div className="container relative z-10">
         {/* Title and Subtitle */}
         <motion.div

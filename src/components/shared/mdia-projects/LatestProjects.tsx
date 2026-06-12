@@ -87,10 +87,7 @@ function MadiaProjects() {
   }
 
   return (
-    <section className="relative overflow-hidden border-y border-[oklch(0.88_0.035_245/0.11)] bg-[oklch(0.105_0.018_250)] py-16 text-[oklch(0.965_0.008_245)] md:py-24">
-      <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,oklch(0.501_0.253_264.6/0.45),transparent)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_0%,oklch(0.501_0.253_264.6/0.16),transparent_30%),radial-gradient(circle_at_88%_18%,oklch(0.501_0.253_264.6/0.14),transparent_28%)]" />
-
+    <section className="relative overflow-hidden bg-transparent py-16 text-[oklch(0.965_0.008_245)] md:py-24">
       <div className="container relative z-10">
         <motion.div
           initial="hidden"
