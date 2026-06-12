@@ -35,7 +35,6 @@ export default function HomePageClient({ texts }: HomePageClientProps) {
 
   return (
     <>
-      {/* <TopBanner /> */}
 
       <UnifiedHeader
         texts={texts}

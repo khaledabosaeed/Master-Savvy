@@ -171,14 +171,14 @@ export default function NewHero({
               ) : null}
             </motion.h1>
 
-            <motion.p
+            {/* <motion.p
               variants={descriptionVariants}
               initial="hidden"
               animate={animate ? "visible" : "hidden"}
               className="mb-4 max-w-3xl text-pretty px-2 text-sm leading-7 text-[#dce8f5] sm:text-base md:mb-5 md:text-lg md:leading-8"
             >
               <FormattedText text={t(descriptionKey)} />
-            </motion.p>
+            </motion.p> */}
 
             {actions.length > 0 ? (
               <motion.div
@@ -214,6 +214,9 @@ export default function NewHero({
               className="w-full rounded-2xl border border-[rgba(139,196,255,0.34)] bg-[rgba(6,17,29,0.82)] p-3 shadow-[0_24px_70px_rgba(0,0,0,0.34)] md:p-5"
               aria-label={t("hero.impactStats.ariaLabel")}
             >
+                    <p className="mb-5 text-center text-xs font-extrabold uppercase leading-relaxed tracking-[0.22em] text-[#399cff]">
+                <FormattedText text={t("hero.impactStats.footer")} />
+              </p>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 {impactStats.map(({ value, label, Icon }) => (
                   <div
@@ -234,9 +237,7 @@ export default function NewHero({
                   </div>
                 ))}
               </div>
-              <p className="mt-5 text-center text-xs font-extrabold uppercase leading-relaxed tracking-[0.22em] text-[#399cff]">
-                <FormattedText text={t("hero.impactStats.footer")} />
-              </p>
+        
             </motion.aside>
           ) : null}
         </div>

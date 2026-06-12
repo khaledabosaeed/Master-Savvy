@@ -7,10 +7,8 @@ export function mediaPageHeaderTexts(d: LocaleDictionary): PageHeaderTexts {
   const c = d.common
   return {
     main: c.main,
-    news: c.news,
-    gallery: c.gallery,
-    "why-savvy": c.whySavvy,
-    ourRobots: c.robots,
+    robots: c.mediaRobotsSection,
+    screens: c.mediaScreensSection,
     contactUs: c.contactUs,
   }
 }
@@ -49,6 +47,7 @@ export function innovationPageHeaderTexts(d: LocaleDictionary): PageHeaderTexts 
   return {
     main: c.main,
     industries: d.innovation.industriesNavLabel,
+    solutions: c.solutions,
     contactUs: c.contactUs,
   }
 }

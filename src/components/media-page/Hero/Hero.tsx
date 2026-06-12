@@ -4,8 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { content } from './content';
+import { useTranslation } from 'react-i18next';
 
 const textContainerVariants: Variants = {
   hidden: {},
@@ -89,12 +88,11 @@ const cardBottomVariant: Variants = {
 };
 
 const Hero: React.FC = () => {
-  const { language } = useLanguage();
-  const text = content[language];
+  const { t } = useTranslation();
 
 
   return (
-    <section className="min-h-screen relative overflow-hidden bg-transparent pt-16">
+    <section id="robots" className="min-h-screen scroll-mt-24 relative overflow-hidden bg-transparent pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-8 sm:py-12 md:py-16 lg:py-20 overflow-hidden relative z-10 min-h-screen flex flex-col">
 
         {/* Text Content - Top Center */}
@@ -108,16 +106,16 @@ const Hero: React.FC = () => {
             variants={headingVariants}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-5 md:mb-6 leading-tight"
           >
-            <span className="text-foreground">{text.title}</span>
+            <span className="text-foreground">{t("media.robots.title")}</span>
             <br />
-            <span className="text-primary">{text.titleHighlight}</span>
+            <span className="text-primary">{t("media.robots.titleHighlight")}</span>
           </motion.h1>
 
           <motion.p
             variants={descriptionVariants}
             className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 leading-relaxed text-gray-600 max-w-3xl mx-auto px-4"
           >
-            {text.description}
+            {t("media.robots.description")}
           </motion.p>
 
 
@@ -167,8 +165,8 @@ const Hero: React.FC = () => {
                 style={{ transformStyle: 'preserve-3d' }}
               >
                 <Image
-                  src={text.heroImage}
-                  alt="Savvy Robot"
+                  src={t("media.robots.heroImage")}
+                  alt={t("media.robots.imageAlt")}
                   width={650}
                   height={780}
                   priority
@@ -199,7 +197,7 @@ const Hero: React.FC = () => {
                     <span className="text-white text-xs sm:text-base font-bold">★</span>
                   </div>
                   <p className="text-[9.5px] sm:text-sm font-bold text-foreground whitespace-nowrap">
-                    {text.floatingCards.enhanceBrand}
+                    {t("media.robots.floatingCards.enhanceBrand")}
                   </p>
                 </div>
               </motion.div>

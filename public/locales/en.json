@@ -4143,68 +4143,55 @@
       "badge": "Boost Your Visibility",
       "title": "Your building facade, working as a brand screen 24/7",
       "description": "Put your brand on immersive screens and interactive displays that run around the clock, so your message stays visible in high-traffic locations.",
-      "statsLabel1": "Active Screens",
-      "statsLabel2": "Uptime",
       "primaryButton": "Explore our work",
       "secondaryButton": "Contact us",
       "imageAlt": "NHC Building, Innovation Center"
     },
-    "about": {
-      "badge": "About Us",
-      "title": "Full-service content and production",
-      "description": "From 4K video and motion graphics to screen content, social media, editing, publishing, paid ads, influencer partnerships, and media coverage.",
-      "feature1Title": "Unlimited Creativity",
-      "feature1Description": "We turn your ideas into content people stop to watch",
-      "feature2Title": "Fast Production",
-      "feature2Description": "High-quality delivery on tight timelines",
-      "feature3Title": "Professional Quality",
-      "feature3Description": "Production standards built for major brands and events"
+    "robots": {
+      "title": "Welcome",
+      "titleHighlight": "Mr. Savvy",
+      "description": "Make your events unforgettable with Mr. Savvy — a smart robot that speaks Arabic, interacts with visitors using customized technologies,, and represents your brand in a captivating and impressive way.",
+      "heroImage": "/media/hero/Hero.png",
+      "imageAlt": "Savvy Robot",
+      "floatingCards": {
+        "enhanceBrand": "Enhance Your Brand"
+      }
     },
     "content": {
       "topTitle": "Immersive content for every screen and event",
       "topDescription": "We create hyper-realistic visuals, anamorphic projections, and augmented reality experiences for marketing, exhibitions, and brand activations that need to stop people in their tracks.",
-      "bottomTitle": "Indoor and outdoor screens, live 24/7",
-      "bottomDescription": "Our screen network runs around the clock with high-brightness, weather-resistant displays. Manage content remotely, target audiences precisely, and measure what works: visitor counts, dwell time, age groups, and engagement. Campaigns see up to 50% better results.",
-      "activeEngagements": "Active Engagements",
-      "uptime": "Uptime",
-      "hours": "Hours",
-      "feature1": "Dwell time tracking",
-      "feature2": "Visitor and footfall counts",
-      "feature3": "Emotion and impression analysis",
-      "feature4": "Age and gender demographics",
       "button": "First of its kind in Saudi Arabia"
     },
-    "whySavvy": {
-      "title": "Why Savvy Media?",
-      "subtitle": "Because your message deserves to be seen clearly, beautifully, and at scale",
-      "feature1Title": "Complete display solutions",
-      "feature1Description": "Indoor and outdoor screens built to commercial standards, running around the clock",
-      "feature2Title": "Immersive content that lifts your brand",
-      "feature2Description": "Hyper-realistic visuals, augmented reality, and 3D experiences built to hold attention",
-      "feature3Title": "Targeting and measurement backed by data",
-      "feature3Description": "Track how people move, stop, and respond so you can improve each campaign"
-    },
-    "projects": {
-      "badge": "Our Projects",
-      "title": "Growing your project is our priority",
-      "subtitle": "We combine strategy, creative production, and screen networks to help brands reach more people in Saudi Arabia.",
-      "project1Title": "Media facade screens",
-      "project1Description": "Large facade screens across Saudi Arabia that put your brand in front of high-traffic city audiences.",
-      "project2Title": "Content and production",
-      "project2Description": "End-to-end production: 4K filming, motion graphics, screen and social content, editing, paid promotion, and influencer management."
-    },
-    "services": {
-      "badge": "Our Services",
-      "title": "Services built to grow your brand",
-      "subtitle": "From giant screens to social campaigns, we help you reach the right audience with content that performs.",
-      "service1": "Media facades and giant screens",
-      "service2": "Outdoor advertising",
-      "service3": "On-site 4K filming",
-      "service4": "Animation and infographic videos",
-      "service5": "Fast-turn production",
-      "service6": "Social media (Arabic and English)",
-      "service7": "Influencer partnerships",
-      "service8": "50 m² studio screen for real estate shoots"
+    "screens": {
+      "eyebrow": "Absen LED scale",
+      "title": "A World Amazed by large LED Innovation",
+      "description": "Absen is a global LED display leader trusted in 140+ countries, with 60,000+ installations, 6,000+ service engineers, award-winning innovation, Micro LED technology, and manufacturing capacity exceeding 1,000,000 m² annually.",
+      "message": "From Times Square to the FIFA World Cup, from airports to 3D media facades, Absen keeps shaping the future of digital display experiences around the world.",
+      "centerLabel": "Global LED display network",
+      "visualScenes": ["Times Square", "FIFA World Cup", "Airport", "Shopping Mall", "3D Media Facade"],
+      "leftCapabilities": ["Indoor LED", "Outdoor LED", "Rental & Staging", "Micro LED"],
+      "rightCapabilities": ["Cloud Management", "Remote Monitoring", "Smart Diagnostics", "eDOOH Energy Storage"],
+      "highlights": [
+        "#1 Chinese LED Display Brand",
+        "Founded in 2001",
+        "140+ Countries",
+        "60,000+ Installations",
+        "6,000+ Service Engineers",
+        "900+ Intellectual Property Rights",
+        "190+ Patents",
+        "260+ Awards & Titles",
+        "1,000,000 m² Annual Capacity"
+      ],
+      "kpis": [
+        ["140+", "Countries"],
+        ["60,000+", "Projects"],
+        ["6,000+", "Engineers"],
+        ["900+", "IP Rights"],
+        ["190+", "Patents"],
+        ["260+", "Awards"],
+        ["20+", "Years"],
+        ["1,000,000 m²", "Capacity"]
+      ]
     }
   },
   "news": {
@@ -4438,8 +4425,8 @@
     "termsOfUse": "Terms of Use",
     "mediaGallery": "Gallery",
     "savvyEStore": "Savvy eStore",
-    "mediaContentSection": "Content",
-    "mediaGallerySection": "Gallery"
+    "mediaRobotsSection": "Robots",
+    "mediaScreensSection": "Screens"
   },
   "savvySections": {
     "sectionTitle": "Savvy World Sections",
