@@ -14,77 +14,22 @@ import {
   Wrench,
 } from "lucide-react"
 import { useLanguage } from "@/contexts/LanguageContext"
+import { useTranslation } from "react-i18next"
 
 const absenEase: [number, number, number, number] = [0.16, 1, 0.3, 1]
 
-const content = {
-  en: {
-    eyebrow: "Absen LED scale",
-    title: "A World Amazed by large LED Innovation",
-    description:
-      "Absen is a global LED display leader trusted in 140+ countries, with 60,000+ installations, 6,000+ service engineers, award-winning innovation, Micro LED technology, and manufacturing capacity exceeding 1,000,000 m² annually.",
-    message:
-      "From Times Square to the FIFA World Cup, from airports to 3D media facades, Absen keeps shaping the future of digital display experiences around the world.",
-    centerLabel: "Global LED display network",
-    visualScenes: ["Times Square", "FIFA World Cup", "Airport", "Shopping Mall", "3D Media Facade"],
-    leftCapabilities: ["Indoor LED", "Outdoor LED", "Rental & Staging", "Micro LED"],
-    rightCapabilities: ["Cloud Management", "Remote Monitoring", "Smart Diagnostics", "eDOOH Energy Storage"],
-    highlights: [
-      "#1 Chinese LED Display Brand",
-      "Founded in 2001",
-      "140+ Countries",
-      "60,000+ Installations",
-      "6,000+ Service Engineers",
-      "900+ Intellectual Property Rights",
-      "190+ Patents",
-      "260+ Awards & Titles",
-      "1,000,000 m² Annual Capacity",
-    ],
-    kpis: [
-      ["140+", "Countries"],
-      ["60,000+", "Projects"],
-      ["6,000+", "Engineers"],
-      ["900+", "IP Rights"],
-      ["190+", "Patents"],
-      ["260+", "Awards"],
-      ["20+", "Years"],
-      ["1,000,000 m²", "Capacity"],
-    ],
-  },
-  ar: {
-    eyebrow: "حجم Absen العالمي",
-    title: "نبهر العالم بابتكارات الشاشات LED الضخمة",
-    description:
-      "تُعد Absen إحدى الشركات العالمية الرائدة في شاشات LED، بحضور في أكثر من 140 دولة، وأكثر من 60,000 مشروع، و6,000 مهندس دعم، وتقنيات Micro LED متقدمة، وقدرة تصنيع تتجاوز 1,000,000 متر مربع سنويًا.",
-    message:
-      "من تايمز سكوير إلى كأس العالم FIFA، ومن المطارات إلى الواجهات الإعلامية ثلاثية الأبعاد، تواصل Absen رسم مستقبل تجارب العرض الرقمية حول العالم.",
-    centerLabel: "شبكة شاشات LED عالمية",
-    visualScenes: ["تايمز سكوير", "كأس العالم FIFA", "المطارات", "المراكز التجارية", "واجهات إعلامية ثلاثية الأبعاد"],
-    leftCapabilities: ["شاشات داخلية", "شاشات خارجية", "التأجير والفعاليات", "Micro LED"],
-    rightCapabilities: ["إدارة سحابية", "مراقبة عن بُعد", "تشخيص ذكي", "تخزين طاقة eDOOH"],
-    highlights: [
-      "الشركة الصينية رقم 1 في شاشات LED",
-      "تأسست عام 2001",
-      "أكثر من 140 دولة",
-      "أكثر من 60,000 مشروع",
-      "أكثر من 6,000 مهندس خدمات",
-      "أكثر من 900 حق ملكية فكرية",
-      "أكثر من 190 براءة اختراع",
-      "أكثر من 260 جائزة واعتماد",
-      "قدرة إنتاجية تتجاوز 1,000,000 متر مربع سنويًا",
-    ],
-    kpis: [
-      ["+140", "دولة"],
-      ["+60,000", "مشروع"],
-      ["+6,000", "مهندس"],
-      ["+900", "حق ملكية"],
-      ["+190", "براءة اختراع"],
-      ["+260", "جائزة"],
-      ["+20", "سنة"],
-      ["1,000,000 م²", "قدرة إنتاجية"],
-    ],
-  },
-} as const
+type ScreenText = {
+  eyebrow: string
+  title: string
+  description: string
+  message: string
+  centerLabel: string
+  visualScenes: string[]
+  leftCapabilities: string[]
+  rightCapabilities: string[]
+  highlights: string[]
+  kpis: [string, string][]
+}
 
 const highlightIcons = [
   BadgeCheck,
@@ -100,7 +45,8 @@ const highlightIcons = [
 
 export default function AbsenInnovationSection() {
   const { language } = useLanguage()
-  const text = content[language]
+  const { t } = useTranslation()
+  const text = t("media.screens", { returnObjects: true }) as ScreenText
   const isRTL = language === "ar"
 
   const capabilityColumns = isRTL
@@ -109,8 +55,8 @@ export default function AbsenInnovationSection() {
 
   return (
     <section
-      id="absen-innovation"
-      className="relative isolate overflow-hidden bg-transparent py-20 text-[oklch(0.965_0.008_245)] md:py-28"
+      id="screens"
+      className="relative isolate scroll-mt-24 overflow-hidden bg-transparent py-20 text-[oklch(0.965_0.008_245)] md:py-28"
       dir={isRTL ? "rtl" : "ltr"}
     >
       <div className="container relative z-10">

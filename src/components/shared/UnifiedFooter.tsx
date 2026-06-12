@@ -26,29 +26,25 @@ export default function UnifiedFooter() {
         titleHref: `/${lang}`,
         links: [
           { label: t("common.ourSections"), href: `/${lang}#about` },
-          { label: t("common.gallery"), href: `/${lang}#services` },
+          // { label: t("common.gallery"), href: `/${lang}#services` },
         ],
       },
       {
         title: t("common.savvyMedia"),
         titleHref: `/${lang}/media`,
         links: [
-          { label: t("common.mediaContentSection"), href: `/${lang}/media#content` },
-          { label: t("common.mediaGallerySection"), href: `/${lang}/media#gallery` },
-        ],
-      },
-      {
-        title: t("common.savvyExpo"),
-        titleHref: `/${lang}/expo`,
-        links: [
-          { label: t("common.servicesLabel"), href: `/${lang}/expo#services` },
-          { label: t("common.projects"), href: `/${lang}/expo#projects` },
+          { label: t("common.mediaRobotsSection"), href: `/${lang}/media#robots` },
+          { label: t("common.mediaScreensSection"), href: `/${lang}/media#screens` },
+
         ],
       },
       {
         title: t("common.savvyInnovation"),
         titleHref: `/${lang}/innovation`,
-        links: [{ label: t("common.solutions"), href: `/${lang}/innovation#solutions` }],
+        links: [
+          { label: t("innovation.industriesNavLabel"), href: `/${lang}/innovation#industries` },
+          { label: t("common.solutions"), href: `/${lang}/innovation#solutions` },
+        ],
       },
       {
         title: t("common.otherPages"),
@@ -66,7 +62,7 @@ export default function UnifiedFooter() {
     <footer ref={footerRef} className="relative bg-white text-gray-700 pt-12 md:pt-16 pb-6 md:pb-8">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-10">
         <div
-          className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 mb-8 md:mb-12 ${isRTL ? "text-right" : "text-left"}`}
+          className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mb-8 md:mb-12 ${isRTL ? "text-right" : "text-left"}`}
         >
           <motion.div
             initial={{ opacity: 0, y: isMobile ? 15 : 20 }}

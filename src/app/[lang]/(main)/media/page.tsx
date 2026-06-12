@@ -1,5 +1,4 @@
 import PageTransition from "@/components/shared/PageTransition/PageTransition"
-import MediaContent from "@/components/media-page/sections/MediaContent"
 import UnifiedHeader from "@/components/shared/UnifiedHeader"
 import MadiaProjects from "@/components/shared/mdia-projects/LatestProjects"
 import NewHero from "@/components/main-page/sections/NewHero"
@@ -39,7 +38,7 @@ export default async function MediaPage({ params }: MediaPageProps) {
           descriptionKey="media.hero.description"
           showImpactStats={false}
           actions={[
-            { href: "#projects", labelKey: "media.hero.primaryButton" },
+            { href: "#gallery", labelKey: "media.hero.primaryButton" },
             { href: `/${lang}/contact`, labelKey: "media.hero.secondaryButton", variant: "secondary" },
           ]}
         />
@@ -49,10 +48,10 @@ export default async function MediaPage({ params }: MediaPageProps) {
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_82%_14%,rgba(57,96,249,0.1),transparent_30%),radial-gradient(circle_at_18%_52%,rgba(96,165,250,0.12),transparent_34%),radial-gradient(circle_at_50%_92%,rgba(57,96,249,0.08),transparent_36%)]" />
           <div className="pointer-events-none absolute inset-0 opacity-35 [background-image:linear-gradient(rgba(57,96,249,0.045)_1px,transparent_1px),linear-gradient(90deg,rgba(57,96,249,0.04)_1px,transparent_1px)] [background-size:56px_56px]" />
 
-          <div className="relative z-10">
+          <div className="relative z-10" id="robots">
             <Hero />
 
-            <section id="projects">
+            <section id="gallery" className="scroll-mt-24">
               <LatestProjects blendWithParent />
             </section>
           </div>
@@ -62,16 +61,16 @@ export default async function MediaPage({ params }: MediaPageProps) {
           <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,oklch(0.501_0.253_264.6/0.45),transparent)]" />
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_12%_0%,oklch(0.501_0.253_264.6/0.16),transparent_30%),radial-gradient(circle_at_88%_18%,oklch(0.501_0.253_264.6/0.14),transparent_28%)]" />
 
-          <div className="relative z-10">
-            <AbsenInnovationSection />
+          <div className="relative z-10"  id="screens" >
+            <AbsenInnovationSection/>
 
-            <section id="content">
+            <section id="content" className="scroll-mt-24">
               <MadiaProjects />
             </section>
           </div>
         </div>
 
-        <MediaContent />
+        {/* <MediaContent /> */}
 
 
 

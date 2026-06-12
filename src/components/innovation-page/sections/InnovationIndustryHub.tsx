@@ -227,7 +227,7 @@ export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIn
     <>
       <InnovationVideoHero />
 
-      <div id="industries" className="bg-[oklch(0.985_0.003_260)]">
+      <div id="industries" className="scroll-mt-24 bg-[oklch(0.985_0.003_260)]">
         <div ref={heroSentinelRef} className="h-0" aria-hidden />
 
         <div
@@ -266,18 +266,20 @@ export default function InnovationIndustryHub({ onScrollPastHero }: InnovationIn
 
         <div ref={navCompactSentinelRef} className="h-0" aria-hidden />
 
-        <div className="flex flex-col gap-[clamp(4rem,9vw,7rem)] px-[clamp(0.25rem,1.5vw,1rem)] pt-[clamp(0.75rem,2vw,1.25rem)] pb-[clamp(5rem,10vw,8rem)]">
-          {INDUSTRIES.map((industry, index) => (
-            <motion.div
-              key={industry.slug}
-              variants={fadeInUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.12 }}
-            >
-              <IndustryPageSection industry={industry} isFirst={index === 0} />
-            </motion.div>
-          ))}
+        <div id="solutions" className="scroll-mt-[var(--innovation-nav-height,96px)]">
+          <div className="flex flex-col gap-[clamp(4rem,9vw,7rem)] px-[clamp(0.25rem,1.5vw,1rem)] pt-[clamp(0.75rem,2vw,1.25rem)] pb-[clamp(5rem,10vw,8rem)]">
+            {INDUSTRIES.map((industry, index) => (
+              <motion.div
+                key={industry.slug}
+                variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.12 }}
+              >
+                <IndustryPageSection industry={industry} isFirst={index === 0} />
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </>

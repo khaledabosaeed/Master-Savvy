@@ -9,12 +9,8 @@ export async function getHomePageTexts(lang: AppLanguage): Promise<HomePageTexts
   return {
     texts: {
       main: c.main,
-      projects: c.projects,
-      services: c.services,
       about: c.about,
-      ourRobots: c.robots,
       contactUs: c.contactUs,
     },
-    galleryHeading: c.gallery,
   }
 }

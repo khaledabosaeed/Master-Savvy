@@ -10,9 +10,7 @@ import type { Language } from "./content"
 import { getProjects, getLatestProjectsTitle, getLatestProjectsSubtitle } from "./content"
 import {
   fadeInUp,
-  viewportConfig,
-  // crossfade,
-  sectionSlideUp,
+  viewportConfig,  sectionSlideUp,
 } from "@/lib/animations"
 
 type LatestProjectsProps = {
