@@ -94,11 +94,7 @@ const Hero: React.FC = () => {
 
 
   return (
-    <section className="min-h-screen relative overflow-hidden pt-16"
-      style={{
-        background: 'linear-gradient(180deg, #FBFCFD 0%, #F5F7FA 50%, #EEF2F6 100%)'
-      }}
-    >
+    <section className="min-h-screen relative overflow-hidden bg-transparent pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-8 sm:py-12 md:py-16 lg:py-20 overflow-hidden relative z-10 min-h-screen flex flex-col">
 
         {/* Text Content - Top Center */}
