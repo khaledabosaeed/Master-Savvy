@@ -23,16 +23,7 @@ export const INDUSTRY_USE_CASE_CONFIG: Record<IndustrySlug, IndustryUseCaseConfi
         { slideKeys: ["holabot", "kettybot"], solutionKeys: ["holabot", "kettybot"] },
       ],
     },
-    retail: {
-      titles: {
-        en: ["In-Store Delivery", "Shopper Guidance"],
-        ar: ["التوصيل داخل المتجر", "إرشاد المتسوقين"],
-      },
-      keys: [
-        { slideKeys: ["bellabot", "flashbot"], solutionKeys: ["bellabot", "flashbot"] },
-        { slideKeys: ["kettybot", "bellabot"], solutionKeys: ["kettybot", "bellabot"] },
-      ],
-    },
+
     hospitality: {
       titles: {
         en: [
