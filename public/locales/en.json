@@ -217,15 +217,15 @@
     "otherIndustriesTitle": "Explore Other Industries",
     "industries": {
       "food-beverage": {
-        "title": "Food & Beverage",
-        "shortTitle": "Food & Beverage",
-        "headline": "Food & Beverage",
-        "summary": "Food and beverage delivery · Customer reception · Self-cleaning",
-        "imageAlt": "Restaurant interior with Pudu service robot",
-        "imageUrl": "https://cdn.savvyworld.ai/master/Food_and_Beverage_ecca2bbd37.webp",
+        "title": "Food Manufacturing, FMCG & Consumer Goods",
+        "shortTitle": "Food & FMCG",
+        "headline": "PUDU Robotics for Food Manufacturing & FMCG",
+        "summary": "More Efficient Production · Smarter Supply Chains · Better Operational Performance\nPUDU Robotics helps food manufacturers, beverage producers, FMCG companies, warehouses, and distribution centers automate internal operations, improve material flow, reduce repetitive manual work, and enhance productivity across manufacturing and logistics environments.",
+        "imageAlt": "Food manufacturing and warehouse operations with automated material flow",
+        "imageUrl": "https://cdn.savvyworld.ai/master/_373b0fa367.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "Challenges",
+            "heading": "Food Manufacturing & FMCG Challenges",
             "items": [
               {
                 "icon": "cost",
@@ -233,15 +233,27 @@
               },
               {
                 "icon": "workforce",
-                "label": "Labor shortages"
+                "label": "Operational labor shortages"
               },
               {
-                "icon": "speed",
-                "label": "Service speed"
+                "icon": "productivity",
+                "label": "Need to increase productivity"
               },
               {
-                "icon": "experience",
-                "label": "Customer satisfaction"
+                "icon": "transport",
+                "label": "Repetitive material and product movement"
+              },
+              {
+                "icon": "warehouse",
+                "label": "Inventory and warehouse management"
+              },
+              {
+                "icon": "safety",
+                "label": "Safety and quality standards"
+              },
+              {
+                "icon": "uptime",
+                "label": "Continuous operations around the clock"
               }
             ]
           },
@@ -249,73 +261,219 @@
             "heading": "How PUDU Robots Help",
             "items": [
               {
+                "icon": "transport",
+                "label": "Raw material transport"
+              },
+              {
+                "icon": "production",
+                "label": "Production line support"
+              },
+              {
                 "icon": "delivery",
-                "label": "Food and beverage delivery"
+                "label": "Internal logistics"
               },
               {
-                "icon": "service",
-                "label": "Customer reception"
+                "icon": "warehouse",
+                "label": "Warehouse management"
               },
               {
-                "icon": "cleaning",
-                "label": "Self-cleaning"
+                "icon": "samples",
+                "label": "Quality and operations support"
+              },
+              {
+                "icon": "uptime",
+                "label": "Continuous 24/7 operation"
               }
             ]
           },
           "results": {
-            "heading": "Results",
+            "heading": "Expected Outcomes",
             "items": [
               {
-                "icon": "efficiency",
-                "label": "Faster service"
-              },
-              {
-                "icon": "cost",
-                "label": "Lower operating costs"
-              },
-              {
-                "icon": "experience",
-                "label": "Better customer experience"
-              },
-              {
                 "icon": "productivity",
-                "label": "Increased productivity"
+                "label": "Higher productivity"
+              },
+              {
+                "icon": "transport",
+                "label": "Improved material flow"
+              },
+              {
+                "icon": "automation",
+                "label": "Reduced repetitive manual work"
+              },
+              {
+                "icon": "warehouse",
+                "label": "Greater warehouse efficiency"
+              },
+              {
+                "icon": "safety",
+                "label": "Improved operational safety"
+              },
+              {
+                "icon": "speed",
+                "label": "Reduced waiting times"
+              },
+              {
+                "icon": "efficiency",
+                "label": "Higher logistics efficiency"
+              },
+              {
+                "icon": "uptime",
+                "label": "Continuous operations around the clock"
               }
             ]
           }
         },
         "scenarios": [
           {
-            "title": "Multi-Scenario Coverage",
-            "subtitle": "Table Service · Dish Return · Lobby Reception · Floor Cleaning",
-            "imageAlt": "Isometric view of Pudu robots serving across a restaurant",
-            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_68694792ca.webp"
+            "title": "Where PUDU Robots Can Be Used",
+            "subtitle": "Food factories · Beverage plants · Dairy factories · Bakeries · Packaging plants · Distribution centers · Warehouses · FMCG companies · Consumer goods manufacturing · Modern production facilities",
+            "imageAlt": "Warehouse and distribution areas supporting food manufacturing operations",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_c7680a5a1b.webp"
+          },
+          {
+            "title": "Material Journey Inside the Factory",
+            "subtitle": "Raw material receiving → Storage movement → Production line feeding → Packing and packaging → Quality and lab transport → Finished goods storage → Shipping and distribution → Continuous 24/7 material flow",
+            "imageAlt": "Material flow across manufacturing and logistics areas",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_c7680a5a1b.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "Food & Beverage",
+            "aboutTitle": "Food Manufacturing & FMCG Operations",
+            "slideKeys": [
+              "t300",
+              "pudubot2",
+              "flashbot",
+              "cc1"
+            ],
+            "solutionKeys": [
+              "t300",
+              "pudubot2",
+              "flashbot",
+              "cc1"
+            ],
             "slides": [
               {
-                "robotName": "HolaBot",
-                "imageAlt": "HolaBot — Table Service & Delivery",
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 — Food Manufacturing & FMCG Operations",
+                "imageUrl": ""
+              },
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — Food Manufacturing & FMCG Operations",
+                "imageUrl": ""
+              },
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — Food Manufacturing & FMCG Operations",
+                "imageUrl": ""
+              },
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — Food Manufacturing & FMCG Operations",
                 "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "Challenges",
-              "items": []
+              "heading": "Food Manufacturing & FMCG Challenges",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "High operating costs"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "Operational labor shortages"
+                },
+                {
+                  "icon": "productivity",
+                  "label": "Need to increase productivity"
+                },
+                {
+                  "icon": "transport",
+                  "label": "Repetitive material and product movement"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "Inventory and warehouse management"
+                },
+                {
+                  "icon": "safety",
+                  "label": "Safety and quality standards"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "Continuous operations around the clock"
+                }
+              ]
             },
             "whyChoose": {
               "heading": "How PUDU Robots Help",
-              "items": []
+              "items": [
+                "Move raw materials and ingredients between storage areas and production lines.",
+                "Feed production lines with materials and supplies continuously.",
+                "Move products and materials between production, packing, packaging, and storage areas.",
+                "Improve product flow inside warehouses and distribution centers.",
+                "Transport samples and operational materials between laboratories and production lines.",
+                "Support operational continuity 24 hours a day."
+              ]
             },
-            "solutionsTitle": "How PUDU Robots Help",
-            "solutions": [],
-            "slideKeys": [
-              "holabot"
-            ],
-            "solutionKeys": []
+            "solutionsTitle": "Recommended Solutions",
+            "solutions": [
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300",
+                "imageUrl": "",
+                "features": [
+                  "Cart towing and transport",
+                  "Up to 300 kg payload",
+                  "Production line support",
+                  "Material transport automation"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              },
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "Internal logistics",
+                  "Material and product transport",
+                  "Warehouse support",
+                  "Movement between operational areas"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              },
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "Sensitive material transport",
+                  "Multiple secure compartments",
+                  "PIN and NFC authentication",
+                  "Multi-floor operations"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              },
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "Cleaning operational areas",
+                  "Cleaning corridors and facilities",
+                  "Support for cleaning teams",
+                  "Higher hygiene and safety standards"
+                ],
+                "learnMoreLabel": "Learn More",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },

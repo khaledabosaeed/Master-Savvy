@@ -217,15 +217,15 @@
     "otherIndustriesTitle": "استكشف قطاعات أخرى",
     "industries": {
       "food-beverage": {
-        "title": "الأغذية والمشروبات",
-        "shortTitle": "الأغذية والمشروبات",
-        "headline": "الأغذية والمشروبات",
-        "summary": "توصيل الطعام والمشروبات · استقبال العملاء · التنظيف الذاتي",
-        "imageAlt": "مطعم مع روبوت خدمة Pudu",
-        "imageUrl": "https://cdn.savvyworld.ai/master/Food_and_Beverage_ecca2bbd37.webp",
+        "title": "الصناعات الغذائية وFMCG والسلع الاستهلاكية",
+        "shortTitle": "الصناعات الغذائية وFMCG",
+        "headline": "روبوتات PUDU لقطاع الصناعات الغذائية وFMCG",
+        "summary": "مصانع أكثر كفاءة · سلاسل إمداد أكثر ذكاءً · عمليات تشغيل أكثر استدامة\nتساعد روبوتات PUDU مصانع الأغذية والمشروبات وشركات السلع الاستهلاكية ومراكز التوزيع والمستودعات على أتمتة العمليات الداخلية، وتحسين تدفق المواد، وتقليل الأعمال اليدوية المتكررة، ورفع كفاءة الإنتاج والخدمات اللوجستية.",
+        "imageAlt": "عمليات تصنيع غذائي ومستودعات مع تدفق مواد مؤتمت",
+        "imageUrl": "https://cdn.savvyworld.ai/master/_373b0fa367.webp",
         "impactPanels": {
           "challenges": {
-            "heading": "التحديات",
+            "heading": "تحديات قطاع الصناعات الغذائية وFMCG",
             "items": [
               {
                 "icon": "cost",
@@ -233,15 +233,27 @@
               },
               {
                 "icon": "workforce",
-                "label": "نقص العمالة"
+                "label": "نقص الكوادر التشغيلية"
               },
               {
-                "icon": "speed",
-                "label": "سرعة الخدمة"
+                "icon": "productivity",
+                "label": "الحاجة إلى رفع الإنتاجية"
               },
               {
-                "icon": "experience",
-                "label": "رضا العملاء"
+                "icon": "transport",
+                "label": "تكرار عمليات نقل المواد والمنتجات"
+              },
+              {
+                "icon": "warehouse",
+                "label": "إدارة المخزون والمستودعات"
+              },
+              {
+                "icon": "safety",
+                "label": "الحفاظ على معايير السلامة والجودة"
+              },
+              {
+                "icon": "uptime",
+                "label": "تشغيل مستمر على مدار الساعة"
               }
             ]
           },
@@ -249,73 +261,219 @@
             "heading": "كيف تساعد روبوتات PUDU",
             "items": [
               {
+                "icon": "transport",
+                "label": "نقل المواد الخام"
+              },
+              {
+                "icon": "production",
+                "label": "دعم خطوط الإنتاج"
+              },
+              {
                 "icon": "delivery",
-                "label": "توصيل الطعام والمشروبات"
+                "label": "الخدمات اللوجستية الداخلية"
               },
               {
-                "icon": "service",
-                "label": "استقبال العملاء"
+                "icon": "warehouse",
+                "label": "إدارة المستودعات"
               },
               {
-                "icon": "cleaning",
-                "label": "التنظيف الذاتي"
+                "icon": "samples",
+                "label": "دعم الجودة والعمليات"
+              },
+              {
+                "icon": "uptime",
+                "label": "تشغيل مستمر"
               }
             ]
           },
           "results": {
-            "heading": "النتائج",
+            "heading": "النتائج المتوقعة",
             "items": [
               {
-                "icon": "efficiency",
-                "label": "خدمة أسرع"
-              },
-              {
-                "icon": "cost",
-                "label": "تكلفة تشغيل أقل"
-              },
-              {
-                "icon": "experience",
-                "label": "تجربة عملاء أفضل"
-              },
-              {
                 "icon": "productivity",
-                "label": "زيادة الإنتاجية"
+                "label": "رفع الإنتاجية"
+              },
+              {
+                "icon": "transport",
+                "label": "تحسين تدفق المواد"
+              },
+              {
+                "icon": "automation",
+                "label": "تقليل الأعمال اليدوية المتكررة"
+              },
+              {
+                "icon": "warehouse",
+                "label": "زيادة كفاءة المستودعات"
+              },
+              {
+                "icon": "safety",
+                "label": "تحسين السلامة التشغيلية"
+              },
+              {
+                "icon": "speed",
+                "label": "تقليل أوقات الانتظار"
+              },
+              {
+                "icon": "efficiency",
+                "label": "رفع كفاءة الخدمات اللوجستية"
+              },
+              {
+                "icon": "uptime",
+                "label": "تشغيل مستمر على مدار الساعة"
               }
             ]
           }
         },
         "scenarios": [
           {
-            "title": "تغطية متعددة السيناريوهات",
-            "subtitle": "خدمة الطاولات · إرجاع الأطباق · استقبال الردهة · تنظيف الأرضيات",
-            "imageAlt": "منظر isometric لروبوتات Pudu تعمل عبر مطعم",
-            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_68694792ca.webp"
+            "title": "أين يمكن استخدام روبوتات PUDU",
+            "subtitle": "مصانع الأغذية · مصانع المشروبات · مصانع الألبان · مصانع المخبوزات · مصانع التعبئة والتغليف · مراكز التوزيع · المستودعات · شركات السلع الاستهلاكية · مصانع المنتجات الاستهلاكية · مرافق التصنيع الحديثة",
+            "imageAlt": "مستودعات ومناطق توزيع تدعم عمليات الصناعات الغذائية",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_c7680a5a1b.webp"
+          },
+          {
+            "title": "رحلة المواد داخل المصنع",
+            "subtitle": "استلام المواد الخام → نقل المواد إلى مناطق التخزين → إدارة الحركة داخل المستودعات → تغذية خطوط الإنتاج بالمواد → نقل المنتجات بين مراحل الإنتاج → نقل العينات والمواد التشغيلية → نقل المنتجات الجاهزة للمستودعات → دعم العمليات اللوجستية الداخلية على مدار الساعة",
+            "imageAlt": "تدفق المواد عبر مناطق التصنيع والخدمات اللوجستية",
+            "imageUrl": "https://cdn.savvyworld.ai/master/Robtics-pages/_c7680a5a1b.webp"
           }
         ],
         "useCases": [
           {
-            "aboutTitle": "الأغذية والمشروبات",
+            "aboutTitle": "عمليات الصناعات الغذائية وFMCG",
+            "slideKeys": [
+              "t300",
+              "pudubot2",
+              "flashbot",
+              "cc1"
+            ],
+            "solutionKeys": [
+              "t300",
+              "pudubot2",
+              "flashbot",
+              "cc1"
+            ],
             "slides": [
               {
-                "robotName": "HolaBot",
-                "imageAlt": "HolaBot — خدمة الطاولات والتوصيل",
+                "robotName": "PUDU T300",
+                "imageAlt": "PUDU T300 — عمليات الصناعات الغذائية وFMCG",
+                "imageUrl": ""
+              },
+              {
+                "robotName": "PuduBot 2",
+                "imageAlt": "PuduBot 2 — عمليات الصناعات الغذائية وFMCG",
+                "imageUrl": ""
+              },
+              {
+                "robotName": "FlashBot Max",
+                "imageAlt": "FlashBot Max — عمليات الصناعات الغذائية وFMCG",
+                "imageUrl": ""
+              },
+              {
+                "robotName": "CC1 Pro",
+                "imageAlt": "CC1 Pro — عمليات الصناعات الغذائية وFMCG",
                 "imageUrl": ""
               }
             ],
             "challenges": {
-              "heading": "التحديات",
-              "items": []
+              "heading": "تحديات قطاع الصناعات الغذائية وFMCG",
+              "items": [
+                {
+                  "icon": "cost",
+                  "label": "ارتفاع تكاليف التشغيل"
+                },
+                {
+                  "icon": "workforce",
+                  "label": "نقص الكوادر التشغيلية"
+                },
+                {
+                  "icon": "productivity",
+                  "label": "الحاجة إلى رفع الإنتاجية"
+                },
+                {
+                  "icon": "transport",
+                  "label": "تكرار عمليات نقل المواد والمنتجات"
+                },
+                {
+                  "icon": "warehouse",
+                  "label": "إدارة المخزون والمستودعات"
+                },
+                {
+                  "icon": "safety",
+                  "label": "الحفاظ على معايير السلامة والجودة"
+                },
+                {
+                  "icon": "uptime",
+                  "label": "تشغيل مستمر على مدار الساعة"
+                }
+              ]
             },
             "whyChoose": {
               "heading": "كيف تساعد روبوتات PUDU",
-              "items": []
+              "items": [
+                "نقل المواد والمكونات بين مناطق التخزين وخطوط الإنتاج.",
+                "تغذية خطوط الإنتاج بالمواد والمستلزمات بشكل مستمر.",
+                "نقل المنتجات والمواد بين مناطق الإنتاج والتعبئة والتغليف والتخزين.",
+                "تحسين تدفق المنتجات داخل المستودعات ومراكز التوزيع.",
+                "نقل العينات والمواد بين المختبرات وخطوط الإنتاج.",
+                "دعم العمليات التشغيلية على مدار 24 ساعة دون انقطاع."
+              ]
             },
-            "solutionsTitle": "كيف تساعد روبوتات PUDU",
-            "solutions": [],
-            "slideKeys": [
-              "holabot"
-            ],
-            "solutionKeys": []
+            "solutionsTitle": "الحلول الموصى بها",
+            "solutions": [
+              {
+                "name": "PUDU T300",
+                "imageAlt": "PUDU T300",
+                "imageUrl": "",
+                "features": [
+                  "نقل وسحب العربات",
+                  "حمولة تصل إلى 300 كجم",
+                  "دعم خطوط الإنتاج",
+                  "أتمتة نقل المواد"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/pudut300"
+              },
+              {
+                "name": "PuduBot 2",
+                "imageAlt": "PuduBot 2",
+                "imageUrl": "",
+                "features": [
+                  "الخدمات اللوجستية الداخلية",
+                  "نقل المواد والمنتجات",
+                  "دعم المستودعات",
+                  "التنقل بين مناطق التشغيل"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/pudubot2"
+              },
+              {
+                "name": "FlashBot Max",
+                "imageAlt": "FlashBot Max",
+                "imageUrl": "",
+                "features": [
+                  "نقل المواد الحساسة",
+                  "حجرات آمنة متعددة",
+                  "مصادقة PIN وNFC",
+                  "التشغيل متعدد الطوابق"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/products/flashbot-new"
+              },
+              {
+                "name": "CC1 Pro",
+                "imageAlt": "CC1 Pro",
+                "imageUrl": "",
+                "features": [
+                  "تنظيف المناطق التشغيلية",
+                  "تنظيف الممرات والمرافق",
+                  "دعم فرق النظافة",
+                  "رفع معايير النظافة والسلامة"
+                ],
+                "learnMoreLabel": "اعرف المزيد",
+                "href": "https://www.pudurobotics.com/en/products/cc1-pro/"
+              }
+            ]
           }
         ]
       },
