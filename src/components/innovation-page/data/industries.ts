@@ -1,6 +1,6 @@
 export type IndustrySlug =
   | "food-beverage"
-  | "retail"
+  // | "retail"
   | "hospitality"
   | "industrial-logistics"
   | "healthcare"
@@ -25,7 +25,7 @@ export interface IndustryRef {
 
 export const INDUSTRY_SLUGS: IndustrySlug[] = [
   "food-beverage",
-  "retail",
+  // "retail",
   "hospitality",
   "industrial-logistics",
   "healthcare",

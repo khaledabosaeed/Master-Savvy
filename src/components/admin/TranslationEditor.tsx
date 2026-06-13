@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
-import { Search } from "lucide-react"
+import { Search, Trash2 } from "lucide-react"
 import InnovationUseCasesEditor from "@/components/admin/InnovationUseCasesEditor"
 import SavvySectionsEditor from "@/components/admin/SavvySectionsEditor"
 import ValueField from "@/components/admin/ValueField"
@@ -406,6 +406,21 @@ function innovationIndustryLabel(
   return typeof shortTitle === "string" && shortTitle.trim() ? shortTitle : slug
 }
 
+function availableInnovationIndustrySlugs(
+  content: Record<string, JsonValue> | null
+): IndustrySlug[] {
+  if (!content || !isPlainObject(content.innovation)) {
+    return INDUSTRY_SLUGS
+  }
+  const industries = (content.innovation as Record<string, JsonValue>).industries
+  if (!isPlainObject(industries)) {
+    return INDUSTRY_SLUGS
+  }
+  return INDUSTRY_SLUGS.filter((slug) =>
+    isPlainObject((industries as Record<string, JsonValue>)[slug])
+  )
+}
+
 /** From a full field path under `robots.*`, pick which robot sidebar page to open so the field exists in the scoped editor. */
 function inferRobotPageFromMatchPath(path: string): RobotSidebarPage {
   if (path === "robots" || !path.startsWith("robots.")) return "robots"
@@ -716,12 +731,26 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
       : extractInnovationForIndustry(innovation, innovationPageFocus)
   }, [content, innovationPageFocus])
 
+  const innovationIndustrySlugs = useMemo(
+    () => availableInnovationIndustrySlugs(content),
+    [content]
+  )
+
   useEffect(() => {
     if (!content || filteredKeys.length === 0) return
     if (activeSection && !filteredKeys.includes(activeSection)) {
       setActiveSection(filteredKeys[0] ?? null)
     }
   }, [content, filteredKeys, activeSection])
+
+  useEffect(() => {
+    if (
+      innovationPageFocus !== "hub" &&
+      !innovationIndustrySlugs.includes(innovationPageFocus)
+    ) {
+      setInnovationPageFocus("hub")
+    }
+  }, [innovationIndustrySlugs, innovationPageFocus])
 
   function isSectionDirty(section: string): boolean {
     if (!content || !baseline) return false
@@ -782,6 +811,46 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
     } finally {
       setSaving(false)
     }
+  }
+
+  function removeSelectedInnovationIndustry() {
+    if (
+      !content ||
+      activeSection !== "innovation" ||
+      innovationPageFocus === "hub"
+    ) {
+      return
+    }
+
+    const label = innovationIndustryLabel(content, innovationPageFocus)
+    const ok = window.confirm(
+      `Remove "${label}" from the admin industry list? Save "innovation" to publish this change.`
+    )
+    if (!ok) return
+
+    setContent((prev) => {
+      if (!prev || !isPlainObject(prev.innovation)) {
+        return prev
+      }
+      const innovation = prev.innovation as Record<string, JsonValue>
+      const industries = isPlainObject(innovation.industries)
+        ? { ...(innovation.industries as Record<string, JsonValue>) }
+        : {}
+      delete industries[innovationPageFocus]
+      return {
+        ...prev,
+        innovation: {
+          ...innovation,
+          industries,
+        },
+      }
+    })
+    setInnovationPageFocus("hub")
+    setPreviewTarget("innovation")
+    setToast({
+      type: "ok",
+      text: `Removed "${label}" from the admin list. Save "innovation" to keep it.`,
+    })
   }
 
   const dirty = activeSection ? isSectionDirty(activeSection) : false
@@ -1011,7 +1080,7 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                         <span className="truncate">Hub overview</span>
                       </button>
                     </li>
-                    {INDUSTRY_SLUGS.map((slug) => {
+                    {innovationIndustrySlugs.map((slug) => {
                       const selected =
                         activeSection === "innovation" &&
                         innovationPageFocus === slug
@@ -1273,6 +1342,17 @@ export default function TranslationEditor({ onSignOut }: TranslationEditorProps)
                       Unsaved
                     </span>
                   )}
+                  {activeSection === "innovation" &&
+                    innovationPageFocus !== "hub" && (
+                      <button
+                        type="button"
+                        onClick={removeSelectedInnovationIndustry}
+                        className="ml-auto inline-flex min-h-9 items-center gap-2 rounded-md border border-red-900/60 bg-red-950/30 px-3 py-1.5 text-sm font-medium text-red-200 transition hover:border-red-700/80 hover:bg-red-950/60 hover:text-red-100 focus:outline-none focus:ring-2 focus:ring-red-500/40"
+                      >
+                        <Trash2 className="h-4 w-4" aria-hidden />
+                        <span>Remove industry</span>
+                      </button>
+                    )}
                 </div>
                 {activeSection === "robots" && robotPageFocus !== null ? (
                   <>
