@@ -4582,9 +4582,14 @@
     "privacyPolicy": "Privacy Policy",
     "termsOfUse": "Terms of Use",
     "mediaGallery": "Gallery",
+    "mediaNewsSection": "News",
+    "mediaContentSection": "Immersive Content",
+    "savvyContent": "Savvy Content",
+    "targetedSectors": "Targeted Sectors",
+    "technicalSolutions": "Technical Solutions",
     "savvyEStore": "Savvy eStore",
     "mediaRobotsSection": "Robots",
-    "mediaScreensSection": "Screens"
+    "mediaScreensSection": "Savvy Screens"
   },
   "savvySections": {
     "sectionTitle": "Savvy World Sections",

@@ -18,7 +18,7 @@ export default function InnovationPageClient({ texts, lang }: InnovationPageClie
     setHideNav((prev) => (prev === past ? prev : past))
   }
 
-  return (
+  return (  
     <>
       <UnifiedHeader
         texts={texts}
@@ -29,9 +29,11 @@ export default function InnovationPageClient({ texts, lang }: InnovationPageClie
         hideOnScroll={hideNav}
       />
 
-      <PageTransition>
+<div id="#industries">
+      <PageTransition >
         <InnovationIndustryHub onScrollPastHero={handleScrollPastHero} />
       </PageTransition>
+      </div>
     </>
   )
 }

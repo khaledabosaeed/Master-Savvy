@@ -28,22 +28,23 @@ export default function UnifiedFooter() {
           { label: t("common.ourSections"), href: `/${lang}#about` },
           // { label: t("common.gallery"), href: `/${lang}#services` },
         ],
-      },
+      },  
       {
         title: t("common.savvyMedia"),
         titleHref: `/${lang}/media`,
         links: [
-          { label: t("common.mediaRobotsSection"), href: `/${lang}/media#robots` },
+          { label: t("common.previousExhibitions"), href: `/${lang}/media#gallery` },
           { label: t("common.mediaScreensSection"), href: `/${lang}/media#screens` },
-
+          { label: t("common.mediaContentSection"), href: `/${lang}/media#content` },
         ],
       },
       {
         title: t("common.savvyInnovation"),
         titleHref: `/${lang}/innovation`,
         links: [
+          { label: t("common.mediaRobotsSection"), href: `https://shop.savvyworld.ai` },
           { label: t("innovation.industriesNavLabel"), href: `/${lang}/innovation#industries` },
-          { label: t("common.solutions"), href: `/${lang}/innovation#solutions` },
+          // { label: t("common.solutions"), href: `/${lang}/innovation#solutions` },
         ],
       },
       {
@@ -51,7 +52,7 @@ export default function UnifiedFooter() {
         titleHref: null,
         links: [
           { label: t("common.contactUs"), href: `/${lang}/contact` },
-          { label: t("common.savvyEStore"), href: `/${lang}/robots` },
+          // { label: t("common.savvyEStore"), href: `/${lang}/robots` },
         ],
       },
     ],

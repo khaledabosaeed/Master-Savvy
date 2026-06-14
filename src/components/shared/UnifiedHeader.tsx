@@ -110,6 +110,12 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
 
   const isTransparent = transparentHeader && !isScrolled && !hideOnScroll
   const navTextClass = isTransparent ? "text-white hover:text-white/90" : "text-gray-700 hover:text-gray-900"
+  const getHeaderLinkHref = (key: string) => {
+    if (key === "main") return `/${lang}`
+    if (key === "news") return `/${lang}/news`
+    if (key === "robots") return "https://shop.savvyworld.ai"
+    return `#${key}`
+  }
 
   return (
     <>
@@ -158,8 +164,8 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
                 {Object.entries(texts)
                   .filter(([key]) => key !== "ourServices" && key !== "ourRobots" && key !== "contactUs")
                   .map(([key, value]) => {
-                    // Handle "main" and "news" as page links, others as section links
-                    const href = key === "main" ? `/${lang}` : key === "news" ? `/${lang}/news` : `#${key}`
+                    const href = getHeaderLinkHref(key)
+                    const isExternal = href.startsWith("http")
                     
                     // Handle "main" link: if already on home page, scroll to top instead of navigating
                     const handleMainClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -181,6 +187,8 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
                         key={key}
                         href={href}
                         onClick={handleMainClick}
+                        target={isExternal ? "_blank" : undefined}
+                        rel={isExternal ? "noopener noreferrer" : undefined}
                         className={`${navTextClass} transition-colors text-sm font-medium whitespace-nowrap flex items-center`}
                       >
                         <FormattedText text={value} />
@@ -387,8 +395,8 @@ Unitree Humanoid R1
                   {Object.entries(texts)  
                     .filter(([key]) => key !== "ourServices" && key !== "ourRobots" && key !== "contactUs")
                     .map(([key, value]) => {
-                      // Handle "main" and "news" as page links, others as section links
-                      const href = key === "main" ? `/${lang}` : key === "news" ? `/${lang}/news` : `#${key}`
+                      const href = getHeaderLinkHref(key)
+                      const isExternal = href.startsWith("http")
                       
                       // Handle "main" link: if already on home page, scroll to top instead of navigating
                       const handleMainClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -435,6 +443,8 @@ Unitree Humanoid R1
                           key={key}
                           href={href}
                           onClick={handleMainClick}
+                          target={isExternal ? "_blank" : undefined}
+                          rel={isExternal ? "noopener noreferrer" : undefined}
                           className="block px-6 py-3 text-white hover:bg-white/10 transition-colors text-sm font-medium"
                         >
                           <FormattedText text={value} />

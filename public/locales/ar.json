@@ -210,7 +210,7 @@
       "scrollHint": "انتقل إلى القطاعات",
       "videoUrl": "https://cdn.savvyworld.ai/master/PUDU_Industry_Solutions_29dd55ee9d.mp4"
     },
-    "industriesNavLabel": "القطاعات",
+    "industriesNavLabel": "القطاعات المستهدفة ",
     "exploreIndustry": "اعرف المزيد",
     "backToIndustries": "جميع القطاعات",
     "impactNavLabel": "الأثر",
@@ -4562,10 +4562,15 @@
     "copyrightFull": "حقوق النشر © 2025 ساڤي. جميع الحقوق محفوظة",
     "privacyPolicy": "سياسة الخصوصية",
     "termsOfUse": "شروط الاستخدام",
-    "mediaGallery": "معرض الميديا",
+    "mediaGallery": "معارضنا السابقة",
+    "mediaNewsSection": "الأخبار",
+    "mediaContentSection": "محتوى ساڤي",
+    "savvyContent": "محتوى ساڤي",
+    "targetedSectors": "القطاعات المستهدفة",
+    "technicalSolutions": "الحلول التقنية",
     "savvyEStore": "متجر ساڤي",
     "mediaRobotsSection": "الروبوتات",
-    "mediaScreensSection": "الشاشات"
+    "mediaScreensSection": "شاشات ساڤي"
   },
   "savvySections": {
     "sectionTitle": "أقسام ساڤي وورلد",
