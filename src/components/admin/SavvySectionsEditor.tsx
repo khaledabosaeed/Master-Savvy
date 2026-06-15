@@ -1,6 +1,6 @@
 "use client"
 
-import { Trash2 } from "lucide-react"
+import { Plus, Trash2 } from "lucide-react"
 import ValueField from "@/components/admin/ValueField"
 import RichTextArea from "@/components/admin/RichTextArea"
 
@@ -16,6 +16,8 @@ type SavvySectionCard = {
   link: string
   buttonText: string
 }
+
+type SavvySectionCardDetails = Omit<SavvySectionCard, "features">
 
 type SavvySectionsData = {
   sectionTitle: string
@@ -59,6 +61,30 @@ function parseCard(raw: unknown): SavvySectionCard | null {
   }
 }
 
+function parseCardDetails(raw: unknown): SavvySectionCardDetails | null {
+  if (!isPlainObject(raw)) return null
+  if (
+    typeof raw.id !== "string" ||
+    typeof raw.title !== "string" ||
+    typeof raw.description !== "string" ||
+    typeof raw.icon !== "string" ||
+    typeof raw.image !== "string" ||
+    typeof raw.link !== "string" ||
+    typeof raw.buttonText !== "string"
+  ) {
+    return null
+  }
+  return {
+    id: raw.id,
+    title: raw.title,
+    description: raw.description,
+    icon: raw.icon,
+    image: raw.image,
+    link: raw.link,
+    buttonText: raw.buttonText,
+  }
+}
+
 function parseSavvySections(raw: unknown): SavvySectionsData {
   if (!isPlainObject(raw)) {
     return { sectionTitle: "", cards: [] }
@@ -93,11 +119,19 @@ export default function SavvySectionsEditor({
     onChange({ ...data, sectionTitle })
   }
 
-  function updateCard(index: number, next: JsonValue) {
-    const parsed = parseCard(next)
+  function updateCardDetails(index: number, next: JsonValue) {
+    const parsed = parseCardDetails(next)
     if (!parsed) return
     const cards = [...data.cards]
-    cards[index] = parsed
+    cards[index] = { ...cards[index], ...parsed }
+    onChange({ ...data, cards })
+  }
+
+  function updateCardFeatures(index: number, features: string[]) {
+    const card = data.cards[index]
+    if (!card) return
+    const cards = [...data.cards]
+    cards[index] = { ...card, features }
     onChange({ ...data, cards })
   }
 
@@ -163,12 +197,79 @@ export default function SavvySectionsEditor({
                   Remove section
                 </button>
               </div>
-              <div className="p-3">
+              <div className="space-y-5 p-3">
+                <div className="rounded-lg border border-zinc-800 bg-zinc-900/30 p-3">
+                  <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
+                      Points
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        updateCardFeatures(index, [...card.features, ""])
+                      }
+                      className="inline-flex items-center gap-1 rounded-md border border-zinc-700 px-2.5 py-1.5 text-xs text-zinc-300 transition hover:border-zinc-500 hover:bg-zinc-900"
+                    >
+                      <Plus className="h-3.5 w-3.5" aria-hidden />
+                      Add point
+                    </button>
+                  </div>
+
+                  {card.features.length === 0 ? (
+                    <p className="rounded-md border border-dashed border-zinc-800 bg-zinc-950/60 px-3 py-4 text-sm text-zinc-500">
+                      No points yet.
+                    </p>
+                  ) : (
+                    <ul className="space-y-2">
+                      {card.features.map((feature, featureIndex) => (
+                        <li
+                          key={`${card.id}-feature-${featureIndex}`}
+                          className="grid gap-2 rounded-md border border-zinc-800 bg-zinc-950/70 p-3 sm:grid-cols-[minmax(0,1fr)_auto]"
+                        >
+                          <RichTextArea
+                            id={`savvySections.cards[${index}].features[${featureIndex}]`}
+                            label={`Point ${featureIndex + 1}`}
+                            value={feature}
+                            onChange={(nextFeature) => {
+                              const features = [...card.features]
+                              features[featureIndex] = nextFeature
+                              updateCardFeatures(index, features)
+                            }}
+                            padLeft={0}
+                          />
+                          <button
+                            type="button"
+                            onClick={() =>
+                              updateCardFeatures(
+                                index,
+                                card.features.filter(
+                                  (_, i) => i !== featureIndex
+                                )
+                              )
+                            }
+                            className="mt-6 shrink-0 self-start rounded-md border border-red-900/50 p-2 text-red-300 transition hover:bg-red-950/40"
+                            aria-label={`Remove point ${featureIndex + 1}`}
+                          >
+                            <Trash2 className="h-4 w-4" aria-hidden />
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
                 <ValueField
                   path={`savvySections.cards[${index}]`}
-                  value={card}
+                  value={{
+                    id: card.id,
+                    title: card.title,
+                    description: card.description,
+                    icon: card.icon,
+                    image: card.image,
+                    link: card.link,
+                    buttonText: card.buttonText,
+                  }}
                   depth={0}
-                  onChange={(next) => updateCard(index, next)}
+                  onChange={(next) => updateCardDetails(index, next)}
                 />
               </div>
             </div>
