@@ -366,30 +366,7 @@ export default function ContactPage() {
                     </a>
                   </div>
                 </li>
-                <li className="flex items-center gap-3 cursor-pointer hover:bg-gray-100/80 rounded px-2 py-1.5 -mx-2">
-                  <MapPin className="w-5 h-5 text-[#4361EE] shrink-0 mt-0.5" aria-hidden />
-                  <div className="min-w-0 flex-1">
-                    <p className="font-medium text-gray-900">
-                      <FormattedText text={t("contact.sidebarAddressLabel")} />
-                    </p>
-                    <FormattedText
-                      text={Object.values(t("contact.sidebarAddress", { returnObjects: true }) as Record<string, string>).join(", ")}
-                      className="whitespace-pre-line break-words"
-                    />
-                  </div>
-                </li>
-                <li className="flex items-center gap-3 cursor-pointer hover:bg-gray-100/80 rounded px-2 py-1.5 -mx-2">
-                  <Clock className="w-5 h-5 text-[#4361EE] shrink-0 mt-0.5" aria-hidden />
-                  <div className="min-w-0 flex-1">
-                    <p className="font-medium text-gray-900">
-                      <FormattedText text={t("contact.sidebarHoursLabel")} />
-                    </p>
-                    <FormattedText
-                      text={Object.values(t("contact.sidebarHours", { returnObjects: true }) as Record<string, string>).join(", ")}
-                      className="whitespace-pre-line break-words"
-                    />
-                  </div>
-                </li>
+
               </ul>
             </aside>
               </div>
