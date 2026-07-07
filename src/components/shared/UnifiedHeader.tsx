@@ -46,7 +46,6 @@ export default function UnifiedHeader({ texts = {}, showBadge = true, hasBanner 
   const serviceSections = t("serviceBrandNames", { returnObjects: true }) as string[]
 
   const aboutSectionLinks = [
-    { href: `/${lang}/expo`, label: t("nav.expo") },
     { href: `/${lang}/innovation`, label: t("nav.innovation") },
     { href: `/${lang}/media`, label: t("nav.media") },
   ] as const
